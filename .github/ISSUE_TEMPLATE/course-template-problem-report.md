@@ -1,16 +1,14 @@
 ---
-name: Course Template Problem Report
-about: Create a report to help improve the template and its documentation
+name: Course Problem Report
+about: Create a report to help improve the course
 title: problem
 labels: bug
 assignees: cansavvy
 
 ---
 
-**Describe what is not working with the template or is unclear in the documentation**
+**Describe what is not working with the course**
 A clear and concise description of what the bug is.
-
-**Please link to the specific course repository you are working on**
 
 **To Reproduce**
 Steps to reproduce the behavior:
@@ -21,9 +19,6 @@ Steps to reproduce the behavior:
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
-
-**Github actions links**
-If applicable please link to the Github actions that has failed
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
