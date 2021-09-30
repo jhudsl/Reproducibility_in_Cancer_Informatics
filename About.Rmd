@@ -1,5 +1,5 @@
 ---
-title: "Title of Course"
+title: "Reproducibility in Cancer Informatics"
 ---
 
 # About the Authors {-}
@@ -14,7 +14,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |**Pedagogy**||
 |Lead Content Instructor(s)|[FirstName LastName](link to personal website)|
 |Lecturer(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved| Delivered the course in some way - video or audio|
-|Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor| 
+|Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor|
 |Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter|
 |Content Editor(s)/Reviewer(s) | Checked your content|
 |Content Director(s) | Helped guide the content direction|
