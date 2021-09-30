@@ -1,6 +1,6 @@
 ---
-name: Course Template Feature Request
-about: Suggest an idea for the course templates
+name: Course Feature Request
+about: Suggest an idea for the course
 title: ''
 labels: ''
 assignees: cansavvy
