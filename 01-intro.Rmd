@@ -4,7 +4,6 @@ title: "Reproducibility in Cancer Informatics"
 
 ```{r, include = FALSE}
 leanbuild::set_knitr_image_path()
-
 ```
 # Introduction
 
