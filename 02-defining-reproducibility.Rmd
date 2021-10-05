@@ -40,9 +40,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 ```
 
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results?
-Ruby the researcher sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer.
-"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results? Ruby the researcher sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_368")
 ```
 
