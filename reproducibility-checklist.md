@@ -7,6 +7,7 @@ This checklist is to help you review your analysis project to identify areas whe
 - [ ] The data needed to run the analysis are included in the project and/or a script for downloading the data is included.
 - [ ] There is no manual steps (you never clicked or dragged something to alter the data) required to re-run the analysis.
   - [ ] If no to the above question, the manual step required is highly documented and the exact steps needed to re-do the manual step are explained.
+- [ ] In analyses where randomness is used, a seed is set.
 
 ## Documentation
 - [ ] The origin and measurements of the data are explained.
@@ -22,6 +23,7 @@ This checklist is to help you review your analysis project to identify areas whe
 - [ ] Project organization follows an identifiable structure.
 - [ ] Input data has its own directory.
 - [ ] Output files like `plots` and `results` have their own directory.
+- [ ] Scripts are numbered in their logic order.
 
 ## Code readability
 - [ ] The code adheres to a particular style.
@@ -35,8 +37,11 @@ This checklist is to help you review your analysis project to identify areas whe
 - [ ] The analysis is version-controlled by git and GitHub
 - [ ] Changes made to the code are made on new branches and reviewed upon the initiation of a pull request (no direct to main/master merges).
 
-## Docker
+## Computing environment
+- [ ] `Session info` is tracked.
 - [ ] A Docker image is included and used for development to maintain consistency across researchers.
 
 ## Automation
 - [ ] The output items are refreshed automatically when changes are made using automation.
+
+To test the reproducibility of your analysis, have your code reviewed by a colleague and ask them to re-run the analysis and then compare your results. 
