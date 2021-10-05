@@ -1,0 +1,20 @@
+---
+title: "What is reproducibility"
+---
+
+```{r, include = FALSE}
+leanbuild::set_knitr_image_path()
+```
+
+## Learning Objectives
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Understand the fundamental concepts of reproducibility vs replicability vs repeatability. Understand how working to make your analyses reproducible save your time and the time of your collaborators. Understand how working toward reproducible analyses enhances the accuracy of analysis results."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_1205")
+```
+
+## Defining reproducibility
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducibility is a different analyst re­-performing the same analysis with the same code and data. Replicability is analysts re-­performing the experiment and collecting new data."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_146")
+```
