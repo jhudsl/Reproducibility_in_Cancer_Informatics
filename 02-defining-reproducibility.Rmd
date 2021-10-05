@@ -18,3 +18,35 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducibility is a different analyst re­-performing the same analysis with the same code and data. Replicability is analysts re-­performing the experiment and collecting new data."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_146")
 ```
+
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue and pink data points and an trendline separating the blue points. The scatterplot has Variable A on the x axis and Variable B on the y axis. Ruby says my data analysis is showing a pattern that is very informative for ongoing research in my field."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_0")
+```
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has code and data that she has used to obtain a scatterplot of results. The results show variable A and variable B plotted with each other. The inference of this plot and results are that variable A and variable B are positively correlated. "}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_60")
+```
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Repeatable means that if you keep everything the same but repeat the analysis - do you get the same results? Ruby the researcher has her same code and data but a repeat sign around them. If she re-runs the analysis, will she get the same scatterplot of results we’ve seen previously?"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_413")
+```
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue data points and an trendline that shows a positive correlation. The scatterplot has Variable A on the x axis and Variable B on the y axis. Avi the associate sees Ruby the researcher’s results and is also excited about the findings. Avi says Ruby’s findings are super relevant to my work and I’m interested in using her methods!"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_413")
+```
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results?
+Ruby the researcher sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer.
+"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_368")
+```
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Replicable: with new data do we obtain the same inferences? Ruby the researcher sends her code to Avi the Associate who then tries to re-run the same analysis on his own computer but now with new data (represented by a different color flashdrive). Will Avi come to the same inference that Ruby’s analysis did?"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_464")
+```
