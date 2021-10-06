@@ -1,5 +1,5 @@
 ---
-title: "What is reproducibility"
+title: "Defining reproducibility"
 ---
 
 ```{r, include = FALSE}
@@ -35,7 +35,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 ```
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue data points and an trendline that shows a positive correlation. The scatterplot has Variable A on the x axis and Variable B on the y axis. Avi the associate sees Ruby the researcher’s results and is also excited about the findings. Avi says Ruby’s findings are super relevant to my work and I’m interested in using her methods!"}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_413")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_179")
 ```
 
 
