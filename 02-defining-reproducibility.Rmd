@@ -30,18 +30,35 @@ Perhaps you are like Ruby and have just found an interesting pattern through you
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_0")
 ```
 
-But before you get too excited, you should probably ask yourself whether you are able to re-run your own analysis and get the same results again. This is known as repeatability.
+But before you get too excited, Ruby should ask herself whether she is able to re-run her own analysis and get the same results again. This is known as _repeatability_.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Repeatable means that if you keep everything the same but repeat the analysis - do you get the same results? Ruby the researcher has her same code and data but a repeat sign around them. If she re-runs the analysis, will she get the same scatterplot of results we’ve seen previously?"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_413")
 ```
 
-Repeatability is the first standard to reach before sharing your results with others.
-If you are not able to obtain the same results twice, then others' will not be able to re-run your code reliably either.
+Given that Ruby's analysis is repeatable; she may feel confident now to share her preliminary results with her colleague, Avi the Associate. Whether or not someone else will be able to take Ruby's code and data, re-run the analysis and obtain the same results is known as _reproducibility_.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "If your results are not repeatable they will NOT be reproducible. In other words, if you can’t get the same answer twice, other researchers won’t be able to get your answer either."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_564")
+```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results? Ruby the researcher sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_368")
 ```
+
+If Ruby's results are able to be reproduced by Avi, now Avi may collect new data and use Ruby's same analysis methods to analyze his data. Whether or not Avi's new data and results concur with Ruby's study's original inferences is known as _replicability_.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Replicable: with new data do we obtain the same inferences? Ruby the researcher sends her code to Avi the Associate who then tries to re-run the same analysis on his own computer but now with new data (represented by a different color flashdrive). Will Avi come to the same inference that Ruby’s analysis did?"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_464")
+```
+
+You may realize that these levels of research build on each other (like science is supposed to do). In this way, we can think of these in a hierarchy like this diagram from @Essawy2020.  Skipping any of these levels of research applicability can lead to unreliable results and conclusions.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "A triangular graph shows a hierarchy of research. Repeatability is a the bottom ‘same researcher, same machine’, Runnability is next ‘same researcher, new machine’, Reproducibility is above that, ‘new researcher, same data’ and on the very top is Replicability ‘new researcher, new data’."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_10")
+```
+
+Before Ruby is ready to share her data with an associate such as Avi, she needs to make sure she can repeat it and obtain the same results. Before Avi is ready to use the analysis methods on new data, he needs to make sure that in his hands, he can obtain the same results Ruby did.
+
+Science progress when data and hypotheses are put through these levels thoroughly and sequentially. Unfortunately, life and science are generally a lot messier than that and in their desire to race to the next stage of novel results, institutions do not generally reward reproducibility. This has led to what individuals have referred to as the reproducibility crises. 
+
+## Reproducibility in daily life
 
 Let's say Ruby's results are repeatable in her own hands and she excitedly tells her associate, Avi about her preliminary findings. Avi is very excited about these results as well as Ruby's methods!
 
@@ -51,10 +68,6 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Avi is also interested in Ruby's analysis methods and results. So Ruby sends Avi the code and data she used to obtain the results. Now, whether or not Avi is able to obtain the same exact results with this same data and same analysis code is known as reproducibility.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results? Ruby the researcher sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_368")
-```
-
 Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researcher's share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working.
 
 Avi is encountering errors because Ruby's code was written with Ruby's computer and local set up in mind and she didn't know how to make it more generally applicable. Avi is spending a lot of time just trying to re-run Ruby's same analysis on her same data; he has yet to be able to try the code on any additional data (which will likely bring up even more errors).
@@ -63,17 +76,20 @@ Avi is encountering errors because Ruby's code was written with Ruby's computer 
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_993")
 ```
 
-Avi is still struggling to work with Ruby's code and is confused about what some of the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide its time to email Ruby to hopefully get some clarity. 
+Avi is still struggling to work with Ruby's code and is confused about the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide its time to email Ruby to hopefully get some clarity. Now both Avi and Ruby are confused about why this analysis isn't nicely re-running for Avi and their attempts to communicate about the code through email haven't helped them clarify either of their questions. Multiple versions of the code may have been sent back and forth between them and now things are taking a lot more time than either of them expected.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi are emailing back and forth. Avi is very confused about Ruby’s code and data. Avi’s computer says ‘Error: file path “Ruby’s computer/Ruby’s file/final_version10.R” not found’. Avi email says ‘Re:Re:Re: Data Hi Ruby, I don’t understand what this code is supposed to be doing…’ Ruby is also confused and emails back to Avi ‘Re:Re:Re: Data Hi Avi, It works for me?’"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_1066")
 ```
 
+Let's say at some point Avi is able to successfully run Ruby's code on Ruby's same data. Just because Avi didn't get any errors doesn't mean that the code ran exactly the same as it did for Ruby. Lack of errors also doesn't mean that either Ruby or Avi's runs of the code ran with high accuracy or that the results can be trusted. Even a small difference in decimal point may indicate a more fundamental difference in how the analysis was performed and this could be due to differences in software versions, settings, or any number of items in their computing environments.
 
-We can think of these levels of research as a hierarchy as demonstrated in this figure from @Essawy2020
-```{r, fig.align='center', echo = FALSE, fig.alt= "A triangular graph shows a hierarchy of research. Repeatability is a the bottom ‘same researcher, same machine’, Runnability is next ‘same researcher, new machine’, Reproducibility is above that, ‘new researcher, same data’ and on the very top is Replicability ‘new researcher, new data’."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_10")
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_673")
 ```
+
+
+
 
 ## Reproducibility is critical
 
