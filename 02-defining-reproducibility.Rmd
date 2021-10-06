@@ -24,13 +24,8 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Reproducibility is related to repeatability and replicability but it is worth taking the time parse out these terms.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue and pink data points and an trendline separating the blue points. The scatterplot has Variable A on the x axis and Variable B on the y axis. Ruby says my data analysis is showing a pattern that is very informative for ongoing research in my field."}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue and pink data points and a trendline. The scatterplot has Variable A on the x axis and Variable B on the y axis. Ruby says my data analysis is showing a pattern that is very informative for ongoing research in my field."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_0")
-```
-
-
-```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has code and data that she has used to obtain a scatterplot of results. The results show variable A and variable B plotted with each other. The inference of this plot and results are that variable A and variable B are positively correlated. "}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_60")
 ```
 
 
