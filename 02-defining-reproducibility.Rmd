@@ -24,27 +24,55 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Reproducibility is related to repeatability and replicability but it is worth taking the time parse out these terms.
 
+Perhaps you are like Ruby and have just found an interesting pattern through your data analysis! This has probably been the result of many months or years on your project and its worth celebrating!
+
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue and pink data points and a trendline. The scatterplot has Variable A on the x axis and Variable B on the y axis. Ruby says my data analysis is showing a pattern that is very informative for ongoing research in my field."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_0")
 ```
 
+But before you get too excited, you should probably ask yourself whether you are able to re-run your own analysis and get the same results again. This is known as repeatability.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Repeatable means that if you keep everything the same but repeat the analysis - do you get the same results? Ruby the researcher has her same code and data but a repeat sign around them. If she re-runs the analysis, will she get the same scatterplot of results we’ve seen previously?"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_413")
 ```
 
+Repeatability is the first standard to reach before sharing your results with others.
+If you are not able to obtain the same results twice, then others' will not be able to re-run your code reliably either.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "If your results are not repeatable they will NOT be reproducible. In other words, if you can’t get the same answer twice, other researchers won’t be able to get your answer either."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_564")
+```
+
+Let's say Ruby's results are repeatable in her own hands and she excitedly tells her associate, Avi about her preliminary findings. Avi is very excited about these results as well as Ruby's methods!
+
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has found something very interesting through data analysis. Ruby has a scatterplot on her computer that shows blue data points and an trendline that shows a positive correlation. The scatterplot has Variable A on the x axis and Variable B on the y axis. Avi the associate sees Ruby the researcher’s results and is also excited about the findings. Avi says Ruby’s findings are super relevant to my work and I’m interested in using her methods!"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_179")
 ```
 
+Avi is also interested in Ruby's analysis methods and results. So Ruby sends Avi the code and data she used to obtain the results. Now, whether or not Avi is able to obtain the same exact results with this same data and same analysis code is known as reproducibility.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results? Ruby the researcher sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_368")
 ```
 
+Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researcher's share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Replicable: with new data do we obtain the same inferences? Ruby the researcher sends her code to Avi the Associate who then tries to re-run the same analysis on his own computer but now with new data (represented by a different color flashdrive). Will Avi come to the same inference that Ruby’s analysis did?"}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_464")
+Avi is encountering errors because Ruby's code was written with Ruby's computer and local set up in mind and she didn't know how to make it more generally applicable. Avi is spending a lot of time just trying to re-run Ruby's same analysis on her same data; he has yet to be able to try the code on any additional data (which will likely bring up even more errors).
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Avi the associate is confused and sweating. His computer has the word ‘error’ written all over it and its on fire trying to use Ruby’s code on Ruby’s data. This is using a substantial amount of time and effort on Avi’s part. "}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_993")
+```
+
+Avi is still struggling to work with Ruby's code and is confused about what some of the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide its time to email Ruby to hopefully get some clarity. 
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi are emailing back and forth. Avi is very confused about Ruby’s code and data. Avi’s computer says ‘Error: file path “Ruby’s computer/Ruby’s file/final_version10.R” not found’. Avi email says ‘Re:Re:Re: Data Hi Ruby, I don’t understand what this code is supposed to be doing…’ Ruby is also confused and emails back to Avi ‘Re:Re:Re: Data Hi Avi, It works for me?’"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_1066")
+```
+
+
+We can think of these levels of research as a hierarchy as demonstrated in this figure from @Essawy2020
+```{r, fig.align='center', echo = FALSE, fig.alt= "A triangular graph shows a hierarchy of research. Repeatability is a the bottom ‘same researcher, same machine’, Runnability is next ‘same researcher, new machine’, Reproducibility is above that, ‘new researcher, same data’ and on the very top is Replicability ‘new researcher, new data’."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_10")
 ```
 
 ## Reproducibility is critical
