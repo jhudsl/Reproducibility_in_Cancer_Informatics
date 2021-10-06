@@ -56,7 +56,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Before Ruby is ready to share her data with an associate such as Avi, she needs to make sure she can repeat it and obtain the same results. Before Avi is ready to use the analysis methods on new data, he needs to make sure that in his hands, he can obtain the same results Ruby did.
 
-Science progress when data and hypotheses are put through these levels thoroughly and sequentially. Unfortunately, life and science are generally a lot messier than that and in their desire to race to the next stage of novel results, institutions do not generally reward reproducibility. This has led to what individuals have referred to as the reproducibility crises. 
+Science progresses when data and hypotheses are put through these levels thoroughly and sequentially. Unfortunately, life and science are generally a lot messier than that and in their desire to race to the next stage of novel results, institutions do not generally reward reproducibility. This has led to what individuals have referred to as the reproducibility crises. 
 
 ## Reproducibility in daily life
 
