@@ -106,5 +106,12 @@ Perhaps you've found yourself in a situation like Ruby and Avi; struggling to re
 As you apply these reproducible techniques to your research may feel like it is taking more time to reach endpoints, but keep in mind that often reproducible analyses and projects have higher upfront costs but these will absolutely pay off in the long term. Reproducibility in your analyses is not only a time saver for yourself, but also your colleagues, your field, and your future self!
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible analyses save everyone time and effort!"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_239")
+```
+
+
+
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible analyses save everyone time and effort!"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_5")
 ```
