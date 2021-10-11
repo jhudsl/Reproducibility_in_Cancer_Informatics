@@ -3,13 +3,18 @@ title: "Reproducibility in Cancer Informatics"
 ---
 
 
+
 # Introduction
 
 <img src="resources/images/01-intro_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_0.png" title="Title image: Reproducibility in Cancer Informatics" alt="Title image: Reproducibility in Cancer Informatics" width="100%" />
 
 ## Motivation
 
-Cancer datasets are plentiful, complicated, and hold information that may be critical for the next research advancements. Cancer researchers may have analyzed data
+Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.
+
+Data analyses are also are generally not reproducible without direct contact with the original researchers and a substantial amount of time and effort [@Beaulieu-Jones]. Reproducibility in cancer informatics (as with other fields) is still not monitored or incentivized despite that it is fundamental to the scientific method. Despite the lack of incentive, many researchers strive for reproducibility in their own work but often lack the skills or training to do so effectively.
+
+Equipping researchers with the skills to create reproducible data analyses increases the efficiency of everyone involved. Reproducible analyses are more likely to understood, applied, and replicated by others. This helps expedite the scientific process by helping researchers avoid false positive dead ends. Open source clarity in reproducible methods also saves researchers' time so they don't have to reinvent the proverbial wheel for methods that everyone in the field is already performing.
 
 This course introduces the concepts of reproducibility and replicability in the context of cancer informatics. It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses. The course also introduces tools relevant to reproducibility including analysis notebooks, Docker images, git and GitHub.
 
@@ -21,5 +26,4 @@ The course is intended for students in the biomedical sciences and researchers w
 
 <img src="resources/images/01-intro_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_10.png" title="This course will demonstrate how to: Understanding why usability and documentation is vital, Identifying your user community, Building documentation and tutorials to maximize the usability of developed tools, Obtaining feedback from your users" alt="This course will demonstrate how to: Understanding why usability and documentation is vital, Identifying your user community, Building documentation and tutorials to maximize the usability of developed tools, Obtaining feedback from your users"  />
 
-The course includes a hands-on exercises for how to apply reproducible code concepts to their code
-Individuals who take this course are encouraged to complete these activities as they follow along with the course material to help increase the reproducibility of their analyses.
+The course includes a hands-on exercises for how to apply reproducible code concepts to their code. Individuals who take this course are encouraged to complete these activities as they follow along with the course material to help increase the reproducibility of their analyses.

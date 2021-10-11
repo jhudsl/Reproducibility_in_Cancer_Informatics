@@ -2,5 +2,9 @@ introduction
 motivation
 target-audience
 curriculum
+defining-reproducibility
 learning-objectives
-print-out-session-info
+what-is-reproducibility
+reproducibility-in-daily-life
+reproducibility-is-worth-the-effort
+reproducibility-exists-on-a-continuum
