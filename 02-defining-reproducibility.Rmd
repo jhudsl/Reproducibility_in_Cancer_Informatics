@@ -129,7 +129,7 @@ Reproducible code also saves your colleagues time! The more reproducible your co
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "If Ruby’s code is less reproducible, every researcher who attempts to use Ruby’s code will encounter the same errors and each person will have to fix it. This adds up to a lot of spent researcher time and effort."}
 leanbuild::include_slide("
-https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_160
+https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_160")
 ```
 
 But, reproducible code saves everyone exponential amounts of time and effort! The time and effort saved is a big pay off. It will also motivate individuals to use and cite your code and analyses in the future!
