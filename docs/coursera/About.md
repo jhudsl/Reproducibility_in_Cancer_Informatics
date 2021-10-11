@@ -12,7 +12,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructor(s)|[FirstName LastName](link to personal website)|
+|Lead Content Instructor(s)|[Candace Savonen](https://www.cansavvy.com/)|
 |Lecturer(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved| Delivered the course in some way - video or audio|
 |Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor|
 |Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter|
@@ -21,7 +21,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Content Consultants (include chapter name/link in parentheses or word "General") - make new line if more than one chapter involved | Gave high level advice on content|
 |Acknowledgments| Gave small assistance to content but not to the level of consulting |
 |**Production**||
-|Content Publisher(s)| Helped with publishing platform|
+|Content Publisher|[Ira Gooding](https://publichealth.jhu.edu/faculty/4130/ira-gooding)|
 |Content Publishing Reviewer(s)| Reviewed overall content and aesthetics on publishing platform|
 |**Technical**||
 |Course Publishing Engineer(s)| Helped with the code for the technical aspects related to the specific course generation|
@@ -54,7 +54,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2021-09-30                  
+##  date     2021-10-11                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version    date       lib source                            
