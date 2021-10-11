@@ -150,3 +150,19 @@ Incremental work on your analyses is good! You do not need to make your analyses
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducibility is on a continuum. This graph shows a two sided arrow with a gradient. On the very left is a ‘not repeatable analysis’ it was ran once. To the right of that is an analysis that ‘re-runs sometimes’. To the right of this, is an analysis that ‘Re-runs reliably in most contexts’.  And all the way to the right is a ‘perfectly reproducible analysis’ that ‘Re-runs in every situation and gets the same result every time’. In red lettering we note that every analysis is started by being run once but no analysis is ‘perfectly reproducible’."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_0")
 ```
+
+## Tools to be discussed in this course
+
+In this course, we will discuss the following tools for conducting your analyses reproducibly:
+
+```{r, fig.alt="Title image: Reproducibility in Cancer Informatics", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_1140")
+```
+
+We have set up some files that may resemble a "typical" analysis. Throughout this course, we will incrementally transform these analysis files into a beautifully reproducible project by applying what we discuss in each chapter with hands-on exercises.
+
+In our [follow up course](), you can further enhance the reproducibility of this project by learning and applying even more techniques. Here's a preview of what will be discussed in that course.
+
+```{r, fig.alt="Title image: Reproducibility in Cancer Informatics", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_0_0")
+```
