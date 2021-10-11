@@ -80,7 +80,7 @@ Avi is also interested in Ruby's analysis methods and results. So Ruby sends Avi
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_944")
 ```
 
-Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researcher's share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working [@BeaulieuJones2017].
+Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researchers share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working and this often cannot be done successfully without help from the original code author [@BeaulieuJones2017].
 
 Avi is encountering errors because Ruby's code was written with Ruby's computer and local set up in mind and she didn't know how to make it more generally applicable. Avi is spending a lot of time just trying to re-run Ruby's same analysis on her same data; he has yet to be able to try the code on any additional data (which will likely bring up even more errors).
 
@@ -101,8 +101,6 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 ```
 
 Lack of errors also doesn't mean that either Ruby or Avi's runs of the code ran with high accuracy or that the results can be trusted. Even a small difference in decimal point may indicate a more fundamental difference in how the analysis was performed and this could be due to differences in software versions, settings, or any number of items in their computing environments.
-
-In the upcoming chapters we will discuss what aspects of a project can help bolster its reproducibility.
 
 ## Reproducibility is worth the effort!
 
