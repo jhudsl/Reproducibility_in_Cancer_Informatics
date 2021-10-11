@@ -48,7 +48,7 @@ If Ruby's results are able to be reproduced by Avi, now Avi may collect new data
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_464")
 ```
 
-You may realize that these levels of research build on each other (like science is supposed to do). In this way, we can think of these in a hierarchy like this diagram from @Essawy2020.  Skipping any of these levels of research applicability can lead to unreliable results and conclusions.
+You may realize that these levels of research build on each other (like science is supposed to do). In this way, we can think of these in a hierarchy.  Skipping any of these levels of research applicability can lead to unreliable results and conclusions.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "A triangular graph shows a hierarchy of research. Repeatability is a the bottom ‘same researcher, same machine’, Runnability is next ‘same researcher, new machine’, Reproducibility is above that, ‘new researcher, same data’ and on the very top is Replicability ‘new researcher, new data’."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_10")
@@ -56,14 +56,17 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Science progresses when data and hypotheses are put through these levels thoroughly and sequentially. If results are not repeatable, they won't be reproducible or replicable.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "If your results are not repeatable they will NOT be reproducible.
-In other words, if you can’t get the same answer twice, other researchers won’t be able to get your answer either."}
+```{r, fig.align='center', echo = FALSE, fig.alt= "If your results are not repeatable they will NOT be reproducible. In other words, if you can’t get the same answer twice, other researchers won’t be able to get your answer either."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_564")
 ```
 
-Ideally all analyses and results would be reproducible without too much time effort spent; this would aid in the efficiency of research getting to the next stages and questions. But unfortunately, in practice, reproducibility is not as commonplace as we would hope. Institutions their reward systems generally do not prioritize or even measure reproducibility standards in research and training opportunities for reproducible techniques can be scarce. Reproducible research can often feel like uphill battle that is made steeper by lack of training opportunities.
+Ideally all analyses and results would be reproducible without too much time effort spent; this would aid in the efficiency of research getting to the next stages and questions. But unfortunately, in practice, reproducibility is not as commonplace as we would hope. Institutions and reward systems generally do not prioritize or even measure reproducibility standards in research and training opportunities for reproducible techniques can be scarce. Reproducible research can often feel like uphill battle that is made steeper by lack of training opportunities.
+
+In this course, we hope to equip your research with the tools you need to enhance the reproducibility of your analyses so this uphill battle is _less steep_.
 
 ## Reproducibility in daily life
+
+What does reproducibility in mean in the daily life of a researcher?
 
 Let's say Ruby's results are repeatable in her own hands and she excitedly tells her associate, Avi about her preliminary findings. Avi is very excited about these results as well as Ruby's methods!
 
@@ -71,13 +74,13 @@ Let's say Ruby's results are repeatable in her own hands and she excitedly tells
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_179")
 ```
 
-Avi is also interested in Ruby's analysis methods and results. So Ruby sends Avi the code and data she used to obtain the results. Now, whether or not Avi is able to obtain the same exact results with this same data and same analysis code is known as reproducibility.
+Avi is also interested in Ruby's analysis methods and results. So Ruby sends Avi the code and data she used to obtain the results. Now, whether or not Avi is able to obtain the same exact results with this same data and same analysis code will indicate if Ruby's analysis is reproducible.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has her computer with a plot and a significant and exciting research result. Ruby says 'Here, Avi, this code runs well on my computer, let me email it to you!' Avi the associate says 'so exciting'"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_944")
 ```
 
-Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researcher's share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working.
+Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researcher's share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working [@BeaulieuJones2017].
 
 Avi is encountering errors because Ruby's code was written with Ruby's computer and local set up in mind and she didn't know how to make it more generally applicable. Avi is spending a lot of time just trying to re-run Ruby's same analysis on her same data; he has yet to be able to try the code on any additional data (which will likely bring up even more errors).
 
@@ -85,21 +88,23 @@ Avi is encountering errors because Ruby's code was written with Ruby's computer 
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_993")
 ```
 
-Avi is still struggling to work with Ruby's code and is confused about the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide its time to email Ruby to get some clarity. Now both Avi and Ruby are confused about why this analysis isn't nicely re-running for Avi and their attempts to communicate about the code through email haven't helped them clarify either of their questions. Multiple versions of the code may have been sent back and forth between them and now things are taking a lot more time than either of them expected.
+Avi is still struggling to work with Ruby's code and is confused about the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide its time to email Ruby to get some clarity. Now both Avi and Ruby are confused about why this analysis isn't nicely re-running for Avi. Their attempts to communicate about the code through email haven't helped them clarify anything. Multiple versions of the code may have been sent back and forth between them and now things are taking a lot more time than either of them expected.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi are emailing back and forth. Avi is very confused about Ruby’s code and data. Avi’s computer says ‘Error: file path “Ruby’s computer/Ruby’s file/final_version10.R” not found’. Avi email says ‘Re:Re:Re: Data Hi Ruby, I don’t understand what this code is supposed to be doing…’ Ruby is also confused and emails back to Avi ‘Re:Re:Re: Data Hi Avi, It works for me?’"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi are emailing back and forth. Avi is very confused about Ruby’s code and data. Avi’s computer says 'Error: file path 'Ruby’s computer/Ruby’s file/final_version10.R' not found'. Avi email says ‘Re:Re:Re: Data Hi Ruby, I don’t understand what this code is supposed to be doing…’ Ruby is also confused and emails back to Avi 'Re:Re:Re: Data Hi Avi, It works for me?''"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_1066")
 ```
 
-Perhaps at some point Avi is able to successfully run Ruby's code on Ruby's same data. Just because Avi didn't get any errors doesn't mean that the code ran exactly the same as it did for Ruby. Lack of errors also doesn't mean that either Ruby or Avi's runs of the code ran with high accuracy or that the results can be trusted. Even a small difference in decimal point may indicate a more fundamental difference in how the analysis was performed and this could be due to differences in software versions, settings, or any number of items in their computing environments.
+Perhaps at some point Avi is able to successfully run Ruby's code on Ruby's same data. Just because Avi didn't get any errors doesn't mean that the code ran exactly the same as it did for Ruby.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_673")
 ```
 
+Lack of errors also doesn't mean that either Ruby or Avi's runs of the code ran with high accuracy or that the results can be trusted. Even a small difference in decimal point may indicate a more fundamental difference in how the analysis was performed and this could be due to differences in software versions, settings, or any number of items in their computing environments.
+
 In the upcoming chapters we will discuss what aspects of a project can help bolster its reproducibility.
 
-## Reproducibility - a long term mentality
+## Reproducibility is worth the effort!
 
 Perhaps you've found yourself in a situation like Ruby and Avi; struggling to re-run code that you thought for sure was working a minute ago. In the upcoming chapters, we will discuss how to bolster your projects' reproducibility.
 
@@ -112,7 +117,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 Reproducibility in your analyses is not only a time saver for yourself, but also your colleagues, your field, and your future self!
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Reproducible analyses save everyone time and effort!"}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_239")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_5")
 ```
 
 You might not change a single character in your code but then return to it in a a few days/months/years and find that it no longer runs! Reproducible code stands the test of time longer, making future you glad you spent the time to work on it. It's said that your closest collaborator is you from 6 months ago but you don't reply to email. @Broman
@@ -121,18 +126,20 @@ You might not change a single character in your code but then return to it in a 
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_330")
 ```
 
+Many a data scientist has referred to their frustration with their past selves:
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dear past-Hadley: PLEASE COMMENT YOUR CODE BETTER. Love present-Hadley</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/718203628528349184?ref_src=twsrc%5Etfw">April 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The more you comment your code, and make it clear and readable, your future self will thank you.
 
-Reproducible code also saves your colleagues time! The more reproducible your code is, the less time all of your collaborators will need to spend troubleshooting it. The more people who use your code and need to try to fix it, the more time is wasted. This adds up to a lot of spent researcher time and effort.
+Reproducible code also saves your colleagues time! The more reproducible your code is, the less time all of your collaborators will need to spend troubleshooting it. The more people who use your code and need to try to fix it, the more time is wasted. This can add up to a lot of wasted researcher time and effort.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "If Ruby’s code is less reproducible, every researcher who attempts to use Ruby’s code will encounter the same errors and each person will have to fix it. This adds up to a lot of spent researcher time and effort."}
 leanbuild::include_slide("
 https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_160")
 ```
 
-But, reproducible code saves everyone exponential amounts of time and effort! The time and effort saved is a big pay off. It will also motivate individuals to use and cite your code and analyses in the future!
+But, reproducible code saves everyone exponential amounts of time and effort! It will also motivate individuals to use and cite your code and analyses in the future!
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "If Ruby’s code is built in a sturdier manner, it will save others’ time who might also need to perform a similar analysis. Ruby’s code is made reproducibly in this example and only one of her seven colleagues that are using her code needed to troubleshoot an error."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1cd772e00_0_53")
