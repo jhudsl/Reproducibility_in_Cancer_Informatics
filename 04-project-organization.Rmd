@@ -1,0 +1,58 @@
+---
+title: "Organizing your project"
+---
+
+```{r, include = FALSE}
+leanbuild::set_knitr_image_path()
+```
+
+# Organizing your project
+
+## Learning Objectives
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
+```
+
+Keeping your files organized is a skill that has a high long-term pay off.As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_56")
+```
+
+@Tayo2019 discusses four particular reasons why it is important to organize your project:
+
+> 1. Organization increases productivity. If a project is well organized, with everything placed in one directory, it makes it easier to avoid wasting time searching for project files such as datasets, codes, output files, and so on.
+> 2. A well-organized project helps you to keep and maintain a record of your ongoing and completed data science projects.
+> 3. Completed data science projects could be used for building future models. If you have to solve a similar problem in the future, you can use the same code with slight modifications.
+> 4. A well-organized project can easily be understood by other data science professionals when shared on platforms such as Github.
+
+Organization is yet another aspect of reproducibility that saves you and your colleagues time!
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_180")
+```
+
+## Organizational strategies
+
+There's a lot of ways to keep your files organized, and there's not a "one size fits all" organizational solution [@Shapiro_Childhood_Cancer_Data_2021]. In this chapter, we will discuss some generalities but as far as specifics we will point you to others' who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.
+
+The most important aspects of your project organization scheme is that it:
+- Is [project-oriented](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) [@Bryan2017].  
+- Follows consistent patterns.  
+- Is easy for you and others to find the files you need quickly.  
+- Minimizes the likelihood for errors (like writing over files accidentally).  
+[@Shapiro_Childhood_Cancer_Data_2021]
+
+
+### Readings about organizational strategies for data science projects:
+
+- [Jenny Bryan's organizational strategy](https://www.stat.ubc.ca/~jenny/STAT545A/block19_codeFormattingOrganization.html) [@Bryan2021].
+- [Jenny Bryan on Project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)[@Bryan2017].
+- [Data Carpentry mini course about organizing projects](https://datacarpentry.org/organization-genomics/) [@DataCarpentry2021].
+https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0
+- [A BioStars thread where many individuals share their own organizational strategies](https://www.biostars.org/p/821/) [@Biostars2021].
+- [Data Carpentry course chapter about getting organized](https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html) [@DataCarpentry2019].
+
+
+### Exercise: Organize your project!
