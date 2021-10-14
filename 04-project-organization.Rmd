@@ -119,8 +119,8 @@ wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhu
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
 
 ```{bash, message = FALSE, results = 'hide'}
-unzip chapter-zips/python-heatmap-chapt-4.zip
-unzip chapter-zips/r-heatmap-chapt-4.zip
+unzip -o chapter-zips/python-heatmap-chapt-4.zip
+unzip -o chapter-zips/r-heatmap-chapt-4.zip
 ```
 
 Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
