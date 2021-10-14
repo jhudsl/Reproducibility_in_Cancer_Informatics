@@ -29,9 +29,9 @@ At the beginning of each chapter, we will prompt you to download either the R or
 
 We will have the download commands typed out for you that you will copy and paste to your command line. If you have not used command line or are not sure how to find it, [read this article](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
 
-#### Getting wget
+## Using wget
 
-All you will need to do is make sure you have `wget` installed on your computer. You can check if you have it by running the following in your command line:
+All you will need to do is make sure you have [`wget`](https://www.gnu.org/software/wget/manual/wget.html) installed on your computer. You can check if you have it by running the following in your command line:
 
 ```{bash}
 wget -V
