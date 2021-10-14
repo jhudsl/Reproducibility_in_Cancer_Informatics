@@ -68,6 +68,6 @@ wget -V
 ## Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
 ## Please send bug reports and questions to <bug-wget@gnu.org>.
 ```
-If this prints back `wget command not found` you will need to [ install wget](https://www.jcchouinard.com/wget/). If it prints out a bunch of information, then you already have `wget` installed and can continue on!
+If this prints back something similar to this message above, then you already have `wget` and don't need to do anything! But if this command prints back `wget command not found` you will need to [ install wget](https://www.jcchouinard.com/wget/). 
 
 Happy coding!
