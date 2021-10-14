@@ -64,14 +64,14 @@ For this chapter, we will organize our example project files!
 
 To get the _Python project example files_, copy and paste these commands below into your command line and press Enter.
 
-```{bash}
+```{bash, echo = FALSE}
 mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip
 ```
 
 To get the _R project examples files_ copy and paste these commands below into your command line and press Enter.
 
-```{bash}
+```{bash, echo = FALSE}
 mkdir -p chapter-zips
 wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip
 ```
