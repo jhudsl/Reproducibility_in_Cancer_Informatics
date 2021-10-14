@@ -14,7 +14,7 @@ leanbuild::set_knitr_image_path()
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
 ```
 
-Keeping your files organized is a skill that has a high long-term pay off.As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
+Keeping your files organized is a skill that has a high long-term pay off. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?"}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_56")
@@ -43,21 +43,22 @@ The most important aspects of your project organization scheme is that it:
 - Follows consistent patterns.  
 - Is easy for you and others to find the files you need quickly.  
 - Minimizes the likelihood for errors (like writing over files accidentally).  
-[@Shapiro_Childhood_Cancer_Data_2021]
 - Is something maintainable!
+
+[@Shapiro_Childhood_Cancer_Data_2021]
 
 ### Tips for organizing your project:   
 
 Getting more specific, here's some ideas of how to organize your project:  
 
-- Make file names sensible to those who don't have knowledge of the project but avoid using spaces, quotes, or unusual characters in your filenames and folders -- these only serve to make reading in files a nightmare in some programs.
-- Number scripts in the order that they are run.
-- Keep like-files together in their own directory: results tables with other results tables, etc. _Including most importantly keeping raw data separate from processed data or other results!_
-- Put source scripts and functions in their own directory. Things that should never need to be called directly by yourself or anyone else.
-- Make results and plots files easy to find in their own directory.
-- Have a central document (like a README) that describes the basic information about the analysis and how to re-run it.
-- Make it easy on yourself, dates aren't necessary. The computer keeps track of those.
-- Make a central script that re-runs everything -- including the creation of the folders! (more on this in a later chapter)
+- **Make file names informative** to those who don't have knowledge of the project but avoid using spaces, quotes, or unusual characters in your filenames and folders -- these only serve to make reading in files a nightmare in some programs.
+- **Number scripts** in the order that they are run.
+- **Keep like-files together** in their own directory: results tables with other results tables, etc. _Including most importantly keeping raw data separate from processed data or other results!_
+- **Put source scripts and functions in their own directory**. Things that should never need to be called directly by yourself or anyone else.
+- **Put output in its own directories** like `results` and `plots`.
+- **Have a central document (like a README)** that describes the basic information about the analysis and how to re-run it.
+- Make it easy on yourself, **dates aren't necessary**. The computer keeps track of those.
+- **Make a central script that re-runs everything** -- including the creation of the folders! (more on this in a later chapter)
 
 Let's see what these principles might look like put into practice.
 
@@ -102,14 +103,39 @@ You can read through some of these articles to think about what kind of organiza
 
 For this chapter, we will organize our example project files!
 
-To get the _Python project example files_, copy and paste these commands below into your command line and press Enter.
+<details> <summary>Python version of the exercise</summary>
+
+To get the _Python project example files_, copy and paste these commands below into your [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955) and press Enter.
+Or [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip).
 
 ```{bash, results = 'hide', message = FALSE}
 mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip
 ```
 
-To get the _R project examples files_ copy and paste these commands below into your command line and press Enter.
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+
+```{bash, echo = FALSE, message = FALSE, results = 'hide'}
+unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
+```
+
+Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
+
+```{bash, echo = FALSE}
+ls chapter-zips/python-heatmap-chapt-4
+```
+
+Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
+
+- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data folder. 
+- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly. 
+
+</details>
+
+<details> <summary>R version of the exercise</summary>
+
+To get the _R project examples files_ copy and paste these commands below into your [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955) and press Enter.
+Or [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip).
 
 ```{bash, results = 'hide', message = FALSE}
 mkdir -p chapter-zips
@@ -118,21 +144,19 @@ wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhu
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
 
-```{bash, message = FALSE, results = 'hide'}
+```{bash, echo = FALSE, message = FALSE, results = 'hide'}
 unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
-unzip -o chapter-zips/r-heatmap-chapt-4.zip -d chapter-zips/
 ```
 
 Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
 
-<details> <summary> Python version: </summary>
-```{bash, echo = FALSE}
-ls chapter-zips/python-heatmap-chapt-4
-```
-</details>
-
-<details> <summary>  R version:</summary>
 ```{bash, echo = FALSE}
 ls chapter-zips/r-heatmap-chapt-4
 ```
+
+Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
+
+- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder. 
+- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly. 
+
 </details>

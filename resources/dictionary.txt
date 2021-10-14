@@ -1,3 +1,8 @@
+BioStars
+Github
+README
+Severin's
+wget
 ITCR
 itcrtraining
 ITN
