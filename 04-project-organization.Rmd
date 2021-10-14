@@ -44,19 +44,59 @@ The most important aspects of your project organization scheme is that it:
 - Is easy for you and others to find the files you need quickly.  
 - Minimizes the likelihood for errors (like writing over files accidentally).  
 [@Shapiro_Childhood_Cancer_Data_2021]
+- Is something maintainable!
 
+### Tips for organizing your project:   
 
-### Readings about organizational strategies for data science projects:
+Getting more specific, here's some ideas of how to organize your project:  
+
+- Make file names sensible to those who don't have knowledge of the project but avoid using spaces, quotes, or unusual characters in your filenames and folders -- these only serve to make reading in files a nightmare in some programs.
+- Number scripts in the order that they are run.
+- Keep like-files together in their own directory: results tables with other results tables, etc. _Including most importantly keeping raw data separate from processed data or other results!_
+- Put source scripts and functions in their own directory. Things that should never need to be called directly by yourself or anyone else.
+- Make results and plots files easy to find in their own directory.
+- Have a central document (like a README) that describes the basic information about the analysis and how to re-run it.
+- Make it easy on yourself, dates aren't necessary. The computer keeps track of those.
+- Make a central script that re-runs everything -- including the creation of the folders! (more on this in a later chapter)
+
+Let's see what these principles might look like put into practice.
+
+#### Example organizational scheme  
+
+Here's an example of what this might look like:
+```
+project-name/
+├── run_analysis.sh # Central script that runs everything again
+├── 00-download-data.sh # The script that needs to be run first and is called by run_analysis.sh
+├── 01-make-heatmap.Rmd # The script that needs to be run second and is also called by run_analysis.sh
+├── README.md # The document that has the information that will orient someone to this project
+├── plots/ # A folder of plots and resulting images
+│   └── project-name-heatmap.png
+├── results/ # A folder results
+│   └── top_gene_results.tsv
+├── raw-data/ # data files as they first arrive and **nothing** has been done to them yet.
+│   ├── project-name-raw.tsv
+│   └── project-name-metadata.tsv
+├── processed-data/ # data that has been modified from the raw in some way.
+│   ├── project-name-quantile-normalized.tsv
+└── util/ # A folder of utilities that never needs to be called or touched directly unless troubleshooting something
+    ├── plotting-functions.R
+    └── data-wrangling-functions.R
+```
+
+## Readings about organizational strategies for data science projects:
+
+But you don't have to take my organizational strategy, there are lots of ideas out there.
+You can read through some of these articles to think about what kind of organizational strategy might work for you and your team:   
 
 - [Jenny Bryan's organizational strategy](https://www.stat.ubc.ca/~jenny/STAT545A/block19_codeFormattingOrganization.html) [@Bryan2021].
 - [Jenny Bryan on Project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)[@Bryan2017].
-- [Data Carpentry mini course about organizing projects](https://datacarpentry.org/organization-genomics/) [@DataCarpentry2021].
-https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0
+- [Data Carpentry mini-course about organizing projects](https://datacarpentry.org/organization-genomics/) [@DataCarpentry2021].
+- [Andrew Severin's strategy for organization](https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0) [@Severin2021].
 - [A BioStars thread where many individuals share their own organizational strategies](https://www.biostars.org/p/821/) [@Biostars2021].
 - [Data Carpentry course chapter about getting organized](https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html) [@DataCarpentry2019].
 
-
-### Exercise: Organize your project!
+## Exercise: Organize your project!
 
 #### Get the example project files for this chapter
 
@@ -83,14 +123,16 @@ unzip chapter-zips/python-heatmap-chapt-4.zip
 unzip chapter-zips/r-heatmap-chapt-4.zip
 ```
 
-Now let's take a look at what these projects look like.
+Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
 
-Python version
+<details> <summary> Python version: </summary>
 ```{bash, echo = FALSE}
 ls chapter-zips/python-heatmap-chapt-4
 ```
+</details>
 
-R version:
+<details> <summary>  R version:</summary>
 ```{bash, echo = FALSE}
 ls chapter-zips/r-heatmap-chapt-4
 ```
+</details>
