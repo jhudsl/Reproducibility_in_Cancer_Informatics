@@ -23,6 +23,19 @@ This is the R version of the heatmap:
 This is the Python version of the heatmap:
 ![Python Heatmap](https://github.com/jhudsl/Reproducibility-Examples/raw/main/python-examples/python-heatmap-final/plots/aml_heatmap.png)
 
-At the beginning of each chapter, download either the R or Python project files and edit the files along with the course. 
+## How to download the chapter files
+
+At the beginning of each chapter, we will prompt you to download either the R or Python project files and edit the files along with the course.
+
+We will have the download commands typed out for you that you will copy and paste to your command line. If you have not used command line or are not sure how to find it, [read this article](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
+
+#### Getting wget
+
+All you will need to do is make sure you have `wget` installed on your computer. You can check if you have it by running the following in your command line:
+
+```{bash}
+wget -V
+```
+If this prints back `wget command not found` you will need to [ install wget](https://www.jcchouinard.com/wget/). If it prints out a bunch of information, then you already have `wget` installed and can continue on!
 
 Happy coding!

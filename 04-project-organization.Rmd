@@ -37,7 +37,8 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 There's a lot of ways to keep your files organized, and there's not a "one size fits all" organizational solution [@Shapiro_Childhood_Cancer_Data_2021]. In this chapter, we will discuss some generalities but as far as specifics we will point you to others' who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.
 
-The most important aspects of your project organization scheme is that it:
+The most important aspects of your project organization scheme is that it:  
+
 - Is [project-oriented](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) [@Bryan2017].  
 - Follows consistent patterns.  
 - Is easy for you and others to find the files you need quickly.  
@@ -56,3 +57,17 @@ https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.htm
 
 
 ### Exercise: Organize your project!
+
+For this chapter, we will organize our example project files!
+
+```{bash}
+mkdir chapter-zips
+wget https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip --output chapter-zips/python-heatmap-chapt-4.zip
+```
+
+To get the
+```{bash}
+mkdir chapter-zips
+wget https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip --output chapter-zips/python-heatmap-chapt-4.zip
+```
+- [Download the R files for this chapter](https://github.com/jhudsl/Reproducibility-Examples/raw/main/chapter-zips/r-heatmap-chapt-4.zip)
