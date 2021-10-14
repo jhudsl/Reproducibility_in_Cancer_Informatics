@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | Reproducibility in Cancer Informatics</title>
+  <title>Chapter 3 How to use the example project files | Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | Reproducibility in Cancer Informatics" />
+  <meta property="og:title" content="Chapter 3 How to use the example project files | Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | Reproducibility in Cancer Informatics" />
+  <meta name="twitter:title" content="Chapter 3 How to use the example project files | Reproducibility in Cancer Informatics" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="index.html"/>
-<link rel="next" href="defining-reproducibility.html"/>
+<link rel="prev" href="defining-reproducibility.html"/>
+<link rel="next" href="organizing-your-project.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -221,31 +221,59 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/itcr_main_image.png">
 </div>
-<div id="introduction" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p><img src="resources/images/01-intro_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_0.png" title="Title image: Reproducibility in Cancer Informatics" alt="Title image: Reproducibility in Cancer Informatics" width="100%" /></p>
-<div id="motivation" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Motivation</h2>
-<p>Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.</p>
-<p>Data analyses are also are generally not reproducible without direct contact with the original researchers and a substantial amount of time and effort <span class="citation">(<a href="#ref-BeaulieuJones2017" role="doc-biblioref">BeaulieuJones2017 and Greene 2017</a>)</span>. Reproducibility in cancer informatics (as with other fields) is still not monitored or incentivized despite that it is fundamental to the scientific method. Despite the lack of incentive, many researchers strive for reproducibility in their own work but often lack the skills or training to do so effectively.</p>
-<p>Equipping researchers with the skills to create reproducible data analyses increases the efficiency of everyone involved. Reproducible analyses are more likely to understood, applied, and replicated by others. This helps expedite the scientific process by helping researchers avoid false positive dead ends. Open source clarity in reproducible methods also saves researchers’ time so they don’t have to reinvent the proverbial wheel for methods that everyone in the field is already performing.</p>
-<p>This course introduces the concepts of reproducibility and replicability in the context of cancer informatics. It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses. The course also introduces tools relevant to reproducibility including analysis notebooks, Docker images, git and GitHub.</p>
-</div>
-<div id="target-audience" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Target Audience</h2>
-<p>The course is intended for students in the biomedical sciences and researchers who use informatics tools in their research.</p>
-</div>
-<div id="curriculum" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Curriculum</h2>
-<p><img src="resources/images/01-intro_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_10.png" title="This course will demonstrate how to: Understanding why usability and documentation is vital, Identifying your user community, Building documentation and tutorials to maximize the usability of developed tools, Obtaining feedback from your users" alt="This course will demonstrate how to: Understanding why usability and documentation is vital, Identifying your user community, Building documentation and tutorials to maximize the usability of developed tools, Obtaining feedback from your users"  /></p>
-<p>The course includes a hands-on exercises for how to apply reproducible code concepts to their code. Individuals who take this course are encouraged to complete these activities as they follow along with the course material to help increase the reproducibility of their analyses.</p>
+<div id="how-to-use-the-example-project-files" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> How to use the example project files</h1>
+<p>Each chapter has a set of example project files for you to practice applying the reproducibility concepts we discuss.
+These project files will start out as not very reproducible (they don’t run properly) but at the end of the course your goal is to make them into a lovely project that creates a nice heatmap!</p>
+<p>These files come in Python or R options depending on your preference your resulting heatmap should look like one of these:</p>
+<p>This is the R version of the heatmap:
+<img src="https://github.com/jhudsl/Reproducibility-Examples/raw/main/r-examples/r-heatmap-final/plots/aml_heatmap.png" alt="R Heatmap" /></p>
+<p>This is the Python version of the heatmap:
+<img src="https://github.com/jhudsl/Reproducibility-Examples/raw/main/python-examples/python-heatmap-final/plots/aml_heatmap.png" alt="Python Heatmap" /></p>
+<div id="how-to-download-the-chapter-files" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> How to download the chapter files</h2>
+<p>At the beginning of each chapter, we will prompt you to download either the R or Python project files and edit the files along with the course.</p>
+<p>We will have the download commands typed out for you that you will copy and paste to your command line. If you have not used command line or are not sure how to find it, <a href="https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955">read this article</a>.</p>
+<div id="getting-wget" class="section level4" number="3.1.0.1">
+<h4><span class="header-section-number">3.1.0.1</span> Getting wget</h4>
+<p>All you will need to do is make sure you have <code>wget</code> installed on your computer. You can check if you have it by running the following in your command line:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="how-to-use-the-example-project-files.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-V</span></span></code></pre></div>
+<pre><code>## GNU Wget 1.20.3 built on linux-gnu.
+## 
+## -cares +digest -gpgme +https +ipv6 +iri +large-file -metalink +nls 
+## +ntlm +opie +psl +ssl/openssl 
+## 
+## Wgetrc: 
+##     /etc/wgetrc (system)
+## Locale: 
+##     /usr/share/locale 
+## Compile: 
+##     gcc -DHAVE_CONFIG_H -DSYSTEM_WGETRC=&quot;/etc/wgetrc&quot; 
+##     -DLOCALEDIR=&quot;/usr/share/locale&quot; -I. -I../../src -I../lib 
+##     -I../../lib -Wdate-time -D_FORTIFY_SOURCE=2 -DHAVE_LIBSSL -DNDEBUG 
+##     -g -O2 -fdebug-prefix-map=/build/wget-OYIfr9/wget-1.20.3=. 
+##     -fstack-protector-strong -Wformat -Werror=format-security 
+##     -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall 
+## Link: 
+##     gcc -DHAVE_LIBSSL -DNDEBUG -g -O2 
+##     -fdebug-prefix-map=/build/wget-OYIfr9/wget-1.20.3=. 
+##     -fstack-protector-strong -Wformat -Werror=format-security 
+##     -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall -Wl,-Bsymbolic-functions 
+##     -Wl,-z,relro -Wl,-z,now -lpcre2-8 -luuid -lidn2 -lssl -lcrypto -lz 
+##     -lpsl ftp-opie.o openssl.o http-ntlm.o ../lib/libgnu.a 
+## 
+## Copyright (C) 2015 Free Software Foundation, Inc.
+## License GPLv3+: GNU GPL version 3 or later
+## &lt;http://www.gnu.org/licenses/gpl.html&gt;.
+## This is free software: you are free to change and redistribute it.
+## There is NO WARRANTY, to the extent permitted by law.
+## 
+## Originally written by Hrvoje Niksic &lt;hniksic@xemacs.org&gt;.
+## Please send bug reports and questions to &lt;bug-wget@gnu.org&gt;.</code></pre>
+<p>If this prints back <code>wget command not found</code> you will need to <a href="https://www.jcchouinard.com/wget/">install wget</a>. If it prints out a bunch of information, then you already have <code>wget</code> installed and can continue on!</p>
+<p>Happy coding!</p>
 
 </div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-BeaulieuJones2017" class="csl-entry">
-BeaulieuJones2017, Brett K., and Casey S. Greene. 2017. <span>“Reproducibility of Computational Workflows Is Automated Using Continuous Analysis.”</span> <em>Nature Biotechnology</em> 35 (4): 342–46. <a href="https://doi.org/10.1038/nbt.3780">https://doi.org/10.1038/nbt.3780</a>.
 </div>
 </div>
 <hr>
@@ -261,8 +289,8 @@ BeaulieuJones2017, Brett K., and Casey S. Greene. 2017. <span>“Reproducibility
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="defining-reproducibility.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="defining-reproducibility.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="organizing-your-project.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

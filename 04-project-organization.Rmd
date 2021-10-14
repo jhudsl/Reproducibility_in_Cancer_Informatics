@@ -58,16 +58,22 @@ https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.htm
 
 ### Exercise: Organize your project!
 
+#### Get the example project files for this chapter
+
 For this chapter, we will organize our example project files!
 
+To get the _Python project example files_, copy and paste these commands below into your command line and press Enter.
+
 ```{bash}
-mkdir chapter-zips
-wget https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip --output chapter-zips/python-heatmap-chapt-4.zip
+mkdir -p chapter-zips
+wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip
 ```
 
-To get the
+To get the _R project examples files_ copy and paste these commands below into your command line and press Enter.
+
 ```{bash}
-mkdir chapter-zips
-wget https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip --output chapter-zips/python-heatmap-chapt-4.zip
+mkdir -p chapter-zips
+wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip
 ```
-- [Download the R files for this chapter](https://github.com/jhudsl/Reproducibility-Examples/raw/main/chapter-zips/r-heatmap-chapt-4.zip)
+
+Now double click your chapter zip file to unzip.
