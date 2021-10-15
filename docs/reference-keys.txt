@@ -8,3 +8,12 @@ what-is-reproducibility
 reproducibility-in-daily-life
 reproducibility-is-worth-the-effort
 reproducibility-exists-on-a-continuum
+how-to-use-the-example-project-files
+how-to-download-the-chapter-files
+getting-wget
+organizing-your-project
+learning-objectives-1
+organizational-strategies
+readings-about-organizational-strategies-for-data-science-projects
+exercise-organize-your-project
+get-the-example-project-files-for-this-chapter

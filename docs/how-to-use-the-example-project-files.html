@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 How to use the example project files | Reproducibility in Cancer Informatics</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 How to use the example project files | Reproducibility in Cancer Informatics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 How to use the example project files | Reproducibility in Cancer Informatics" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="defining-reproducibility.html"/>
+<link rel="next" href="organizing-your-project.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.itcrtraining.org/"><img src="assets/ITN_logo.png" style="padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target Audience</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.3</b> Curriculum</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html"><i class="fa fa-check"></i><b>2</b> Defining reproducibility</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#learning-objectives"><i class="fa fa-check"></i><b>2.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2.2" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#what-is-reproducibility"><i class="fa fa-check"></i><b>2.2</b> What is reproducibility</a></li>
+<li class="chapter" data-level="2.3" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-in-daily-life"><i class="fa fa-check"></i><b>2.3</b> Reproducibility in daily life</a></li>
+<li class="chapter" data-level="2.4" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-is-worth-the-effort"><i class="fa fa-check"></i><b>2.4</b> Reproducibility is worth the effort!</a></li>
+<li class="chapter" data-level="2.5" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-exists-on-a-continuum"><i class="fa fa-check"></i><b>2.5</b> Reproducibility exists on a continuum!</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="how-to-use-the-example-project-files.html"><a href="how-to-use-the-example-project-files.html"><i class="fa fa-check"></i><b>3</b> How to use the example project files</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="how-to-use-the-example-project-files.html"><a href="how-to-use-the-example-project-files.html#how-to-download-the-chapter-files"><i class="fa fa-check"></i><b>3.1</b> How to download the chapter files</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="organizing-your-project.html"><a href="organizing-your-project.html"><i class="fa fa-check"></i><b>4</b> Organizing your project</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#learning-objectives-1"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="4.2" data-path="organizing-your-project.html"><a href="organizing-your-project.html#organizational-strategies"><i class="fa fa-check"></i><b>4.2</b> Organizational strategies</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#readings-about-organizational-strategies-for-data-science-projects"><i class="fa fa-check"></i><b>4.2.1</b> Readings about organizational strategies for data science projects:</a></li>
+<li class="chapter" data-level="4.2.2" data-path="organizing-your-project.html"><a href="organizing-your-project.html#exercise-organize-your-project"><i class="fa fa-check"></i><b>4.2.2</b> Exercise: Organize your project!</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/hc8Xt3Y2Znjb6M4Y7"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducibility in Cancer Informatics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_ITN.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/itcr_main_image.png">
+</div>
+<div id="how-to-use-the-example-project-files" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> How to use the example project files</h1>
+<p>Each chapter has a set of example project files for you to practice applying the reproducibility concepts we discuss.
+These project files will start out as not very reproducible (they don’t run properly) but at the end of the course your goal is to make them into a lovely project that creates a nice heatmap!</p>
+<p>These files come in Python or R options depending on your preference your resulting heatmap should look like one of these:</p>
+<p>This is the R version of the heatmap:
+<img src="https://github.com/jhudsl/Reproducibility-Examples/raw/main/r-examples/r-heatmap-final/plots/aml_heatmap.png" alt="R Heatmap" /></p>
+<p>This is the Python version of the heatmap:
+<img src="https://github.com/jhudsl/Reproducibility-Examples/raw/main/python-examples/python-heatmap-final/plots/aml_heatmap.png" alt="Python Heatmap" /></p>
+<div id="how-to-download-the-chapter-files" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> How to download the chapter files</h2>
+<p>At the beginning of each chapter, we will prompt you to download either the R or Python project files and edit the files along with the course.</p>
+<p>We will have the download commands typed out for you that you will copy and paste to your command line. If you have not used command line or are not sure how to find it, <a href="https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955">read this article</a>.</p>
+<div id="getting-wget" class="section level4" number="3.1.0.1">
+<h4><span class="header-section-number">3.1.0.1</span> Getting wget</h4>
+<p>All you will need to do is make sure you have <code>wget</code> installed on your computer. You can check if you have it by running the following in your command line:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="how-to-use-the-example-project-files.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-V</span></span></code></pre></div>
+<pre><code>## GNU Wget 1.20.3 built on linux-gnu.
+## 
+## -cares +digest -gpgme +https +ipv6 +iri +large-file -metalink +nls 
+## +ntlm +opie +psl +ssl/openssl 
+## 
+## Wgetrc: 
+##     /etc/wgetrc (system)
+## Locale: 
+##     /usr/share/locale 
+## Compile: 
+##     gcc -DHAVE_CONFIG_H -DSYSTEM_WGETRC=&quot;/etc/wgetrc&quot; 
+##     -DLOCALEDIR=&quot;/usr/share/locale&quot; -I. -I../../src -I../lib 
+##     -I../../lib -Wdate-time -D_FORTIFY_SOURCE=2 -DHAVE_LIBSSL -DNDEBUG 
+##     -g -O2 -fdebug-prefix-map=/build/wget-OYIfr9/wget-1.20.3=. 
+##     -fstack-protector-strong -Wformat -Werror=format-security 
+##     -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall 
+## Link: 
+##     gcc -DHAVE_LIBSSL -DNDEBUG -g -O2 
+##     -fdebug-prefix-map=/build/wget-OYIfr9/wget-1.20.3=. 
+##     -fstack-protector-strong -Wformat -Werror=format-security 
+##     -DNO_SSLv2 -D_FILE_OFFSET_BITS=64 -g -Wall -Wl,-Bsymbolic-functions 
+##     -Wl,-z,relro -Wl,-z,now -lpcre2-8 -luuid -lidn2 -lssl -lcrypto -lz 
+##     -lpsl ftp-opie.o openssl.o http-ntlm.o ../lib/libgnu.a 
+## 
+## Copyright (C) 2015 Free Software Foundation, Inc.
+## License GPLv3+: GNU GPL version 3 or later
+## &lt;http://www.gnu.org/licenses/gpl.html&gt;.
+## This is free software: you are free to change and redistribute it.
+## There is NO WARRANTY, to the extent permitted by law.
+## 
+## Originally written by Hrvoje Niksic &lt;hniksic@xemacs.org&gt;.
+## Please send bug reports and questions to &lt;bug-wget@gnu.org&gt;.</code></pre>
+<p>If this prints back something similar to this message above, then you already have <code>wget</code> and don’t need to do anything! But if this command prints back <code>wget command not found</code> you will need to <a href="https://www.jcchouinard.com/wget/">install wget</a>.</p>
+<p>Happy coding!</p>
+
+</div>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="defining-reproducibility.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="organizing-your-project.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

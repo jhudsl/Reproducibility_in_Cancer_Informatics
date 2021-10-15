@@ -92,7 +92,7 @@ You might not change a single character in your code but then return to it in a 
 
 Many a data scientist has referred to their frustration with their past selves:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dear past-Hadley: PLEASE COMMENT YOUR CODE BETTER. Love present-Hadley</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/718203628528349184?ref_src=twsrc%5Etfw">April 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dear past-Hadley: PLEASE COMMENT YOUR CODE BETTER. Love present-Hadley</p>&mdash; Hadley Wickham (\@hadleywickham) <a href="https://twitter.com/hadleywickham/status/718203628528349184?ref_src=twsrc%5Etfw">April 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The more you comment your code, and make it clear and readable, your future self will thank you.
 
