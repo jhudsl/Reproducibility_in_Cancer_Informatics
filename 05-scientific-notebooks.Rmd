@@ -1,12 +1,12 @@
 ---
-title: "Writing durable code"
+title: "Using Notebooks"
 ---
 
 ```{r, include = FALSE}
 leanbuild::set_knitr_image_path()
 ```
 
-# Organizing your project
+# Using Notebooks
 
 ## Learning Objectives
 
@@ -16,16 +16,6 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 
 ## Readings about reproducible, durable code
-
-But you don't have to take my organizational strategy, there are lots of ideas out there.
-You can read through some of these articles to think about what kind of organizational strategy might work for you and your team:   
-
-- [Jenny Bryan's organizational strategy](https://www.stat.ubc.ca/~jenny/STAT545A/block19_codeFormattingOrganization.html) [@Bryan2021].
-- [Jenny Bryan on Project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)[@Bryan2017].
-- [Data Carpentry mini-course about organizing projects](https://datacarpentry.org/organization-genomics/) [@DataCarpentry2021].
-- [Andrew Severin's strategy for organization](https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0) [@Severin2021].
-- [A BioStars thread where many individuals share their own organizational strategies](https://www.biostars.org/p/821/) [@Biostars2021].
-- [Data Carpentry course chapter about getting organized](https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html) [@DataCarpentry2019].
 
 ## Exercise: Make code more durable!
 
@@ -72,7 +62,7 @@ ls chapter-zips/python-heatmap-chapt-4
 
 Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
 
-- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data folder.
+- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
 - Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
 
 </details>

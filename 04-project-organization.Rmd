@@ -176,5 +176,4 @@ Organize these files! For now we will organize these files by hand, but in the u
 
 </details>
 
-After your files are organized, you are ready to move on to the next chapter and start diving into the code!
-
+After your files are organized, you are ready to move on to the next chapter and create a notebook!

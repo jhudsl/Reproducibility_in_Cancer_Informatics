@@ -6,7 +6,8 @@ rmd_files: ["index.Rmd",
             "02-defining-reproducibility.Rmd",
             "03-using-the-examples.Rmd",
             "04-project-organization.Rmd",
-            "05-durable-code.Rmd",
+            "05-scientific-notebooks.Rmd",
+            "06-durable-code.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
