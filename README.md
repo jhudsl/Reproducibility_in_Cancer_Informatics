@@ -22,7 +22,7 @@ This course will teach learners to:
 - Understand the fundamental concepts of reproducibility vs replicability
 - Write a basic analysis that could be passed to another person/computer and be re-ran to obtain the same output
 - Write analysis notebook that adheres to best practices for reproducibility and readability
-- Create a reproducible project on GitHub that could
+- Create a reproducible project on GitHub that could be re-run by someone else
 - Pull and use an existing Docker image for running an analysis
 - Obtain confidence to learn and apply additional reproducibility tools to an analysis
 
