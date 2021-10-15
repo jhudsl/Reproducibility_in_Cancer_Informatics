@@ -15,13 +15,13 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 ```
 
 
-## Readings about reproducible, durable code
+## Readings about scientific computational notebooks
 
-## Exercise: Make code more durable!
+## Exercise: Convert code into a notebook!
 
 #### Get the example project files for this chapter
 
-For this chapter, we will organize our example project files!
+For this chapter, we will create notebooks from our example files code!
 
 <details> <summary> About command line </summary>
 
@@ -43,7 +43,7 @@ Now choose which version of the example you would like to work with and follow t
 To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip).
 Or you can use these commands in command line.
 
-```{bash, results = 'hide', message = FALSE, class.source = 'fold-show'}
+```{bash, echo = FALSE, results = 'hide', message = FALSE, class.source = 'fold-show'}
 mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip
 ```
