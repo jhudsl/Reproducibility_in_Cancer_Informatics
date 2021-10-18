@@ -1,5 +1,12 @@
 ---
 title: "Organizing your project"
+output:
+  bookdown::html_document2:
+    includes:
+      in_header: assets/header.html
+  bookdown::gitbook:
+    includes:
+      in_header: assets/header.html
 ---
 
 
