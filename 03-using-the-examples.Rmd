@@ -34,4 +34,16 @@ On most operating systems, you will be able to double click your chapter zip fil
 
 We will have the download commands typed out for you that you will copy and paste to your command line but these are collapsed and "point and click" instructions are also provided where possible. If you are interested in using the command line but are not sure how to find it, [read this article](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955). But if you are more comfortable with "point and click" by all means follow those instructions.
 
+
+## The Reproducibility checklist
+
+As you are proceeding through this course, you may want to apply some of these tools and techniques to your own analyses. 
+That is highly encouraged! Remember that analyses are not written perfectly on the first try (or the 2nd, or the nth, or ever!) but the more you are able to apply these principles to your analyses, the more future you (and perhaps your collaborators) will thank you for it!
+
+We've created this checklist as a summarized guide of the course to help you of this course to help you evaluate in what areas your analyses could use a boost of reproducibility.
+
+[Download the checklist](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/reproducibility-checklist.md)
+
+This checklist is written in [markdown format](https://www.markdownguide.org/cheat-sheet/) -- a short hand for html that can be rendered nicely like a webpage. You may want to store it with your analyses and perhaps on a GitHub repository (GitHub repositories are something we will walk through in the advanced course). 
+
 We hope you find this course useful and informative (and maybe even fun!).
