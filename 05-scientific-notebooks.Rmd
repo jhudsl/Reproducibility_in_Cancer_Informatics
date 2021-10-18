@@ -10,10 +10,9 @@ leanbuild::set_knitr_image_path()
 
 ## Learning Objectives
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
+```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Use an Integrated Development Environment to aid your development of code. Understand how notebooks can increase the usability and readability of scientific code. Set up code as a notebook. Use the notebook’s interface to interactively develop code."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_4")
 ```
-
 
 ## Readings about scientific computational notebooks
 
