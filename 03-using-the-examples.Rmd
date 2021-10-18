@@ -18,10 +18,10 @@ These project files will start out as not very reproducible (they don't run prop
 These files come in Python or R options depending on your preference your resulting heatmap should look like one of these:
 
 This is the R version of the heatmap:
-![R Heatmap](https://github.com/jhudsl/Reproducibility-Examples/raw/main/r-examples/r-heatmap-final/plots/aml_heatmap.png)
+![R Heatmap](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/r-examples/r-heatmap-final/plots/aml_heatmap.png)
 
 This is the Python version of the heatmap:
-![Python Heatmap](https://github.com/jhudsl/Reproducibility-Examples/raw/main/python-examples/python-heatmap-final/plots/aml_heatmap.png)
+![Python Heatmap](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/python-examples/python-heatmap-final/plots/aml_heatmap.png)
 
 ## Downloading the chapter files
 
