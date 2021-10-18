@@ -1,0 +1,37 @@
+# Candace Savonen Oct 2021
+
+name: Render Python Example
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'python-examples/python-heatmap-final/*'
+
+jobs:
+  render-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Run Python analysis example
+        run: |
+          docker run \
+          --mount type=bind,target=/home/jovyan/work,source=$PWD \
+          jhudsl/reproducible-python \
+          jupyter nbconvert --execute work/python-examples/python-heatmap-final/make_heatmap.ipynb --to html --inplace
+
+      - name: Commit rendered Python example files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git add --force python-examples/python-heatmap-final/*
+          git commit -m 'Render Python' || echo "No changes to commit"
+          git push origin || echo "No changes to push"
