@@ -58,72 +58,72 @@ This can also be handy especially if you use automation to enhance the reproduci
 
 Because all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
 
-## Readings about scientific computational notebooks
-
 ## Exercise: Convert code into a notebook!
 
-#### Get the example project files for this chapter
+#### Set up your computational notebook!
 
-For this chapter, we will create notebooks from our example files code!
+For this chapter, we will create notebooks from our example files code.
+But, before we do that, we will need to set up our environment to work from. 
 
 Now choose which version of the example you would like to work with and follow the instructions.  
 
 <details> <summary>Python version of the exercise</summary>
 
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip).
-Or you can use these commands in command line.
+### Set up the example files 
 
-```{bash, echo = FALSE, results = 'hide', message = FALSE, class.source = 'fold-show'}
+To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-5.zip).
+
+```{bash, include = FALSE}
 mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip
 ```
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
 
-```{bash, echo = FALSE, message = FALSE, results = 'hide', class.source = 'fold-show'}
+```{bash, include = FALSE}
 unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
 ```
 
-Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
+Now let's take a look at the files inside these projects.
+We can use the [`ls` command](https://careerkarma.com/blog/linux-ls-command/) to list the files in this folder. 
 
 ```{bash, echo = FALSE, class.source = 'fold-show'}
 ls chapter-zips/python-heatmap-chapt-4
 ```
 
-Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
+### The task 
 
-- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
-- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
 
 </details>
 
 <details> <summary>R version of the exercise</summary>
 
-To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip).
+### Set up the example files 
+
+To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-5.zip).
 Or you can use these commands in command line.
 
-```{bash, results = 'hide', message = FALSE, class.source = 'fold-show'}
+```{bash, include = FALSE}
 mkdir -p chapter-zips
 wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip
 ```
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
 
-```{bash, echo = FALSE, message = FALSE, results = 'hide', class.source = 'fold-show'}
+```{bash, include = FALSE}
 unzip -o chapter-zips/r-heatmap-chapt-4.zip -d chapter-zips/
 ```
 
-Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
+Now let's take a look at the files inside these projects.
+We can use the [`ls` command](https://careerkarma.com/blog/linux-ls-command/) to list the files in this folder. 
 
 ```{bash, echo = FALSE, class.source = 'fold-show'}
 ls chapter-zips/r-heatmap-chapt-4
 ```
 
-Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
+### The task 
 
-- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
-- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
 
 </details>
 
-After your files are organized, you are ready to move on to the next chapter and start diving into the code!
+Now that you've created your notebook, you are ready to start polishing that code!
