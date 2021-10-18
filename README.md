@@ -50,11 +50,11 @@ This is the URL pattern they can find the chapter files at:
 
 _For Python_:
 ```
-https://github.com/jhudsl/Reproducibility-Examples/raw/main/chapter-zips/python-heatmap-final.zip
+https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter-zips/python-heatmap-final.zip
 ```
 _For R_:
 ```
-https://github.com/jhudsl/Reproducibility-Examples/raw/main/chapter-zips/r-heatmap-final.zip
+https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter-zips/r-heatmap-final.zip
 ```
 
 ## For development purposes:
