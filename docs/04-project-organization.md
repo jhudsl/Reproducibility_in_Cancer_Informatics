@@ -140,7 +140,7 @@ wget -V
 ## Please send bug reports and questions to <bug-wget@gnu.org>.
 ```
 
-If this prints back something similar to this message above, then you already have `wget` and don't need to do anything! But if this command prints back `wget command not found` you will need to [ install wget](https://www.jcchouinard.com/wget/). 
+If this prints back something similar to this message above, then you already have `wget` and don't need to do anything! But if this command prints back `wget command not found` you will need to [ install wget](https://www.jcchouinard.com/wget/).
 
 </details>
 
@@ -148,13 +148,13 @@ Now choose which version of the example you would like to work with and follow t
 
 <details> <summary>Python version of the exercise</summary>
 
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip).
+To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip).
 Or you can use these commands in command line.
 
 
 ```{.bash .fold-show}
 mkdir -p chapter-zips
-wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/python-heatmap-chapt-4.zip
+wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip
 ```
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
@@ -177,20 +177,20 @@ Now let's take a look at the files inside these projects. These are purposely no
 
 Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
 
-- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data folder. 
-- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly. 
+- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data folder.
+- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
 
 </details>
 
 <details> <summary>R version of the exercise</summary>
 
-To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip).
+To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip).
 Or you can use these commands in command line.
 
 
 ```{.bash .fold-show}
 mkdir -p chapter-zips
-wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility-Examples/main/chapter-zips/r-heatmap-chapt-4.zip
+wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip
 ```
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
@@ -201,6 +201,8 @@ Now let's take a look at the files inside these projects. These are purposely no
 
 
 ```
+## aggregated_metadata.json
+## dataset.zip
 ## heatmap_up_to_date_OLD.R
 ## heatmap_up_to_date.R
 ## LICENSE.TXT
@@ -210,10 +212,9 @@ Now let's take a look at the files inside these projects. These are purposely no
 
 Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
 
-- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder. 
-- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly. 
+- Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
+- Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
 
 </details>
 
 After your files are organized, you are ready to move on to the next chapter and start diving into the code!
-

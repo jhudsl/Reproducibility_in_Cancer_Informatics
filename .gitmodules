@@ -1,0 +1,6 @@
+[submodule "r-examples/reproducible-R-example"]
+	path = r-examples/reproducible-R-example
+	url = https://github.com/jhudsl/reproducible-R-example.git
+[submodule "python-examples/reproducible-python-example"]
+	path = python-examples/reproducible-python-example
+	url = https://github.com/jhudsl/reproducible-python-example.git
