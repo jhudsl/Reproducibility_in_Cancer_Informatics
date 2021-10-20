@@ -80,11 +80,51 @@ Using a container is a useful tool for reproducibility!
 
 We will introduce you to how to use a Docker container for this course, but first you will need to install Docker on your computer. After you are able to install Docker and git on your computer there will be no other software installations you will need to deal with for this course!
 
+[Go here and install Docker](https://docs.docker.com/get-docker/). Choose your operating system and follow along with their instructions. 
 
-[Go here to install Docker](https://docs.docker.com/get-docker/). 
-Click on and follow the instructions for your operating system. 
+You ideally should follow the prompts to create a Dockerhub account as well. Dockerhub is the online service that can store docker images. 
 
 ### Why git 
+
+git is a version control system that is a great tool for creating reproducible analyses. 
+What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.  
+
+```{r, fig.alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Now was it “final_final_version_100%_up_to_date” or “final_version_edit5” that I was working from?", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf9843bee50_0_535")
+```
+
+All of us at one point or another have created different versions of a file or document, but for analysis projects this can easily get out of hand if you don't have a system in place. That's where git comes in handy. 
+
+**Version control systems like git allow you to:**  
+
+> 1. Generate backups
+
+```{r, fig.alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code.", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_0")
+```
+
+> 2. Test and experiment
+
+```{r, fig.alt="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_47")
+```
+
+> 3. Keep history and track changes
+
+```{r, fig.alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_47")
+```
+
+> 4. Collaborate and contribute
+
+```{r, fig.alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_131")
+```
+
+
+https://medium.com/@lanceharvieruntime/version-control-why-do-we-need-it-1681f4888cec
+
+https://towardsdatascience.com/why-git-and-how-to-use-git-as-a-data-scientist-4fa2d3bdc197
 
 https://towardsdatascience.com/a-quick-primer-to-version-control-using-git-3fbdbb123262#:~:text=Version%20control%20is%20a%20type,and%20associated%20contributors%20are%20tracked
 
@@ -103,7 +143,6 @@ You will download either the R or Python project files and edit the files along 
 These example project files will be zipped up and you will need to unzip them before you can complete the exercise.
 
 On most operating systems, you will be able to double click your chapter zip file to unzip, but for Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)). Please let us know with [the feedback form](https://forms.gle/dLRHgo4Q5w15kCri9) if you encounter any problems along the way while completing the exercises.
-
 
 ## The Reproducibility checklist
 
