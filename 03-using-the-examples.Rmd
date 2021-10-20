@@ -121,19 +121,19 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_131")
 ```
 
+Excerpts from [article](https://medium.com/@lanceharvieruntime/version-control-why-do-we-need-it-1681f4888cec) by @Harvie2019. 
 
-https://medium.com/@lanceharvieruntime/version-control-why-do-we-need-it-1681f4888cec
+Version control is a necessary tool for creating reproducible analyses. and to share the code easily, we often use GitHub, which is an online hosting service for git controlled files. 
 
-https://towardsdatascience.com/why-git-and-how-to-use-git-as-a-data-scientist-4fa2d3bdc197
-
-https://towardsdatascience.com/a-quick-primer-to-version-control-using-git-3fbdbb123262#:~:text=Version%20control%20is%20a%20type,and%20associated%20contributors%20are%20tracked
-
-### Installing Docker
+We've chosen to introduce you to git and GitHub because they are the most commonly used but the git terminology can take a bit getting used to, so we'll start by introducing you to some terms that are often thrown around in the world of git.
 
 ### Installing git 
 
-### git-ting started 
+To start, [follow the installation instructions here](https://github.com/git-guides/install-git) according to your operating system. 
 
+### "git"ting started 
+
+- [A quick primer to version control](https://towardsdatascience.com/a-quick-primer-to-version-control-using-git-3fbdbb123262#:~:text=Version%20control%20is%20a%20type,and%20associated%20contributors%20are%20tracked)
 
 ## Downloading the chapter files
 
