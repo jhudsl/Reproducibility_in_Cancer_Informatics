@@ -60,10 +60,9 @@ Because all of these reasons, we encourage the use of computational notebooks as
 
 ## Exercise: Convert code into a notebook!
 
-#### Set up your computational notebook!
-
 For this chapter, we will create notebooks from our example files code.
-But, before we do that, we will need to set up our environment to work from. 
+If you have not followed [these instructions](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/#how-to-use-this-course.html) to set up your environment for using the example files from this course, you will need to do so before starting on this exercise. 
+
 
 Now choose which version of the example you would like to work with and follow the instructions.  
 
@@ -93,6 +92,7 @@ ls chapter-zips/python-heatmap-chapt-5
 
 ### The task 
 
+#### Set up your environment 
 
 </details>
 

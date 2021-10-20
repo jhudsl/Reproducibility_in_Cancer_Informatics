@@ -10,7 +10,30 @@ leanbuild::set_knitr_image_path()
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7e3bf260f_0_4")
 ```
 
-# How to use the example project files
+# How to use this course 
+
+## Requirements
+
+There are two software items you will need installed on your computer: `git` and Docker. 
+Both of these items are useful tools for creating reproducible analyses and will be helpful for you far beyond this course. We hope that our introduction to these tools will help you incorporate them into your daily work. 
+
+### Why Docker 
+
+For this course, we will be working from a Docker image. 
+This ensures that everyone who follows this course is working from the same environment for these exercises (and hence will make this course more reproducible). 
+
+[Go here to install Docker](https://docs.docker.com/get-docker/). 
+Click on and follow the instructions for your operating system. 
+
+### Why git 
+
+
+### Installing Docker
+
+### Installing git 
+
+
+## How to use the example project files
 
 Each chapter has a set of example project files for you to practice applying the reproducibility concepts we discuss.
 These project files will start out as not very reproducible (they don't run properly) but at the end of the course your goal is to make them into a lovely project that creates a nice heatmap!
