@@ -133,6 +133,9 @@ To start, [follow the installation instructions here](https://github.com/git-gui
 
 ### "git"ting started 
 
+
+Further reading for getting familiar with git and GitHub:  
+
 - [A quick primer to version control](https://towardsdatascience.com/a-quick-primer-to-version-control-using-git-3fbdbb123262#:~:text=Version%20control%20is%20a%20type,and%20associated%20contributors%20are%20tracked)
 
 ## Downloading the chapter files
