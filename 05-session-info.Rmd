@@ -112,7 +112,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 > 3. Keep history and track changes
 
 ```{r, fig.alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'", echo = FALSE}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_47")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_92")
 ```
 
 > 4. Collaborate and contribute

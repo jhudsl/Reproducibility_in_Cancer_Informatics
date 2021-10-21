@@ -1,0 +1,114 @@
+---
+title: "How to use this course"
+---
+
+```{r, include = FALSE}
+leanbuild::set_knitr_image_path()
+```
+
+```{r, fig.alt="This chapter will demonstrate how to: Set up the example files associated with this course. Understand how these example files are intended to be used with this course.", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7e3bf260f_0_4")
+```
+
+# How to use this course
+
+To get the most out of this course, you should complete the exercises that come along with each chapter.
+
+The exercises in each chapter have a set of example project files for you to practice applying the reproducibility concepts we discuss. We will walk through step-by-step how to transform these example project files into a nicely reproducible project that creates a nice heatmap!
+
+These files come in Python or R options depending on your preference your resulting heatmap should resemble one of these:
+
+This is the R version of the heatmap:
+![R Heatmap](https://github.com/jhudsl/reproducible-r-example/raw/main/plots/aml_heatmap.png)
+
+This is the Python version of the heatmap:
+![Python Heatmap](https://github.com/jhudsl/reproducible-python-example/raw/main/plots/aml_heatmap.png)
+
+We encourage you to apply the techniques and tools we use in the exercises to your own current and former projects that may exist on your computer!
+
+## Getting comfortable with command line
+
+We will have the download commands typed out for you that you will copy and paste to your command line.
+If you are not comfortable with command line, or don't know how to find it, [read this article](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
+
+## Why git and GitHub
+
+git is a version control system that is a great tool for creating reproducible analyses.
+What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.  
+
+```{r, fig.alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Now was it “final_final_version_100%_up_to_date” or “final_version_edit5” that I was working from?", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf9843bee50_0_535")
+```
+
+All of us at one point or another have created different versions of a file or document, but for analysis projects this can easily get out of hand if you don't have a system in place. That's where git comes in handy.
+
+There are other version control systems as well, but git is the most popular in part because it works with GitHub, an online hosting service for git controlled files.
+
+
+**GitHub and git allow you to...**  
+
+### Have backups of your code and analyses at every point
+
+Life happens, sometimes you misplace a file or your computer malfunctions. If you ever lose data on your computer or need to retrieve something from an earlier version of your code, GitHub allows you to revert your losses.
+
+```{r, fig.alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code.", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_0")
+```
+
+### Keep a documented history of your project
+
+Over the time course of a project a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to re-visit a question you already answered.
+
+```{r, fig.alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_92")
+```
+
+### Maintain transparent analyses
+
+The best science is done with transparency and input from others! GitHub allows you to conduct your analyses in an open source manner. You can obtain feedback more easily when your analyses are open and transparent. Sometimes a random stranger on the internet can altruistically help you fix a problem that's been plaguing you for months (or perhaps that you didn't know about in the first place!)
+
+### Collaborate with others
+
+```{r, fig.alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_131")
+```
+
+### Experiment with your analysis
+
+Data science projects often lead to side analyses that could be very worth while but might be scary to venture on if you don't have your code well version controlled. Git and GitHub allow you to venture on these side experiments without fear since your main code can be kept safe from your side venture.
+
+```{r, fig.alt="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_47")
+```
+
+### Installing git
+
+To start, [follow the installation instructions here](https://github.com/git-guides/install-git) according to your operating system.
+
+### "git"ting started
+
+Further reading for getting familiar with git and GitHub:  
+
+- [A quick primer to version control](https://towardsdatascience.com/a-quick-primer-to-version-control-using-git-3fbdbb123262#:~:text=Version%20control%20is%20a%20type,and%20associated%20contributors%20are%20tracked)
+
+## Downloading the chapter files
+
+At the exercise portion of each chapter, we will prompt you to follow either the R or Python exercise. There is no need to do both, they are largely the same.
+You will download either the R or Python project files and edit the files along with the course according to the prompts.
+
+These example project files will be zipped up and you will need to unzip them before you can complete the exercise.
+
+On most operating systems, you will be able to double click your chapter zip file to unzip, but for Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)). Please let us know with [the feedback form](https://forms.gle/dLRHgo4Q5w15kCri9) if you encounter any problems along the way while completing the exercises.
+
+## The Reproducibility checklist
+
+As you are proceeding through this course, you may want to apply some of these tools and techniques to your own analyses.
+That is highly encouraged! Remember that analyses are not written perfectly on the first try (or the 2nd, or the nth, or ever!) but the more you are able to apply these principles to your analyses, the more future you (and perhaps your collaborators) will thank you for it!
+
+We've created this checklist as a summarized guide of the course to help you of this course to help you evaluate in what areas your analyses could use a boost of reproducibility.
+
+[Download the checklist](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/reproducibility-checklist.md)
+
+This checklist is written in [markdown format](https://www.markdownguide.org/cheat-sheet/) -- a short hand for html that can be rendered nicely like a webpage. You may want to store it with your analyses and perhaps on a GitHub repository (GitHub repositories are something we will walk through in the advanced course).
+
+We hope you find this course useful and informative (and maybe even fun!).
