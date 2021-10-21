@@ -6,30 +6,9 @@ title: "How to use this course"
 leanbuild::set_knitr_image_path()
 ```
 
-```{r, fig.alt="This chapter will demonstrate how to: Set up the example files associated with this course. Understand how these example files are intended to be used with this course.", out.width = "100%", echo = FALSE}
+```{r, fig.alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses.", out.width = "100%", echo = FALSE}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7e3bf260f_0_4")
 ```
-
-# How to use this course
-
-To get the most out of this course, you should complete the exercises that come along with each chapter.
-
-The exercises in each chapter have a set of example project files for you to practice applying the reproducibility concepts we discuss. We will walk through step-by-step how to transform these example project files into a nicely reproducible project that creates a nice heatmap!
-
-These files come in Python or R options depending on your preference your resulting heatmap should resemble one of these:
-
-This is the R version of the heatmap:
-![R Heatmap](https://github.com/jhudsl/reproducible-r-example/raw/main/plots/aml_heatmap.png)
-
-This is the Python version of the heatmap:
-![Python Heatmap](https://github.com/jhudsl/reproducible-python-example/raw/main/plots/aml_heatmap.png)
-
-We encourage you to apply the techniques and tools we use in the exercises to your own current and former projects that may exist on your computer!
-
-## Getting comfortable with command line
-
-We will have the download commands typed out for you that you will copy and paste to your command line.
-If you are not comfortable with command line, or don't know how to find it, [read this article](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
 
 ## Why git and GitHub
 
