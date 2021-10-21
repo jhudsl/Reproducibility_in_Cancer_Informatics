@@ -44,10 +44,17 @@ All of us at one point or another have created different versions of a file or d
 
 There are other version control systems as well, but git is the most popular in part because it works with GitHub, an online hosting service for git controlled files.
 
-
 **GitHub and git allow you to...**  
 
-### Have backups of your code and analyses at every point
+#### Maintain transparent analyses
+
+Open and transparent analyses are a critical part to conducting open science. GitHub allows you to conduct your analyses in an open source manner. Open science also allows others to better understand your methods and potentially borrow them for their own research, saving everyone time!
+
+```{r, fig.alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code.", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_331")
+```
+
+#### Have backups of your code and analyses at every point
 
 Life happens, sometimes you misplace a file or your computer malfunctions. If you ever lose data on your computer or need to retrieve something from an earlier version of your code, GitHub allows you to revert your losses.
 
@@ -55,7 +62,7 @@ Life happens, sometimes you misplace a file or your computer malfunctions. If yo
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_0")
 ```
 
-### Keep a documented history of your project
+#### Keep a documented history of your project
 
 Over the time course of a project a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to re-visit a question you already answered.
 
@@ -63,17 +70,13 @@ Over the time course of a project a lot happens, especially when it comes to exp
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_92")
 ```
 
-### Maintain transparent analyses
-
-The best science is done with transparency and input from others! GitHub allows you to conduct your analyses in an open source manner. You can obtain feedback more easily when your analyses are open and transparent. Sometimes a random stranger on the internet can altruistically help you fix a problem that's been plaguing you for months (or perhaps that you didn't know about in the first place!)
-
-### Collaborate with others
+#### Collaborate with others
 
 ```{r, fig.alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!", echo = FALSE}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_131")
 ```
 
-### Experiment with your analysis
+#### Experiment with your analysis
 
 Data science projects often lead to side analyses that could be very worth while but might be scary to venture on if you don't have your code well version controlled. Git and GitHub allow you to venture on these side experiments without fear since your main code can be kept safe from your side venture.
 
@@ -81,34 +84,53 @@ Data science projects often lead to side analyses that could be very worth while
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_47")
 ```
 
-### Installing git
+## Exercise: Set up a project on GitHub
 
-To start, [follow the installation instructions here](https://github.com/git-guides/install-git) according to your operating system.
+Now that we understand how useful GitHub is for creating reproducible analyses, it's time to set ourselves up on GitHub.
 
-### "git"ting started
+- Go to [Github's main page](https://github.com/) and click Sign Up if you don't have an account.
+- Follow [these instructions to create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo). As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.
+  - Name the repository something that reminds you what its related to.
+  - Choose "Public".
+  - Check the box that says "Add a gitignore".
+  - Check the box that says "Add a README".
 
-Further reading for getting familiar with git and GitHub:  
+- Download the example chapter files depending on whether you'd like to complete the Python or R exercises in this course:
 
-- [A quick primer to version control](https://towardsdatascience.com/a-quick-primer-to-version-control-using-git-3fbdbb123262#:~:text=Version%20control%20is%20a%20type,and%20associated%20contributors%20are%20tracked)
+<details> <summary>Python version of the exercise</summary>
 
-## Downloading the chapter files
+To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
 
-At the exercise portion of each chapter, we will prompt you to follow either the R or Python exercise. There is no need to do both, they are largely the same.
-You will download either the R or Python project files and edit the files along with the course according to the prompts.
+```{bash, include = FALSE}
+mkdir -p chapter-zips
+wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip
+```
 
-These example project files will be zipped up and you will need to unzip them before you can complete the exercise.
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
 
-On most operating systems, you will be able to double click your chapter zip file to unzip, but for Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)). Please let us know with [the feedback form](https://forms.gle/dLRHgo4Q5w15kCri9) if you encounter any problems along the way while completing the exercises.
+```{bash, include = FALSE}
+unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
+```
 
-## The Reproducibility checklist
+</details>
 
-As you are proceeding through this course, you may want to apply some of these tools and techniques to your own analyses.
-That is highly encouraged! Remember that analyses are not written perfectly on the first try (or the 2nd, or the nth, or ever!) but the more you are able to apply these principles to your analyses, the more future you (and perhaps your collaborators) will thank you for it!
+<details> <summary>Download the R version of the example files</summary>
 
-We've created this checklist as a summarized guide of the course to help you of this course to help you evaluate in what areas your analyses could use a boost of reproducibility.
+To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
+Or you can use these commands in command line.
 
-[Download the checklist](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/reproducibility-checklist.md)
+```{bash, include = FALSE}
+mkdir -p chapter-zips
+wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip
+```
 
-This checklist is written in [markdown format](https://www.markdownguide.org/cheat-sheet/) -- a short hand for html that can be rendered nicely like a webpage. You may want to store it with your analyses and perhaps on a GitHub repository (GitHub repositories are something we will walk through in the advanced course).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
 
-We hope you find this course useful and informative (and maybe even fun!).
+```{bash, include = FALSE}
+unzip -o chapter-zips/r-heatmap-chapt-4.zip -d chapter-zips/
+```
+</details>
+
+- Follow [these instructions to add the example files you downloaded to your new repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github)
+
+Congrats! You've started your very own project on GitHub!
