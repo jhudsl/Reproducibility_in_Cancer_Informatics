@@ -4,10 +4,11 @@ repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
             "01-intro.Rmd",
             "02-defining-reproducibility.Rmd",
-            "03-using-the-examples.Rmd",
-            "04-project-organization.Rmd",
-            "05-scientific-notebooks.Rmd",
-            "06-durable-code.Rmd",
+            "03-project-organization.Rmd",
+            "04-open-source-with-github.Rmd",
+            "05-session-info.Rmd",
+            "06-scientific-notebooks.Rmd",
+            "07-durable-code.Rmd"
             "About.Rmd",
             "References.Rmd"]
 new_session: yes

@@ -88,6 +88,8 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Now that we understand how useful GitHub is for creating reproducible analyses, it's time to set ourselves up on GitHub.
 
+Git and GitHub have a whole rich world of tools and terms that can get complex quickly, but for this exercise, we will not worry about those terms and functionalities just yet, but focus on getting code up on GitHub so we are ready to collaborate and conduct open analyses!
+
 - Go to [Github's main page](https://github.com/) and click Sign Up if you don't have an account.
 - Follow [these instructions to create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo). As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.
   - Name the repository something that reminds you what its related to.
@@ -134,3 +136,4 @@ unzip -o chapter-zips/r-heatmap-chapt-4.zip -d chapter-zips/
 - Follow [these instructions to add the example files you downloaded to your new repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github)
 
 Congrats! You've started your very own project on GitHub!
+We encourage you to do the same with your own code and other projects!
