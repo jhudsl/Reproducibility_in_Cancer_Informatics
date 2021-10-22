@@ -8,7 +8,7 @@ rmd_files: ["index.Rmd",
             "04-open-source-with-github.Rmd",
             "05-session-info.Rmd",
             "06-scientific-notebooks.Rmd",
-            "07-durable-code.Rmd"
+            "07-durable-code.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
