@@ -1,5 +1,5 @@
 ---
-title: "How to use this course"
+title: "Open source with GitHub"
 ---
 
 ```{r, include = FALSE}
