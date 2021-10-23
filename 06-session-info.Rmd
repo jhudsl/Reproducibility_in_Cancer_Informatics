@@ -1,0 +1,35 @@
+---
+title: "Package versions"
+---
+
+```{r, include = FALSE}
+leanbuild::set_knitr_image_path()
+```
+
+```{r, fig.alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using.", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_394")
+```
+
+# Why package versions matter
+
+As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!
+
+```{r, fig.alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. ", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf1accd298e_0_673")
+```
+
+What Ruby and Avi may not realize, is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
+
+```{r, fig.alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_404")
+```
+
+There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info. 
+
+The easiest (though not most comprehensive) method for handling differences in software versions is to have your code list details about your computing environment. This is referred to as the session info for your code. 
+
+## Exercise: Print out session info 
+
+
+
+
