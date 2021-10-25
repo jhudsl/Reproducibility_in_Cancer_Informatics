@@ -97,72 +97,41 @@ You can read through some of these articles to think about what kind of organiza
 - [A BioStars thread where many individuals share their own organizational strategies](https://www.biostars.org/p/821/) [@Biostars2021].
 - [Data Carpentry course chapter about getting organized](https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html) [@DataCarpentry2019].
 
+## Get the exercise project files (or continue with the files you used in the previous chapter)
+
+<details> <summary>How to get the _Python project example files_</summary>
+To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip).
+
+```{bash, include = FALSE}
+mkdir -p chapter-zips
+wget -O chapter-zips/python-heatmap-chapt-3.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip
+```
+
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+
+```{bash, include = FALSE}
+unzip -o chapter-zips/python-heatmap-chapt-3.zip -d chapter-zips/
+```
+</details>
+
+<details> <summary>How to get the _R project example files_</summary>
+To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-3.zip).
+
+```{bash, include = FALSE}
+mkdir -p chapter-zips
+wget -O chapter-zips/r-heatmap-chapt-3.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-3.zip
+```
+
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+
+```{bash, include = FALSE}
+unzip -o chapter-zips/r-heatmap-chapt-3.zip -d chapter-zips/
+```
+</details>
+
 ## Exercise: Organize your project!
 
-#### Get the example project files for this chapter
-
-For this chapter, we will organize our example project files!
-Now choose which version of the example you would like to work with and follow the instructions.  
-
-<details> <summary>Python version of the exercise</summary>
-
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip).
-
-```{bash, include = FALSE}
-mkdir -p chapter-zips
-wget -O chapter-zips/python-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip
-```
-
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
-
-```{bash, include = FALSE}
-unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
-```
-
-Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
-We can use the [`ls` command](https://careerkarma.com/blog/linux-ls-command/) to list the files in this folder.
-
-```{bash, echo = FALSE, class.source = 'fold-show'}
-ls chapter-zips/python-heatmap-chapt-4
-```
-
-Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
-
-### The task:
 - [ ] Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
 - [ ] Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
-
-</details>
-
-<details> <summary>R version of the exercise</summary>
-
-To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip).
-Or you can use these commands in command line.
-
-```{bash, include = FALSE}
-mkdir -p chapter-zips
-wget -O chapter-zips/r-heatmap-chapt-4.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip
-```
-
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
-
-```{bash, include = FALSE}
-unzip -o chapter-zips/r-heatmap-chapt-4.zip -d chapter-zips/
-```
-
-Now let's take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
-We can use the [`ls` command](https://careerkarma.com/blog/linux-ls-command/) to list the files in this folder.
-
-```{bash, echo = FALSE, class.source = 'fold-show'}
-ls chapter-zips/r-heatmap-chapt-4
-```
-
-Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).
-
-### The task:
-- [ ] Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
-- [ ] Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
-
-</details>
 
 After your files are organized, you are ready to move on to the next chapter and create a notebook!
