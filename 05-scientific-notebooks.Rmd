@@ -145,7 +145,7 @@ For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://git
 
 </details>
 
-### Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files (or continue with the files you used in the previous chapter)
 
 <details> <summary>How to get the _Python project example files_</summary>
 To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
@@ -206,7 +206,6 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 3. Practice creating a new chunk in your R notebook by clicking the `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I`. (You can also manually type out the back ticks and `{}`)
 4. Delete all the default text in this notebook. 
-5. Practice writing your 
 5. Now copy and paste all of the code from `make_heatmap.R` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter. 
 6. Save your untitled.Rmd into something that tells us what it will end up doing like `make-heatmap.Rmd`. 
 7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`.

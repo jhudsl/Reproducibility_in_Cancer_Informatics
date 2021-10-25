@@ -37,7 +37,7 @@ For both exercises, we will download an environment file we've set up for you, t
 - For Python, we'll use `conda` for package management and store this information in a `environment.yml` file. 
 - For R, we'll use `renv` for package management and store this information in a `renv.lock` file. 
 
-### Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files (or continue with the files you used in the previous chapter)
 
 <details> <summary>How to get the _Python project example files_</summary>
 To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
@@ -74,19 +74,22 @@ unzip -o chapter-zips/r-heatmap-chapt-6.zip -d chapter-zips/
 <details> <summary>Python version of the exercise</summary>
 
 In your scientific notebook, you'll need to add two items.
-1. 
-2. 
+1. Add the `import session_info` to a code chunk at the beginning of your notebook. 
+2. Add `session_info.show()` to a new code chunk at the very end of your notebook. 
+3. Save your notebook and commit it to GitHub.
 
 </details>
 
 <details> <summary>R version of the exercise</summary>
 
-In your scientific notebook, add a chunk in the very end that looks like this: 
+1. In your Rmd file, add a chunk in the very end that looks like this: 
 `````
 ```{r}
 sessionInfo()
 ```
 `````
+2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything. 
+3. Save your notebook and commit it to GitHub.
 
 </details>
 
@@ -105,7 +108,6 @@ wget -O https://raw.githubusercontent.com/civisanalytics/datascience-python/mast
 conda install -c conda-forge nb_conda_kernels
 ```
 
-
 https://medium.com/swlh/installing-jupyter-notebook-and-using-your-own-environment-on-mac-fa41efd4639d
 https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda
 
@@ -119,20 +121,7 @@ https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-
 install.packages("renv")
 ```
 
-2. Get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip) or continue using the files you were working on from the last chapter. 
-
-```{bash, include = FALSE}
-mkdir -p chapter-zips
-wget -O chapter-zips/r-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip
-```
-
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
-
-```{bash, include = FALSE}
-unzip -o chapter-zips/r-heatmap-chapt-5.zip -d chapter-zips/
-```
-
-3. Create your renv snapshot following the `renv` workflow process:
+2. Create your renv snapshot following the `renv` workflow process:
 
 > 1. Call renv::init() to initialize a new project-local environment with a private R library,
 
@@ -144,9 +133,9 @@ unzip -o chapter-zips/r-heatmap-chapt-5.zip -d chapter-zips/
 
 > 5. Call renv::snapshot() again to save the state of your project library if your attempts to update R packages were successful, or call renv::restore() to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.
 
-4. You should see an `renv.lock` file is now created! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
+3. You should see an `renv.lock` file is now created! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
 
-5. Follow [these instructions to add your renv.lock file to the repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub. 
+4. Follow [these instructions to add your renv.lock file to the repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub. 
 
 </details>
 
