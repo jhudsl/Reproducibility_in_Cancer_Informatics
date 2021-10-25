@@ -7,7 +7,7 @@ rmd_files: ["index.Rmd",
             "03-project-organization.Rmd",
             "04-open-source-with-github.Rmd",
             "05-scientific-notebooks.Rmd",
-            "06-session-info.Rmd",
+            "06-package-management.Rmd",
             "07-durable-code.Rmd",
             "About.Rmd",
             "References.Rmd"]
