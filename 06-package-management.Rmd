@@ -98,7 +98,6 @@ sessionInfo()
 <details> <summary>Python version of the exercise</summary>
 
 1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/civisanalytics/datascience-python/master/environment.yml) by clicking on the link. 
-
 ```{bash}
 wget -O https://raw.githubusercontent.com/civisanalytics/datascience-python/master/environment.yml
 ```
