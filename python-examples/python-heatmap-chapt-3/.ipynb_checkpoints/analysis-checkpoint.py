@@ -5,6 +5,7 @@ import statistics
 import pandas as pd
 import numpy as np
 import seaborn as sns; sns.set_theme(color_codes=True)
+import IPython
 df1=pd.read_csv('a/file/path/only/I/have/SRP070849.tsv', sep='\t')
 mdf=pd.read_csv('a/file/path/only/I/have/SRP070849_metadata.tsv', sep='\t')
 df1["Gene"]
