@@ -100,7 +100,7 @@ sessionInfo()
 1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory. 
 
 ```{bash}
-wget -O https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
