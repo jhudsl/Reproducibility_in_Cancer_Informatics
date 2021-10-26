@@ -96,6 +96,16 @@ For this chapter, we will create notebooks from our example files code. Notebook
 ### Install JupyterLab
 
 1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, but [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation).
+
+```{bash}
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+mkdir /root/.conda \
+bash Miniconda3-latest-Linux-x86_64.sh -b \
+rm -f Miniconda3-latest-Linux-x86_64.sh 
+
+conda --version
+```
+
 2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), Install JupyterLab using this command in your [command line window](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.): `conda install -c conda-forge jupyterlab`
 3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password). 
 
