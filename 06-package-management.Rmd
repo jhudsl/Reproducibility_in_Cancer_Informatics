@@ -24,18 +24,18 @@ What Ruby and Avi may not realize, is that although they may have used the same 
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_404")
 ```
 
-There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info. 
+There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.
 
-There are two strategies for dealing with software versions that we will use in our exercises: 
+There are two strategies for dealing with software versions that we will use in our exercises:
 
 1. List the **session info** - The easiest (though not most comprehensive) method for handling differences in software versions is to have your code list details about your computing environment.
 
-2. Use **package managers** to handle your package for you in a way that you can share them with others. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from. 
+2. Use **package managers** to handle your package for you in a way that you can share them with others. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from.
 
-For both exercises, we will download an environment file we've set up for you, then we will practice adding a new package to the environments we've provided, and add them to your new repository along with the rest of your example project files. 
+For both exercises, we will download an environment file we've set up for you, then we will practice adding a new package to the environments we've provided, and add them to your new repository along with the rest of your example project files.
 
-- For Python, we'll use `conda` for package management and store this information in a `environment.yml` file. 
-- For R, we'll use `renv` for package management and store this information in a `renv.lock` file. 
+- For Python, we'll use `conda` for package management and store this information in a `environment.yml` file.
+- For R, we'll use `renv` for package management and store this information in a `renv.lock` file.
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
@@ -69,26 +69,26 @@ unzip -o chapter-zips/r-heatmap-chapt-6.zip -d chapter-zips/
 ```
 </details>
 
-## Exercise 1: Print out session info 
+## Exercise 1: Print out session info
 
 <details> <summary>Python version of the exercise</summary>
 
 In your scientific notebook, you'll need to add two items.
-1. Add the `import session_info` to a code chunk at the beginning of your notebook. 
-2. Add `session_info.show()` to a new code chunk at the very end of your notebook. 
+1. Add the `import session_info` to a code chunk at the beginning of your notebook.
+2. Add `session_info.show()` to a new code chunk at the very end of your notebook.
 3. Save your notebook and commit it to GitHub.
 
 </details>
 
 <details> <summary>R version of the exercise</summary>
 
-1. In your Rmd file, add a chunk in the very end that looks like this: 
+1. In your Rmd file, add a chunk in the very end that looks like this:
 `````
 ```{r}
 sessionInfo()
 ```
 `````
-2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything. 
+2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything.
 3. Save your notebook and commit it to GitHub.
 
 </details>
@@ -97,7 +97,7 @@ sessionInfo()
 
 <details> <summary>Python version of the exercise</summary>
 
-1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory. 
+1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory.
 
 ```{bash}
 wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
@@ -105,27 +105,27 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
 
-3. Create your conda environment by using this file in the command. 
+3. Create your conda environment by using this file in the command.
 
-```{bash}
+```
 conda env create --file environment.yml
 ```
 
-4. Activate your conda environment using this command. 
+4. Activate your conda environment using this command.
 
-```{bash}
+```
 conda activate reproducible-python
 ```
 
-5. Now start up JupyterLab again using this command: 
+5. Now start up JupyterLab again using this command:
 
-```{bash}
+```
 jupyter lab
 ```
 
-6. Follow [these instructions to add the environment.yml file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe. 
+6. Follow [these instructions to add the environment.yml file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
-### More resources on how to use conda 
+### More resources on how to use conda
 - [Install Jupyter using your own environment (Mac specific)](https://medium.com/swlh/installing-jupyter-notebook-and-using-your-own-environment-on-mac-fa41efd4639d)
 - [Definitive guide to using conda](https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda)
 
@@ -133,9 +133,9 @@ jupyter lab
 
 <details> <summary>R version of the exercise</summary>
 
-1. Go to RStudio and the Console pane: 
+1. Go to RStudio and the Console pane:
 
-2. Install `renv` using: 
+2. Install `renv` using:
 
 ```{r, echo = FALSE}
 install.packages("renv")
@@ -155,9 +155,8 @@ install.packages("renv")
 
 4. You should see an `renv.lock` file is now created! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
 
-5. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe. 
+5. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
 </details>
 
 After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!
-
