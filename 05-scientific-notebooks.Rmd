@@ -53,98 +53,6 @@ This can also be handy especially if you use automation to enhance the reproduci
 
 Because all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
 
-## Exercise: Convert code into a notebook!
-
-### Set up your IDE
-
-For this chapter, we will create notebooks from our example files code. Notebooks work best with the integrated development environment (IDE) they were created to work with. IDE's are sets of tools that help you develop your code. They are part "point and click" and part command line and include lots of visuals that will help guide you. 
-
-<details> <summary>Set up a Python IDE</summary>
-
-If you plan on using Python for this course, you will need to install JuptyerLab!
-
-1. We advise using the `conda` method to install JuptyerLab, because we will return to talk more about conda later on, but [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation). 
-2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), Install JuptyerLab using this command in your [command line terminal](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.): `conda install -c conda-forge jupyterlab`
-3. Navigate to the directory/folder that you would like to have your example files for this course in (or already have them stored in). A directory is a folder. From command line rather than pointing and clicking, you have to move between folders with commands (generally [`ls`](https://en.wikipedia.org/wiki/Ls#:~:text=In%20computing%2C%20ls%20is%20a,available%20in%20the%20EFI%20shell.) and [`cd`](https://en.wikipedia.org/wiki/Cd_(command)) are what you need) If you are unfamiliar with how to navigate directories with command line, follow these guides: [For windows](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/) or for [For Mac](https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html).
-4. [Click this link to get this chapter's example files](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
-```{bash, include = FALSE}
-mkdir -p chapter-zips
-wget -O chapter-zips/python-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip
-```
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
-```{bash, include = FALSE}
-unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
-```
-5. If you installed juptyer lab successfully, you can run `jupyter lab` and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JuptyerLab browser windows, or follow their documentation to set a password). 
-
-### Getting familiar with JuptyerLab's interface
-
-> The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.
-
-```{r, fig.align='center', echo = FALSE, fig.alt= "The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.’ "}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_469")
-```
-
-> The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
-
-> File: actions related to files and directories
-Edit: actions related to editing documents and other activities
-View: actions that alter the appearance of JupyterLab
-Run: actions for running code in different activities such as notebooks and code consoles
-Kernel: actions for managing kernels, which are separate processes for running code
-Tabs: a list of the open documents and activities in the dock panel
-Settings: common settings and an advanced settings editor
-Help: a list of JupyterLab and kernel help links
-
-
-</details>
-
-<details> <summary>Set up an R IDE</summary>
-
-1. [Install RStudio](https://www.rstudio.com/products/rstudio/download/) (and [install R first](https://repo.miserver.it.umich.edu/cran/) if you have not already).
-2. After you've downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.  
-3. Open up the RStudio application by double clicking on it.
-4. Click on the `Terminal` tab 
-5. [Click this link to get this chapter's example files](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
-```{bash, include = FALSE}
-mkdir -p chapter-zips
-wget -O chapter-zips/python-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip
-```
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
-```{bash, include = FALSE}
-unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
-```
-
-### Getting familiar with RStudio's interface
-
-```{r, fig.align='center', echo = FALSE, fig.alt= ""}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
-```
-
-> The RStudio environment has four main **panes**, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools -> Global Options -> Pane Layout).
-
-> 1. The **Editor** pane is where you can write R scripts and other documents. Each tab here is its own document.
-This is your _text editor_, which will allow you to save your R code for future use. 
-Note that change code here will not run automatically until you run it. 
-
-> 2. The **Console** pane is where you can _interactively_ run R code. 
-  + There is also a **Terminal** tab here which can be used for running programs outside R on your computer
-  
-> 3. The **Environment** pane primarily displays the variables, sometimes known as _objects_ that are defined during a given R session, and what data or values they might hold.
-
-> 4. The **Help viewer** pane has several tabs all of which are pretty important:
-    + The **Files** tab shows the structure and contents of files and folders (also known as directories) on your computer.
-    + The **Plots** tab will reveal plots when you make them
-    + The **Packages** tab shows which installed packages have been loaded into your R session
-    + The **Help** tab will show the help page when you look up a function
-    + The **Viewer** pane will reveal compiled R Markdown documents 
-
-From @Shapiro_Childhood_Cancer_Data_2021
-
-For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
-
-</details>
-
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
 <details> <summary>How to get the _Python project example files_</summary>
@@ -175,6 +83,80 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 ```{bash, include = FALSE}
 unzip -o chapter-zips/r-heatmap-chapt-5.zip -d chapter-zips/
 ```
+</details>
+
+## Exercise: Convert code into a notebook!
+
+### Set up your IDE
+
+For this chapter, we will create notebooks from our example files code. Notebooks work best with the integrated development environment (IDE) they were created to work with. IDE's are sets of tools that help you develop your code. They are part "point and click" and part command line and include lots of visuals that will help guide you. 
+
+<details> <summary>Set up a Python IDE</summary>
+
+### Install JupyterLab
+
+1. We advise using the `conda` method to install JuptyerLab, because we will return to talk more about `conda` later on, but [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation). 
+2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), Install JuptyerLab using this command in your [command line window](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.): `conda install -c conda-forge jupyterlab`
+3. If you installed juptyer lab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JuptyerLab browser windows, or follow their documentation to set a password). 
+
+### Getting familiar with JuptyerLab's interface
+
+> The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.’ "}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_469")
+```
+
+> The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
+
+> File: actions related to files and directories
+Edit: actions related to editing documents and other activities
+View: actions that alter the appearance of JupyterLab
+Run: actions for running code in different activities such as notebooks and code consoles
+Kernel: actions for managing kernels, which are separate processes for running code
+Tabs: a list of the open documents and activities in the dock panel
+Settings: common settings and an advanced settings editor
+Help: a list of JupyterLab and kernel help links
+
+
+</details>
+
+<details> <summary>Set up an R IDE</summary>
+
+### Install RStudio 
+
+1. [Install RStudio](https://www.rstudio.com/products/rstudio/download/) (and [install R first](https://repo.miserver.it.umich.edu/cran/) if you have not already).
+2. After you've downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.  
+3. Open up the RStudio application by double clicking on it.
+
+### Getting familiar with RStudio's interface
+
+```{r, fig.align='center', echo = FALSE, fig.alt= ""}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
+```
+
+> The RStudio environment has four main **panes**, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools -> Global Options -> Pane Layout).
+
+> 1. The **Editor** pane is where you can write R scripts and other documents. Each tab here is its own document.
+This is your _text editor_, which will allow you to save your R code for future use. 
+Note that change code here will not run automatically until you run it. 
+
+> 2. The **Console** pane is where you can _interactively_ run R code. 
+  + There is also a **Terminal** tab here which can be used for running programs outside R on your computer
+  
+> 3. The **Environment** pane primarily displays the variables, sometimes known as _objects_ that are defined during a given R session, and what data or values they might hold.
+
+> 4. The **Help viewer** pane has several tabs all of which are pretty important:
+    + The **Files** tab shows the structure and contents of files and folders (also known as directories) on your computer.
+    + The **Plots** tab will reveal plots when you make them
+    + The **Packages** tab shows which installed packages have been loaded into your R session
+    + The **Help** tab will show the help page when you look up a function
+    + The **Viewer** pane will reveal compiled R Markdown documents 
+
+From @Shapiro_Childhood_Cancer_Data_2021
+
+For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+
 </details>
 
 ### Create a notebook! 

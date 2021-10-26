@@ -97,30 +97,51 @@ sessionInfo()
 
 <details> <summary>Python version of the exercise</summary>
 
-1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/civisanalytics/datascience-python/master/environment.yml) by clicking on the link. 
+1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory. 
+
 ```{bash}
-wget -O https://raw.githubusercontent.com/civisanalytics/datascience-python/master/environment.yml
+wget -O https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
 ```
 
-3. [Open up your command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955) and install nb_conda_kernels using this command:
-```
-conda install -c conda-forge nb_conda_kernels
+2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
+
+3. Create your conda environment by using this file in the command. 
+
+```{bash}
+conda env create --file environment.yml
 ```
 
-https://medium.com/swlh/installing-jupyter-notebook-and-using-your-own-environment-on-mac-fa41efd4639d
-https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda
+4. Activate your conda environment using this command. 
+
+```{bash}
+conda activate reproducible-python
+```
+
+5. Now start up JupyterLab again using this command: 
+
+```{bash}
+jupyter lab
+```
+
+6. Follow [these instructions to add the environment.yml file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe. 
+
+### More resources on how to use conda 
+- [Install Jupyter using your own environment (Mac specific)](https://medium.com/swlh/installing-jupyter-notebook-and-using-your-own-environment-on-mac-fa41efd4639d)
+- [Definitive guide to using conda](https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda)
 
 </details>
 
 <details> <summary>R version of the exercise</summary>
 
-1. Install renv using: 
+1. Go to RStudio and the Console pane: 
+
+2. Install `renv` using: 
 
 ```{r, echo = FALSE}
 install.packages("renv")
 ```
 
-2. Create your renv snapshot following the `renv` workflow process:
+3. Create your renv snapshot following the `renv` workflow process:
 
 > 1. Call renv::init() to initialize a new project-local environment with a private R library,
 
@@ -132,11 +153,11 @@ install.packages("renv")
 
 > 5. Call renv::snapshot() again to save the state of your project library if your attempts to update R packages were successful, or call renv::restore() to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.
 
-3. You should see an `renv.lock` file is now created! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
+4. You should see an `renv.lock` file is now created! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
 
-4. Follow [these instructions to add your renv.lock file to the repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub. 
+5. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe. 
 
 </details>
 
-After your files are organized, you are ready to move on to the next chapter and create a notebook!
+After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!
 
