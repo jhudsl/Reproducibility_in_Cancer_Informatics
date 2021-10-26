@@ -107,19 +107,19 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 
 3. Create your conda environment by using this file in the command.
 
-```{bash}
+```
 conda env create --file environment.yml
 ```
 
 4. Activate your conda environment using this command.
 
-```{bash}
+```
 conda activate reproducible-python
 ```
 
 5. Now start up JupyterLab again using this command:
 
-```{bash}
+```
 jupyter lab
 ```
 
