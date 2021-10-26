@@ -51,26 +51,16 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 This can also be handy especially if you use automation to enhance the reproducibility of your analyses (something we will talk about in the advanced part of this course).
 
-
 Because all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
 
-## Exercise: Convert code into a notebook!
+## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-For this chapter, we will create notebooks from our example files code.
-If you have not followed [these instructions](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/#how-to-use-this-course.html) to set up your environment for using the example files from this course, you will need to do so before starting on this exercise.
-
-
-Now choose which version of the example you would like to work with and follow the instructions.  
-
-<details> <summary>Python version of the exercise</summary>
-
-### Set up the example files
-
-To get the _Python project example files_, [click this link](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter-zips/python-heatmap-chapt-5.zip).
+<details> <summary>How to get the _Python project example files_</summary>
+To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
 
 ```{bash, include = FALSE}
 mkdir -p chapter-zips
-wget -O chapter-zips/python-heatmap-chapt-5.zip https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter-zips/python-heatmap-chapt-5.zip
+wget -O chapter-zips/python-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip
 ```
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
@@ -78,30 +68,14 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 ```{bash, include = FALSE}
 unzip -o chapter-zips/python-heatmap-chapt-5.zip -d chapter-zips/
 ```
-
-Now let's take a look at the files inside these projects.
-We can use the [`ls` command](https://careerkarma.com/blog/linux-ls-command/) to list the files in this folder.
-
-```{bash, echo = FALSE, class.source = 'fold-show'}
-ls chapter-zips/python-heatmap-chapt-5
-```
-
-### The task
-
-#### Set up your environment
-
 </details>
 
-<details> <summary>R version of the exercise</summary>
-
-### Set up the example files
-
-To get the _R project examples files_ [click this link](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter-zips/r-heatmap-chapt-5.zip).
-Or you can use these commands in command line.
+<details> <summary>How to get the _R project example files_</summary>
+To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
 
 ```{bash, include = FALSE}
 mkdir -p chapter-zips
-wget -O chapter-zips/r-heatmap-chapt-5.zip https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter-zips/r-heatmap-chapt-5.zip
+wget -O chapter-zips/r-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip
 ```
 
 Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
@@ -109,16 +83,115 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 ```{bash, include = FALSE}
 unzip -o chapter-zips/r-heatmap-chapt-5.zip -d chapter-zips/
 ```
+</details>
 
-Now let's take a look at the files inside these projects.
-We can use the [`ls` command](https://careerkarma.com/blog/linux-ls-command/) to list the files in this folder.
+## Exercise: Convert code into a notebook!
 
-```{bash, echo = FALSE, class.source = 'fold-show'}
-ls chapter-zips/r-heatmap-chapt-5
+### Set up your IDE
+
+For this chapter, we will create notebooks from our example files code. Notebooks work best with the integrated development environment (IDE) they were created to work with. IDE's are sets of tools that help you develop your code. They are part "point and click" and part command line and include lots of visuals that will help guide you.
+
+<details> <summary>Set up a Python IDE</summary>
+
+### Install JupyterLab
+
+1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, but [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation).
+2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), Install JupyterLab using this command in your [command line window](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.): `conda install -c conda-forge jupyterlab`
+3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password). 
+
+### Getting familiar with JupyterLab's interface
+
+> The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.’ "}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_469")
 ```
 
-### The task
+> The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
 
+> File: actions related to files and directories
+Edit: actions related to editing documents and other activities
+View: actions that alter the appearance of JupyterLab
+Run: actions for running code in different activities such as notebooks and code consoles
+Kernel: actions for managing kernels, which are separate processes for running code
+Tabs: a list of the open documents and activities in the dock panel
+Settings: common settings and an advanced settings editor
+Help: a list of JupyterLab and kernel help links
+
+
+</details>
+
+<details> <summary>Set up an R IDE</summary>
+
+### Install RStudio
+
+1. [Install RStudio](https://www.rstudio.com/products/rstudio/download/) (and [install R first](https://repo.miserver.it.umich.edu/cran/) if you have not already).
+2. After you've downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.  
+3. Open up the RStudio application by double clicking on it.
+
+### Getting familiar with RStudio's interface
+
+```{r, fig.align='center', echo = FALSE, fig.alt= ""}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
+```
+
+> The RStudio environment has four main **panes**, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools -> Global Options -> Pane Layout).
+
+> 1. The **Editor** pane is where you can write R scripts and other documents. Each tab here is its own document.
+This is your _text editor_, which will allow you to save your R code for future use.
+Note that change code here will not run automatically until you run it.
+
+> 2. The **Console** pane is where you can _interactively_ run R code.
+  + There is also a **Terminal** tab here which can be used for running programs outside R on your computer
+
+> 3. The **Environment** pane primarily displays the variables, sometimes known as _objects_ that are defined during a given R session, and what data or values they might hold.
+
+> 4. The **Help viewer** pane has several tabs all of which are pretty important:
+    + The **Files** tab shows the structure and contents of files and folders (also known as directories) on your computer.
+    + The **Plots** tab will reveal plots when you make them
+    + The **Packages** tab shows which installed packages have been loaded into your R session
+    + The **Help** tab will show the help page when you look up a function
+    + The **Viewer** pane will reveal compiled R Markdown documents
+
+From @Shapiro_Childhood_Cancer_Data_2021
+
+For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+
+</details>
+
+### Create a notebook!
+
+Now, in your respective IDE, we'll turn our unreproducible scripts into notebooks. In the next chapter we will begin to dive into the code itself, but for now, we'll get the notebook ready to go.
+
+<details> <summary>Set up a Python notebook</summary>
+
+1. Start a new notebook by going to `New` > `Notebook`.
+2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
+
+```{r, fig.align='center', fig.alt= "In Jupyter, you can create a new notebook by going to New > Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
+```
+
+4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
+5. Save your `Untitled.ipynb` file as something that tells us what it will end up doing like `make-heatmap.ipynb`.
+
+</details>
+
+<details> <summary>Set up an R notebook</summary>
+
+1. Start a new notebook by going to `File` > `New Files` > `R Notebook`.
+2. Then open up this chapter’s example code folder and open the `make_heatmap.R` file.
+
+```{r, fig.align='center', fig.alt= "In RStudio, you can create a new notebook by going to File > New Files > R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_13")
+```
+
+3. Practice creating a new chunk in your R notebook by clicking the `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I`. (You can also manually type out the back ticks and `{}`)
+4. Delete all the default text in this notebook.
+5. Now copy and paste all of the code from `make_heatmap.R` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
+6. Save your untitled.Rmd into something that tells us what it will end up doing like `make-heatmap.Rmd`.
+7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`.
+8. This shows the nicely rendered version of your analysis and snapshots whatever output existed when the `.Rmd` file was saved.
 
 </details>
 

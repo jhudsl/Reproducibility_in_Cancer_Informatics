@@ -9,3 +9,4 @@ spell_check_results.tsv
 .httr-oauth
 docker/git_token.txt
 chapter-zips/*
+.ipynb_checkpoints/
