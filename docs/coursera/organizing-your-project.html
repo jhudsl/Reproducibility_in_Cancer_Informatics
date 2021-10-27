@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Organizing your project | Reproducibility in Cancer Informatics</title>
+  <title>Chapter 3 Organizing your project | Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Organizing your project | Reproducibility in Cancer Informatics" />
+  <meta property="og:title" content="Chapter 3 Organizing your project | Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Organizing your project | Reproducibility in Cancer Informatics" />
+  <meta name="twitter:title" content="Chapter 3 Organizing your project | Reproducibility in Cancer Informatics" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="how-to-use-this-course.html"/>
+<link rel="prev" href="defining-reproducibility.html"/>
 <link rel="next" href="using-notebooks.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
@@ -53,6 +53,69 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
@@ -108,48 +171,47 @@ div.csl-indent {
 <li class="chapter" data-level="2.4" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-is-worth-the-effort"><i class="fa fa-check"></i><b>2.4</b> Reproducibility is worth the effort!</a></li>
 <li class="chapter" data-level="2.5" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-exists-on-a-continuum"><i class="fa fa-check"></i><b>2.5</b> Reproducibility exists on a continuum!</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html"><i class="fa fa-check"></i><b>3</b> How to use this course</a>
+<li class="chapter" data-level="3" data-path="organizing-your-project.html"><a href="organizing-your-project.html"><i class="fa fa-check"></i><b>3</b> Organizing your project</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#getting-comfortable-with-command-line"><i class="fa fa-check"></i><b>3.1</b> Getting comfortable with command line</a></li>
-<li class="chapter" data-level="3.2" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#software-requirements"><i class="fa fa-check"></i><b>3.2</b> Software requirements</a>
+<li class="chapter" data-level="3.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#learning-objectives-1"><i class="fa fa-check"></i><b>3.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="3.2" data-path="organizing-your-project.html"><a href="organizing-your-project.html#organizational-strategies"><i class="fa fa-check"></i><b>3.2</b> Organizational strategies</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#why-docker"><i class="fa fa-check"></i><b>3.2.1</b> Why Docker</a></li>
-<li class="chapter" data-level="3.2.2" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#why-git"><i class="fa fa-check"></i><b>3.2.2</b> Why git</a></li>
-<li class="chapter" data-level="3.2.3" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#installing-git"><i class="fa fa-check"></i><b>3.2.3</b> Installing git</a></li>
-<li class="chapter" data-level="3.2.4" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#gitting-started"><i class="fa fa-check"></i><b>3.2.4</b> “git”ting started</a></li>
+<li class="chapter" data-level="3.2.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#tips-for-organizing-your-project"><i class="fa fa-check"></i><b>3.2.1</b> Tips for organizing your project:</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#downloading-the-chapter-files"><i class="fa fa-check"></i><b>3.3</b> Downloading the chapter files</a></li>
-<li class="chapter" data-level="3.4" data-path="how-to-use-this-course.html"><a href="how-to-use-this-course.html#the-reproducibility-checklist"><i class="fa fa-check"></i><b>3.4</b> The Reproducibility checklist</a></li>
+<li class="chapter" data-level="3.3" data-path="organizing-your-project.html"><a href="organizing-your-project.html#readings-about-organizational-strategies-for-data-science-projects"><i class="fa fa-check"></i><b>3.3</b> Readings about organizational strategies for data science projects:</a></li>
+<li class="chapter" data-level="3.4" data-path="organizing-your-project.html"><a href="organizing-your-project.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter"><i class="fa fa-check"></i><b>3.4</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="3.5" data-path="organizing-your-project.html"><a href="organizing-your-project.html#exercise-organize-your-project"><i class="fa fa-check"></i><b>3.5</b> Exercise: Organize your project!</a></li>
+<li class="chapter" data-level="3.6" data-path="organizing-your-project.html"><a href="organizing-your-project.html#why-git-and-github"><i class="fa fa-check"></i><b>3.6</b> Why git and GitHub</a></li>
+<li class="chapter" data-level="3.7" data-path="organizing-your-project.html"><a href="organizing-your-project.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-1"><i class="fa fa-check"></i><b>3.7</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="3.8" data-path="organizing-your-project.html"><a href="organizing-your-project.html#exercise-set-up-a-project-on-github"><i class="fa fa-check"></i><b>3.8</b> Exercise: Set up a project on GitHub</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="organizing-your-project.html"><a href="organizing-your-project.html"><i class="fa fa-check"></i><b>4</b> Organizing your project</a>
+<li class="chapter" data-level="4" data-path="using-notebooks.html"><a href="using-notebooks.html"><i class="fa fa-check"></i><b>4</b> Using Notebooks</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#learning-objectives-1"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="4.2" data-path="organizing-your-project.html"><a href="organizing-your-project.html#organizational-strategies"><i class="fa fa-check"></i><b>4.2</b> Organizational strategies</a>
+<li class="chapter" data-level="4.1" data-path="using-notebooks.html"><a href="using-notebooks.html#learning-objectives-2"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="4.2" data-path="using-notebooks.html"><a href="using-notebooks.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-2"><i class="fa fa-check"></i><b>4.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="4.3" data-path="using-notebooks.html"><a href="using-notebooks.html#exercise-convert-code-into-a-notebook"><i class="fa fa-check"></i><b>4.3</b> Exercise: Convert code into a notebook!</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#tips-for-organizing-your-project"><i class="fa fa-check"></i><b>4.2.1</b> Tips for organizing your project:</a></li>
+<li class="chapter" data-level="4.3.1" data-path="using-notebooks.html"><a href="using-notebooks.html#set-up-your-ide"><i class="fa fa-check"></i><b>4.3.1</b> Set up your IDE</a></li>
+<li class="chapter" data-level="4.3.2" data-path="using-notebooks.html"><a href="using-notebooks.html#install-jupyterlab"><i class="fa fa-check"></i><b>4.3.2</b> Install JupyterLab</a></li>
+<li class="chapter" data-level="4.3.3" data-path="using-notebooks.html"><a href="using-notebooks.html#getting-familiar-with-jupyterlabs-interface"><i class="fa fa-check"></i><b>4.3.3</b> Getting familiar with JupyterLab’s interface</a></li>
+<li class="chapter" data-level="4.3.4" data-path="using-notebooks.html"><a href="using-notebooks.html#install-rstudio"><i class="fa fa-check"></i><b>4.3.4</b> Install RStudio</a></li>
+<li class="chapter" data-level="4.3.5" data-path="using-notebooks.html"><a href="using-notebooks.html#getting-familiar-with-rstudios-interface"><i class="fa fa-check"></i><b>4.3.5</b> Getting familiar with RStudio’s interface</a></li>
+<li class="chapter" data-level="4.3.6" data-path="using-notebooks.html"><a href="using-notebooks.html#create-a-notebook"><i class="fa fa-check"></i><b>4.3.6</b> Create a notebook!</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="organizing-your-project.html"><a href="organizing-your-project.html#readings-about-organizational-strategies-for-data-science-projects"><i class="fa fa-check"></i><b>4.3</b> Readings about organizational strategies for data science projects:</a></li>
-<li class="chapter" data-level="4.4" data-path="organizing-your-project.html"><a href="organizing-your-project.html#exercise-organize-your-project"><i class="fa fa-check"></i><b>4.4</b> Exercise: Organize your project!</a>
-<ul>
-<li class="chapter" data-level="4.4.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#the-task"><i class="fa fa-check"></i><b>4.4.1</b> The task:</a></li>
-<li class="chapter" data-level="4.4.2" data-path="organizing-your-project.html"><a href="organizing-your-project.html#the-task-1"><i class="fa fa-check"></i><b>4.4.2</b> The task:</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="using-notebooks.html"><a href="using-notebooks.html"><i class="fa fa-check"></i><b>5</b> Using Notebooks</a>
+<li class="chapter" data-level="5" data-path="why-package-versions-matter.html"><a href="why-package-versions-matter.html"><i class="fa fa-check"></i><b>5</b> Why package versions matter</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="using-notebooks.html"><a href="using-notebooks.html#learning-objectives-2"><i class="fa fa-check"></i><b>5.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="5.2" data-path="using-notebooks.html"><a href="using-notebooks.html#exercise-convert-code-into-a-notebook"><i class="fa fa-check"></i><b>5.2</b> Exercise: Convert code into a notebook!</a>
+<li class="chapter" data-level="5.1" data-path="why-package-versions-matter.html"><a href="why-package-versions-matter.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3"><i class="fa fa-check"></i><b>5.1</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="5.2" data-path="why-package-versions-matter.html"><a href="why-package-versions-matter.html#exercise-1-print-out-session-info"><i class="fa fa-check"></i><b>5.2</b> Exercise 1: Print out session info</a></li>
+<li class="chapter" data-level="5.3" data-path="why-package-versions-matter.html"><a href="why-package-versions-matter.html#exercise-2-package-management"><i class="fa fa-check"></i><b>5.3</b> Exercise 2: Package management</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="using-notebooks.html"><a href="using-notebooks.html#set-up-the-example-files"><i class="fa fa-check"></i><b>5.2.1</b> Set up the example files</a></li>
-<li class="chapter" data-level="5.2.2" data-path="using-notebooks.html"><a href="using-notebooks.html#the-task-2"><i class="fa fa-check"></i><b>5.2.2</b> The task</a></li>
-<li class="chapter" data-level="5.2.3" data-path="using-notebooks.html"><a href="using-notebooks.html#set-up-the-example-files-1"><i class="fa fa-check"></i><b>5.2.3</b> Set up the example files</a></li>
-<li class="chapter" data-level="5.2.4" data-path="using-notebooks.html"><a href="using-notebooks.html#the-task-3"><i class="fa fa-check"></i><b>5.2.4</b> The task</a></li>
+<li class="chapter" data-level="5.3.1" data-path="why-package-versions-matter.html"><a href="why-package-versions-matter.html#more-resources-on-how-to-use-conda"><i class="fa fa-check"></i><b>5.3.1</b> More resources on how to use conda</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="organizing-your-project-1.html"><a href="organizing-your-project-1.html"><i class="fa fa-check"></i><b>6</b> Organizing your project</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="organizing-your-project-1.html"><a href="organizing-your-project-1.html#learning-objectives-3"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="6.2" data-path="organizing-your-project-1.html"><a href="organizing-your-project-1.html#readings-about-reproducible-durable-code"><i class="fa fa-check"></i><b>6.2</b> Readings about reproducible, durable code</a></li>
+<li class="chapter" data-level="6.2" data-path="organizing-your-project-1.html"><a href="organizing-your-project-1.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4"><i class="fa fa-check"></i><b>6.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
 <li class="chapter" data-level="6.3" data-path="organizing-your-project-1.html"><a href="organizing-your-project-1.html#exercise-make-code-more-durable"><i class="fa fa-check"></i><b>6.3</b> Exercise: Make code more durable!</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
@@ -189,13 +251,13 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/itcr_main_image.png">
 </div>
-<div id="organizing-your-project" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Organizing your project</h1>
-<div id="learning-objectives-1" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Learning Objectives</h2>
-<p><img src="resources/images/04-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png" title="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." alt="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." style="display: block; margin: auto;" /></p>
+<div id="organizing-your-project" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Organizing your project</h1>
+<div id="learning-objectives-1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Learning Objectives</h2>
+<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png" title="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." alt="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." style="display: block; margin: auto;" /></p>
 <p>Keeping your files organized is a skill that has a high long-term pay off. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.</p>
-<p><img src="resources/images/04-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png" title="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png" title="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" style="display: block; margin: auto;" /></p>
 <p><span class="citation">Tayo (<a href="#ref-Tayo2019" role="doc-biblioref">2019</a>)</span> discusses four particular reasons why it is important to organize your project:</p>
 <blockquote>
 <ol style="list-style-type: decimal">
@@ -206,10 +268,10 @@ div.csl-indent {
 </ol>
 </blockquote>
 <p>Organization is yet another aspect of reproducibility that saves you and your colleagues time!</p>
-<p><img src="resources/images/04-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_180.png" title="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." alt="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_180.png" title="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." alt="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." style="display: block; margin: auto;" /></p>
 </div>
-<div id="organizational-strategies" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Organizational strategies</h2>
+<div id="organizational-strategies" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Organizational strategies</h2>
 <p>There’s a lot of ways to keep your files organized, and there’s not a “one size fits all” organizational solution <span class="citation">(<a href="#ref-Shapiro_Childhood_Cancer_Data_2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span>. In this chapter, we will discuss some generalities but as far as specifics we will point you to others’ who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.</p>
 <p>The most important aspects of your project organization scheme is that it:</p>
 <ul>
@@ -224,8 +286,8 @@ div.csl-indent {
 <li>Is something maintainable!</li>
 </ul>
 <p><span class="citation">(<a href="#ref-Shapiro_Childhood_Cancer_Data_2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span></p>
-<div id="tips-for-organizing-your-project" class="section level3" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Tips for organizing your project:</h3>
+<div id="tips-for-organizing-your-project" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Tips for organizing your project:</h3>
 <p>Getting more specific, here’s some ideas of how to organize your project:</p>
 <ul>
 <li><strong>Make file names informative</strong> to those who don’t have knowledge of the project but avoid using spaces, quotes, or unusual characters in your filenames and folders – these only serve to make reading in files a nightmare in some programs.</li>
@@ -238,8 +300,8 @@ div.csl-indent {
 <li><strong>Make a central script that re-runs everything</strong> – including the creation of the folders! (more on this in a later chapter)</li>
 </ul>
 <p>Let’s see what these principles might look like put into practice.</p>
-<div id="example-organizational-scheme" class="section level4" number="4.2.1.1">
-<h4><span class="header-section-number">4.2.1.1</span> Example organizational scheme</h4>
+<div id="example-organizational-scheme" class="section level4" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> Example organizational scheme</h4>
 <p>Here’s an example of what this might look like:</p>
 <pre><code>project-name/
 ├── run_analysis.sh # Central script that runs everything again
@@ -261,8 +323,8 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div id="readings-about-organizational-strategies-for-data-science-projects" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Readings about organizational strategies for data science projects:</h2>
+<div id="readings-about-organizational-strategies-for-data-science-projects" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Readings about organizational strategies for data science projects:</h2>
 <p>But you don’t have to take my organizational strategy, there are lots of ideas out there.
 You can read through some of these articles to think about what kind of organizational strategy might work for you and your team:</p>
 <ul>
@@ -274,69 +336,103 @@ You can read through some of these articles to think about what kind of organiza
 <li><a href="https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html">Data Carpentry course chapter about getting organized</a> <span class="citation">(<a href="#ref-DataCarpentry2019" role="doc-biblioref"><span>“Introduction to the Command Line for Genomics”</span> n.d.</a>)</span>.</li>
 </ul>
 </div>
-<div id="exercise-organize-your-project" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Exercise: Organize your project!</h2>
-<div id="get-the-example-project-files-for-this-chapter" class="section level4" number="4.4.0.1">
-<h4><span class="header-section-number">4.4.0.1</span> Get the example project files for this chapter</h4>
-<p>For this chapter, we will organize our example project files!
-Now choose which version of the example you would like to work with and follow the instructions.</p>
+<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
 <details>
 <summary>
-Python version of the exercise
+How to get the <em>Python project example files</em>
 </summary>
-<p>To get the <em>Python project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip">click this link</a>.</p>
+<p>To get the <em>Python project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip">click this link</a>.</p>
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
-<p>Now let’s take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
-We can use the <a href="https://careerkarma.com/blog/linux-ls-command/"><code>ls</code> command</a> to list the files in this folder.</p>
-<pre><code>## aggregated_metadata.json
-## aml_heatmap.png
-## analysis_OLD.py
-## analysis.py
-## dataset.zip
-## LICENSE.TXT
-## metadata_SRP070849.tsv
-## SRP070849.tsv</code></pre>
-<p>Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).</p>
-</div>
-<div id="the-task" class="section level3" number="4.4.1">
-<h3><span class="header-section-number">4.4.1</span> The task:</h3>
-<ul class="task-list">
-<li><input type="checkbox" disabled="" />
-Create a <code>plots</code>, <code>results</code>, and <code>data</code> folder and organize the files into their respective folders. Note that <code>aggregated_metadata.json</code> and <code>LICENSE.TXT</code> also belong in the `data folder.</li>
-<li><input type="checkbox" disabled="" />
-Delete any files that say “OLD”. Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.</li>
-</ul>
 </details>
 <details>
 <summary>
-R version of the exercise
+How to get the <em>R project example files</em>
 </summary>
-<p>To get the <em>R project examples files</em> <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip">click this link</a>.
-Or you can use these commands in command line.</p>
+<p>To get the <em>R project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-3.zip">click this link</a>.</p>
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
-<p>Now let’s take a look at the files inside these projects. These are purposely not organized because for this exercise we will organize them!
-We can use the <a href="https://careerkarma.com/blog/linux-ls-command/"><code>ls</code> command</a> to list the files in this folder.</p>
-<pre><code>## aggregated_metadata.json
-## dataset.zip
-## heatmap_up_to_date_OLD.R
-## heatmap_up_to_date.R
-## LICENSE.TXT
-## metadata_SRP070849.tsv
-## SRP070849.tsv</code></pre>
-<p>Organize these files! For now we will organize these files by hand, but in the upcoming chapters we will make it so our analysis places these items in the correct directories (and creates the directories if they do not exist!).</p>
+</details>
 </div>
-<div id="the-task-1" class="section level3" number="4.4.2">
-<h3><span class="header-section-number">4.4.2</span> The task:</h3>
+<div id="exercise-organize-your-project" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Exercise: Organize your project!</h2>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 Create a <code>plots</code>, <code>results</code>, and <code>data</code> folder and organize the files into their respective folders. Note that <code>aggregated_metadata.json</code> and <code>LICENSE.TXT</code> also belong in the <code>data</code> folder.</li>
 <li><input type="checkbox" disabled="" />
 Delete any files that say “OLD”. Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.</li>
 </ul>
-</details>
 <p>After your files are organized, you are ready to move on to the next chapter and create a notebook!</p>
 
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png" title="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." width="100%" /></p>
 </div>
+<div id="why-git-and-github" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Why git and GitHub</h2>
+<p>git is a version control system that is a great tool for creating reproducible analyses.
+What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.</p>
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9843bee50_0_535.png" title="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Now was it “final_final_version_100%_up_to_date” or “final_version_edit5” that I was working from?" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Now was it “final_final_version_100%_up_to_date” or “final_version_edit5” that I was working from?" width="100%" /></p>
+<p>All of us at one point or another have created different versions of a file or document, but for analysis projects this can easily get out of hand if you don’t have a system in place. That’s where git comes in handy.</p>
+<p>There are other version control systems as well, but git is the most popular in part because it works with GitHub, an online hosting service for git controlled files.</p>
+<p><strong>GitHub and git allow you to…</strong></p>
+<div id="maintain-transparent-analyses" class="section level4" number="3.6.0.1">
+<h4><span class="header-section-number">3.6.0.1</span> Maintain transparent analyses</h4>
+<p>Open and transparent analyses are a critical part to conducting open science. GitHub allows you to conduct your analyses in an open source manner. Open science also allows others to better understand your methods and potentially borrow them for their own research, saving everyone time!</p>
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_331.png" title="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." width="100%" /></p>
+</div>
+<div id="have-backups-of-your-code-and-analyses-at-every-point" class="section level4" number="3.6.0.2">
+<h4><span class="header-section-number">3.6.0.2</span> Have backups of your code and analyses at every point</h4>
+<p>Life happens, sometimes you misplace a file or your computer malfunctions. If you ever lose data on your computer or need to retrieve something from an earlier version of your code, GitHub allows you to revert your losses.</p>
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_0.png" title="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." width="100%" /></p>
+</div>
+<div id="keep-a-documented-history-of-your-project" class="section level4" number="3.6.0.3">
+<h4><span class="header-section-number">3.6.0.3</span> Keep a documented history of your project</h4>
+<p>Over the time course of a project a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don’t have to re-visit a question you already answered.</p>
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_92.png" title="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'" alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'"  /></p>
+</div>
+<div id="collaborate-with-others" class="section level4" number="3.6.0.4">
+<h4><span class="header-section-number">3.6.0.4</span> Collaborate with others</h4>
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_131.png" title="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!" alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!"  /></p>
+</div>
+<div id="experiment-with-your-analysis" class="section level4" number="3.6.0.5">
+<h4><span class="header-section-number">3.6.0.5</span> Experiment with your analysis</h4>
+<p>Data science projects often lead to side analyses that could be very worth while but might be scary to venture on if you don’t have your code well version controlled. Git and GitHub allow you to venture on these side experiments without fear since your main code can be kept safe from your side venture.</p>
+<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_47.png" title="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code" alt="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code"  /></p>
+</div>
+</div>
+<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-1" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
+<details>
+<summary>
+How to get the <em>Python project example files</em>
+</summary>
+<p>To get the <em>Python project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip">click this link</a>.</p>
+<p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
+</details>
+<details>
+<summary>
+How to get the <em>R project example files</em>
+</summary>
+<p>To get the <em>R project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip">click this link</a>.</p>
+<p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
+</details>
+</div>
+<div id="exercise-set-up-a-project-on-github" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Exercise: Set up a project on GitHub</h2>
+<p>Now that we understand how useful GitHub is for creating reproducible analyses, it’s time to set ourselves up on GitHub.</p>
+<p>Git and GitHub have a whole rich world of tools and terms that can get complex quickly, but for this exercise, we will not worry about those terms and functionalities just yet, but focus on getting code up on GitHub so we are ready to collaborate and conduct open analyses!</p>
+<ul>
+<li>Go to <a href="https://github.com/">Github’s main page</a> and click Sign Up if you don’t have an account.</li>
+<li>Follow <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo">these instructions to create a repository</a>. As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.
+<ul>
+<li>Name the repository something that reminds you what its related to.</li>
+<li>Choose “Public”.</li>
+<li>Check the box that says “Add a gitignore”.</li>
+<li>Check the box that says “Add a README”.</li>
+</ul></li>
+<li>Follow <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github">these instructions</a> to add the example files you downloaded to your new repository.</li>
+</ul>
+<p>Congrats! You’ve started your very own project on GitHub!
+We encourage you to do the same with your own code and other projects!</p>
+
 </div>
 </div>
 <h3>References</h3>
@@ -379,7 +475,7 @@ Tayo, Benjamin Obi. 2019. <span>“How to <span>Organize</span> <span>Your</span
           </div>
         </div>
       </div>
-<a href="how-to-use-this-course.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="defining-reproducibility.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="using-notebooks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
