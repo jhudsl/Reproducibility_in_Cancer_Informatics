@@ -6,11 +6,13 @@ title: "Package versions"
 leanbuild::set_knitr_image_path()
 ```
 
+# Why package versions matter
+
+## Learning Objectives
+
 ```{r, fig.alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using.", out.width = "100%", echo = FALSE}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_394")
 ```
-
-# Why package versions matter
 
 As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!
 
