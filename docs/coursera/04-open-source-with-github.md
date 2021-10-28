@@ -4,9 +4,11 @@ title: "Open source with GitHub"
 
 
 
-<img src="resources/images/04-open-source-with-github_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png" title="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." width="100%" />
+# Why git and GitHub
 
-## Why git and GitHub
+## Learning Objectives
+
+<img src="resources/images/04-open-source-with-github_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png" title="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." width="100%" />
 
 git is a version control system that is a great tool for creating reproducible analyses.
 What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.  
@@ -81,7 +83,7 @@ Git and GitHub have a whole rich world of tools and terms that can get complex q
   - Choose "Public".
   - Check the box that says "Add a gitignore".
   - Check the box that says "Add a README".
-- Follow [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github) to add the example files you downloaded to your new repository. 
+- Follow [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github) to add the example files you downloaded to your new repository.
 
 Congrats! You've started your very own project on GitHub!
 We encourage you to do the same with your own code and other projects!

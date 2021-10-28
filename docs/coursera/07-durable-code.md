@@ -4,7 +4,7 @@ title: "Writing durable code"
 
 
 
-# Organizing your project
+# Writing durable code
 
 ## Learning Objectives
 

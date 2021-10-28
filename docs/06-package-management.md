@@ -4,9 +4,11 @@ title: "Package versions"
 
 
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" title="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" />
-
 # Why package versions matter
+
+## Learning Objectives
+
+<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" title="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" />
 
 As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!
 
@@ -118,16 +120,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-10-27 16:21:36--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+## --2021-10-28 16:26:33--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
-## Length: 2657 (2.6K) [text/plain]
-## Saving to: ‘environment.yml.1’
+## Length: 6246 (6.1K) [text/plain]
+## Saving to: ‘environment.yml.3’
 ## 
-##      0K ..                                                    100% 28.1M=0s
+##      0K ......                                                100% 27.2M=0s
 ## 
-## 2021-10-27 16:21:36 (28.1 MB/s) - ‘environment.yml.1’ saved [2657/2657]
+## 2021-10-28 16:26:33 (27.2 MB/s) - ‘environment.yml.3’ saved [6246/6246]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).

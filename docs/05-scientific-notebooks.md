@@ -73,7 +73,7 @@ For this chapter, we will create notebooks from our example files code. Notebook
 
 <details> <summary>Set up a Python IDE</summary>
 
-### Install JupyterLab
+**Install JupyterLab**
 
 1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, so [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation).
 
@@ -82,20 +82,20 @@ To install conda using command line will look something like this in command lin
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 mkdir /root/.conda \
 bash Miniconda3-latest-Linux-x86_64.sh -b \
-rm -f Miniconda3-latest-Linux-x86_64.sh 
+rm -f Miniconda3-latest-Linux-x86_64.sh
 
 conda --version
 ```
 
-2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), install JupyterLab using this command in your [command line window](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.): 
+2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), install JupyterLab using this command in your [command line window](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.):
 
 ```
 conda install -c conda-forge jupyterlab
 ```
 
-3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password). 
+3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).
 
-### Getting familiar with JupyterLab's interface
+**Getting familiar with JupyterLab's interface**  
 
 > The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.
 
@@ -112,18 +112,17 @@ Tabs: a list of the open documents and activities in the dock panel
 Settings: common settings and an advanced settings editor
 Help: a list of JupyterLab and kernel help links
 
-
 </details>
 
 <details> <summary>Set up an R IDE</summary>
 
-### Install RStudio
+**Install RStudio**
 
 1. [Install RStudio](https://www.rstudio.com/products/rstudio/download/) (and [install R first](https://repo.miserver.it.umich.edu/cran/) if you have not already).
 2. After you've downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.  
 3. Open up the RStudio application by double clicking on it.
 
-### Getting familiar with RStudio's interface
+**Getting familiar with RStudio's interface**
 
 <img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_225.png" style="display: block; margin: auto;" />
 
