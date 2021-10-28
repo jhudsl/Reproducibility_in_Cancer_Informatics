@@ -184,7 +184,7 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
 
 ```{r, fig.align='center', fig.alt= "In Jupyter, you can create a new notebook by going to New > Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20")
 ```
 
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
