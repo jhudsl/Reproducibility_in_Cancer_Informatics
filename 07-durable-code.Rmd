@@ -6,7 +6,7 @@ title: "Writing durable code"
 leanbuild::set_knitr_image_path()
 ```
 
-# Organizing your project
+# Writing durable code
 
 ## Learning Objectives
 
