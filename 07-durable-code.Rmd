@@ -14,6 +14,52 @@ leanbuild::set_knitr_image_path()
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
 ```
 
+## General principles
+
+1. **Be iterative**
+After you make your code work the first time, you aren’t done! (but you can leave it for the day and come back later).  
+
+
+2. **Prioritize readability over cleverness.** 
+
+3. Work on writing **DRY code**
+https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself 
+
+4. **Refresh your session** -- Don’t be afraid to delete it all and re-run (multiple times)
+
+5. **Use code comments effectively** 
+https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments 
+
+6. **Use informative variable names.**
+
+7. **Follow a code style.** 
+Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG it can be distracting, the same goes for code. 
+Your code may even work all the same, but for others, a lack of consistent style can make it difficult to read and understand. 
+For reproducibility purposes, readability is important! 
+The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
+
+Some Python: 
+https://www.python.org/dev/peps/pep-0008/
+https://google.github.io/styleguide/pyguide.html 
+R
+http://adv-r.had.co.nz/Style.html
+https://google.github.io/styleguide/Rguide.html 
+
+
+DRY code - Turn it into a function vs Change it in five places.
+Error checking can make it easier for others and yourself to decipher the problem
+Failing loudly >> failing silently
+Being more specific to the context!
+Functions 
+Setting the seed
+Try re-running something with/without setting the seed and see if you get the same thing
+https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/00c-good-scientific-coding-practices.md#setseed-helps-people-reproduce-your-results 
+No mystery files; be clear about the file paths
+Store a file and download it or say where you got it
+Refresh your session -- Don’t be afraid to delete it all and re-run (a few times)
+
+
+
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
 <details> <summary>How to get the _Python project example files_</summary>
