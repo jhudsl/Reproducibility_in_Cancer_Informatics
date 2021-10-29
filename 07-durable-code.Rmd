@@ -16,14 +16,20 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 ## General principles
 
-1. **Work on your code iteratively**  
+#### 1. Work on your code iteratively
+<img src="resources/images/iterative.png" width="8%">
+
 Getting your code to work the first time is the first step, but don't stop there! 
 Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it! 
 
-2. **Prioritize readability over cleverness.**   
+#### 2. Prioritize readability over cleverness
+<img src="resources/images/readable.png" width="8%">
+
 Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
 
-3. **DRY up your code.**  
+#### 3. DRY up your code
+<img src="resources/images/DRY.png" width="8%">
+
 [DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself".
 
 > "I hate code, and I want as little of it as possible in our product." 
@@ -38,7 +44,9 @@ More reading:
 - [Keep your code dry](https://www.drycode.io/) by @DRY.
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
 
-4. **Don't be afraid to delete and refresh**  
+#### 4. Don't be afraid to delete and refresh  
+<img src="resources/images/delete.png" width="8%">
+
 Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
 1) You might write better code on the second try (or third or nth). 
@@ -49,7 +57,8 @@ This means you should not comment out old code. Just delete it! No code is so pr
 
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
 
-5. **Use code comments effectively.**   
+#### 5. Use code comments effectively  
+<img src="resources/images/comment.png" width="8%">
 
 Good code comments are a part of writing good, readable code! Your code is more likely to stand the test of time for longer if others, including yourself in the future, can see what’s happening enough to trust it themselves. This will encourage others to use your code and help you maintain it!
 
@@ -70,7 +79,9 @@ Comments can help clarify at points where your code might need further explanati
 - [Some internet wisdom on R documentation](http://alyssafrazee.com/2014/04/20/rdocs.html) by @Frazee2014.  
 - [How to Comment Your Code Like a Pro: Best Practices and Good Habits](https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits) by @Keeton2019.  
 
-6. **Use informative variable names.**  
+#### 6. Use informative variable names
+<img src="resources/images/variable-name.png" width="8%">
+
 Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.
 
 > 1 Write Intention-Revealing Names
@@ -83,7 +94,9 @@ More reading:
 - [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.
 - [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018. 
 
-7. **Follow a code style.**  
+#### 7. Follow a code style 
+<img src="resources/images/style.png" width="8%">
+
 Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG it can be distracting, the same goes for code. Your code may even work all the same, but for others, a lack of consistent style can make it difficult to read and understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
 
 There are different style guides out there that people adhere to. It doesn't matter so much which one you choose, so much that you pick one and stick to it for a particular project.  
@@ -100,24 +113,56 @@ Although writing code following a style as you are writing is a good practice, w
 For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/). 
 
 
+#### 8. Set the seed if your analysis has randomness involved
+<img src="resources/images/seeds.png" width="8%">
 
-To review:    
+If any randomness is involved in your analysis, you will want to set the seed in order for your results to be reproducible. 
+
+In brief, computers don't actually create numbers randomly they create [numbers pseudorandomly](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible. 
+
+<details> <summary> For more on how setting the seed works -- a quick experiment </summary>
+To illustrate how seeds work, run we'll run a quick experiment with setting the seed here: 
+
+First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number. 
+
+```{r}
+# Set the seed: 
+set.seed(1234)
+
+# Now create a random number again
+runif(1)
+```
+
+Now if we try a different seed, we will get a different "random" number. 
+
+```{r}
+# Set a different seed: 
+set.seed(4321)
+
+# Now create a random number again
+runif(1)
+```
+
+But, if we return to the original seed we used, `1234`, we will get the original "random" number we got.  
+
+```{r}
+# Set this back to the original seed
+set.seed(1234)
+
+# Now we'll get the same "random" number we got when we set the seed to 1234 previously
+runif(1)
+```
+
+</details>
+
+More reading on setting the seed:  
+- [Set seed](https://r-coder.com/set-seed-r/)
+- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/)
+
+#### To review general principles:    
 ```{r, fig.align='center', echo = FALSE, fig.alt= "General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_89")
 ```
-
-DRY code - Turn it into a function vs Change it in five places.
-Error checking can make it easier for others and yourself to decipher the problem
-Failing loudly >> failing silently
-Being more specific to the context!
-Functions 
-Setting the seed
-Try re-running something with/without setting the seed and see if you get the same thing
-https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/00c-good-scientific-coding-practices.md#setseed-helps-people-reproduce-your-results 
-No mystery files; be clear about the file paths
-Store a file and download it or say where you got it
-Refresh your session -- Don’t be afraid to delete it all and re-run (a few times)
-
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
@@ -152,3 +197,13 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 </details>
 
 ## Exercise: Make code more durable!
+
+
+
+
+
+
+
+
+
+
