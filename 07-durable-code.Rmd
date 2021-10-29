@@ -20,21 +20,59 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 Getting your code to work the first time is the first step, but don't stop there! 
 Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it! 
 
-
-
 2. **Prioritize readability over cleverness.** 
-Although some dose of cleverness in code can be helpful, if the clever method you introduce to your code makes it difficult for others to understand, it probably is not worth it 
-
+Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
 
 3. **DRY up your code**
-https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself 
+[DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself".
+
+> "I hate code, and I want as little of it as possible in our product." – Jack Diederich
+
+- If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. 
+- DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. :)
+- DRY code is also easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places. 
+
+More reading:  
+- [Keep your code dry](https://www.drycode.io/)
+- [DRY Programming Practices](https://metova.com/dry-programming-practices/)
 
 4. **Don't be afraid to delete and refresh** -- Don’t be afraid to delete it all and re-run (multiple times)
+Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
+
+1) You might write better code on the second try (or third or nth). 
+2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need. 
+3) With version control you can always return to that old code! 
+
+This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it). 
+
+Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
 
 5. **Use code comments effectively** 
-https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments 
+
+Good code comments are a part of writing good, readable code! Your code is more likely to stand the test of time for longer if others, including yourself in the future, can see what’s happening enough to trust it themselves. This will encourage others to use your code and help you maintain it!
+
+'Current You' who is writing your code may know what is happening but 'Future You' will have no idea what 'Current You' was thinking [@Spielman]:
+
+> 'Future You' comes into existence about one second after you write code, and has no idea what on earth Past You was thinking. Help out 'Future You' by adding lots of comments! 'Future You' next week thinks Today You is an idiot, and the only way you can convince 'Future You' that Today You is reasonably competent is by adding comments in your code explaining why Today You is actually not so bad.
+
+Your code and your understanding of it will fade soon after you write it, leaving your hard work to deprecate. Code that works is a start, but **readable** AND working code is best!
+
+Comments can help clarify at points where your code might need further explanation. The act of writing them can also help you think out your thought process and perhaps identify a better solution to the odd parts of your code.
+
+- [Creating clarifying code comments](https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments)
+- [Best Practices for Writing Code Comments](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/) by @Spertus2021.
+- [What Makes a Good Code Comment?](https://itnext.io/what-makes-a-good-code-comment-5267debd2c24) by @Cronin2019.  
+- [The Value of Code Documentation](https://www.olioapps.com/blog/the-value-of-code-documentation/) by @Meza2018.  
+- [Some internet wisdom on R documentation](http://alyssafrazee.com/2014/04/20/rdocs.html) by @Frazee2014.  
+- [How to Comment Your Code Like a Pro: Best Practices and Good Habits](https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits) by @Keeton2019.  
 
 6. **Use informative variable names.**
+
+
+
+More reading:  
+- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them.](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be)
+
 
 7. **Follow a code style.** 
 Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG it can be distracting, the same goes for code. 
@@ -42,15 +80,22 @@ Your code may even work all the same, but for others, a lack of consistent style
 For reproducibility purposes, readability is important! 
 The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
 
-Some Python: 
-https://www.python.org/dev/peps/pep-0008/
-https://google.github.io/styleguide/pyguide.html 
-R
-http://adv-r.had.co.nz/Style.html
-https://google.github.io/styleguide/Rguide.html 
+There are different style guides out there that people adhere to. It doesn't matter so much which one you choose, so much that you pick one and stick to it for a particular project.  
+
+_Python style guides_: 
+- [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/). 
+- [Google Python style guide](https://google.github.io/styleguide/pyguide.html). 
+
+_R style guides_:     
+- [Hadley Wickham's Style guide](http://adv-r.had.co.nz/Style.html)
+- [Google R style guide](https://google.github.io/styleguide/Rguide.html). 
+
+Although writing code following a style as you are writing is a good practice, we're all human and that can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you. 
+For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/). 
 
 
-To review:  
+
+To review:    
 ```{r, fig.align='center', echo = FALSE, fig.alt= "General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_89")
 ```
