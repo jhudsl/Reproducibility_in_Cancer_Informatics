@@ -16,16 +16,20 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 ## General principles
 
-1. **Be iterative**
-After you make your code work the first time, you aren’t done! (but you can leave it for the day and come back later).  
+1. **Work on your code iteratively**
+Getting your code to work the first time is the first step, but don't stop there! 
+Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it! 
+
 
 
 2. **Prioritize readability over cleverness.** 
+Although some dose of cleverness in code can be helpful, if the clever method you introduce to your code makes it difficult for others to understand, it probably is not worth it 
 
-3. Work on writing **DRY code**
+
+3. **DRY up your code**
 https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself 
 
-4. **Refresh your session** -- Don’t be afraid to delete it all and re-run (multiple times)
+4. **Don't be afraid to delete and refresh** -- Don’t be afraid to delete it all and re-run (multiple times)
 
 5. **Use code comments effectively** 
 https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments 
@@ -45,6 +49,11 @@ R
 http://adv-r.had.co.nz/Style.html
 https://google.github.io/styleguide/Rguide.html 
 
+
+To review:  
+```{r, fig.align='center', echo = FALSE, fig.alt= "General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_89")
+```
 
 DRY code - Turn it into a function vs Change it in five places.
 Error checking can make it easier for others and yourself to decipher the problem
