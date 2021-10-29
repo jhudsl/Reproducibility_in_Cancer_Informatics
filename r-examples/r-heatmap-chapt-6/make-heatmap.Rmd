@@ -14,10 +14,6 @@ sums=matrix(nrow = nrow(df), ncol = ncol(df) - 1)
 for(i in 1:nrow(sums)) { sums[i, ] <- sum(df[i, -1])
 }
 df2=df[which(df[, -1] >= 10), ]
-df3=round(df2)
-dds=DESeqDataSetFromMatrix(countData=df3, colData = xx, design = ~1)
-dds=rlog(dds)
-assay_df=assay(dds)
 variances=matrix(nrow = nrow(dds), ncol = ncol(dds) - 1)
   for(i in 1:nrow(dds)) {
     variances[i, ] <- var(dds[i, -1])

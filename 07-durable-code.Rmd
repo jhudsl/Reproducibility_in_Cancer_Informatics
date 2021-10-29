@@ -203,7 +203,8 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`. 
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
-4. Now we'll work on applying the principles from this chapter to this code.
+4. Now we'll work on applying the principles from this chapter to the code.
+
 
 
 
@@ -214,9 +215,46 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
-3. Now we'll work on applying the principles from this chapter to this code.
+3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the key points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section. 
 
+**Get rid of setwd**
 
+_Rationale:_  `setwd()` almost never work for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.  
+
+_Before:_  
+```
+setwd("Super specific/filepath/that/noone/else/has/")
+```
+_After:_  
+Now that we are working from a notebook, we know that the default [current directory is wherever the notebook is placed!](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html)
+
+_Related readings:_ [Jenny Bryan will light your computer on fire if you use setwd](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
+**Give the variables more informative names**
+
+`xx` doesn't tell us what is in the data here. Also by using the `readr::read_tsv()` from tidyverse we'll get a cleaner, faster read and won't have to specify `sep` argument. Note we are also fixing some spacing and using `<-` so that we can stick to readability conventions. 
+
+_Before:_  
+```
+xx=read.csv("metadata_SRP070849.tsv", sep = "\t")
+```
+_After:_  
+```
+metadata <- readr::read_tsv("metadata_SRP070849.tsv")
+```
+
+4. Run your notebook through `styler`. First you'll need to install it and add it to your `renv`.
+```
+install.packages("styler")
+```
+Then add it to your `renv` by running: 
+```
+renv::snapshot()
+```
+Now you can automatically style your code by running this command from your Console (be sure to replace the `"make-heatmap.Rmd"` with whatever you have named your notebook:   
+```
+styler::style_file("make-heatmap.Rmd")
+```
 
 </details>
 
