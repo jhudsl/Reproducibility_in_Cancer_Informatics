@@ -16,14 +16,14 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 ## General principles
 
-1. **Work on your code iteratively**
+1. **Work on your code iteratively**  
 Getting your code to work the first time is the first step, but don't stop there! 
 Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it! 
 
-2. **Prioritize readability over cleverness.** 
+2. **Prioritize readability over cleverness.**   
 Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
 
-3. **DRY up your code**
+3. **DRY up your code.**  
 [DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself".
 
 > "I hate code, and I want as little of it as possible in our product." – Jack Diederich
@@ -36,8 +36,8 @@ More reading:
 - [Keep your code dry](https://www.drycode.io/)
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/)
 
-4. **Don't be afraid to delete and refresh** -- Don’t be afraid to delete it all and re-run (multiple times)
-Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
+4. **Don't be afraid to delete and refresh**  
+Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
 1) You might write better code on the second try (or third or nth). 
 2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need. 
@@ -47,7 +47,7 @@ This means you should not comment out old code. Just delete it! No code is so pr
 
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
 
-5. **Use code comments effectively** 
+5. **Use code comments effectively.**   
 
 Good code comments are a part of writing good, readable code! Your code is more likely to stand the test of time for longer if others, including yourself in the future, can see what’s happening enough to trust it themselves. This will encourage others to use your code and help you maintain it!
 
@@ -66,19 +66,21 @@ Comments can help clarify at points where your code might need further explanati
 - [Some internet wisdom on R documentation](http://alyssafrazee.com/2014/04/20/rdocs.html) by @Frazee2014.  
 - [How to Comment Your Code Like a Pro: Best Practices and Good Habits](https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits) by @Keeton2019.  
 
-6. **Use informative variable names.**
+6. **Use informative variable names.**  
+Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.
 
+> 1 Write Intention-Revealing Names
+> 2 Use Consistent Notation for Naming Convention
+> 3 Use Standard Terms
+> 4 Do Not Number Variable Name
+> 5 When you find another way to name variable, Refactor as fast as possible
 
-
-More reading:  
+More reading:    
 - [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them.](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be)
+- [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3)
 
-
-7. **Follow a code style.** 
-Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG it can be distracting, the same goes for code. 
-Your code may even work all the same, but for others, a lack of consistent style can make it difficult to read and understand. 
-For reproducibility purposes, readability is important! 
-The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
+7. **Follow a code style.**  
+Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG it can be distracting, the same goes for code. Your code may even work all the same, but for others, a lack of consistent style can make it difficult to read and understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
 
 There are different style guides out there that people adhere to. It doesn't matter so much which one you choose, so much that you pick one and stick to it for a particular project.  
 
