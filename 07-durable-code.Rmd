@@ -68,7 +68,6 @@ Store a file and download it or say where you got it
 Refresh your session -- Don’t be afraid to delete it all and re-run (a few times)
 
 
-
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
 <details> <summary>How to get the _Python project example files_</summary>
