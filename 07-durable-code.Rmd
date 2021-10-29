@@ -198,6 +198,28 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 
 ## Exercise: Make code more durable!
 
+<details> <summary>Python version of the exercise</summary>
+
+1. Start up JuptyerLab with running `juptyer lab` from your command line.
+2. Activate your conda environment using `conda activate reproducible-python`. 
+3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
+4. Now we'll work on applying the principles from this chapter to this code.
+
+
+
+
+</details>
+
+<details> <summary>R version of the exercise</summary>
+
+1. Open up RStudio.
+2. Open up the notebook you created in the previous chapter.  
+3. Now we'll work on applying the principles from this chapter to this code.
+
+
+
+</details>
+
 
 
 
