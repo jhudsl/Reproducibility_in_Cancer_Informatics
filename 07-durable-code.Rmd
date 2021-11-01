@@ -205,7 +205,24 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 ```
 </details>
 
-## Exercise: Make code more durable!
+## Exercise 1: Make code more durable!
+
+### Organize the big picture of the code
+Before diving in line-by-line it can be helpful to make a code-outline of sorts. 
+
+What are the main steps you need to accomplish in this notebook? What are the starting and ending points for this particular notebook? 
+
+For example, for this `make-heatmap` notebook we want to:  
+  
+1) Set up analysis folders and declare file names.  
+2) Install the libraries we need.  
+3) Import the gene expression data and metadata.  
+4) Filter down the gene expression data to genes of interest -- in this instance the most variant ones.   
+5) Clean the metadata.   
+6) Create an annotated heatmap.   
+7) Save the heatmap to a PNG.   
+8) Print out the session info!  
+
 
 <details> <summary>Python version of the exercise</summary>
 
@@ -214,8 +231,28 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`. 
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
-4. Now we'll work on applying the principles from this chapter to the code.
+4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
 
+***
+
+**Get rid of setwd**
+
+_Rationale:_  
+`setwd()` almost never work for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.  
+
+_Before:_  
+```
+setwd("Super specific/filepath/that/noone/else/has/")
+```
+_After:_  
+Now that we are working from a notebook, we know that the default [current directory is wherever the notebook is placed!](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html)
+
+_Related readings:_ 
+
+
+
+Continue to try to apply the general advice we gave about code to your notebook!
+Then, when you are ready, take a look at what our ["final" version](https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb) looks like in the [example Python repository](https://github.com/jhudsl/reproducible-python-example). (_Final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
 
 </details>
 
@@ -236,10 +273,8 @@ _More reading on the tidyverse:_
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
 3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section. 
+4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
 
-
-***
-Digging into the code!: 
 ***
 
 **Get rid of setwd**
@@ -376,14 +411,13 @@ all.equal(colnames(expression_df), metadata$refinebio_accession_code)
 ```
 
 Continue to try to apply the general advice we gave about code to your notebook!
-Then, when you are ready, take a look at what our "final" versions look like. (Final is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
+Then, when you are ready, take a look at what our ["final" version](https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html) looks like in the [example R repository](https://github.com/jhudsl/reproducible-R-example). (_Final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
 
 </details>
 
 Now that we've made some nice updates to the code, we are ready to do a bit more polishing by adding more documentation! But before we head to the next chapter, we can style the code we wrote automatically by using automatic code stylers!
 
-
-## Style code automatically! 
+## Exercise 2: Style code automatically! 
 
 <details> <summary>Styling Python code automatically</summary>
 
