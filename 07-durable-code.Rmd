@@ -10,25 +10,25 @@ leanbuild::set_knitr_image_path()
 
 ## Learning Objectives
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
+```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_9")
 ```
 
 ## General principles
 
-#### 1. Work on your code iteratively
-<img src="resources/images/iterative.png" width="8%">
+#### Work on your code iteratively
+<img src="resources/images/iterative.png" width="12%">
 
 Getting your code to work the first time is the first step, but don't stop there! 
 Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it! 
 
-#### 2. Prioritize readability over cleverness
-<img src="resources/images/readable.png" width="8%">
+#### Prioritize readability over cleverness 
+<img src="resources/images/readable.png" width="12%">
 
 Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
 
-#### 3. DRY up your code
-<img src="resources/images/DRY.png" width="8%">
+#### DRY up your code
+<img src="resources/images/DRY.png" width="12%">
 
 [DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself".
 
@@ -36,16 +36,18 @@ Some cleverness in code can be helpful, too much can make it difficult for other
 
 – @Diederich2012
 
-- If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. 
-- DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. :)
-- DRY code is also easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places. 
+If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places.  
 
-More reading:  
-- [Keep your code dry](https://www.drycode.io/) by @DRY.
+DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
+DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project! 
+
+More reading:
+  
+- [Keep your code dry](https://www.drycode.io/) by @DRY.  
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
-
-#### 4. Don't be afraid to delete and refresh  
-<img src="resources/images/delete.png" width="8%">
+  
+#### Don't be afraid to delete and refresh  
+<img src="resources/images/delete.png" width="12%">
 
 Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
@@ -57,8 +59,8 @@ This means you should not comment out old code. Just delete it! No code is so pr
 
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
 
-#### 5. Use code comments effectively  
-<img src="resources/images/comment.png" width="8%">
+#### Use code comments effectively  
+<img src="resources/images/comment.png" width="12%">
 
 Good code comments are a part of writing good, readable code! Your code is more likely to stand the test of time for longer if others, including yourself in the future, can see what’s happening enough to trust it themselves. This will encourage others to use your code and help you maintain it!
 
@@ -70,7 +72,9 @@ Your code and your understanding of it will fade soon after you write it, leavin
 
 Comments can help clarify at points where your code might need further explanation. The act of writing them can also help you think out your thought process and perhaps identify a better solution to the odd parts of your code.
 
-- from @Savonen2021
+@Savonen2021
+
+More reading:   
 
 - [Creating clarifying code comments](https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments)
 - [Best Practices for Writing Code Comments](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/) by @Spertus2021.
@@ -79,33 +83,36 @@ Comments can help clarify at points where your code might need further explanati
 - [Some internet wisdom on R documentation](http://alyssafrazee.com/2014/04/20/rdocs.html) by @Frazee2014.  
 - [How to Comment Your Code Like a Pro: Best Practices and Good Habits](https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits) by @Keeton2019.  
 
-#### 6. Use informative variable names
-<img src="resources/images/variable-name.png" width="8%">
+#### Use informative variable names
+<img src="resources/images/variable-name.png" width="12%">
 
 Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.
 
-> 1 Write Intention-Revealing Names
-> 2 Use Consistent Notation for Naming Convention
-> 3 Use Standard Terms
-> 4 Do Not Number Variable Name
-> 5 When you find another way to name variable, Refactor as fast as possible
+> 1 Write Intention-Revealing Names. 
+> 2 Use Consistent Notation for Naming Convention. 
+> 3 Use Standard Terms. 
+> 4 Do Not Number Variable Name. 
+> 5 When you find another way to name variable, Refactor as fast as possible. 
 
-More reading:    
-- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.
-- [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018. 
+More reading:
+
+- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.  
+- [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018.   
 
 #### 7. Follow a code style 
-<img src="resources/images/style.png" width="8%">
+<img src="resources/images/style.png" width="12%">
 
-Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG it can be distracting, the same goes for code. Your code may even work all the same, but for others, a lack of consistent style can make it difficult to read and understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
+Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
 
 There are different style guides out there that people adhere to. It doesn't matter so much which one you choose, so much that you pick one and stick to it for a particular project.  
 
 _Python style guides_: 
+
 - [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/) @PEP8. 
 - [Google Python style guide](https://google.github.io/styleguide/pyguide.html) @GooglePython.
 
-_R style guides_:     
+_R style guides_: 
+
 - [Hadley Wickham's Style guide](http://adv-r.had.co.nz/Style.html) @Wickham.
 - [Google R style guide](https://google.github.io/styleguide/Rguide.html) @GoogleR.
 
@@ -113,8 +120,8 @@ Although writing code following a style as you are writing is a good practice, w
 For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/). 
 
 
-#### 8. Set the seed if your analysis has randomness involved
-<img src="resources/images/seeds.png" width="8%">
+#### Set the seed if your analysis has randomness involved
+<img src="resources/images/seeds.png" width="12%">
 
 If any randomness is involved in your analysis, you will want to set the seed in order for your results to be reproducible. 
 
@@ -155,9 +162,10 @@ runif(1)
 
 </details>
 
-More reading on setting the seed:  
-- [Set seed](https://r-coder.com/set-seed-r/)
-- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/)
+More reading on setting the seed: 
+
+- [Set seed](https://r-coder.com/set-seed-r/).  
+- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/).  
 
 #### To review general principles:    
 ```{r, fig.align='center', echo = FALSE, fig.alt= "General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style."}
@@ -200,6 +208,7 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 
 <details> <summary>Python version of the exercise</summary>
 
+
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`. 
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
@@ -213,13 +222,15 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 
 <details> <summary>R version of the exercise</summary>
 
+
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
 3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the key points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section. 
 
 **Get rid of setwd**
 
-_Rationale:_  `setwd()` almost never work for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.  
+_Rationale:_  
+`setwd()` almost never work for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.  
 
 _Before:_  
 ```
