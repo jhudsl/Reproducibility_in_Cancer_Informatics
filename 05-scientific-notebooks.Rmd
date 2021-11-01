@@ -170,7 +170,10 @@ Note that change code here will not run automatically until you run it.
 
 From @Shapiro_Childhood_Cancer_Data_2021
 
-For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+More reading about RStudio's interface: 
+
+- [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+- [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
 
 </details>
 
