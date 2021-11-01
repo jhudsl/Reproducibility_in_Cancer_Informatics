@@ -134,7 +134,7 @@ To illustrate how seeds work, run we'll run a quick experiment with setting the 
 First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number. 
 
 ```{r}
-# Set the seed: 
+# Set the seed:
 set.seed(1234)
 
 # Now create a random number again
@@ -144,7 +144,7 @@ runif(1)
 Now if we try a different seed, we will get a different "random" number. 
 
 ```{r}
-# Set a different seed: 
+# Set a different seed:
 set.seed(4321)
 
 # Now create a random number again
