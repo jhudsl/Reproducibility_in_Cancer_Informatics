@@ -43,7 +43,10 @@ What does readable code look like? We'll
 
 We'll talk a bit more about code review in a next chapter!
 
+More reading:
+  
 - [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.  
+- [Write clean R code](https://appsilon.com/write-clean-r-code/)
 
 #### DRY up your code
 <img src="resources/images/DRY.png" width="12%">
@@ -58,6 +61,34 @@ If you find yourself writing something more than once, you might want to write a
 
 DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
 DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project! 
+
+Here's an slightly modified example from @Bernado2021 for what DRY vs non-DRY code might look like: 
+
+```
+paste('Hello','John', 'welcome to this course')
+paste('Hello','Susan', 'welcome to this course')
+paste('Hello','Matt', 'welcome to this course')
+paste('Hello','Anne', 'welcome to this course')
+paste('Hello','Joe', 'welcome to this course')
+paste('Hello','Tyson', 'welcome to this course')
+paste('Hello','Julia', 'welcome to this course')
+paste('Hello','Cathy', 'welcome to this course')
+```
+
+Could be functional-ized and rewritten as:
+
+```
+GreetStudent <- function(name) {
+ greeting <- paste('Hello', name, 'welcome to this course')
+ return(greeting)
+}
+
+class_names <- c('John', 'Susan', 'Matt' ,'Anne', 'Joe', 'Tyson', 'Julia', 'Cathy')
+              
+lapply(class_names, GreetStudent)
+```
+
+Now, if you wanted to edit the greeting, you'd only need to edit it in the function, instead of in each instance. 
 
 More reading:
   
@@ -138,6 +169,22 @@ _R style guides_:
 Although writing code following a style as you are writing is a good practice, we're all human and that can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you. 
 For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/). 
 
+#### Organize the structure of your code
+<img src="resources/images/organize.png" width="12%">
+
+Readable code should follow an organized structure. Just like how outlines help the structure of manuscript writing, outlines can also help the organization of code writing.
+
+A tentative outline for a notebook might look like this: 
+
+1) A description of the purpose of the code (in Markdown). 
+2) Import the libraries you will need (including sourcing any functions )
+3) List any hard-coded variables. 
+4) Import data.  
+5) Do any data cleaning needed.   
+6) The main thing you need to do.  
+7) Print out session info.  
+
+Note that if your notebook gets too long, you may want to separate out things in their own scripts. Additionally, it's good practice to keep custom functions in their own file and import them. This allows you to use them elsewhere and also keeps the main part of the analysis cleaner. 
 
 #### Set the seed if your analysis has randomness involved
 <img src="resources/images/seeds.png" width="12%">
@@ -184,12 +231,28 @@ runif(1)
 More reading on setting the seed: 
 
 - [Set seed](https://r-coder.com/set-seed-r/).  
-- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/).  
+- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/). 
 
-#### To review general principles:    
+#### To review general principles: 
+
 ```{r, fig.align='center', echo = FALSE, fig.alt= "General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_89")
 ```
+
+## More reading on best coding practices
+
+There's so many opinions and strategies on best practices for code. And although a lot of these principles are generally applicable, not _all_ of it is one size fits all. Some code practices are context-specific so sometimes you may need to pick and choose what works for you, your team, and your particular project. 
+
+#### Python specific: 
+
+
+
+#### R specific: 
+
+- [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
+- [R Programming for Research: Reproducible Research](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html)
+- [R for Epidemiology: Coding best practices](https://www.r4epi.com/coding-best-practices.html)
+- [Best practices for R Programming](https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a)
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
