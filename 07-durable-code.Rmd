@@ -27,6 +27,24 @@ Just like in writing a manuscript you wouldn't consider your first draft a final
 
 Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
 
+What does readable code look like? We'll 
+
+> **Readable code starts with code that you find easy to read.** When you finish coding, take a break to clear your mind. Then try to re-read the code, putting yourself in the mindset that you know nothing about the changes and why you made them.
+
+> Can you follow along with your code? Do the variables and method names help understand what they do? Are there comments at places where just the code is not enough? Is the style of the code consistent across the changes?
+
+> Think about how you could make the code more readable. Perhaps you see some functions that do too many things and are too long. Perhaps you find that renaming a variable would make its purpose clearer. Make changes until you feel like the code is as expressive, concise, and pretty as it can be.
+
+> **The real test of readable code is others reading it.** So get feedback from others, via code reviews. Ask people to share feedback on how clear the code is. Encourage people to ask questions if something does not make sense. Code reviews - especially thorough code reviews - are the best way to get feedback on how good and readable your code is.
+
+> Readable code will attract little to no clarifying questions, and reviewers won't misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.
+
+> A good way to get more feedback on the clarity of your code is to ask for feedback from someone, who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
+
+We'll talk a bit more about code review in a next chapter!
+
+- [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.  
+
 #### DRY up your code
 <img src="resources/images/DRY.png" width="12%">
 
