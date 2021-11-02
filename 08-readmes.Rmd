@@ -56,6 +56,17 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called "README.md" when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README. 
 
+
+**Information that should be included in a README:** 
+
+1) General purpose of the project 
+2) Instructions on how to re-run the project 
+3) Lists of any software required by the project 
+4) Input and output file descriptions. 
+5) Descriptions of any additional tools included in the project? 
+
+You can take a look at this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md) to get your started. 
+
 #### More about writing READMEs: 
 
 - [How to write a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
