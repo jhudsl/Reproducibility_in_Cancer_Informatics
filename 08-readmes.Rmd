@@ -13,3 +13,117 @@ leanbuild::set_knitr_image_path()
 ```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Document your analysis in a way to make an analysis’ steps, goals, and conclusions clear. Add a README that quickly orients others to your analysis project."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8379bb805_0_1")
 ```
+
+## Why documentation?
+
+Documentation is an important but sometimes overlooked part of creating a reproducible analysis! There are two parts of documentation we will discuss here: 1) In notebook descriptions and 2) READMEs 
+
+Both these notebook descriptions and READMEs are written in markdown -- a shorthand for html (the same as the documentation parts of your code). If you aren't familiar, markdown is such a handy tool and we encourage you to learn it (it doesn't take too long), here's a [quick guide](https://www.markdownguide.org/cheat-sheet/) to get you started. 
+
+### Notebook descriptions
+
+As we [discussed in chapter 5](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/using-notebooks.html#reason-1-notebooks-allow-for-tracking-data-exploration-and-encourage-the-scientist-to-narrate-their-thought-process), data analyses can lead one on a winding trail of decisions, but notebooks allow you to narrate your thought process as you travel along these analyses explorations!
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Working from this notebook allows me to interactively develop on my data analysis and write down my thoughts about the process all in one place!’"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_186")
+```
+
+**Your scientific notebook should include descriptions that describe:**   
+
+#### The purposes of the notebook
+
+What scientific question are you trying to answer? Describe the dataset you are using to try to answer this and why does it help answer this question?
+
+#### The rationales behind your decisions
+
+Describe why a particular code chunk is doing a particular thing -- the more odd the code looks, the greater need for you to describe why you are doing it. 
+
+Describe any particular filters or cutoffs you are using and how did you decide on those? 
+
+For data wrangling steps, why are you wrangling the data in such a way -- is this because a certain package you are using requires it?
+
+#### Your observations of the results
+
+What do you think about the results? The plots and tables you show in the notebook -- how do they inform your original questions?
+
+### READMEs!
+
+READMEs are also a great way to help your collaborators get quickly acquainted with the project. 
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Avi is looking at a set of project files that include a file called a ‘README.md’. Avi says 'I had no idea where to start with this analysis that Ruby sent me to review, but then I saw she included a README and that saved me so much time and effort in getting started!'"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8379bb805_0_11")
+```
+
+READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called "README.md" when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README. 
+
+#### More about writing READMEs: 
+
+- [How to write a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+- [A Beginners Guide to writing a Kicka** README](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
+- [How to write an awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
+
+
+## Get the exercise project files (or continue with the files you used in the previous chapter)
+
+<details> <summary>How to get the _Python project example files_</summary>
+To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-8.zip).
+
+```{bash, include = FALSE}
+mkdir -p chapter-zips
+wget -O chapter-zips/python-heatmap-chapt-8.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-8.zip
+```
+
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+
+```{bash, include = FALSE}
+unzip -o chapter-zips/python-heatmap-chapt-8.zip -d chapter-zips/
+```
+</details>
+
+<details> <summary>How to get the _R project example files_</summary>
+To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-8.zip).
+
+```{bash, include = FALSE}
+mkdir -p chapter-zips
+wget -O chapter-zips/r-heatmap-chapt-8.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-8.zip
+```
+
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+
+```{bash, include = FALSE}
+unzip -o chapter-zips/r-heatmap-chapt-8.zip -d chapter-zips/
+```
+</details>
+
+## Exercise 1: Practice beefing up your notebook descriptions
+
+<details> <summary>How to get the _Python project exercise_</summary>
+
+1. Start up JuptyerLab with running `juptyer lab` from your command line.
+2. Activate your conda environment using `conda activate reproducible-python`. 
+3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
+4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
+
+</details>
+
+<details> <summary>How to get the _R project exercise_</summary>
+
+1. Open up RStudio.
+2. Open up the notebook you created in the previous chapter.  
+3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section. 
+4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
+
+</details>
+
+
+
+## Exercise 2: Write a README for your project!
+
+1. Here's a [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md) that you can download and fill in the questions inside the `{ }` to create a README for your project.
+2. 
+
+
+
+
+
+
