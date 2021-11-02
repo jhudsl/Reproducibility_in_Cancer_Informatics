@@ -168,9 +168,12 @@ Note that change code here will not run automatically until you run it.
     + The **Help** tab will show the help page when you look up a function
     + The **Viewer** pane will reveal compiled R Markdown documents
 
-From @Shapiro_Childhood_Cancer_Data_2021
+From @Shapiro2021
 
-For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+More reading about RStudio's interface: 
+
+- [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+- [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
 
 </details>
 
@@ -184,7 +187,7 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
 
 ```{r, fig.align='center', fig.alt= "In Jupyter, you can create a new notebook by going to New > Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20")
 ```
 
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
