@@ -101,9 +101,9 @@ Now, if you wanted to edit the greeting, you'd only need to edit it in the funct
 
 Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
-1) You might write better code on the second try (or third or _n_th). 
+1) You might write better code on the second try (or third or n'th). 
 2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need. 
-3) With version control you can always return to that old code! 
+3) With version control you can always return to that old code! (We'll dive more into version control later on, but you've started the process by [uploading your code to GitHub in chapter 4](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html)!)
 
 This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it). 
 
