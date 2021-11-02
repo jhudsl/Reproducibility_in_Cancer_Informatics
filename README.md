@@ -12,7 +12,7 @@ If you would like to contribute to this course material, take a look at the [get
 ## About this course
 
 This course introduces the concepts of reproducibility and replicability in the context of cancer informatics.
-It is the first course in a two part course on reproducibility.
+It is the first course in a two part course on reproducibility (the second part is not yet written but coming soon). 
 It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses.
 The course also introduces tools relevant to reproducibility including analysis notebooks, package management, git and GitHub.
 
@@ -30,7 +30,6 @@ This course will teach learners to:
 If you are encountering any problems with this course, please file a GitHub issue or contact us at {Some email or web address with a contact form}.
 
 _All materials in this course are licensed [CC-BY](https://tldrlegal.com/license/creative-commons-attribution-(cc)) and can be repurposed freely with attribution._
-
 
 ## About the chapter example files
 
@@ -58,8 +57,9 @@ https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/raw/main/chapter
 
 ## Obtaining the "final" versions of the example reproducible analyses
 
-Both the "final" versions of the example analyses have their own repositories that are submodules of this one (located in their respective directories with the less reproducible versions of them in the `r-examples` and `python-examples` directories).  
-See more details on how these example project files are to be used [in this chapter](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/how-to-use-the-example-project-files.html). 
+Both the "final" versions of the example analyses have their own repositories that are submodules of this one (located in their respective directories with the less reproducible versions of them in the `r-examples` and `python-examples` directories).
+_Final_ here is in quotes because we may continue to make improvements to this notebook too -- this course tries to emphasize that work on data analyses should be iterative and we never have to say we're done with an analysis if we find other ways it can be improved!
+
 - https://github.com/jhudsl/reproducible-python-example
 - https://github.com/jhudsl/reproducible-r-example
 
@@ -71,7 +71,7 @@ cd r-examples/reproducible-r-example
 docker build -f docker/Dockerfile . -t jhudsl/reproducible-r
 docker run -it -v $PWD:/home/rstudio -e PASSWORD=password -p 8787:8787 jhudsl/reproducible-r
 ```
-Then, in the browser of your choice, navigate to localhost:8787 ; using `rstudio` as your username and `password` as your password (or whatever you choose for your password in the command above). 
+Then, in the browser of your choice, navigate to localhost:8787 ; using `rstudio` as your username and `password` as your password (or whatever you choose for your password in the command above). This docker image has the `renv` included in it. 
 
 ### Running the Python docker image:
 
@@ -81,4 +81,5 @@ cd python-examples/reproducible-python-example
 docker build -f docker/Dockerfile . -t jhudsl/reproducible-python
 docker run --rm -v $(pwd):/home/jovyan/work -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 jhudsl/reproducible-python
 ```
-Then, in the browser of your choice, navigate to the port that the output tells you.
+Then, in the browser of your choice, navigate to the port that the output tells you. This docker image will automatically have your conda environment set up and working. 
+
