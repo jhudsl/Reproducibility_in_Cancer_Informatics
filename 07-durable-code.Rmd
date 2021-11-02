@@ -321,6 +321,20 @@ For example, for this `make-heatmap` notebook we want to:
 
 ***
 
+**Set the seed**
+
+_Rationale:_ 
+The clustering in the analysis involves some randomness. We need to set the seed!
+
+_Before:_  
+Nothing! We didn't set the seed before!
+
+_After:_ 
+You can pick any number; doesn't have to be 1234.
+```
+random.seed(1234)
+```
+
 **Use a relative file path**
 
 _Rationale:_  
@@ -400,9 +414,7 @@ Just because your script ran without an error that stopped the script doesn't me
 A very common error is data that is in the wrong order. In this example we have two data frames that contain information about the same samples. But in the original script, we don't ever check that the samples are in the same order in the metadata and the gene expression matrix! This is a really easy way to get incorrect results!
 
 _Before:_   
-```
-Nothing... we didn't check for this :(
-```
+Nothing, we didn't check for this before.
 
 _After:_  
 ```
@@ -434,6 +446,20 @@ _More reading on the tidyverse:_
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
 
 ***
+
+**Set the seed**
+
+_Rationale:_ 
+The clustering in the analysis involves some randomness. We need to set the seed!
+
+_Before:_  
+Nothing! We didn't set the seed before!
+
+_After:_ 
+You can pick any number; doesn't have to be 1234.
+```
+set.seed(1234)
+```
 
 **Get rid of setwd**
 
