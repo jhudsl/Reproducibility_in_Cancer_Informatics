@@ -1,5 +1,5 @@
 
-# Reproducibility in Cancer Informatics
+# Intro to Reproducibility in Cancer Informatics
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/actions/workflows/render-bookdown.yml/badge.svg)](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/actions/workflows/render-bookdown.yml)
 
@@ -12,8 +12,9 @@ If you would like to contribute to this course material, take a look at the [get
 ## About this course
 
 This course introduces the concepts of reproducibility and replicability in the context of cancer informatics.
+It is the first course in a two part course on reproducibility.
 It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses.
-The course also introduces tools relevant to reproducibility including analysis notebooks, Docker images, git and GitHub.
+The course also introduces tools relevant to reproducibility including analysis notebooks, package management, git and GitHub.
 
 ## Learning Objectives
 
@@ -23,8 +24,6 @@ This course will teach learners to:
 - Write a basic analysis that could be passed to another person/computer and be re-ran to obtain the same output
 - Write analysis notebook that adheres to best practices for reproducibility and readability
 - Create a reproducible project on GitHub that could be re-run by someone else
-- Pull and use an existing Docker image for running an analysis
-- Obtain confidence to learn and apply additional reproducibility tools to an analysis
 
 ## Encountering problems?
 
