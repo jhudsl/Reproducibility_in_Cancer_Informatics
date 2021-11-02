@@ -246,6 +246,7 @@ There's so many opinions and strategies on best practices for code. And although
 #### Python specific: 
 
 - [15 common coding mistakes data scientist make in Python (and how to fix them)](https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af)
+- [Data Science in Production — Advanced Python Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82)
 - [6 Mistakes Every Python Beginner Should Avoid While Coding](https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942)
 
 #### R specific: 
