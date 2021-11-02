@@ -120,16 +120,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-10-28 16:26:33--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+## --2021-11-02 21:47:11--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
-## Length: 6246 (6.1K) [text/plain]
-## Saving to: ‘environment.yml.3’
+## Length: 398 [text/plain]
+## Saving to: ‘environment.yml.1’
 ## 
-##      0K ......                                                100% 27.2M=0s
+##      0K                                                       100% 19.7M=0s
 ## 
-## 2021-10-28 16:26:33 (27.2 MB/s) - ‘environment.yml.3’ saved [6246/6246]
+## 2021-11-02 21:47:11 (19.7 MB/s) - ‘environment.yml.1’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).

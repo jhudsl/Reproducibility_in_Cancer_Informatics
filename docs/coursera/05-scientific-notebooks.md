@@ -103,14 +103,14 @@ conda install -c conda-forge jupyterlab
 
 > The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
 
-> File: actions related to files and directories
-Edit: actions related to editing documents and other activities
-View: actions that alter the appearance of JupyterLab
-Run: actions for running code in different activities such as notebooks and code consoles
-Kernel: actions for managing kernels, which are separate processes for running code
-Tabs: a list of the open documents and activities in the dock panel
-Settings: common settings and an advanced settings editor
-Help: a list of JupyterLab and kernel help links
+> **File:** actions related to files and directories
+> **Edit:** actions related to editing documents and other activities
+> **View:** actions that alter the appearance of JupyterLab
+> **Run:** actions for running code in different activities such as notebooks and code consoles
+> **Kernel:** actions for managing kernels, which are separate processes for running code
+> **Tabs:** a list of the open documents and activities in the dock panel
+> **Settings:** common settings and an advanced settings editor
+> **Help:** a list of JupyterLab and kernel help links
 
 </details>
 
@@ -119,7 +119,7 @@ Help: a list of JupyterLab and kernel help links
 **Install RStudio**
 
 1. [Install RStudio](https://www.rstudio.com/products/rstudio/download/) (and [install R first](https://repo.miserver.it.umich.edu/cran/) if you have not already).
-2. After you've downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.  
+2. After you've downloaded the RStudio installation file, double click on it and follow along with the installation prompts.  
 3. Open up the RStudio application by double clicking on it.
 
 **Getting familiar with RStudio's interface**
@@ -144,9 +144,12 @@ Note that change code here will not run automatically until you run it.
     + The **Help** tab will show the help page when you look up a function
     + The **Viewer** pane will reveal compiled R Markdown documents
 
-From @Shapiro_Childhood_Cancer_Data_2021
+From @Shapiro2021
 
-For even more navigation info see the [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+More reading about RStudio's interface: 
+
+- [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+- [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
 
 </details>
 
@@ -161,10 +164,19 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 
 
 ```r
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20")
 ```
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_225.png" title="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." alt="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" />
+<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_20.png" title="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." alt="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" />
+
+3. Create a new code chunk in your notebook. 
+
+
+```r
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
+```
+
+<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" title="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " style="display: block; margin: auto;" />
 
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
 5. Save your `Untitled.ipynb` file as something that tells us what it will end up doing like `make-heatmap.ipynb`.

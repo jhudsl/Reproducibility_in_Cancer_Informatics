@@ -211,8 +211,31 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="writing-durable-code.html"><a href="writing-durable-code.html"><i class="fa fa-check"></i><b>7</b> Writing durable code</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="writing-durable-code.html"><a href="writing-durable-code.html#learning-objectives-5"><i class="fa fa-check"></i><b>7.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="7.2" data-path="writing-durable-code.html"><a href="writing-durable-code.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4"><i class="fa fa-check"></i><b>7.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
-<li class="chapter" data-level="7.3" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-make-code-more-durable"><i class="fa fa-check"></i><b>7.3</b> Exercise: Make code more durable!</a></li>
+<li class="chapter" data-level="7.2" data-path="writing-durable-code.html"><a href="writing-durable-code.html#general-principles"><i class="fa fa-check"></i><b>7.2</b> General principles</a></li>
+<li class="chapter" data-level="7.3" data-path="writing-durable-code.html"><a href="writing-durable-code.html#more-reading-on-best-coding-practices"><i class="fa fa-check"></i><b>7.3</b> More reading on best coding practices</a></li>
+<li class="chapter" data-level="7.4" data-path="writing-durable-code.html"><a href="writing-durable-code.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4"><i class="fa fa-check"></i><b>7.4</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="7.5" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-1-make-code-more-durable"><i class="fa fa-check"></i><b>7.5</b> Exercise 1: Make code more durable!</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="writing-durable-code.html"><a href="writing-durable-code.html#organize-the-big-picture-of-the-code"><i class="fa fa-check"></i><b>7.5.1</b> Organize the big picture of the code</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-2-style-code-automatically"><i class="fa fa-check"></i><b>7.6</b> Exercise 2: Style code automatically!</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="documenting-analyses.html"><a href="documenting-analyses.html"><i class="fa fa-check"></i><b>8</b> Documenting analyses</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="documenting-analyses.html"><a href="documenting-analyses.html#learning-objectives-6"><i class="fa fa-check"></i><b>8.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="8.2" data-path="documenting-analyses.html"><a href="documenting-analyses.html#why-documentation"><i class="fa fa-check"></i><b>8.2</b> Why documentation?</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="documenting-analyses.html"><a href="documenting-analyses.html#notebook-descriptions"><i class="fa fa-check"></i><b>8.2.1</b> Notebook descriptions</a></li>
+<li class="chapter" data-level="8.2.2" data-path="documenting-analyses.html"><a href="documenting-analyses.html#readmes"><i class="fa fa-check"></i><b>8.2.2</b> READMEs!</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="documenting-analyses.html"><a href="documenting-analyses.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-5"><i class="fa fa-check"></i><b>8.3</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="8.4" data-path="documenting-analyses.html"><a href="documenting-analyses.html#exercise-1-practice-beefing-up-your-notebook-descriptions"><i class="fa fa-check"></i><b>8.4</b> Exercise 1: Practice beefing up your notebook descriptions</a></li>
+<li class="chapter" data-level="8.5" data-path="documenting-analyses.html"><a href="documenting-analyses.html#exercise-2-write-a-readme-for-your-project"><i class="fa fa-check"></i><b>8.5</b> Exercise 2: Write a README for your project!</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="code-review.html"><a href="code-review.html"><i class="fa fa-check"></i><b>9</b> Code review</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="code-review.html"><a href="code-review.html#learning-objectives-7"><i class="fa fa-check"></i><b>9.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="9.2" data-path="code-review.html"><a href="code-review.html#exercise-send-your-code-to-someone-else-to-run"><i class="fa fa-check"></i><b>9.2</b> Exercise: Send your code to someone else to run!</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -256,37 +279,169 @@ div.csl-indent {
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">
-BeaulieuJones2017, Brett K., and Casey S. Greene. 2017. <span>“Reproducibility of Computational Workflows Is Automated Using Continuous Analysis.”</span> <em>Nature Biotechnology</em> 35 (4): 342–46. <a href="https://doi.org/10.1038/nbt.3780">https://doi.org/10.1038/nbt.3780</a>.
+Aaberge, Martin Andersson. 2021. <span>“Stop <span>Using</span> <span>Magic</span> <span>Numbers</span> and <span>Variables</span> in <span>Your</span> <span>Code</span>.”</span> <em>Medium</em>. <a href="https://betterprogramming.pub/stop-using-magic-numbers-and-variables-in-your-code-4e86f008b84c">https://betterprogramming.pub/stop-using-magic-numbers-and-variables-in-your-code-4e86f008b84c</a>.
 </div>
 <div class="csl-entry">
-Broman, Karl. n.d. <span>“Tools for <span>Reproducible</span> <span>Research</span>.”</span> Accessed October 11, 2021. <a href="https://kbroman.org/Tools4RR/">https://kbroman.org/Tools4RR/</a>.
+BeaulieuJones2017, Brett K, and Casey S Greene. 2017. <span>“Reproducibility of Computational Workflows Is Automated Using Continuous Analysis.”</span> <em>Nature Biotechnology</em> 35 (4): 342–46. <a href="https://doi.org/10.1038/nbt.3780">https://doi.org/10.1038/nbt.3780</a>.
+</div>
+<div class="csl-entry">
+Bernardo, Ivo. 2021. <span>“Best <span>Practices</span> for <span>R</span> <span>Programming</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a">https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a</a>.
+</div>
+<div class="csl-entry">
+<span>“Best <span>Practices</span> for <span>Writing</span> <span>R</span> <span>Code</span> – <span>Programming</span> with <span>R</span>.”</span> 2021. <a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/</a>.
+</div>
+<div class="csl-entry">
+Broman, Karl. 2016. <span>“Tools for <span>Reproducible</span> <span>Research</span>.”</span> <a href="https://kbroman.org/Tools4RR/">https://kbroman.org/Tools4RR/</a>.
 </div>
 <div class="csl-entry">
 Bryan, Jenny. 2017. <span>“Project-Oriented Workflow.”</span> <em>Tidyverse Blog</em>. <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.
 </div>
 <div class="csl-entry">
-Bryan, Jenny, and Jim Hester. n.d. <span>“Happy Git and GitHub for the useR.”</span> <a href="https://happygitwithr.com/">https://happygitwithr.com/</a>.
+Bryan, Jenny, and Jim Hester. 2021. <span>“Happy Git and GitHub for the useR.”</span> <a href="https://happygitwithr.com/">https://happygitwithr.com/</a>.
+</div>
+<div class="csl-entry">
+Cannell, Brad. 2021. <em>9 <span>Coding</span> Best Practices <span></span> <span>R</span> for <span>Epidemiology</span></em>. <a href="https://brad-cannell.github.io/r4epi/">https://brad-cannell.github.io/r4epi/</a>.
+</div>
+<div class="csl-entry">
+Carrie Wright, Stephanie C. Hicks and Roger D. Peng, Shannon E. Ellis. n.d. <em>Chapter 1 <span>Introduction</span> to the <span>Tidyverse</span> <span></span> <span>Tidyverse</span> <span>Skills</span> for <span>Data</span> <span>Science</span></em>. Accessed November 2, 2021. <a href="http://jhudatascience.org/tidyversecourse/intro.html">http://jhudatascience.org/tidyversecourse/intro.html</a>.
+</div>
+<div class="csl-entry">
+Chang, Winston. 2021. <span>“Generating Random Numbers.”</span> <a href="http://www.cookbook-r.com/Numbers/Generating_random_numbers/">http://www.cookbook-r.com/Numbers/Generating_random_numbers/</a>.
+</div>
+<div class="csl-entry">
+Cronin, Mike. 2019. <span>“What <span>Makes</span> a <span>Good</span> <span>Code</span> <span>Comment</span>?”</span> <em>Medium</em>. <a href="https://itnext.io/what-makes-a-good-code-comment-5267debd2c24">https://itnext.io/what-makes-a-good-code-comment-5267debd2c24</a>.
+</div>
+<div class="csl-entry">
+Csendes, Gerold. 2020. <span>“15 Common Coding Mistakes Data Scientist Make in <span>Python</span> (and How to Fix Them).”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af">https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af</a>.
+</div>
+<div class="csl-entry">
+Diederich, Jack. 2012. <span>“Stop <span>Writing</span> <span>Classes</span>.”</span> <em>PyVideo.org</em>. <a href="https://pyvideo.org/pycon-us-2012/stop-writing-classes.html">https://pyvideo.org/pycon-us-2012/stop-writing-classes.html</a>.
+</div>
+<div class="csl-entry">
+Dubel, Marcin. 2021. <span>“5 <span>Tips</span> for <span>Writing</span> <span>Clean</span> <span>R</span> <span>Code</span> - <span>Leave</span> <span>Your</span> <span>Code</span> <span>Reviewer</span> <span>Commentless</span>.”</span> <em>Appsilon <span></span> End­ to­ End Data Science Solutions</em>. <a href="https://appsilon.com/write-clean-r-code/">https://appsilon.com/write-clean-r-code/</a>.
 </div>
 <div class="csl-entry">
 Fangohr, Hans. 2021. <span>“Jupyter for <span>Computational</span> <span>Science</span> and <span>Data</span> <span>Science</span>.”</span> <em>Computational Science and Data Science</em>. <a href="https://fangohr.github.io/blog/jupyter-for-computational-science-and-data-science.html">https://fangohr.github.io/blog/jupyter-for-computational-science-and-data-science.html</a>.
 </div>
 <div class="csl-entry">
-<span>“How Do You Manage Your Files &amp; Directories for Your Projects?”</span> n.d. Accessed October 12, 2021. <a href="https://www.biostars.org/p/821/">www.biostars.org/p/821/</a>.
+Frazee, Alyssa. 2014. <span>“Some Internet Wisdom on <span>R</span> Documentation.”</span> <a href="http://alyssafrazee.com/2014/04/20/rdocs.html">http://alyssafrazee.com/2014/04/20/rdocs.html</a>.
 </div>
 <div class="csl-entry">
-<span>“Introduction to the Command Line for Genomics.”</span> n.d. Accessed October 12, 2021. <a href="https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html">https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html</a>.
+Geeks, Geeks for. 2018. <span>“F-Strings in <span>Python</span>.”</span> <em>GeeksforGeeks</em>. <a href="https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/">https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/</a>.
 </div>
 <div class="csl-entry">
-<span>“Project <span>Organization</span> and <span>Management</span> for <span>Genomics</span>.”</span> n.d. Accessed October 12, 2021. <a href="https://datacarpentry.org/organization-genomics/">https://datacarpentry.org/organization-genomics/</a>.
+Good, and Nicholas, Rachel Severson. 2021. <em>Chapter 5 <span>Reproducible</span> Research #1 <span></span> <span>R</span> <span>Programming</span> for <span>Research</span></em>. <a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html">https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html</a>.
 </div>
 <div class="csl-entry">
-Severin, Andrew. n.d. <span>“Project <span>Management</span>.”</span> <em>Bioinformatics Workbook</em>. Accessed October 14, 2021. <a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html">https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html</a>.
+<span>“Google’s <span>R</span> <span>Style</span> <span>Guide</span>.”</span> 2021. <em>Styleguide</em>. <a href="https://google.github.io/styleguide/Rguide.html">https://google.github.io/styleguide/Rguide.html</a>.
+</div>
+<div class="csl-entry">
+Hauer, Philipp. 2018. <span>“Code <span>Review</span> <span>Guidelines</span> for <span>Humans</span>.”</span> <em>Philipp Hauer’s Blog</em>. <a href="https://phauer.com/2018/code-review-guidelines/">https://phauer.com/2018/code-review-guidelines/</a>.
+</div>
+<div class="csl-entry">
+Heil, Benjamin J. 2020. <span>“Reproducible Programming for Biologists Who Code - Part 2: Should Dos.”</span> <em>AutoBenCoding</em>. <a href="https://autobencoder.com/2020-06-30-shoulddo/">https://autobencoder.com/2020-06-30-shoulddo/</a>.
+</div>
+<div class="csl-entry">
+Hildebr, Mischa. 2020. <span>“Your <span>Code</span> <span>Sucks</span>! – <span>Code</span> <span>Review</span> <span>Best</span> <span>Practices</span>.”</span> <em>QuickBird Studios Blog</em>. <a href="https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/">https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/</a>.
+</div>
+<div class="csl-entry">
+Hobert, Kevin. 2018. <span>“Writing <span>Variable</span> — <span>Informative</span>, <span>Descriptive</span> &amp; <span>Elegant</span>.”</span> <em>Medium</em>. <a href="https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3">https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3</a>.
+</div>
+<div class="csl-entry">
+<span>“How Do You Manage Your Files &amp; Directories for Your Projects?”</span> 2010. <a href="https://www.biostars.org/p/821/">www.biostars.org/p/821/</a>.
+</div>
+<div class="csl-entry">
+<span>“How <span>To</span> <span>Keep</span> <span>Your</span> <span>Code</span> <span>Dry</span>.”</span> 2021. <a href="http://www.drycode.io">http://www.drycode.io</a>.
+</div>
+<div class="csl-entry">
+<span>“Introduction to the Command Line for Genomics.”</span> 2019. <a href="https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html">https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html</a>.
+</div>
+<div class="csl-entry">
+Keeton, BJ. 2019. <span>“How to <span>Comment</span> <span>Your</span> <span>Code</span> <span>Like</span> a <span>Pro</span>: <span>Best</span> <span>Practices</span> and <span>Good</span> <span>Habits</span>.”</span> <em>Elegant Themes</em>. <a href="https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits">https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits</a>.
+</div>
+<div class="csl-entry">
+Klinefelter, Sarah. 2016. <span>“<span>DRY</span> <span>Programming</span> <span>Practices</span> – <span>Metova</span>.”</span> <a href="https://metova.com/dry-programming-practices/">https://metova.com/dry-programming-practices/</a>.
+</div>
+<div class="csl-entry">
+Koehrsen, Will. 2019. <span>“Data <span>Scientists</span>: <span>Your</span> <span>Variable</span> <span>Names</span> <span>Are</span> <span>Awful</span>. <span>Here</span>’s <span>How</span> to <span>Fix</span> <span>Them</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be">https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be</a>.
+</div>
+<div class="csl-entry">
+Kostyuk, Victor. 2020. <span>“Data <span>Science</span> <span>Python</span> <span>Best</span> <span>Practices</span>.”</span> <em>BCG GAMMA</em>. <a href="https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82">https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82</a>.
+</div>
+<div class="csl-entry">
+Meza, Frank. 2018. <span>“The <span>Value</span> of <span>Code</span> <span>Documentation</span>.”</span> <em>Olio Apps</em>. <a href="https://www.olioapps.com/blog/the-value-of-code-documentation/">https://www.olioapps.com/blog/the-value-of-code-documentation/</a>.
+</div>
+<div class="csl-entry">
+Mustafeez, Anusheh Zohair. 2021. <span>“Absolute Vs. Relative Path.”</span> <em>Educative</em>. <a href="https://www.educative.io/edpresso/absolute-vs-relative-path">https://www.educative.io/edpresso/absolute-vs-relative-path</a>.
+</div>
+<div class="csl-entry">
+Orosz, Gergely. 2019. <span>“Readable Code.”</span> <a href="https://blog.pragmaticengineer.com/readable-code/">https://blog.pragmaticengineer.com/readable-code/</a>.
+</div>
+<div class="csl-entry">
+Parker, Hilary. 2017. <span>“Opinionated Analysis Development.”</span> <a href="https://doi.org/10.7287/peerj.preprints.3210v1">https://doi.org/10.7287/peerj.preprints.3210v1</a>.
+</div>
+<div class="csl-entry">
+<span>“<span>PEP</span> 8 – <span>Style</span> <span>Guide</span> for <span>Python</span> <span>Code</span>.”</span> 2021. <em>Python.org</em>. <a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a>.
+</div>
+<div class="csl-entry">
+<span>“Project <span>Organization</span> and <span>Management</span> for <span>Genomics</span>.”</span> 2021. <a href="https://datacarpentry.org/organization-genomics/">https://datacarpentry.org/organization-genomics/</a>.
+</div>
+<div class="csl-entry">
+<span>“Python <span>Examples</span> of Pathlib.<span>Path</span>.joinpath.”</span> 2021. <a href="https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath">https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath</a>.
+</div>
+<div class="csl-entry">
+Python, Real. 2021. <span>“Python 3’s f-<span>Strings</span>: <span>An</span> <span>Improved</span> <span>String</span> <span>Formatting</span> <span>Syntax</span> (<span>Guide</span>) – <span>Real</span> <span>Python</span>.”</span> <a href="https://realpython.com/python-f-strings/">https://realpython.com/python-f-strings/</a>.
+</div>
+<div class="csl-entry">
+Radigan, Dan. 2021. <span>“Why Code Reviews Matter (and Actually Save Time!).”</span> <em>Atlassian</em>. <a href="https://www.atlassian.com/agile/software-development/code-reviews">https://www.atlassian.com/agile/software-development/code-reviews</a>.
+</div>
+<div class="csl-entry">
+<span>“Read a Delimited File (Including <span>CSV</span> and <span>TSV</span>) into a Tibble — Read_delim.”</span> n.d. Accessed November 2, 2021. <a href="https://readr.tidyverse.org/reference/read_delim.html">https://readr.tidyverse.org/reference/read_delim.html</a>.
+</div>
+<div class="csl-entry">
+Savonen, Candace. 2021a. <em>Chapter 8 <span>Creating</span> Clarifying Code Comments <span></span> <span>Documentation</span> and <span>Usability</span></em>. <a href="https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments">https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments</a>.
+</div>
+<div class="csl-entry">
+———. 2021b. <span>“The <span>Childhood</span> <span>Cancer</span> <span>Data</span> <span>Lab</span>’s Not-so-Secret Sauce for Efficient Workflows — Aka <span>Philadelphia</span>’s Third Most Famous Process.”</span> <em>Childhood Cancer Data Lab</em>. <a href="https://www.ccdatalab.org/blog/2021/10/7/not-so-secret-sauce-for-efficient-workflows">https://www.ccdatalab.org/blog/2021/10/7/not-so-secret-sauce-for-efficient-workflows</a>.
+</div>
+<div class="csl-entry">
+Saxena, Pranjal. 2021. <span>“6 <span>Mistakes</span> <span>Every</span> <span>Python</span> <span>Beginner</span> <span>Should</span> <span>Avoid</span> <span>While</span> <span>Coding</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942">https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942</a>.
+</div>
+<div class="csl-entry">
+Severin, Andrew. 2021. <span>“Project <span>Management</span>.”</span> <em>Bioinformatics Workbook</em>. <a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html">https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html</a>.
 </div>
 <div class="csl-entry">
 Shapiro, Joshua A., Candace L. Savonen, Allegra G. Hawkins, Chante J. Bethell, Deepashree Venkatesh Prasad, Casey S. Greene, and Jaclyn N. Taroni. 2021. <em><span>Childhood Cancer Data Lab Training Modules</span></em> (version 2021-june).
 </div>
 <div class="csl-entry">
+Smith, Steve. 2013. <span>“Don’t <span>Repeat</span> <span>Yourself</span> - <span>Programmer</span> 97-Things.”</span> <a href="https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don&#39;t_Repeat_Yourself">https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself</a>.
+</div>
+<div class="csl-entry">
+Soage, Jose Carlos. 2020. <span>“<span>SET</span> <span>SEED</span> in <span>R</span> with Set.seed() Function ▷ [<span>WITH</span> <span>EXAMPLES</span>].”</span> <em>R CODER</em>. <a href="https://r-coder.com/set-seed-r/">https://r-coder.com/set-seed-r/</a>.
+</div>
+<div class="csl-entry">
+Spertus, Ellen. 2021. <span>“Best Practices for Writing Code Comments.”</span> <em>Stack Overflow Blog</em>. <a href="https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/">https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/</a>.
+</div>
+<div class="csl-entry">
+Spielman, Stephanie. n.d. <span>“Introduction to r - Cb2r Data Science Workshop, Summer 2020.”</span> <a href="https://github.com/sjspielman/cb2r-ds-summer2020/blob/71cb11277e7383292bf727841ab5fa4ed43cfcbe/resources/introduction_to_R.Rmd#L92">https://github.com/sjspielman/cb2r-ds-summer2020/blob/71cb11277e7383292bf727841ab5fa4ed43cfcbe/resources/introduction_to_R.Rmd#L92</a>.
+</div>
+<div class="csl-entry">
+<span>“Styleguide.”</span> 2021. <em>Styleguide</em>. <a href="https://google.github.io/styleguide/pyguide.html">https://google.github.io/styleguide/pyguide.html</a>.
+</div>
+<div class="csl-entry">
 Tayo, Benjamin Obi. 2019. <span>“How to <span>Organize</span> <span>Your</span> <span>Data</span> <span>Science</span> <span>Project</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/how-to-organize-your-data-science-project-dd6599cf000a">https://towardsdatascience.com/how-to-organize-your-data-science-project-dd6599cf000a</a>.
+</div>
+<div class="csl-entry">
+Team, Analytics Vidhya. 2019. <span>“What Is <span>Tidyverse</span> <span></span> <span>Tidyverse</span> <span>Package</span> in <span>R</span>.”</span> <em>Analytics Vidhya</em>. <a href="https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/">https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/</a>.
+</div>
+<div class="csl-entry">
+Team, Smartbear. 2021. <span>“Best <span>Practices</span> for <span>Code</span> <span>Review</span>.”</span> <em>Smartbear.com</em>. <a href="https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/">https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/</a>.
+</div>
+<div class="csl-entry">
+Wickham, Hadley. 2019. <span>“Style Guide · <span>Advanced</span> <span>R</span>.”</span> <a href="http://adv-r.had.co.nz/Style.html">http://adv-r.had.co.nz/Style.html</a>.
+</div>
+<div class="csl-entry">
+Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbook</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown-cookbook">https://bookdown.org/yihui/rmarkdown-cookbook</a>.
 </div>
 </div>
 </div>

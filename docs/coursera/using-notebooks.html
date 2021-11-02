@@ -211,8 +211,31 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="writing-durable-code.html"><a href="writing-durable-code.html"><i class="fa fa-check"></i><b>7</b> Writing durable code</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="writing-durable-code.html"><a href="writing-durable-code.html#learning-objectives-5"><i class="fa fa-check"></i><b>7.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="7.2" data-path="writing-durable-code.html"><a href="writing-durable-code.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4"><i class="fa fa-check"></i><b>7.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
-<li class="chapter" data-level="7.3" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-make-code-more-durable"><i class="fa fa-check"></i><b>7.3</b> Exercise: Make code more durable!</a></li>
+<li class="chapter" data-level="7.2" data-path="writing-durable-code.html"><a href="writing-durable-code.html#general-principles"><i class="fa fa-check"></i><b>7.2</b> General principles</a></li>
+<li class="chapter" data-level="7.3" data-path="writing-durable-code.html"><a href="writing-durable-code.html#more-reading-on-best-coding-practices"><i class="fa fa-check"></i><b>7.3</b> More reading on best coding practices</a></li>
+<li class="chapter" data-level="7.4" data-path="writing-durable-code.html"><a href="writing-durable-code.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4"><i class="fa fa-check"></i><b>7.4</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="7.5" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-1-make-code-more-durable"><i class="fa fa-check"></i><b>7.5</b> Exercise 1: Make code more durable!</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="writing-durable-code.html"><a href="writing-durable-code.html#organize-the-big-picture-of-the-code"><i class="fa fa-check"></i><b>7.5.1</b> Organize the big picture of the code</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-2-style-code-automatically"><i class="fa fa-check"></i><b>7.6</b> Exercise 2: Style code automatically!</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="documenting-analyses.html"><a href="documenting-analyses.html"><i class="fa fa-check"></i><b>8</b> Documenting analyses</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="documenting-analyses.html"><a href="documenting-analyses.html#learning-objectives-6"><i class="fa fa-check"></i><b>8.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="8.2" data-path="documenting-analyses.html"><a href="documenting-analyses.html#why-documentation"><i class="fa fa-check"></i><b>8.2</b> Why documentation?</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="documenting-analyses.html"><a href="documenting-analyses.html#notebook-descriptions"><i class="fa fa-check"></i><b>8.2.1</b> Notebook descriptions</a></li>
+<li class="chapter" data-level="8.2.2" data-path="documenting-analyses.html"><a href="documenting-analyses.html#readmes"><i class="fa fa-check"></i><b>8.2.2</b> READMEs!</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="documenting-analyses.html"><a href="documenting-analyses.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-5"><i class="fa fa-check"></i><b>8.3</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="8.4" data-path="documenting-analyses.html"><a href="documenting-analyses.html#exercise-1-practice-beefing-up-your-notebook-descriptions"><i class="fa fa-check"></i><b>8.4</b> Exercise 1: Practice beefing up your notebook descriptions</a></li>
+<li class="chapter" data-level="8.5" data-path="documenting-analyses.html"><a href="documenting-analyses.html#exercise-2-write-a-readme-for-your-project"><i class="fa fa-check"></i><b>8.5</b> Exercise 2: Write a README for your project!</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="code-review.html"><a href="code-review.html"><i class="fa fa-check"></i><b>9</b> Code review</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="code-review.html"><a href="code-review.html#learning-objectives-7"><i class="fa fa-check"></i><b>9.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="9.2" data-path="code-review.html"><a href="code-review.html#exercise-send-your-code-to-someone-else-to-run"><i class="fa fa-check"></i><b>9.2</b> Exercise: Send your code to someone else to run!</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -338,14 +361,14 @@ conda --version</code></pre>
 <p>The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:</p>
 </blockquote>
 <blockquote>
-<p>File: actions related to files and directories
-Edit: actions related to editing documents and other activities
-View: actions that alter the appearance of JupyterLab
-Run: actions for running code in different activities such as notebooks and code consoles
-Kernel: actions for managing kernels, which are separate processes for running code
-Tabs: a list of the open documents and activities in the dock panel
-Settings: common settings and an advanced settings editor
-Help: a list of JupyterLab and kernel help links</p>
+<p><strong>File:</strong> actions related to files and directories
+<strong>Edit:</strong> actions related to editing documents and other activities
+<strong>View:</strong> actions that alter the appearance of JupyterLab
+<strong>Run:</strong> actions for running code in different activities such as notebooks and code consoles
+<strong>Kernel:</strong> actions for managing kernels, which are separate processes for running code
+<strong>Tabs:</strong> a list of the open documents and activities in the dock panel
+<strong>Settings:</strong> common settings and an advanced settings editor
+<strong>Help:</strong> a list of JupyterLab and kernel help links</p>
 </blockquote>
 </details>
 <details>
@@ -355,7 +378,7 @@ Set up an R IDE
 <p><strong>Install RStudio</strong></p>
 <ol style="list-style-type: decimal">
 <li><a href="https://www.rstudio.com/products/rstudio/download/">Install RStudio</a> (and <a href="https://repo.miserver.it.umich.edu/cran/">install R first</a> if you have not already).</li>
-<li>After you’ve downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.<br />
+<li>After you’ve downloaded the RStudio installation file, double click on it and follow along with the installation prompts.<br />
 </li>
 <li>Open up the RStudio application by double clicking on it.</li>
 </ol>
@@ -396,8 +419,12 @@ Note that change code here will not run automatically until you run it.</li>
 <li>The <strong>Viewer</strong> pane will reveal compiled R Markdown documents</li>
 </ul>
 </blockquote>
-<p>From <span class="citation">Shapiro et al. (<a href="#ref-Shapiro_Childhood_Cancer_Data_2021" role="doc-biblioref">2021</a>)</span></p>
-<p>For even more navigation info see the <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf">RStudio IDE Cheatsheet (pdf)</a>.</p>
+<p>From <span class="citation">Shapiro et al. (<a href="#ref-Shapiro2021" role="doc-biblioref">2021</a>)</span></p>
+<p>More reading about RStudio’s interface:</p>
+<ul>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf">RStudio IDE Cheatsheet (pdf)</a>.</li>
+<li><a href="https://www.r4epi.com/navigating-the-rstudio-interface.html">Navigating the RStudio Interface - R for Epidemiology</a></li>
+</ul>
 </details>
 </div>
 <div id="create-a-notebook" class="section level3" number="5.3.2">
@@ -411,8 +438,13 @@ Set up a Python notebook
 <li>Start a new notebook by going to <code>New</code> &gt; <code>Notebook</code>.</li>
 <li>Then open up this chapter’s example code folder and open the <code>make-heatmap.py</code> file.</li>
 </ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="using-notebooks.html#cb4-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225&quot;</span>)</span></code></pre></div>
-<p><img src="resources/images/05-scientific-notebooks_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_225.png" title="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." alt="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="using-notebooks.html#cb4-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20&quot;</span>)</span></code></pre></div>
+<p><img src="resources/images/05-scientific-notebooks_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_20.png" title="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." alt="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Create a new code chunk in your notebook.</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="using-notebooks.html#cb5-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30&quot;</span>)</span></code></pre></div>
+<p><img src="resources/images/05-scientific-notebooks_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" title="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
 <li>Now copy and paste all of the code from <code>make-heatmap.py</code> into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.</li>
 <li>Save your <code>Untitled.ipynb</code> file as something that tells us what it will end up doing like <code>make-heatmap.ipynb</code>.</li>
@@ -426,7 +458,7 @@ Set up an R notebook
 <li>Start a new notebook by going to <code>File</code> &gt; <code>New Files</code> &gt; <code>R Notebook</code>.</li>
 <li>Then open up this chapter’s example code folder and open the <code>make_heatmap.R</code> file.</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="using-notebooks.html#cb5-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_13&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="using-notebooks.html#cb6-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_13&quot;</span>)</span></code></pre></div>
 <p><img src="resources/images/05-scientific-notebooks_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_13.png" title="In RStudio, you can create a new notebook by going to File &gt; New Files &gt; R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." alt="In RStudio, you can create a new notebook by going to File &gt; New Files &gt; R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
 <li>Practice creating a new chunk in your R notebook by clicking the <code>Insert Chunk</code> button on the toolbar or by pressing <code>Cmd+Option+I</code>. (You can also manually type out the back ticks and <code>{}</code>)</li>
@@ -447,7 +479,7 @@ Set up an R notebook
 <div id="ref-Fangohr2021" class="csl-entry">
 Fangohr, Hans. 2021. <span>“Jupyter for <span>Computational</span> <span>Science</span> and <span>Data</span> <span>Science</span>.”</span> <em>Computational Science and Data Science</em>. <a href="https://fangohr.github.io/blog/jupyter-for-computational-science-and-data-science.html">https://fangohr.github.io/blog/jupyter-for-computational-science-and-data-science.html</a>.
 </div>
-<div id="ref-Shapiro_Childhood_Cancer_Data_2021" class="csl-entry">
+<div id="ref-Shapiro2021" class="csl-entry">
 Shapiro, Joshua A., Candace L. Savonen, Allegra G. Hawkins, Chante J. Bethell, Deepashree Venkatesh Prasad, Casey S. Greene, and Jaclyn N. Taroni. 2021. <em><span>Childhood Cancer Data Lab Training Modules</span></em> (version 2021-june).
 </div>
 </div>
