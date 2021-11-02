@@ -66,3 +66,7 @@ sPAcinng
 styler
 tidyverse
 Wickham's
+codebase
+df
+DRY'er
+ized

@@ -542,8 +542,3 @@ styler::style_file("make-heatmap.Rmd")
 You should get a message that your notebook was styled!
 
 </details>
-
-
-
-
-
