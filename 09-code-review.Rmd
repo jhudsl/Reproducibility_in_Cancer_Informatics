@@ -1,0 +1,17 @@
+---
+title: "Code review"
+---
+
+```{r, include = FALSE}
+leanbuild::set_knitr_image_path()
+```
+
+# Code review
+
+## Learning Objectives
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_9")
+```
+
+## General principles

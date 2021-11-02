@@ -598,3 +598,6 @@ styler::style_file("make-heatmap.Rmd")
 You should get a message that your notebook was styled!
 
 </details>
+
+Before you are done with this exercise, there's one more thing we need to do: upload the latest version to GitHub. 
+Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
