@@ -97,25 +97,28 @@ unzip -o chapter-zips/r-heatmap-chapt-8.zip -d chapter-zips/
 
 ## Exercise 1: Practice beefing up your notebook descriptions
 
-<details> <summary>How to get the _Python project exercise_</summary>
+<details> <summary> _Python project exercise_</summary>
 
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`. 
-3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
-4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
+3. Open up your notebook you've been working on in the previous chapters: `make_heatmap.ipynb`
+4. Create a new chunk in your notebook and choose the "Markdown" option in the dropdown menu. 
+
+```{r, fig.align='center', fig.alt= "The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. "}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
+```
 
 </details>
 
-<details> <summary>How to get the _R project exercise_</summary>
+<details> <summary> _R project exercise_</summary>
 
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
-3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section. 
-4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
+3. Open up your notebook you've been working on in the previous chapters: `make_heatmap.Rmd`
+4. In between code chunks, add more descriptions using Markdown language. 
+5. You can test how this renders by saving your `.Rmd` and then opening up the resulting `nb.html` file and choosing `View in Browser`. 
 
 </details>
-
-
 
 ## Exercise 2: Write a README for your project!
 

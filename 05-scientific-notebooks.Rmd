@@ -190,6 +190,12 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20")
 ```
 
+3. Create a new code chunk in your notebook. 
+
+```{r, fig.align='center', fig.alt= "The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. "}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
+```
+
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
 5. Save your `Untitled.ipynb` file as something that tells us what it will end up doing like `make-heatmap.ipynb`.
 
