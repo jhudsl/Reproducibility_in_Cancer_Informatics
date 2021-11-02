@@ -27,31 +27,32 @@ Just like in writing a manuscript you wouldn't consider your first draft a final
 
 Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
 
-What does readable code look like? We'll 
+What does readable code look like? @Orosz2019 has some thoughts on writing readable code:
 
 > **Readable code starts with code that you find easy to read.** When you finish coding, take a break to clear your mind. Then try to re-read the code, putting yourself in the mindset that you know nothing about the changes and why you made them.
-
+>
 > Can you follow along with your code? Do the variables and method names help understand what they do? Are there comments at places where just the code is not enough? Is the style of the code consistent across the changes?
-
+>
 > Think about how you could make the code more readable. Perhaps you see some functions that do too many things and are too long. Perhaps you find that renaming a variable would make its purpose clearer. Make changes until you feel like the code is as expressive, concise, and pretty as it can be.
 
 > **The real test of readable code is others reading it.** So get feedback from others, via code reviews. Ask people to share feedback on how clear the code is. Encourage people to ask questions if something does not make sense. Code reviews - especially thorough code reviews - are the best way to get feedback on how good and readable your code is.
-
+>
 > Readable code will attract little to no clarifying questions, and reviewers won't misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.
-
+>
 > A good way to get more feedback on the clarity of your code is to ask for feedback from someone, who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
 
-We'll talk a bit more about code review in a next chapter!
+We'll talk a bit more about code review in a upcoming chapter!
 
-More reading:
+**More reading:** 
   
 - [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.  
-- [Write clean R code](https://appsilon.com/write-clean-r-code/)
+- [Write clean R code](https://appsilon.com/write-clean-r-code/) by @Dubel2021.
+- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.
 
 #### DRY up your code
 <img src="resources/images/DRY.png" width="12%">
 
-[DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself".
+[DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself" [@Smith2013].
 
 > "I hate code, and I want as little of it as possible in our product." 
 
@@ -90,7 +91,7 @@ lapply(class_names, GreetStudent)
 
 Now, if you wanted to edit the greeting, you'd only need to edit it in the function, instead of in each instance. 
 
-More reading:
+**More reading:** 
   
 - [Keep your code dry](https://www.drycode.io/) by @DRY.  
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
@@ -100,7 +101,7 @@ More reading:
 
 Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
-1) You might write better code on the second try (or third or nth). 
+1) You might write better code on the second try (or third or _n_th). 
 2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need. 
 3) With version control you can always return to that old code! 
 
@@ -121,9 +122,9 @@ Your code and your understanding of it will fade soon after you write it, leavin
 
 Comments can help clarify at points where your code might need further explanation. The act of writing them can also help you think out your thought process and perhaps identify a better solution to the odd parts of your code.
 
-@Savonen2021
+(From @Savonen2021)
 
-More reading:   
+**More reading:**   
 
 - [Creating clarifying code comments](https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments)
 - [Best Practices for Writing Code Comments](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/) by @Spertus2021.
@@ -143,9 +144,9 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 > 4 Do not number a variable name. 
 > 5 When you find another way to name variable, refactor as fast as possible. 
 
-More reading:
+**More reading:**  
 
-- [R for Epidemiology - Coding best Practices](https://www.r4epi.com/coding-best-practices.html#object-variable-names)
+- [R for Epidemiology - Coding best Practices](https://www.r4epi.com/coding-best-practices.html#object-variable-names) by @Cannell2021.
 - [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.  
 - [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018.   
 
@@ -228,10 +229,11 @@ runif(1)
 
 </details>
 
-More reading on setting the seed: 
 
-- [Set seed](https://r-coder.com/set-seed-r/).  
-- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/). 
+**More reading:**  
+
+- [Set seed](https://r-coder.com/set-seed-r/) by @Soage2020.
+- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/) by @Chang2021. 
 
 #### To review general principles: 
 
@@ -245,16 +247,17 @@ There's so many opinions and strategies on best practices for code. And although
 
 #### Python specific: 
 
-- [15 common coding mistakes data scientist make in Python (and how to fix them)](https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af)
-- [Data Science in Production — Advanced Python Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82)
-- [6 Mistakes Every Python Beginner Should Avoid While Coding](https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942)
+- [Reproducible Programming for Biologists Who Code Part 2: Should Dos](https://autobencoder.com/2020-06-30-shoulddo/) by @Heil2020b.
+- [15 common coding mistakes data scientist make in Python (and how to fix them)](https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af) by @Csendes2020. 
+- [Data Science in Production — Advanced Python Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82) by @Kostyuk2020.
+- [6 Mistakes Every Python Beginner Should Avoid While Coding](https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942) by @Saxena2021.
 
 #### R specific: 
 
-- [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
-- [R Programming for Research: Reproducible Research](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html)
-- [R for Epidemiology: Coding best practices](https://www.r4epi.com/coding-best-practices.html)
-- [Best practices for R Programming](https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a)
+- [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) by @DataCarpentry2021b.
+- [R Programming for Research: Reproducible Research](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html) by @Good2021.
+- [R for Epidemiology: Coding best practices](https://www.r4epi.com/coding-best-practices.html) by @Cannell2021.
+- [Best practices for R Programming](https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a) by @Bernardo2021.
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
@@ -321,9 +324,9 @@ For example, for this `make-heatmap` notebook we want to:
 **Use a relative file path**
 
 _Rationale:_  
-Absolute file paths only work for the original writer of the code and no one else. But if we make the [file path relative](https://networkencyclopedia.com/absolute-path/) to the project set up, then it will work for whomever has the project repository. 
+Absolute file paths only work for the original writer of the code and no one else. But if we make the [file path relative](https://www.educative.io/edpresso/absolute-vs-relative-path) to the project set up, then it will work for whomever has the project repository [@Mustafeez2021]. 
 
-Additionally, we can set up our file path names using [f-Strings](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) so that we only need to change the project ID and the rest will be ready for a new dataset!
+Additionally, we can set up our file path names using [f-Strings](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) so that we only need to change the project ID and the rest will be ready for a new dataset [@Python2021]!
 
 Although this requires more lines of code, this set up is much more flexible and ready for others to use.
 
@@ -357,10 +360,10 @@ expression_df = pd.read_csv(data_file, sep="\t")
 
 _Related readings:_ 
 
-- [f-strings in Python](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
-- [f-Strings: A New and Improved Way to Format Strings in Python](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python)
-- [Relative vs absolute file paths](https://networkencyclopedia.com/absolute-path/) 
-- [About join path](https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath)
+- [f-strings in Python](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/) by @Geeksforgeeks2018.
+- [f-Strings: A New and Improved Way to Format Strings in Python](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) by @Python2021.
+- [Relative vs absolute file paths](https://www.educative.io/edpresso/absolute-vs-relative-path) by @Mustafeez2021.
+- [About join path](https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath) by @Programcreek2021.
 
 **Avoid using mystery numbers**
 
@@ -384,6 +387,10 @@ upper_quartile = expression_df["variance"].quantile([0.90]).values
 # Filter the data choosing only genes whose variances are in the upper quartile
 df_by_var = expression_df[expression_df.variance > float(upper_quartile)]
 ```
+
+_Related readings:_  
+- [Stop Using Magic Numbers and Variables in Your Code](https://betterprogramming.pub/stop-using-magic-numbers-and-variables-in-your-code-4e86f008b84c) by @Aaberge2021.
+
 
 **Add checks**
 
@@ -415,9 +422,9 @@ Before we dive into the exercise, a word about the tidyverse. The tidyverse is a
 
 _More reading on the tidyverse:_  
 
-- [Tidyverse Skills for Data Science](http://jhudatascience.org/tidyversecourse/intro.html)
-- [A Beginner’s Guide to Tidyverse]( https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/)
-- [Introduction to tidyverse](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html)
+- [Tidyverse Skills for Data Science](http://jhudatascience.org/tidyversecourse/intro.html) by @Wright2021.
+- [A Beginner’s Guide to Tidyverse]( https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/) by @Vidhya2019.
+- [Introduction to tidyverse](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html) by @Shapiro2021.
 
 **The exercise: Polishing code**  
 
@@ -438,11 +445,11 @@ _Before:_
 setwd("Super specific/filepath/that/noone/else/has/")
 ```
 _After:_  
-Now that we are working from a notebook, we know that the default [current directory is wherever the notebook is placed!](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html)
+Now that we are working from a notebook, we know that the default [current directory is wherever the notebook is placed](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html) [@Xie2020].
 
 _Related readings:_ 
 
-- [Jenny Bryan will light your computer on fire if you use setwd() in a script](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+- [Jenny Bryan will light your computer on fire if you use setwd() in a script](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) [@Bryan2017].
 
 **Give the variables more informative names**
 
@@ -462,28 +469,7 @@ metadata <- readr::read_tsv("metadata_SRP070849.tsv")
 
 _Related readings:_ 
 
-- [`readr::read_tsv()` documentation](https://readr.tidyverse.org/reference/read_delim.html)
-
-
-**Give the variables more informative names**
-
-_Rationale:_  
-`xx` doesn't tell us what is in the data here. Also by using the `readr::read_tsv()` from tidyverse we'll get a cleaner, faster read and won't have to specify `sep` argument. Note we are also fixing some spacing and using `<-` so that we can stick to readability conventions. 
-
-You'll notice later
-
-_Before:_  
-```
-xx=read.csv("metadata_SRP070849.tsv", sep = "\t")
-```
-_After:_   
-```
-metadata <- readr::read_tsv("metadata_SRP070849.tsv")
-```
-
-_Related readings:_ 
-
-- [`readr::read_tsv()` documentation](https://readr.tidyverse.org/reference/read_delim.html)
+- [`readr::read_tsv()` documentation](https://readr.tidyverse.org/reference/read_delim.html) by @Tidyverse2021.
 
 **DRYing up data frame manipulations**
 
