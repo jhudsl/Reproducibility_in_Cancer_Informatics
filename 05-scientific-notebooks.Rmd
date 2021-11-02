@@ -141,7 +141,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 **Install RStudio**
 
 1. [Install RStudio](https://www.rstudio.com/products/rstudio/download/) (and [install R first](https://repo.miserver.it.umich.edu/cran/) if you have not already).
-2. After you've downloaded the Rstudio installation file, double click on it and follow along with the installation prompts.  
+2. After you've downloaded the RStudio installation file, double click on it and follow along with the installation prompts.  
 3. Open up the RStudio application by double clicking on it.
 
 **Getting familiar with RStudio's interface**
