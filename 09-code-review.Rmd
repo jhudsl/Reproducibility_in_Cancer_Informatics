@@ -20,11 +20,18 @@ We've previously discussed that the only way to know if your analysis is truly r
 
 > Code review will not guarantee an accurate analysis, but it’s one of the most reliable ways of establishing one that is more accurate than before. 
 
-Not only does code review help boost the accuracy and reprodudcibility of the analysis, it also helps everyone involved in the process learn something new!
+Not only does code review help boost the accuracy and reproducibility of the analysis, it also helps everyone involved in the process learn something new!
+
+#### Recommended reading about code review 
+
+- [Code Review Guidelines for Humans](https://phauer.com/2018/code-review-guidelines/) by @Hauer2018.
+- [Your Code Sucks! – Code Review Best Practices](https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/) by @Hildebr2020.
+- [Best practices for Code Review](https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/) by @Smartbear2021.
+- [Why code reviews matter (and actually save time!)](https://www.atlassian.com/agile/software-development/code-reviews) by @Radigan2021.
 
 ## Exercise: Send your code to someone else to run!
 
-In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will simply encourage you to have someone else look at your code and attempt to run it.  
+In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else look at your code and attempt to run it.  
 
 At this point, you should have a GitHub repository that contains the following:  
 
@@ -51,7 +58,7 @@ At this point, you should have a GitHub repository that contains the following:
   - Explicitly ask them what commands or tests you'd like them to test run. 
 - Lastly, thank them for helping review your code!
 
-9) Now you are ready to send your crafted message to your collaborator for review. 
+9) Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may not want to ask your collaborator to spend their time carefully review this _practice_ repository, but now that you understand and have done the steps involved you are prepared to do this for your own analyses!
 
 In the second part of this course, we will discuss how to conduct code review through GitHub, further utilize version control, and more!
 
