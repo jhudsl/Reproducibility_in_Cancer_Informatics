@@ -1,6 +1,3 @@
----
-title: "Using Notebooks"
----
 
 
 
@@ -146,7 +143,7 @@ Note that change code here will not run automatically until you run it.
 
 From @Shapiro2021
 
-More reading about RStudio's interface: 
+More reading about RStudio's interface:
 
 - [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
 - [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
@@ -169,7 +166,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 <img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_20.png" title="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." alt="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" />
 
-3. Create a new code chunk in your notebook. 
+3. Create a new code chunk in your notebook.
 
 
 ```r

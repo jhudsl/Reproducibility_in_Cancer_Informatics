@@ -16,7 +16,7 @@ example-organizational-scheme
 readings-about-organizational-strategies-for-data-science-projects
 get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter
 exercise-organize-your-project
-why-git-and-github
+making-your-project-open-source-with-github
 learning-objectives-2
 maintain-transparent-analyses
 have-backups-of-your-code-and-analyses-at-every-point
@@ -34,7 +34,7 @@ get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previo
 exercise-convert-code-into-a-notebook
 set-up-your-ide
 create-a-notebook
-why-package-versions-matter
+managing-package-versions
 learning-objectives-4
 get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3
 exercise-1-print-out-session-info

@@ -1,10 +1,7 @@
----
-title: "Open source with GitHub"
----
 
 
 
-# Why git and GitHub
+# Making your project open source with GitHub
 
 ## Learning Objectives
 

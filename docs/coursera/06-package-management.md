@@ -1,10 +1,7 @@
----
-title: "Package versions"
----
 
 
 
-# Why package versions matter
+# Managing package versions
 
 ## Learning Objectives
 
@@ -120,16 +117,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-11-03 17:43:44--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+## --2021-11-03 19:45:54--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
-## Saving to: ‘environment.yml.4’
+## Saving to: ‘environment.yml.3’
 ## 
-##      0K                                                       100% 23.1M=0s
+##      0K                                                       100% 15.4M=0s
 ## 
-## 2021-11-03 17:43:44 (23.1 MB/s) - ‘environment.yml.4’ saved [398/398]
+## 2021-11-03 19:45:54 (15.4 MB/s) - ‘environment.yml.3’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
