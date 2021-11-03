@@ -7,8 +7,8 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions: read-all|write-all
-  
+permissions: write-all
+
 jobs:
   # This workflow contains a single job called "build-all"
   build-all:
