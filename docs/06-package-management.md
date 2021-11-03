@@ -76,7 +76,7 @@ sessionInfo()
 ```
 ## R version 4.0.2 (2020-06-22)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 20.04.2 LTS
+## Running under: Ubuntu 20.04.3 LTS
 ## 
 ## Matrix products: default
 ## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
@@ -120,16 +120,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-11-02 21:47:11--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+## --2021-11-03 17:42:30--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
-## Saving to: ‘environment.yml.1’
+## Saving to: ‘environment.yml.3’
 ## 
-##      0K                                                       100% 19.7M=0s
+##      0K                                                       100% 23.1M=0s
 ## 
-## 2021-11-02 21:47:11 (19.7 MB/s) - ‘environment.yml.1’ saved [398/398]
+## 2021-11-03 17:42:30 (23.1 MB/s) - ‘environment.yml.3’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
