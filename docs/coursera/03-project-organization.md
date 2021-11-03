@@ -1,6 +1,3 @@
----
-title: "Organizing your project"
----
 
 
 

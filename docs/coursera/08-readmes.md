@@ -1,6 +1,3 @@
----
-title: "Documenting analyses"
----
 
 
 
@@ -12,9 +9,9 @@ title: "Documenting analyses"
 
 ## Why documentation?
 
-Documentation is an important but sometimes overlooked part of creating a reproducible analysis! There are two parts of documentation we will discuss here: 1) In notebook descriptions and 2) READMEs 
+Documentation is an important but sometimes overlooked part of creating a reproducible analysis! There are two parts of documentation we will discuss here: 1) In notebook descriptions and 2) READMEs
 
-Both these notebook descriptions and READMEs are written in markdown -- a shorthand for html (the same as the documentation parts of your code). If you aren't familiar, markdown is such a handy tool and we encourage you to learn it (it doesn't take too long), here's a [quick guide](https://www.markdownguide.org/cheat-sheet/) to get you started. 
+Both these notebook descriptions and READMEs are written in markdown -- a shorthand for html (the same as the documentation parts of your code). If you aren't familiar, markdown is such a handy tool and we encourage you to learn it (it doesn't take too long), here's a [quick guide](https://www.markdownguide.org/cheat-sheet/) to get you started.
 
 ### Notebook descriptions
 
@@ -30,9 +27,9 @@ What scientific question are you trying to answer? Describe the dataset you are 
 
 #### The rationales behind your decisions
 
-Describe why a particular code chunk is doing a particular thing -- the more odd the code looks, the greater need for you to describe why you are doing it. 
+Describe why a particular code chunk is doing a particular thing -- the more odd the code looks, the greater need for you to describe why you are doing it.
 
-Describe any particular filters or cutoffs you are using and how did you decide on those? 
+Describe any particular filters or cutoffs you are using and how did you decide on those?
 
 For data wrangling steps, why are you wrangling the data in such a way -- is this because a certain package you are using requires it?
 
@@ -42,23 +39,23 @@ What do you think about the results? The plots and tables you show in the notebo
 
 ### READMEs!
 
-READMEs are also a great way to help your collaborators get quickly acquainted with the project. 
+READMEs are also a great way to help your collaborators get quickly acquainted with the project.
 
 <img src="resources/images/08-readmes_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_11.png" title="Avi is looking at a set of project files that include a file called a ‘README.md’. Avi says 'I had no idea where to start with this analysis that Ruby sent me to review, but then I saw she included a README and that saved me so much time and effort in getting started!'" alt="Avi is looking at a set of project files that include a file called a ‘README.md’. Avi says 'I had no idea where to start with this analysis that Ruby sent me to review, but then I saw she included a README and that saved me so much time and effort in getting started!'" style="display: block; margin: auto;" />
 
-READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called "README.md" when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README. 
+READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called "README.md" when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README.
 
-**Information that should be included in a README:** 
+**Information that should be included in a README:**
 
-1) General purpose of the project 
-2) Instructions on how to re-run the project 
-3) Lists of any software required by the project 
-4) Input and output file descriptions. 
-5) Descriptions of any additional tools included in the project? 
+1) General purpose of the project
+2) Instructions on how to re-run the project
+3) Lists of any software required by the project
+4) Input and output file descriptions.
+5) Descriptions of any additional tools included in the project?
 
-You can take a look at this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md) to get your started. 
+You can take a look at this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md) to get your started.
 
-#### More about writing READMEs: 
+#### More about writing READMEs:
 
 - [How to write a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 - [A Beginners Guide to writing a Kicka** README](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
@@ -91,9 +88,9 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 <details> <summary> _Python project exercise_</summary>
 
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
-2. Activate your conda environment using `conda activate reproducible-python`. 
+2. Activate your conda environment using `conda activate reproducible-python`.
 3. Open up your notebook you've been working on in the previous chapters: `make_heatmap.ipynb`
-4. Create a new chunk in your notebook and choose the "Markdown" option in the dropdown menu. 
+4. Create a new chunk in your notebook and choose the "Markdown" option in the dropdown menu.
 
 
 ```r
@@ -101,7 +98,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 ```
 
 <img src="resources/images/08-readmes_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" title="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " style="display: block; margin: auto;" />
-5. Continue to add more descriptions where you feel is necessary, You can reference the descriptions we have in the ["final" version](https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb) looks like in the [example Python repository](https://github.com/jhudsl/reproducible-python-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?) 
+5. Continue to add more descriptions where you feel is necessary, You can reference the descriptions we have in the ["final" version](https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb) looks like in the [example Python repository](https://github.com/jhudsl/reproducible-python-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
 
 </details>
 
@@ -110,16 +107,16 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
 3. Open up your notebook you've been working on in the previous chapters: `make_heatmap.Rmd`
-4. In between code chunks, add more descriptions using Markdown language. 
-5. You can test how this renders by saving your `.Rmd` and then opening up the resulting `nb.html` file and choosing `View in Browser`. 
-6. Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the ["final" version](https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html) looks like in the [example R repository](https://github.com/jhudsl/reproducible-R-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?) 
+4. In between code chunks, add more descriptions using Markdown language.
+5. You can test how this renders by saving your `.Rmd` and then opening up the resulting `nb.html` file and choosing `View in Browser`.
+6. Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the ["final" version](https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html) looks like in the [example R repository](https://github.com/jhudsl/reproducible-R-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
 
 </details>
 
 ## Exercise 2: Write a README for your project!
 
-1. Download this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md). 
-2. Fill in the questions inside the `{ }` to create a README for this project. 
+1. Download this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md).
+2. Fill in the questions inside the `{ }` to create a README for this project.
 3. You can reference the "final" versions of the README, but keep in mind it will reference items that we will discuss in the "advanced" portion of this course. See the [R README here](https://github.com/jhudsl/reproducible-R-example) and the [Python README here](https://github.com/jhudsl/reproducible-python-example).
 
 4. Add your README and updated notebook to your GitHub repository. Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.

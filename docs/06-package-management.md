@@ -1,22 +1,19 @@
----
-title: "Package versions"
----
 
 
 
-# Why package versions matter
+# Managing package versions
 
 ## Learning Objectives
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" title="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" />
+![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png){width=100%}
 
 As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" title="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" />
+![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png){width=100%}
 
 What Ruby and Avi may not realize, is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" title="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" />
+![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png){width=100%}
 
 There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.
 
@@ -94,13 +91,12 @@ sessionInfo()
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] knitr_1.33      magrittr_1.5    hms_0.5.3       R6_2.4.1       
-##  [5] rlang_0.4.10    highr_0.8       stringr_1.4.0   httr_1.4.2     
-##  [9] tools_4.0.2     xfun_0.26       jquerylib_0.1.1 htmltools_0.5.0
-## [13] ellipsis_0.3.1  yaml_2.2.1      leanbuild_0.1.2 digest_0.6.25  
-## [17] tibble_3.0.3    lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24  
-## [21] readr_1.4.0     vctrs_0.3.4     fs_1.5.0        curl_4.3       
-## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2 
-## [29] pillar_1.4.6    pkgconfig_2.0.3
+##  [5] rlang_0.4.10    stringr_1.4.0   httr_1.4.2      tools_4.0.2    
+##  [9] xfun_0.26       htmltools_0.5.0 ellipsis_0.3.1  yaml_2.2.1     
+## [13] leanbuild_0.1.2 digest_0.6.25   tibble_3.0.3    lifecycle_1.0.0
+## [17] crayon_1.3.4    bookdown_0.24   readr_1.4.0     vctrs_0.3.4    
+## [21] fs_1.5.0        curl_4.3        evaluate_0.14   rmarkdown_2.10 
+## [25] stringi_1.5.3   compiler_4.0.2  pillar_1.4.6    pkgconfig_2.0.3
 ```
 `````
 2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything.
@@ -120,16 +116,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-11-03 17:42:30--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+## --2021-11-03 19:44:47--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
-## Saving to: ‘environment.yml.3’
+## Saving to: ‘environment.yml.2’
 ## 
-##      0K                                                       100% 23.1M=0s
+##      0K                                                       100% 6.27M=0s
 ## 
-## 2021-11-03 17:42:30 (23.1 MB/s) - ‘environment.yml.3’ saved [398/398]
+## 2021-11-03 19:44:47 (6.27 MB/s) - ‘environment.yml.2’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).

@@ -1,6 +1,3 @@
----
-title: "Writing durable code"
----
 
 ```{r, include = FALSE}
 leanbuild::set_knitr_image_path()
@@ -19,10 +16,10 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 #### Work on your code iteratively
 <img src="resources/images/iterative.png" width="12%">
 
-Getting your code to work the first time is the first step, but don't stop there! 
-Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it! 
+Getting your code to work the first time is the first step, but don't stop there!
+Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it!
 
-#### Prioritize readability over cleverness 
+#### Prioritize readability over cleverness
 <img src="resources/images/readable.png" width="12%">
 
 Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
@@ -43,8 +40,8 @@ What does readable code look like? @Orosz2019 has some thoughts on writing reada
 
 We'll talk a bit more about code review in a upcoming chapter!
 
-**More reading:** 
-  
+**More reading:**
+
 - [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.  
 - [Write clean R code](https://appsilon.com/write-clean-r-code/) by @Dubel2021.
 - [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.
@@ -54,16 +51,16 @@ We'll talk a bit more about code review in a upcoming chapter!
 
 [DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) is an acronym: "Don't repeat yourself" [@Smith2013].
 
-> "I hate code, and I want as little of it as possible in our product." 
+> "I hate code, and I want as little of it as possible in our product."
 
 – @Diederich2012
 
 If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places.  
 
 DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
-DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project! 
+DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!
 
-Here's an slightly modified example from @Bernado2021 for what DRY vs non-DRY code might look like: 
+Here's an slightly modified example from @Bernado2021 for what DRY vs non-DRY code might look like:
 
 ```
 paste('Hello','John', 'welcome to this course')
@@ -85,27 +82,27 @@ GreetStudent <- function(name) {
 }
 
 class_names <- c('John', 'Susan', 'Matt' ,'Anne', 'Joe', 'Tyson', 'Julia', 'Cathy')
-              
+
 lapply(class_names, GreetStudent)
 ```
 
-Now, if you wanted to edit the greeting, you'd only need to edit it in the function, instead of in each instance. 
+Now, if you wanted to edit the greeting, you'd only need to edit it in the function, instead of in each instance.
 
-**More reading:** 
-  
+**More reading:**
+
 - [Keep your code dry](https://www.drycode.io/) by @DRY.  
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
-  
+
 #### Don't be afraid to delete and refresh  
 <img src="resources/images/delete.png" width="12%">
 
 Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
-1) You might write better code on the second try (or third or n'th). 
-2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need. 
+1) You might write better code on the second try (or third or n'th).
+2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need.
 3) With version control you can always return to that old code! (We'll dive more into version control later on, but you've started the process by [uploading your code to GitHub in chapter 4](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html)!)
 
-This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it). 
+This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).
 
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
 
@@ -138,11 +135,11 @@ Comments can help clarify at points where your code might need further explanati
 
 Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.
 
-> 1 Write intention-revealing names. 
-> 2 Use consistent notation for naming convention. 
-> 3 Use standard terms. 
-> 4 Do not number a variable name. 
-> 5 When you find another way to name variable, refactor as fast as possible. 
+> 1 Write intention-revealing names.
+> 2 Use consistent notation for naming convention.
+> 3 Use standard terms.
+> 4 Do not number a variable name.
+> 5 When you find another way to name variable, refactor as fast as possible.
 
 **More reading:**  
 
@@ -150,54 +147,54 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 - [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.  
 - [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018.   
 
-#### 7. Follow a code style 
+#### 7. Follow a code style
 <img src="resources/images/style.png" width="12%">
 
-Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results. 
+Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results.
 
 There are different style guides out there that people adhere to. It doesn't matter so much which one you choose, so much that you pick one and stick to it for a particular project.  
 
-_Python style guides_: 
+_Python style guides_:
 
-- [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/) @PEP8. 
+- [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/) @PEP8.
 - [Google Python style guide](https://google.github.io/styleguide/pyguide.html) @GooglePython.
 
-_R style guides_: 
+_R style guides_:
 
 - [Hadley Wickham's Style guide](http://adv-r.had.co.nz/Style.html) @Wickham.
 - [Google R style guide](https://google.github.io/styleguide/Rguide.html) @GoogleR.
 
-Although writing code following a style as you are writing is a good practice, we're all human and that can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you. 
-For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/). 
+Although writing code following a style as you are writing is a good practice, we're all human and that can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you.
+For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/).
 
 #### Organize the structure of your code
 <img src="resources/images/organize.png" width="12%">
 
 Readable code should follow an organized structure. Just like how outlines help the structure of manuscript writing, outlines can also help the organization of code writing.
 
-A tentative outline for a notebook might look like this: 
+A tentative outline for a notebook might look like this:
 
-1) A description of the purpose of the code (in Markdown). 
+1) A description of the purpose of the code (in Markdown).
 2) Import the libraries you will need (including sourcing any functions )
-3) List any hard-coded variables. 
+3) List any hard-coded variables.
 4) Import data.  
 5) Do any data cleaning needed.   
 6) The main thing you need to do.  
 7) Print out session info.  
 
-Note that if your notebook gets too long, you may want to separate out things in their own scripts. Additionally, it's good practice to keep custom functions in their own file and import them. This allows you to use them elsewhere and also keeps the main part of the analysis cleaner. 
+Note that if your notebook gets too long, you may want to separate out things in their own scripts. Additionally, it's good practice to keep custom functions in their own file and import them. This allows you to use them elsewhere and also keeps the main part of the analysis cleaner.
 
 #### Set the seed if your analysis has randomness involved
 <img src="resources/images/seeds.png" width="12%">
 
-If any randomness is involved in your analysis, you will want to set the seed in order for your results to be reproducible. 
+If any randomness is involved in your analysis, you will want to set the seed in order for your results to be reproducible.
 
-In brief, computers don't actually create numbers randomly they create [numbers pseudorandomly](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible. 
+In brief, computers don't actually create numbers randomly they create [numbers pseudorandomly](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible.
 
 <details> <summary> For more on how setting the seed works -- a quick experiment </summary>
-To illustrate how seeds work, run we'll run a quick experiment with setting the seed here: 
+To illustrate how seeds work, run we'll run a quick experiment with setting the seed here:
 
-First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number. 
+First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number.
 
 ```{r}
 # Set the seed:
@@ -207,7 +204,7 @@ set.seed(1234)
 runif(1)
 ```
 
-Now if we try a different seed, we will get a different "random" number. 
+Now if we try a different seed, we will get a different "random" number.
 
 ```{r}
 # Set a different seed:
@@ -233,9 +230,9 @@ runif(1)
 **More reading:**  
 
 - [Set seed](https://r-coder.com/set-seed-r/) by @Soage2020.
-- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/) by @Chang2021. 
+- [Generating random numbers](http://www.cookbook-r.com/Numbers/Generating_random_numbers/) by @Chang2021.
 
-#### To review general principles: 
+#### To review general principles:
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_89")
@@ -243,16 +240,16 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 ## More reading on best coding practices
 
-There's so many opinions and strategies on best practices for code. And although a lot of these principles are generally applicable, not _all_ of it is one size fits all. Some code practices are context-specific so sometimes you may need to pick and choose what works for you, your team, and your particular project. 
+There's so many opinions and strategies on best practices for code. And although a lot of these principles are generally applicable, not _all_ of it is one size fits all. Some code practices are context-specific so sometimes you may need to pick and choose what works for you, your team, and your particular project.
 
-#### Python specific: 
+#### Python specific:
 
 - [Reproducible Programming for Biologists Who Code Part 2: Should Dos](https://autobencoder.com/2020-06-30-shoulddo/) by @Heil2020b.
-- [15 common coding mistakes data scientist make in Python (and how to fix them)](https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af) by @Csendes2020. 
+- [15 common coding mistakes data scientist make in Python (and how to fix them)](https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af) by @Csendes2020.
 - [Data Science in Production — Advanced Python Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82) by @Kostyuk2020.
 - [6 Mistakes Every Python Beginner Should Avoid While Coding](https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942) by @Saxena2021.
 
-#### R specific: 
+#### R specific:
 
 - [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) by @DataCarpentry2021b.
 - [R Programming for Research: Reproducible Research](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html) by @Good2021.
@@ -294,12 +291,12 @@ unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
 ## Exercise 1: Make code more durable!
 
 ### Organize the big picture of the code
-Before diving in line-by-line it can be helpful to make a code-outline of sorts. 
+Before diving in line-by-line it can be helpful to make a code-outline of sorts.
 
-What are the main steps you need to accomplish in this notebook? What are the starting and ending points for this particular notebook? 
+What are the main steps you need to accomplish in this notebook? What are the starting and ending points for this particular notebook?
 
 For example, for this `make-heatmap` notebook we want to:  
-  
+
 1) Set up analysis folders and declare file names.  
 2) Install the libraries we need.  
 3) Import the gene expression data and metadata.  
@@ -315,21 +312,21 @@ For example, for this `make-heatmap` notebook we want to:
 **The exercise: Polishing code**  
 
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
-2. Activate your conda environment using `conda activate reproducible-python`. 
+2. Activate your conda environment using `conda activate reproducible-python`.
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
-4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
+4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
 
 ***
 
 **Set the seed**
 
-_Rationale:_ 
+_Rationale:_
 The clustering in the analysis involves some randomness. We need to set the seed!
 
 _Before:_  
 Nothing! We didn't set the seed before!
 
-_After:_ 
+_After:_
 You can pick any number; doesn't have to be 1234.
 ```
 random.seed(1234)
@@ -338,7 +335,7 @@ random.seed(1234)
 **Use a relative file path**
 
 _Rationale:_  
-Absolute file paths only work for the original writer of the code and no one else. But if we make the [file path relative](https://www.educative.io/edpresso/absolute-vs-relative-path) to the project set up, then it will work for whomever has the project repository [@Mustafeez2021]. 
+Absolute file paths only work for the original writer of the code and no one else. But if we make the [file path relative](https://www.educative.io/edpresso/absolute-vs-relative-path) to the project set up, then it will work for whomever has the project repository [@Mustafeez2021].
 
 Additionally, we can set up our file path names using [f-Strings](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) so that we only need to change the project ID and the rest will be ready for a new dataset [@Python2021]!
 
@@ -372,7 +369,7 @@ metadata = pd.read_csv(metadata_file, sep="\t")
 expression_df = pd.read_csv(data_file, sep="\t")
 ```
 
-_Related readings:_ 
+_Related readings:_
 
 - [f-strings in Python](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/) by @Geeksforgeeks2018.
 - [f-Strings: A New and Improved Way to Format Strings in Python](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) by @Python2021.
@@ -382,7 +379,7 @@ _Related readings:_
 **Avoid using mystery numbers**
 
 _Rationale:_  
-Avoid using numbers that don't have context around them in the code. Include the calculations for the number, or if it needs to be hard-coded, explain the rationale for that number in the comments. Additionally, using variable and column names that tell you what is happening, helps clarify what the number represents. 
+Avoid using numbers that don't have context around them in the code. Include the calculations for the number, or if it needs to be hard-coded, explain the rationale for that number in the comments. Additionally, using variable and column names that tell you what is happening, helps clarify what the number represents.
 
 _Before:_   
 ```
@@ -409,7 +406,7 @@ _Related readings:_
 **Add checks**
 
 _Rationale:_  
-Just because your script ran without an error that stopped the script doesn't mean it is accurate and error free. Silent errors are the most tricky to solve, because you often won't know that they happened! 
+Just because your script ran without an error that stopped the script doesn't mean it is accurate and error free. Silent errors are the most tricky to solve, because you often won't know that they happened!
 
 A very common error is data that is in the wrong order. In this example we have two data frames that contain information about the same samples. But in the original script, we don't ever check that the samples are in the same order in the metadata and the gene expression matrix! This is a really easy way to get incorrect results!
 
@@ -430,7 +427,7 @@ Then, when you are ready, take a look at what our ["final" version](https://gith
 
 **About the tidyverse:**.  
 
-Before we dive into the exercise, a word about the tidyverse. The tidyverse is a highly useful set of packages for creating readable and reproducible data science workflows in R. In general, we will opt for tidyverse approaches in this course, and strongly encourage you to familiarize yourself with the tidyverse if you have not. We will point out some instances where tidyverse functions can help you DRY up your code as well as make it more readable! 
+Before we dive into the exercise, a word about the tidyverse. The tidyverse is a highly useful set of packages for creating readable and reproducible data science workflows in R. In general, we will opt for tidyverse approaches in this course, and strongly encourage you to familiarize yourself with the tidyverse if you have not. We will point out some instances where tidyverse functions can help you DRY up your code as well as make it more readable!
 
 _More reading on the tidyverse:_  
 
@@ -442,20 +439,20 @@ _More reading on the tidyverse:_
 
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
-3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section. 
-4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code. 
+3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section.
+4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
 
 ***
 
 **Set the seed**
 
-_Rationale:_ 
+_Rationale:_
 The clustering in the analysis involves some randomness. We need to set the seed!
 
 _Before:_  
 Nothing! We didn't set the seed before!
 
-_After:_ 
+_After:_
 You can pick any number; doesn't have to be 1234.
 ```
 set.seed(1234)
@@ -473,14 +470,14 @@ setwd("Super specific/filepath/that/noone/else/has/")
 _After:_  
 Now that we are working from a notebook, we know that the default [current directory is wherever the notebook is placed](https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html) [@Xie2020].
 
-_Related readings:_ 
+_Related readings:_
 
 - [Jenny Bryan will light your computer on fire if you use setwd() in a script](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) [@Bryan2017].
 
 **Give the variables more informative names**
 
 _Rationale:_  
-`xx` doesn't tell us what is in the data here. Also by using the `readr::read_tsv()` from tidyverse we'll get a cleaner, faster read and won't have to specify `sep` argument. Note we are also fixing some spacing and using `<-` so that we can stick to readability conventions. 
+`xx` doesn't tell us what is in the data here. Also by using the `readr::read_tsv()` from tidyverse we'll get a cleaner, faster read and won't have to specify `sep` argument. Note we are also fixing some spacing and using `<-` so that we can stick to readability conventions.
 
 You'll notice later
 
@@ -493,25 +490,25 @@ _After:_
 metadata <- readr::read_tsv("metadata_SRP070849.tsv")
 ```
 
-_Related readings:_ 
+_Related readings:_
 
 - [`readr::read_tsv()` documentation](https://readr.tidyverse.org/reference/read_delim.html) by @Tidyverse2021.
 
 **DRYing up data frame manipulations**
 
 _Rationale:_  
-This chunk of code can be very tricky to understand what it is doing. 
-What is happening with df1 and df2? What's being filtered out? etc. 
-Code comments would certainly help understanding, but even better, we can DRY this code up and 
+This chunk of code can be very tricky to understand what it is doing.
+What is happening with df1 and df2? What's being filtered out? etc.
+Code comments would certainly help understanding, but even better, we can DRY this code up and
 
 _Before:_  
 It may be difficult to tell from looking at the before code because there are no comments and it's a bit tricky to read, but the goal of this is to:  
 
-1) Calculate variances for each row (each row is a gene). 
+1) Calculate variances for each row (each row is a gene).
 2) Filter the original gene expression matrix to only genes have a bigger variance (here we use arbitrarily 10 as a filter cutoff).
 
 ```
-df=read.csv("SRP070849.tsv", sep="\t") 
+df=read.csv("SRP070849.tsv", sep="\t")
 sums=matrix(nrow = nrow(df), ncol = ncol(df) - 1)
 for(i in 1:nrow(sums)) { sums[i, ] <- sum(df[i, -1])
 }
@@ -524,7 +521,7 @@ variances=matrix(nrow = nrow(dds), ncol = ncol(dds) - 1)
 
 _After:_   
 
-Let's see how we can do this in a DRY'er and clearer way. 
+Let's see how we can do this in a DRY'er and clearer way.
 
 We can:  
 1) Add comments to describe our goals.   
@@ -532,14 +529,14 @@ We can:
 3) Use the apply functions to do the loop for us -- this will eliminate the need for unclear variable `i` as well.   
 4) Use the tidyverse to do the filtering for us so we don't have to rename data frames or store extra versions of `df`.   
 
-Here's what the above might look like after some refactoring. Hopefully you find this is easier to follow and total there's less lines of code (but also has comments too!). 
+Here's what the above might look like after some refactoring. Hopefully you find this is easier to follow and total there's less lines of code (but also has comments too!).
 ```
 # Read in data TSV file
 expression_df <- readr::read_tsv(data_file) %>%
   # Here we are going to store the gene IDs as row names so that
   # we can have only numeric values to perform calculations on later
   tibble::column_to_rownames("Gene")
-  
+
 # Calculate the variance for each gene
 variances <- apply(expression_df, 1, var)
 
@@ -553,8 +550,8 @@ df_by_var <- data.frame(expression_df) %>%
 
 **Add checks**
 
-_Rationale:_ 
-Just because your script ran without an error that stopped the script doesn't mean it is accurate and error free. Silent errors are the most tricky to solve, because you often won't know that they happened! 
+_Rationale:_
+Just because your script ran without an error that stopped the script doesn't mean it is accurate and error free. Silent errors are the most tricky to solve, because you often won't know that they happened!
 
 A very common error is data that is in the wrong order. In this example we have two data frames that contain information about the same samples. But in the original script, we don't ever check that the samples are in the same order in the metadata and the gene expression matrix! This is a really easy way to get incorrect results!
 
@@ -580,17 +577,17 @@ Then, when you are ready, take a look at what our ["final" version](https://jhud
 
 Now that we've made some nice updates to the code, we are ready to do a bit more polishing by adding more documentation! But before we head to the next chapter, we can style the code we wrote automatically by using automatic code stylers!
 
-## Exercise 2: Style code automatically! 
+## Exercise 2: Style code automatically!
 
 <details> <summary>Styling Python code automatically</summary>
 
-Run your notebook through `black`. First you'll need to install it by running this command in a Terminal window in your JupyterLab. 
+Run your notebook through `black`. First you'll need to install it by running this command in a Terminal window in your JupyterLab.
 
 Make sure you are running this within your conda environment.
 ```
 conda activate reproducible-python
 ```
-Now install this python black. 
+Now install this python black.
 ```
 pip install black[jupyter]
 ```
@@ -608,12 +605,12 @@ You should get a message that your notebook was styled!
 
 <details> <summary>Styling R code automatically</summary>
 
-Let's run your notebook through `styler`. 
+Let's run your notebook through `styler`.
 First you'll need to install it and add it to your `renv`.
 ```
 install.packages("styler")
 ```
-Then add it to your `renv` by running: 
+Then add it to your `renv` by running:
 ```
 renv::snapshot()
 ```
@@ -625,5 +622,5 @@ You should get a message that your notebook was styled!
 
 </details>
 
-Before you are done with this exercise, there's one more thing we need to do: upload the latest version to GitHub. 
+Before you are done with this exercise, there's one more thing we need to do: upload the latest version to GitHub.
 Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.

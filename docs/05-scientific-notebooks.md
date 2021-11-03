@@ -1,6 +1,3 @@
----
-title: "Using Notebooks"
----
 
 
 
@@ -8,7 +5,7 @@ title: "Using Notebooks"
 
 ## Learning Objectives
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_4.png" title="This chapter will demonstrate how to: Use an Integrated Development Environment to aid your development of code. Understand how notebooks can increase the usability and readability of scientific code. Set up code as a notebook. Use the notebook’s interface to interactively develop code." alt="This chapter will demonstrate how to: Use an Integrated Development Environment to aid your development of code. Understand how notebooks can increase the usability and readability of scientific code. Set up code as a notebook. Use the notebook’s interface to interactively develop code." style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_4.png)
 
 Notebooks are a handy way to have the code, output, and scientist's thought process all documented in one place that is easy for others to read and follow.
 
@@ -16,7 +13,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 #### Reason 1: Notebooks allow for tracking data exploration and encourage the scientist to narrate their thought process:
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png" title="Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Working from this notebook allows me to interactively develop on my data analysis and write down my thoughts about the process all in one place!’" alt="Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Working from this notebook allows me to interactively develop on my data analysis and write down my thoughts about the process all in one place!’" style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png)
 
 > Each executed code cell is an attempt by the researcher to achieve something and to tease out some insight from the data set. The result is displayed immediately below the code commands, and the researcher can pause and think about the outcome. As code cells can be executed in any order, modified and re-executed as desired, deleted and copied, the notebook is a convenient environment to iteratively explore a complex problem.
 
@@ -25,7 +22,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 #### Reason 2: Notebooks allow for easy sharing of results:
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png" title="Ruby the researcher has her computer showing her notebook. Ruby says ‘Avi, here’s some output from this scientific notebook I’ve been developing from!’ Avi the associate says ‘This is so easy to follow and read, even though I didn’t write the code. Thanks for sharing your exciting results!’" alt="Ruby the researcher has her computer showing her notebook. Ruby says ‘Avi, here’s some output from this scientific notebook I’ve been developing from!’ Avi the associate says ‘This is so easy to follow and read, even though I didn’t write the code. Thanks for sharing your exciting results!’" style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png)
 
 > Notebooks can be converted to html and pdf, and then shared as static read-only documents. This is useful to communicate and share a study with colleagues or managers. By adding sufficient explanation, the main story can be understood by the reader, even if they wouldn't be able to write the code that is embedded in the document.
 
@@ -33,7 +30,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 #### Reason 3: Notebooks can be re-ran as a script or developed interactively:
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9440130d0_0_0.png" title="Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Yay! I just got the data for 5 more samples. Because of my handy notebook set up, I can easily call one command and re-run the analysis so it is updated with the new samples included!’ " alt="Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Yay! I just got the data for 5 more samples. Because of my handy notebook set up, I can easily call one command and re-run the analysis so it is updated with the new samples included!’ " style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9440130d0_0_0.png)
 
 > A common pattern in science is that a computational recipe is iteratively developed in a notebook. Once this has been found and should be applied to further data sets (or other points in some parameter space), the notebook can be executed like a script, for example by submitting these scripts as batch jobs.
 
@@ -99,7 +96,7 @@ conda install -c conda-forge jupyterlab
 
 > The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_469.png" title="The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.’ " alt="The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.’ " style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_469.png)
 
 > The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
 
@@ -124,7 +121,7 @@ conda install -c conda-forge jupyterlab
 
 **Getting familiar with RStudio's interface**
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_225.png" style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_225.png)
 
 > The RStudio environment has four main **panes**, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools -> Global Options -> Pane Layout).
 
@@ -146,7 +143,7 @@ Note that change code here will not run automatically until you run it.
 
 From @Shapiro2021
 
-More reading about RStudio's interface: 
+More reading about RStudio's interface:
 
 - [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
 - [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
@@ -167,16 +164,16 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20")
 ```
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_20.png" title="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." alt="In Jupyter, you can create a new notebook by going to New &gt; Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_20.png)
 
-3. Create a new code chunk in your notebook. 
+3. Create a new code chunk in your notebook.
 
 
 ```r
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
 ```
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" title="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png)
 
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
 5. Save your `Untitled.ipynb` file as something that tells us what it will end up doing like `make-heatmap.ipynb`.
@@ -193,7 +190,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_13")
 ```
 
-<img src="resources/images/05-scientific-notebooks_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_13.png" title="In RStudio, you can create a new notebook by going to File &gt; New Files &gt; R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." alt="In RStudio, you can create a new notebook by going to File &gt; New Files &gt; R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." style="display: block; margin: auto;" />
+![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_13.png)
 
 3. Practice creating a new chunk in your R notebook by clicking the `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I`. (You can also manually type out the back ticks and `{}`)
 4. Delete all the default text in this notebook.

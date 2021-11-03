@@ -1,12 +1,9 @@
----
-title: "Open source with GitHub"
----
 
 ```{r, include = FALSE}
 leanbuild::set_knitr_image_path()
 ```
 
-# Why git and GitHub
+# Making your project open source with GitHub
 
 ## Learning Objectives
 
