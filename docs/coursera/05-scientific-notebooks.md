@@ -42,8 +42,8 @@ Because all of these reasons, we encourage the use of computational notebooks as
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
+<details> <summary>**Get the _Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
 
 
 
@@ -52,8 +52,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
+<details> <summary>**Get the _R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
 
 
 
@@ -111,7 +111,7 @@ conda install -c conda-forge jupyterlab
 
 </details>
 
-<details> <summary>Set up an R IDE</summary>
+<details> <summary>**Set up an R IDE**</summary>
 
 **Install RStudio**
 
@@ -154,7 +154,7 @@ More reading about RStudio's interface:
 
 Now, in your respective IDE, we'll turn our unreproducible scripts into notebooks. In the next chapter we will begin to dive into the code itself, but for now, we'll get the notebook ready to go.
 
-<details> <summary>Set up a Python notebook</summary>
+<details> <summary>**Set up a Python notebook**</summary>
 
 1. Start a new notebook by going to `New` > `Notebook`.
 2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
@@ -180,7 +180,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 </details>
 
-<details> <summary>Set up an R notebook</summary>
+<details> <summary>**Set up an R notebook**</summary>
 
 1. Start a new notebook by going to `File` > `New Files` > `R Notebook`.
 2. Then open up this chapter’s example code folder and open the `make_heatmap.R` file.

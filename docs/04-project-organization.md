@@ -96,9 +96,9 @@ You can read through some of these articles to think about what kind of organiza
 For this chapter, we will organize our example project files!
 Now choose which version of the example you would like to work with and follow the instructions.  
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip).
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip).
 
 
 
@@ -129,7 +129,7 @@ Organize these files! For now we will organize these files by hand, but in the u
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 To get the _R project examples files_ [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip).
 Or you can use these commands in command line.

@@ -30,8 +30,8 @@ For both exercises, we will download an environment file we've set up for you, t
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
+<details> <summary>**Get the Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
 
 
 
@@ -40,8 +40,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip).
+<details> <summary>**Get the R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip).
 
 
 
@@ -52,7 +52,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 ## Exercise 1: Print out session info
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
 In your scientific notebook, you'll need to add two items.
 1. Add the `import session_info` to a code chunk at the beginning of your notebook.
@@ -61,7 +61,7 @@ In your scientific notebook, you'll need to add two items.
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 1. In your Rmd file, add a chunk in the very end that looks like this:
 `````
@@ -74,10 +74,10 @@ sessionInfo()
 ## R version 4.0.2 (2020-06-22)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 20.04.3 LTS
-## 
+##
 ## Matrix products: default
 ## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
-## 
+##
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
 ##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
@@ -85,10 +85,10 @@ sessionInfo()
 ##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-## 
+##
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
+##
 ## loaded via a namespace (and not attached):
 ##  [1] knitr_1.33      magrittr_1.5    hms_0.5.3       R6_2.4.1       
 ##  [5] rlang_0.4.10    highr_0.8       stringr_1.4.0   httr_1.4.2     
@@ -96,7 +96,7 @@ sessionInfo()
 ## [13] ellipsis_0.3.1  yaml_2.2.1      leanbuild_0.1.2 digest_0.6.25  
 ## [17] tibble_3.0.3    lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24  
 ## [21] readr_1.4.0     vctrs_0.3.4     fs_1.5.0        curl_4.3       
-## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2 
+## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2
 ## [29] pillar_1.4.6    pkgconfig_2.0.3
 ```
 `````
@@ -107,7 +107,7 @@ sessionInfo()
 
 ## Exercise 2: Package management
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
 1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory.
 
@@ -123,9 +123,9 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
 ## Saving to: ‘environment.yml.3’
-## 
+##
 ##      0K                                                       100% 15.4M=0s
-## 
+##
 ## 2021-11-03 19:45:54 (15.4 MB/s) - ‘environment.yml.3’ saved [398/398]
 ```
 
@@ -157,7 +157,7 @@ jupyter lab
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 1. Go to RStudio and the Console pane:
 

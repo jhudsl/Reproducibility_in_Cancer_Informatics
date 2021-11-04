@@ -30,8 +30,8 @@ For both exercises, we will download an environment file we've set up for you, t
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
+<details> <summary>**Get the _Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
 
 
 
@@ -40,8 +40,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip).
+<details> <summary>**Get the _R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip).
 
 
 
@@ -52,7 +52,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 ## Exercise 1: Print out session info
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
 In your scientific notebook, you'll need to add two items.
 1. Add the `import session_info` to a code chunk at the beginning of your notebook.
@@ -61,7 +61,7 @@ In your scientific notebook, you'll need to add two items.
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 1. In your Rmd file, add a chunk in the very end that looks like this:
 `````
@@ -106,7 +106,7 @@ sessionInfo()
 
 ## Exercise 2: Package management
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
 1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory.
 
@@ -156,7 +156,7 @@ jupyter lab
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 1. Go to RStudio and the Console pane:
 

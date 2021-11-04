@@ -107,7 +107,7 @@ You can read through some of these articles to think about what kind of organiza
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
 <details> <summary>**Get the Python project example files**</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip).
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip).
 
 ```{bash, include = FALSE}
 mkdir -p chapter-zips
@@ -122,7 +122,7 @@ unzip -o chapter-zips/python-heatmap-chapt-3.zip -d chapter-zips/
 </details>
 
 <details> <summary>**Get the R project example files**</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-3.zip).
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-3.zip).
 
 ```{bash, include = FALSE}
 mkdir -p chapter-zips

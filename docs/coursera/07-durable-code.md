@@ -187,7 +187,7 @@ If any randomness is involved in your analysis, you will want to set the seed in
 
 In brief, computers don't actually create numbers randomly they create [numbers pseudorandomly](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible.
 
-<details> <summary> For more on how setting the seed works -- a quick experiment </summary>
+<details> <summary> **For more on how setting the seed works -- a quick experiment**</summary>
 To illustrate how seeds work, run we'll run a quick experiment with setting the seed here:
 
 First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number.
@@ -267,8 +267,8 @@ There's so many opinions and strategies on best practices for code. And although
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip).
+<details> <summary>**Get the Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip).
 
 
 
@@ -277,8 +277,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip).
+<details> <summary>**Get the R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip).
 
 
 
@@ -306,7 +306,7 @@ For example, for this `make-heatmap` notebook we want to:
 8) Print out the session info!  
 
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
 **The exercise: Polishing code**  
 
@@ -422,7 +422,7 @@ Then, when you are ready, take a look at what our ["final" version](https://gith
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 **About the tidyverse:**.  
 
@@ -578,7 +578,7 @@ Now that we've made some nice updates to the code, we are ready to do a bit more
 
 ## Exercise 2: Style code automatically!
 
-<details> <summary>Styling Python code automatically</summary>
+<details> <summary>**Styling Python code automatically**</summary>
 
 Run your notebook through `black`. First you'll need to install it by running this command in a Terminal window in your JupyterLab.
 
@@ -602,7 +602,7 @@ You should get a message that your notebook was styled!
 
 </details>
 
-<details> <summary>Styling R code automatically</summary>
+<details> <summary>**Styling R code automatically**</summary>
 
 Let's run your notebook through `styler`.
 First you'll need to install it and add it to your `renv`.
@@ -621,5 +621,5 @@ You should get a message that your notebook was styled!
 
 </details>
 
-Before you are done with this exercise, there's one more thing we need to do: upload the latest version to GitHub.
+Before you are done with this exercise, there's one more thing we need to do: **upload the latest version to GitHub**.
 Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.

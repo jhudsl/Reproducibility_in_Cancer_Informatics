@@ -63,8 +63,8 @@ You can take a look at this [template README](https://raw.githubusercontent.com/
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-8.zip).
+<details> <summary>**Get the Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-8.zip).
 
 
 
@@ -73,8 +73,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-8.zip).
+<details> <summary>**Get the R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-8.zip).
 
 
 
@@ -85,7 +85,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 ## Exercise 1: Practice beefing up your notebook descriptions
 
-<details> <summary> _Python project exercise_</summary>
+<details> <summary>**Python project exercise**</summary>
 
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`.
@@ -102,7 +102,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 </details>
 
-<details> <summary> _R project exercise_</summary>
+<details> <summary>**R project exercise**</summary>
 
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
