@@ -48,7 +48,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 This can also be handy especially if you use automation to enhance the reproducibility of your analyses (something we will talk about in the advanced part of this course).
 
-Because all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
+Because of all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 

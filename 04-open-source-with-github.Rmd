@@ -22,7 +22,7 @@ All of us at one point or another have created different versions of a file or d
 
 There are other version control systems as well, but git is the most popular in part because it works with GitHub, an online hosting service for git controlled files.
 
-### GitHub and git allow you to... 
+### GitHub and git allow you to...
 
 #### Maintain transparent analyses
 
@@ -42,7 +42,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 #### Keep a documented history of your project
 
-Over the time course of a project a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to re-visit a question you already answered.
+Overtime in a project, a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to re-visit a question you already answered.
 
 ```{r, fig.alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'", echo = FALSE}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_92")
