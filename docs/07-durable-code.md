@@ -267,8 +267,8 @@ There's so many opinions and strategies on best practices for code. And although
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip).
+<details> <summary>**Get the _Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip).
 
 
 
@@ -277,8 +277,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip).
+<details> <summary>**Get the _R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip).
 
 
 
@@ -306,7 +306,7 @@ For example, for this `make-heatmap` notebook we want to:
 8) Print out the session info!  
 
 
-<details> <summary>Python version of the exercise</summary>
+<details> <summary>**Python version of the exercise**</summary>
 
 **The exercise: Polishing code**  
 
@@ -422,7 +422,7 @@ Then, when you are ready, take a look at what our ["final" version](https://gith
 
 </details>
 
-<details> <summary>R version of the exercise</summary>
+<details> <summary>**R version of the exercise**</summary>
 
 **About the tidyverse:**.  
 

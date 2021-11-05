@@ -42,8 +42,8 @@ Because all of these reasons, we encourage the use of computational notebooks as
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>How to get the _Python project example files_</summary>
-To get the _Python project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
+<details> <summary>**Get the _Python project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
 
 
 
@@ -52,8 +52,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>How to get the _R project example files_</summary>
-To get the _R project example files_, [click this link](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
+<details> <summary>**Get the _R project example files**</summary>
+[Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
 
 
 
