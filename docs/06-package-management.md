@@ -116,16 +116,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-11-05 00:48:23--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+## --2021-11-05 14:04:37--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
-## Saving to: ‘environment.yml.2’
+## Saving to: ‘environment.yml.5’
 ## 
-##      0K                                                       100% 21.0M=0s
+##      0K                                                       100% 14.6M=0s
 ## 
-## 2021-11-05 00:48:23 (21.0 MB/s) - ‘environment.yml.2’ saved [398/398]
+## 2021-11-05 14:04:37 (14.6 MB/s) - ‘environment.yml.5’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
@@ -162,10 +162,8 @@ jupyter lab
 
 2. Install `renv` using:
 
-
 ```
-## Installing package into '/usr/local/lib/R/site-library'
-## (as 'lib' is unspecified)
+install.packages("renv")
 ```
 
 3. Create your renv snapshot following the `renv` workflow process:
@@ -186,6 +184,7 @@ jupyter lab
 
 </details>
 
+  
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 
 After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!
