@@ -11,7 +11,7 @@ As we discussed previously, sometimes two different researchers can run the same
 
 <img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" title="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" />
 
-What Ruby and Avi may not realize, is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
+What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
 
 <img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" title="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" />
 
@@ -54,10 +54,10 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 <details> <summary>**Python version of the exercise**</summary>
 
-In your scientific notebook, you'll need to add two items.
-1. Add the `import session_info` to a code chunk at the beginning of your notebook.
-2. Add `session_info.show()` to a new code chunk at the very end of your notebook.
-3. Save your notebook and commit it to GitHub.
+In your scientific notebook, you'll need to add two items.  
+1. Add the `import session_info` to a code chunk at the beginning of your notebook.  
+2. Add `session_info.show()` to a new code chunk at the very end of your notebook.  
+3. Save your notebook and add it to GitHub.  
 
 </details>
 
@@ -74,10 +74,10 @@ sessionInfo()
 ## R version 4.0.2 (2020-06-22)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 20.04.3 LTS
-##
+## 
 ## Matrix products: default
 ## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
-##
+## 
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
 ##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
@@ -85,10 +85,10 @@ sessionInfo()
 ##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-##
+## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
-##
+## 
 ## loaded via a namespace (and not attached):
 ##  [1] knitr_1.33      magrittr_1.5    hms_0.5.3       R6_2.4.1       
 ##  [5] rlang_0.4.10    highr_0.8       stringr_1.4.0   httr_1.4.2     
@@ -96,12 +96,12 @@ sessionInfo()
 ## [13] ellipsis_0.3.1  yaml_2.2.1      leanbuild_0.1.2 digest_0.6.25  
 ## [17] tibble_3.0.3    lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24  
 ## [21] readr_1.4.0     vctrs_0.3.4     fs_1.5.0        curl_4.3       
-## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2
+## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2 
 ## [29] pillar_1.4.6    pkgconfig_2.0.3
 ```
 `````
 2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything.
-3. Save your notebook and commit it to GitHub.
+3. Save your notebook and add it to GitHub.
 
 </details>
 
@@ -117,16 +117,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-11-03 19:45:54--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+## --2021-11-05 00:49:45--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
 ## Saving to: ‘environment.yml.3’
-##
-##      0K                                                       100% 15.4M=0s
-##
-## 2021-11-03 19:45:54 (15.4 MB/s) - ‘environment.yml.3’ saved [398/398]
+## 
+##      0K                                                       100% 40.4M=0s
+## 
+## 2021-11-05 00:49:45 (40.4 MB/s) - ‘environment.yml.3’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
@@ -186,5 +186,7 @@ jupyter lab
 5. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
 </details>
+
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 
 After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!

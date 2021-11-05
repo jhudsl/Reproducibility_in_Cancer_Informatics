@@ -18,6 +18,7 @@ get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previo
 exercise-organize-your-project
 making-your-project-open-source-with-github
 learning-objectives-2
+github-and-git-allow-you-to
 maintain-transparent-analyses
 have-backups-of-your-code-and-analyses-at-every-point
 keep-a-documented-history-of-your-project
@@ -46,7 +47,7 @@ general-principles
 work-on-your-code-iteratively
 prioritize-readability-over-cleverness
 dry-up-your-code
-dont-be-afraid-to-delete-and-refresh
+dont-be-afraid-to-delete-and-refresh-a-lot
 use-code-comments-effectively
 use-informative-variable-names
 follow-a-code-style

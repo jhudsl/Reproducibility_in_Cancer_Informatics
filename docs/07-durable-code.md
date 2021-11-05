@@ -89,16 +89,20 @@ Now, if you wanted to edit the greeting, you'd only need to edit it in the funct
 - [Keep your code dry](https://www.drycode.io/) by @DRY.  
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
 
-#### Don't be afraid to delete and refresh  
+#### Don't be afraid to delete and refresh a lot  
 <img src="resources/images/delete.png" width="12%">
 
-Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
+Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE. Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your  environment.
 
-1) You might write better code on the second try (or third or n'th).
-2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need.
-3) With version control you can always return to that old code! (We'll dive more into version control later on, but you've started the process by [uploading your code to GitHub in chapter 4](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html)!)
+Keeping around old code and objects is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
+
+1) You might write better code on the second try (or third or n'th).  
+2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need.  
+3) With version control you can always return to that old code! (We'll dive more into version control later on, but you've started the process by [uploading your code to GitHub in chapter 4](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html)!)  
 
 This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).
+
+
 
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
 
@@ -131,11 +135,13 @@ Comments can help clarify at points where your code might need further explanati
 
 Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.
 
-> 1 Write intention-revealing names.
-> 2 Use consistent notation for naming convention.
-> 3 Use standard terms.
-> 4 Do not number a variable name.
-> 5 When you find another way to name variable, refactor as fast as possible.
+> 1 Write intention-revealing names.  
+> 2 Use consistent notation for naming convention.  
+> 3 Use standard terms.  
+> 4 Do not number a variable name.  
+> 5 When you find another way to name variable, refactor as fast as possible.  
+
+[@Hobert2018]
 
 **More reading:**  
 
@@ -168,11 +174,11 @@ For Python code, you can use [python black](https://black.readthedocs.io/en/stab
 
 Readable code should follow an organized structure. Just like how outlines help the structure of manuscript writing, outlines can also help the organization of code writing.
 
-A tentative outline for a notebook might look like this:
+A tentative outline for a notebook might look like this:  
 
-1) A description of the purpose of the code (in Markdown).
-2) Import the libraries you will need (including sourcing any functions )
-3) List any hard-coded variables.
+1) A description of the purpose of the code (in Markdown).  
+2) Import the libraries you will need (including sourcing any custom functions).  
+3) List any hard-coded variables.  
 4) Import data.  
 5) Do any data cleaning needed.   
 6) The main thing you need to do.  
@@ -187,7 +193,7 @@ If any randomness is involved in your analysis, you will want to set the seed in
 
 In brief, computers don't actually create numbers randomly they create [numbers pseudorandomly](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible.
 
-<details> <summary> For more on how setting the seed works -- a quick experiment </summary>
+<details> <summary>**For more on how setting the seed works -- a quick experiment**</summary>
 To illustrate how seeds work, run we'll run a quick experiment with setting the seed here:
 
 First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number.
@@ -267,7 +273,7 @@ There's so many opinions and strategies on best practices for code. And although
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>**Get the _Python project example files**</summary>
+<details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip).
 
 
@@ -277,7 +283,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>**Get the _R project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip).
 
 
@@ -623,3 +629,5 @@ You should get a message that your notebook was styled!
 
 Before you are done with this exercise, there's one more thing we need to do: upload the latest version to GitHub.
 Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
+
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**

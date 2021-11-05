@@ -11,7 +11,7 @@ As we discussed previously, sometimes two different researchers can run the same
 
 ![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png){width=100%}
 
-What Ruby and Avi may not realize, is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
+What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
 
 ![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png){width=100%}
 
@@ -30,7 +30,7 @@ For both exercises, we will download an environment file we've set up for you, t
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>**Get the _Python project example files**</summary>
+<details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
 
 
@@ -40,7 +40,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>**Get the _R project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip).
 
 
@@ -54,10 +54,10 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 <details> <summary>**Python version of the exercise**</summary>
 
-In your scientific notebook, you'll need to add two items.
-1. Add the `import session_info` to a code chunk at the beginning of your notebook.
-2. Add `session_info.show()` to a new code chunk at the very end of your notebook.
-3. Save your notebook and commit it to GitHub.
+In your scientific notebook, you'll need to add two items.  
+1. Add the `import session_info` to a code chunk at the beginning of your notebook.  
+2. Add `session_info.show()` to a new code chunk at the very end of your notebook.  
+3. Save your notebook and add it to GitHub.  
 
 </details>
 
@@ -100,7 +100,7 @@ sessionInfo()
 ```
 `````
 2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything.
-3. Save your notebook and commit it to GitHub.
+3. Save your notebook and add it to GitHub.
 
 </details>
 
@@ -116,16 +116,16 @@ wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/e
 ```
 
 ```
-## --2021-11-03 19:44:47--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+## --2021-11-05 00:48:23--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
 ## Saving to: ‘environment.yml.2’
 ## 
-##      0K                                                       100% 6.27M=0s
+##      0K                                                       100% 21.0M=0s
 ## 
-## 2021-11-03 19:44:47 (6.27 MB/s) - ‘environment.yml.2’ saved [398/398]
+## 2021-11-05 00:48:23 (21.0 MB/s) - ‘environment.yml.2’ saved [398/398]
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
@@ -185,5 +185,7 @@ jupyter lab
 5. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
 </details>
+
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 
 After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!

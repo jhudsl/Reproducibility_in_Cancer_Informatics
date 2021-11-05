@@ -7,7 +7,7 @@
 
 <img src="resources/images/03-project-organization_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png" title="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." alt="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." style="display: block; margin: auto;" />
 
-Keeping your files organized is a skill that has a high long-term pay off. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
+Keeping your files organized is a skill that has a high long-term payoff. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
 
 <img src="resources/images/03-project-organization_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png" title="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" style="display: block; margin: auto;" />
 
@@ -24,17 +24,15 @@ Organization is yet another aspect of reproducibility that saves you and your co
 
 ## Organizational strategies
 
-There's a lot of ways to keep your files organized, and there's not a "one size fits all" organizational solution [@Shapiro_Childhood_Cancer_Data_2021]. In this chapter, we will discuss some generalities but as far as specifics we will point you to others' who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.
+There's a lot of ways to keep your files organized, and there's not a "one size fits all" organizational solution [@Shapiro2021]. In this chapter, we will discuss some generalities but as far as specifics we will point you to others' who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.
 
 The most important aspects of your project organization scheme is that it:  
 
 - Is [project-oriented](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) [@Bryan2017].  
-- Follows consistent patterns.  
-- Is easy for you and others to find the files you need quickly.  
-- Minimizes the likelihood for errors (like writing over files accidentally).  
-- Is something maintainable!
-
-[@Shapiro_Childhood_Cancer_Data_2021]
+- Follows consistent patterns [@Shapiro2021].  
+- Is easy for you and others to find the files you need quickly [@Shapiro2021].  
+- Minimizes the likelihood for errors (like writing over files accidentally) [@Shapiro2021].  
+- Is something maintainable [@Shapiro2021]!
 
 ### Tips for organizing your project:   
 
@@ -56,23 +54,35 @@ Let's see what these principles might look like put into practice.
 Here's an example of what this might look like:
 ```
 project-name/
-├── run_analysis.sh # Central script that runs everything again
-├── 00-download-data.sh # The script that needs to be run first and is called by run_analysis.sh
-├── 01-make-heatmap.Rmd # The script that needs to be run second and is also called by run_analysis.sh
-├── README.md # The document that has the information that will orient someone to this project
-├── plots/ # A folder of plots and resulting images
+├── run_analysis.sh
+├── 00-download-data.sh
+├── 01-make-heatmap.Rmd
+├── README.md
+├── plots/
 │   └── project-name-heatmap.png
-├── results/ # A folder results
+├── results/
 │   └── top_gene_results.tsv
-├── raw-data/ # data files as they first arrive and **nothing** has been done to them yet.
+├── raw-data/
 │   ├── project-name-raw.tsv
 │   └── project-name-metadata.tsv
-├── processed-data/ # data that has been modified from the raw in some way.
+├── processed-data/
 │   ├── project-name-quantile-normalized.tsv
-└── util/ # A folder of utilities that never needs to be called or touched directly unless troubleshooting something
+└── util/
     ├── plotting-functions.R
     └── data-wrangling-functions.R
 ```
+
+**What these hypothetical files and folders contain:**
+
+- `run_analysis.sh` - A central script that runs everything again
+- `00-download-data.sh` - The script that needs to be run first and is called by run_analysis.sh
+- `01-make-heatmap.Rmd` - The script that needs to be run second and is also called by run_analysis.sh
+- `README.md` - The document that has the information that will orient someone to this project, we'll discuss more about how to create a helpful README in [an upcoming chapter](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/documenting-analyses.html#readmes).
+- `plots` - A folder of plots and resulting images
+- `results` - A folder results
+- `raw-data` - Data files as they first arrive and **nothing** has been done to them yet.
+- `processed-data` - Data that has been modified from the raw in some way.
+- `util` - A folder of utilities that never needs to be called or touched directly unless troubleshooting something
 
 ## Readings about organizational strategies for data science projects:
 
@@ -88,7 +98,7 @@ You can read through some of these articles to think about what kind of organiza
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>**Get the _Python project example files**</summary>
+<details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip).
 
 
@@ -98,7 +108,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>**Get the _R project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-3.zip).
 
 
@@ -110,7 +120,10 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 ## Exercise: Organize your project!
 
-- [ ] Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
-- [ ] Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.
+1. Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.  
+2. Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.  
 
 After your files are organized, you are ready to move on to the next chapter and create a notebook!
+
+
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**

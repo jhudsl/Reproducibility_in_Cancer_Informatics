@@ -38,11 +38,11 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 This can also be handy especially if you use automation to enhance the reproducibility of your analyses (something we will talk about in the advanced part of this course).
 
-Because all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
+Because of all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>**Get the _Python project example files**</summary>
+<details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
 
 
@@ -52,7 +52,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>**Get the _R project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip).
 
 
@@ -68,7 +68,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 For this chapter, we will create notebooks from our example files code. Notebooks work best with the integrated development environment (IDE) they were created to work with. IDE's are sets of tools that help you develop your code. They are part "point and click" and part command line and include lots of visuals that will help guide you.
 
-<details> <summary>Set up a Python IDE</summary>
+<details> <summary>**Set up a Python IDE**</summary>
 
 **Install JupyterLab**
 
@@ -111,7 +111,7 @@ conda install -c conda-forge jupyterlab
 
 </details>
 
-<details> <summary>Set up an R IDE</summary>
+<details> <summary>**Set up an R IDE**</summary>
 
 **Install RStudio**
 
@@ -154,7 +154,7 @@ More reading about RStudio's interface:
 
 Now, in your respective IDE, we'll turn our unreproducible scripts into notebooks. In the next chapter we will begin to dive into the code itself, but for now, we'll get the notebook ready to go.
 
-<details> <summary>Set up a Python notebook</summary>
+<details> <summary>**Set up a Python notebook**</summary>
 
 1. Start a new notebook by going to `New` > `Notebook`.
 2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
@@ -180,7 +180,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 </details>
 
-<details> <summary>Set up an R notebook</summary>
+<details> <summary>**Set up an R notebook**</summary>
 
 1. Start a new notebook by going to `File` > `New Files` > `R Notebook`.
 2. Then open up this chapter’s example code folder and open the `make_heatmap.R` file.
@@ -200,5 +200,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 8. This shows the nicely rendered version of your analysis and snapshots whatever output existed when the `.Rmd` file was saved.
 
 </details>
+
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 
 Now that you've created your notebook, you are ready to start polishing that code!

@@ -63,7 +63,7 @@ You can take a look at this [template README](https://raw.githubusercontent.com/
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
-<details> <summary>**Get the _Python project example files**</summary>
+<details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-8.zip).
 
 
@@ -73,7 +73,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>**Get the _R project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-8.zip).
 
 
@@ -85,7 +85,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 ## Exercise 1: Practice beefing up your notebook descriptions
 
-<details> <summary> _Python project exercise**</summary>
+<details> <summary>**Python project exercise**</summary>
 
 1. Start up JuptyerLab with running `juptyer lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`.
@@ -102,7 +102,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 </details>
 
-<details> <summary> _R project exercise**</summary>
+<details> <summary>**R project exercise**</summary>
 
 1. Open up RStudio.
 2. Open up the notebook you created in the previous chapter.  
@@ -120,3 +120,5 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 3. You can reference the "final" versions of the README, but keep in mind it will reference items that we will discuss in the "advanced" portion of this course. See the [R README here](https://github.com/jhudsl/reproducible-R-example) and the [Python README here](https://github.com/jhudsl/reproducible-python-example).
 
 4. Add your README and updated notebook to your GitHub repository. Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
+
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**

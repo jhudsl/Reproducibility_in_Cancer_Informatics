@@ -184,7 +184,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="4" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html"><i class="fa fa-check"></i><b>4</b> Making your project open source with GitHub</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#learning-objectives-2"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="4.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#learning-objectives-2"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#github-and-git-allow-you-to"><i class="fa fa-check"></i><b>4.1.1</b> GitHub and git allow you to…</a></li>
+</ul></li>
 <li class="chapter" data-level="4.2" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-1"><i class="fa fa-check"></i><b>4.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
 <li class="chapter" data-level="4.3" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#exercise-set-up-a-project-on-github"><i class="fa fa-check"></i><b>4.3</b> Exercise: Set up a project on GitHub</a></li>
 </ul></li>
@@ -281,7 +284,7 @@ div.csl-indent {
 <p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" title="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" /></p>
 <p>As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!</p>
 <p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" title="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" /></p>
-<p>What Ruby and Avi may not realize, is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don’t have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results <span class="citation">(<a href="#ref-BeaulieuJones2017" role="doc-biblioref">BeaulieuJones2017 and Greene 2017</a>)</span>.</p>
+<p>What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don’t have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results <span class="citation">(<a href="#ref-BeaulieuJones2017" role="doc-biblioref">Beaulieu-Jones and Greene 2017</a>)</span>.</p>
 <p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" title="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" /></p>
 <p>There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.</p>
 <p>There are two strategies for dealing with software versions that we will use in our exercises:</p>
@@ -299,16 +302,16 @@ div.csl-indent {
 <h2><span class="header-section-number">6.2</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
 <details>
 <summary>
-How to get the <em>Python project example files</em>
+<strong>Get the Python project example files</strong>
 </summary>
-<p>To get the <em>Python project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip">click this link</a>.</p>
+<p><a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip">Click this link to download</a>.</p>
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
 </details>
 <details>
 <summary>
-How to get the <em>R project example files</em>
+<strong>Get the R project example files</strong>
 </summary>
-<p>To get the <em>R project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip">click this link</a>.</p>
+<p><a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-6.zip">Click this link to download</a>.</p>
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
 </details>
 </div>
@@ -316,16 +319,16 @@ How to get the <em>R project example files</em>
 <h2><span class="header-section-number">6.3</span> Exercise 1: Print out session info</h2>
 <details>
 <summary>
-Python version of the exercise
+<strong>Python version of the exercise</strong>
 </summary>
-<p>In your scientific notebook, you’ll need to add two items.
-1. Add the <code>import session_info</code> to a code chunk at the beginning of your notebook.
-2. Add <code>session_info.show()</code> to a new code chunk at the very end of your notebook.
-3. Save your notebook and commit it to GitHub.</p>
+<p>In your scientific notebook, you’ll need to add two items.<br />
+1. Add the <code>import session_info</code> to a code chunk at the beginning of your notebook.<br />
+2. Add <code>session_info.show()</code> to a new code chunk at the very end of your notebook.<br />
+3. Save your notebook and add it to GitHub.</p>
 </details>
 <details>
 <summary>
-R version of the exercise
+<strong>R version of the exercise</strong>
 </summary>
 <ol style="list-style-type: decimal">
 <li>In your Rmd file, add a chunk in the very end that looks like this:</li>
@@ -366,7 +369,7 @@ sessionInfo()
 ```</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Now you’ll want to refresh everything before you save your notebook. In the menu, where it says “Run” click the arrow and choose “Restart R Run All Chunks” to refresh everything.</li>
-<li>Save your notebook and commit it to GitHub.</li>
+<li>Save your notebook and add it to GitHub.</li>
 </ol>
 </details>
 </div>
@@ -374,22 +377,22 @@ sessionInfo()
 <h2><span class="header-section-number">6.4</span> Exercise 2: Package management</h2>
 <details>
 <summary>
-Python version of the exercise
+<strong>Python version of the exercise</strong>
 </summary>
 <ol style="list-style-type: decimal">
 <li>Download this <a href="https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml">starter conda environment.yml file</a> by clicking on the link and place it with your example project files directory.</li>
 </ol>
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="managing-package-versions.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml</span></code></pre></div>
-<pre><code>## --2021-11-03 19:43:42--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+<pre><code>## --2021-11-05 00:46:05--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...
 ## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
 ## HTTP request sent, awaiting response... 200 OK
 ## Length: 398 [text/plain]
 ## Saving to: ‘environment.yml.1’
 ## 
-##      0K                                                       100% 10.9M=0s
+##      0K                                                       100% 11.9M=0s
 ## 
-## 2021-11-03 19:43:42 (10.9 MB/s) - ‘environment.yml.1’ saved [398/398]</code></pre>
+## 2021-11-05 00:46:05 (11.9 MB/s) - ‘environment.yml.1’ saved [398/398]</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Navigate to your example project files directory using <a href="https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955">command line</a>.</p></li>
 <li><p>Create your conda environment by using this file in the command.</p></li>
@@ -415,7 +418,7 @@ Python version of the exercise
 </details>
 <details>
 <summary>
-R version of the exercise
+<strong>R version of the exercise</strong>
 </summary>
 <ol style="list-style-type: decimal">
 <li><p>Go to RStudio and the Console pane:</p></li>
@@ -456,6 +459,7 @@ R version of the exercise
 <li><p>Follow <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github">these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter</a>. Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.</p></li>
 </ol>
 </details>
+<p><strong>Any feedback you have regarding this exercise is greatly appreciated; you can fill out <a href="https://forms.gle/ygSSwoGaEATA2S65A">this form</a>!</strong></p>
 <p>After you’ve added your computing environment files to your GitHub, you’re ready to continue using them with your IDE to actually work on the code in your notebook!</p>
 
 </div>
@@ -464,7 +468,7 @@ R version of the exercise
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-BeaulieuJones2017" class="csl-entry">
-BeaulieuJones2017, Brett K, and Casey S Greene. 2017. <span>“Reproducibility of Computational Workflows Is Automated Using Continuous Analysis.”</span> <em>Nature Biotechnology</em> 35 (4): 342–46. <a href="https://doi.org/10.1038/nbt.3780">https://doi.org/10.1038/nbt.3780</a>.
+Beaulieu-Jones, Brett K, and Casey S Greene. 2017. <span>“Reproducibility of Computational Workflows Is Automated Using Continuous Analysis.”</span> <em>Nature Biotechnology</em> 35 (4): 342–46. <a href="https://doi.org/10.1038/nbt.3780">https://doi.org/10.1038/nbt.3780</a>.
 </div>
 </div>
 <hr>

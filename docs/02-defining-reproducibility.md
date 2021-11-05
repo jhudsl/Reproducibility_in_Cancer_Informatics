@@ -9,17 +9,17 @@
 
 ## What is reproducibility
 
-There's been a lot of discussion about what is included in the term `reproducibility` and there is some discrepancy between fields. For the purposes of informatics and data analysis, a reproducible analysis is one that can be re-run by a different researcher and the same result and conclusion is found.
+There's been a lot of discussion about what is included in the term `reproducibility` and there is some discrepancy between fields. For the purposes of informatics and data analysis, a _reproducible analysis is one that can be re-run by a different researcher and the same result and conclusion is found_.
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_146.png)
 
-Reproducibility is related to repeatability and replicability but it is worth taking the time parse out these terms.
+Reproducibility is related to repeatability and replicability but it is worth taking time to differentiate these terms
 
-Perhaps you are like Ruby and have just found an interesting pattern through your data analysis! This has probably been the result of many months or years on your project and its worth celebrating!
+Perhaps you are like Ruby and have just found an interesting pattern through your data analysis! This has probably been the result of many months or years on your project and it's worth celebrating!
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_0.png)
 
-But before you get too excited, Ruby should ask herself whether she is able to re-run her own analysis and get the same results again. This is known as _repeatability_.
+But before she considers these results a done deal, Ruby should test whether she is able to re-run her own analysis and get the same results again. This is known as _repeatability_.
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_413.png)
 
@@ -39,15 +39,15 @@ Science progresses when data and hypotheses are put through these levels thoroug
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_564.png)
 
-Ideally all analyses and results would be reproducible without too much time effort spent; this would aid in the efficiency of research getting to the next stages and questions. But unfortunately, in practice, reproducibility is not as commonplace as we would hope. Institutions and reward systems generally do not prioritize or even measure reproducibility standards in research and training opportunities for reproducible techniques can be scarce. Reproducible research can often feel like uphill battle that is made steeper by lack of training opportunities.
+Ideally all analyses and results would be reproducible without too much time and effort spent; this would aid in the efficiency of research getting to the next stages and questions. But unfortunately, in practice, reproducibility is not as commonplace as we would hope. Institutions and reward systems generally do not prioritize or even measure reproducibility standards in research and training opportunities for reproducible techniques can be scarce. Reproducible research can often feel like an uphill battle that is made steeper by lack of training opportunities.
 
 In this course, we hope to equip your research with the tools you need to enhance the reproducibility of your analyses so this uphill battle is _less steep_.
 
 ## Reproducibility in daily life
 
-What does reproducibility in mean in the daily life of a researcher?
+What does reproducibility mean in the daily life of a researcher?
 
-Let's say Ruby's results are repeatable in her own hands and she excitedly tells her associate, Avi about her preliminary findings. Avi is very excited about these results as well as Ruby's methods!
+Let's say Ruby's results are repeatable in her own hands and she excitedly tells her associate, Avi, about her preliminary findings. Avi is very excited about these results as well as Ruby's methods!
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_179.png)
 
@@ -55,13 +55,13 @@ Avi is also interested in Ruby's analysis methods and results. So Ruby sends Avi
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_944.png)
 
-Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully work on Avi's computer is another story. Often when researchers share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working and this often cannot be done successfully without help from the original code author [@BeaulieuJones2017].
+Ruby may have spent a lot of time on her code and getting it to work on her computer, but whether it will successfully run on Avi's computer is another story. Often when researchers share their analysis code it leads to a substantial amount of effort on the part of the researcher who has received the code to get it working and this often cannot be done successfully without help from the original code author [@BeaulieuJones2017].
 
-Avi is encountering errors because Ruby's code was written with Ruby's computer and local set up in mind and she didn't know how to make it more generally applicable. Avi is spending a lot of time just trying to re-run Ruby's same analysis on her same data; he has yet to be able to try the code on any additional data (which will likely bring up even more errors).
+Avi is encountering errors because Ruby's code was written with Ruby's computer and local setup in mind and she didn't know how to make it more generally applicable. Avi is spending a lot of time just trying to re-run Ruby's same analysis on her same data; he has yet to be able to try the code on any additional data (which will likely bring up even more errors).
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_993.png)
 
-Avi is still struggling to work with Ruby's code and is confused about the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide its time to email Ruby to get some clarity. Now both Avi and Ruby are confused about why this analysis isn't nicely re-running for Avi. Their attempts to communicate about the code through email haven't helped them clarify anything. Multiple versions of the code may have been sent back and forth between them and now things are taking a lot more time than either of them expected.
+Avi is still struggling to work with Ruby's code and is confused about the goals and approaches the code is taking. After struggling with Avi's code for an untold amount of time, Avi may decide it's time to email Ruby to get some clarity. Now both Avi and Ruby are confused about why this analysis isn't nicely re-running for Avi. Their attempts to communicate about the code through email haven't helped them clarify anything. Multiple versions of the code may have been sent back and forth between them and now things are taking a lot more time than either of them expected.
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_1066.png)
 
@@ -75,7 +75,7 @@ Lack of errors also doesn't mean that either Ruby or Avi's runs of the code ran 
 
 Perhaps you've found yourself in a situation like Ruby and Avi; struggling to re-run code that you thought for sure was working a minute ago. In the upcoming chapters, we will discuss how to bolster your projects' reproducibility.
 
-As you apply these reproducible techniques to your research may feel like it is taking more time to reach endpoints, but keep in mind that reproducible analyses and projects have higher upfront costs but these will absolutely pay off in the long term.
+As you apply these reproducible techniques to your own projects, you may feel like it is taking more time to reach endpoints, but keep in mind that reproducible analyses and projects have higher upfront costs but these will absolutely pay off in the long term.
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_38.png)
 
@@ -83,7 +83,7 @@ Reproducibility in your analyses is not only a time saver for yourself, but also
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1cd772e00_0_5.png)
 
-You might not change a single character in your code but then return to it in a a few days/months/years and find that it no longer runs! Reproducible code stands the test of time longer, making future you glad you spent the time to work on it. It's said that your closest collaborator is you from 6 months ago but you don't reply to email. @Broman
+You might not change a single character in your code but then return to it in a a few days/months/years and find that it no longer runs! Reproducible code stands the test of time longer, making 'future you' glad you spent the time to work on it. It's said that your closest collaborator is you from 6 months ago but you don't reply to email [@Broman].
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1cd772e00_0_330.png)
 
@@ -103,6 +103,6 @@ But, reproducible code saves everyone exponential amounts of time and effort! It
 
 ## Reproducibility exists on a continuum!
 
-Incremental work on your analyses is good! You do not need to make your analyses perfect on the first try or even in a particular time frame. The first step in creating an analysis is to get it to work once! But the work does not end there. Furthermore, no analysis is or will ever be perfect in that it will not be reproducible in every single context throughout time. But somewhere toward the right of this continuum is what we will aim for.
+Incremental work on your analyses is good! You do not need to make your analyses perfect on the first try or even within a particular time frame. The first step in creating an analysis is to get it to work once! But the work does not end there. Furthermore, no analysis is or will ever be perfect in that it will not be reproducible in every single context throughout time. incrementally pushing our analyses toward the right of this continuum is the goal.
 
 ![](resources/images/02-defining-reproducibility_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_0.png)

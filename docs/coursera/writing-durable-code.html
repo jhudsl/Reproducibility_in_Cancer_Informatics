@@ -184,7 +184,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="4" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html"><i class="fa fa-check"></i><b>4</b> Making your project open source with GitHub</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#learning-objectives-2"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="4.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#learning-objectives-2"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#github-and-git-allow-you-to"><i class="fa fa-check"></i><b>4.1.1</b> GitHub and git allow you to…</a></li>
+</ul></li>
 <li class="chapter" data-level="4.2" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-1"><i class="fa fa-check"></i><b>4.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
 <li class="chapter" data-level="4.3" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#exercise-set-up-a-project-on-github"><i class="fa fa-check"></i><b>4.3</b> Exercise: Set up a project on GitHub</a></li>
 </ul></li>
@@ -349,13 +352,16 @@ lapply(class_names, GreetStudent)</code></pre>
 <li><a href="https://metova.com/dry-programming-practices/">DRY Programming Practices</a> by <span class="citation">Klinefelter (<a href="#ref-Klinefelter2016" role="doc-biblioref">2016</a>)</span>.</li>
 </ul>
 </div>
-<div id="dont-be-afraid-to-delete-and-refresh" class="section level4" number="7.2.0.4">
-<h4><span class="header-section-number">7.2.0.4</span> Don’t be afraid to delete and refresh</h4>
+<div id="dont-be-afraid-to-delete-and-refresh-a-lot" class="section level4" number="7.2.0.4">
+<h4><span class="header-section-number">7.2.0.4</span> Don’t be afraid to delete and refresh a lot</h4>
 <p><img src="resources/images/delete.png" width="12%"></p>
-<p>Don’t be afraid to delete it all and re-run (multiple times). Keeping around old code is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don’t need to stress about deleting it:</p>
+<p>Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE. Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.</p>
+<p>Keeping around old code and objects is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don’t need to stress about deleting it:</p>
 <ol style="list-style-type: decimal">
-<li>You might write better code on the second try (or third or n’th).</li>
-<li>Keeping around old code makes it harder for you to write and troubleshoot new better code – it’s easier to confuse yourself. Sometimes a fresh start can be what you need.</li>
+<li>You might write better code on the second try (or third or n’th).<br />
+</li>
+<li>Keeping around old code makes it harder for you to write and troubleshoot new better code – it’s easier to confuse yourself. Sometimes a fresh start can be what you need.<br />
+</li>
 <li>With version control you can always return to that old code! (We’ll dive more into version control later on, but you’ve started the process by <a href="https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html">uploading your code to GitHub in chapter 4</a>!)</li>
 </ol>
 <p>This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).</p>
@@ -390,12 +396,13 @@ lapply(class_names, GreetStudent)</code></pre>
 <p><img src="resources/images/variable-name.png" width="12%"></p>
 <p>Try to avoid using variable names that have no meaning like <code>tmp</code> or <code>x</code>, or <code>i</code>. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.</p>
 <blockquote>
-<p>1 Write intention-revealing names.
-2 Use consistent notation for naming convention.
-3 Use standard terms.
-4 Do not number a variable name.
+<p>1 Write intention-revealing names.<br />
+2 Use consistent notation for naming convention.<br />
+3 Use standard terms.<br />
+4 Do not number a variable name.<br />
 5 When you find another way to name variable, refactor as fast as possible.</p>
 </blockquote>
+<p><span class="citation">(<a href="#ref-Hobert2018" role="doc-biblioref">Hobert 2018</a>)</span></p>
 <p><strong>More reading:</strong></p>
 <ul>
 <li><a href="https://www.r4epi.com/coding-best-practices.html#object-variable-names">R for Epidemiology - Coding best Practices</a> by <span class="citation">Cannell (<a href="#ref-Cannell2021" role="doc-biblioref">2021</a>)</span>.</li>
@@ -428,9 +435,12 @@ For Python code, you can use <a href="https://black.readthedocs.io/en/stable/">p
 <p>Readable code should follow an organized structure. Just like how outlines help the structure of manuscript writing, outlines can also help the organization of code writing.</p>
 <p>A tentative outline for a notebook might look like this:</p>
 <ol style="list-style-type: decimal">
-<li>A description of the purpose of the code (in Markdown).</li>
-<li>Import the libraries you will need (including sourcing any functions )</li>
-<li>List any hard-coded variables.</li>
+<li>A description of the purpose of the code (in Markdown).<br />
+</li>
+<li>Import the libraries you will need (including sourcing any custom functions).<br />
+</li>
+<li>List any hard-coded variables.<br />
+</li>
 <li>Import data.<br />
 </li>
 <li>Do any data cleaning needed.<br />
@@ -448,7 +458,7 @@ For Python code, you can use <a href="https://black.readthedocs.io/en/stable/">p
 <p>In brief, computers don’t actually create numbers randomly they create <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">numbers pseudorandomly</a>. But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible.</p>
 <details>
 <summary>
-For more on how setting the seed works – a quick experiment
+<strong>For more on how setting the seed works – a quick experiment</strong>
 </summary>
 <p>To illustrate how seeds work, run we’ll run a quick experiment with setting the seed here:</p>
 <p>First let’s set a seed (it doesn’t matter what number we use, just that we pick a number), so let’s use <code>1234</code> and then create a “random” number.</p>
@@ -510,16 +520,16 @@ For more on how setting the seed works – a quick experiment
 <h2><span class="header-section-number">7.4</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
 <details>
 <summary>
-How to get the <em>Python project example files</em>
+<strong>Get the Python project example files</strong>
 </summary>
-<p>To get the <em>Python project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip">click this link</a>.</p>
+<p><a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip">Click this link to download</a>.</p>
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
 </details>
 <details>
 <summary>
-How to get the <em>R project example files</em>
+<strong>Get the R project example files</strong>
 </summary>
-<p>To get the <em>R project example files</em>, <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip">click this link</a>.</p>
+<p><a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip">Click this link to download</a>.</p>
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
 </details>
 </div>
@@ -549,7 +559,7 @@ How to get the <em>R project example files</em>
 </ol>
 <details>
 <summary>
-Python version of the exercise
+<strong>Python version of the exercise</strong>
 </summary>
 <p><strong>The exercise: Polishing code</strong></p>
 <ol style="list-style-type: decimal">
@@ -631,7 +641,7 @@ Then, when you are ready, take a look at what our <a href="https://github.com/jh
 </details>
 <details>
 <summary>
-R version of the exercise
+<strong>R version of the exercise</strong>
 </summary>
 <p><strong>About the tidyverse:</strong>.</p>
 <p>Before we dive into the exercise, a word about the tidyverse. The tidyverse is a highly useful set of packages for creating readable and reproducible data science workflows in R. In general, we will opt for tidyverse approaches in this course, and strongly encourage you to familiarize yourself with the tidyverse if you have not. We will point out some instances where tidyverse functions can help you DRY up your code as well as make it more readable!</p>
@@ -775,6 +785,7 @@ First you’ll need to install it and add it to your <code>renv</code>.</p>
 </details>
 <p>Before you are done with this exercise, there’s one more thing we need to do: upload the latest version to GitHub.
 Follow <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github">these instructions to add the latest version of your notebook to your GitHub repository</a>. Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.</p>
+<p><strong>Any feedback you have regarding this exercise is greatly appreciated; you can fill out <a href="https://forms.gle/ygSSwoGaEATA2S65A">this form</a>!</strong></p>
 
 </div>
 </div>
