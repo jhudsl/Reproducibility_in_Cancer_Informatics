@@ -38,7 +38,7 @@ Equip learners with reproducibility skills they can apply to their existing anal
 This course is meant to introduce learners to the reproducibility tools, but _it does not necessarily represent the absolute end-all be-all best practices for the use of these tools_. In other words, this course gives a starting point with these tools, but not an ending point. The advanced version of this course is the next step toward incrementally "better practices".
 
 ```{r, fig.alt="Reproducibility is on a continuum. Goal of the course is to move learner’s skills toward creating reproducible analyses. This graph shows a two sided arrow with a gradient. On the very left is a ‘not repeatable analysis’ it was ran once. To the right of that is an analysis that ‘re-runs sometimes’. To the right of this, is an analysis that ‘Re-runs reliably in most contexts’.  And all the way to the right is a ‘perfectly reproducible analysis’ that ‘Re-runs in every situation and gets the same result every time’. In red lettering we note that every analysis is started by being run once but no analysis is ‘perfectly reproducible’.", echo = FALSE}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_0")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.g1006ff8e7e9_48_3")
 ```
 
 ## How to use the course
