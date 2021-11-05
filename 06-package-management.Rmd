@@ -99,7 +99,7 @@ sessionInfo()
 1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory.
 
 ```{bash}
-wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+wget -nc https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
@@ -158,7 +158,7 @@ install.packages("renv")
 
 </details>
 
-  
+
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 
 After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!

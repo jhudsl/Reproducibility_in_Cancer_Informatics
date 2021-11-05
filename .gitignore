@@ -10,3 +10,4 @@ spell_check_results.tsv
 docker/git_token.txt
 chapter-zips/*
 .ipynb_checkpoints/
+environment.yml
