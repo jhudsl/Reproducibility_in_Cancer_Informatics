@@ -2,6 +2,7 @@ introduction
 motivation
 target-audience
 curriculum
+how-to-use-the-course
 defining-reproducibility
 learning-objectives
 what-is-reproducibility
@@ -76,4 +77,4 @@ exercise-2-write-a-readme-for-your-project
 code-review
 learning-objectives-7
 recommended-reading-about-code-review
-exercise-send-your-code-to-someone-else-to-run
+exercise-set-up-your-code-review-request

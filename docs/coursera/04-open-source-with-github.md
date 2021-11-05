@@ -38,6 +38,8 @@ Overtime in a project, a lot happens, especially when it comes to exploring and 
 
 #### Collaborate with others
 
+Analysis projects highly benefit from good collaborations! But having multiple copies of code on multiple collaborators' computers can be a nightmare to keep straight. GitHub allows people to work on the same set of code concurrently but still have a method to integrate all the edits together in a systematic way.  
+
 <img src="resources/images/04-open-source-with-github_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_131.png" title="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!" alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!"  />
 
 #### Experiment with your analysis
@@ -58,7 +60,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 </details>
 
-<details> <summary>**Get the Python project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip).
 
 
@@ -81,6 +83,7 @@ Git and GitHub have a whole rich world of tools and terms that can get complex q
   - Check the box that says `Add a gitignore`.
   - Check the box that says `Add a README`.
 - Follow [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github) to add the example files you downloaded to your new repository.
+
 
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 

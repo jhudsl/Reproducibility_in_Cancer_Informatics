@@ -118,7 +118,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 1. Download this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md).
 2. Fill in the questions inside the `{ }` to create a README for this project.
 3. You can reference the "final" versions of the README, but keep in mind it will reference items that we will discuss in the "advanced" portion of this course. See the [R README here](https://github.com/jhudsl/reproducible-R-example) and the [Python README here](https://github.com/jhudsl/reproducible-python-example).
-
 4. Add your README and updated notebook to your GitHub repository. Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
+
 
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
