@@ -50,6 +50,8 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 #### Collaborate with others
 
+Analysis projects highly benefit from good collaborations! But having multiple copies of code on multiple collaborators' computers can be a nightmare to keep straight. GitHub allows people to work on the same set of code concurrently but still have a method to integrate all the edits together in a systematic way.  
+
 ```{r, fig.alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!", echo = FALSE}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_131")
 ```
