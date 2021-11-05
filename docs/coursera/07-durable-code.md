@@ -56,7 +56,7 @@ If you find yourself writing something more than once, you might want to write a
 DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
 DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!
 
-Here's an slightly modified example from @Bernado2021 for what DRY vs non-DRY code might look like:
+Here's an slightly modified example from @Bernardo2021 for what DRY vs non-DRY code might look like:
 
 ```
 paste('Hello','John', 'welcome to this course')
@@ -630,5 +630,5 @@ You should get a message that your notebook was styled!
 Before you are done with this exercise, there's one more thing we need to do: upload the latest version to GitHub.
 Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
-  
+
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**

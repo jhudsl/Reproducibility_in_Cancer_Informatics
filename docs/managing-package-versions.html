@@ -383,17 +383,8 @@ sessionInfo()
 <ol style="list-style-type: decimal">
 <li>Download this <a href="https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml">starter conda environment.yml file</a> by clicking on the link and place it with your example project files directory.</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="managing-package-versions.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml</span></code></pre></div>
-<pre><code>## --2021-11-05 14:03:37--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-## HTTP request sent, awaiting response... 200 OK
-## Length: 398 [text/plain]
-## Saving to: ‘environment.yml.4’
-## 
-##      0K                                                       100% 22.7M=0s
-## 
-## 2021-11-05 14:03:38 (22.7 MB/s) - ‘environment.yml.4’ saved [398/398]</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="managing-package-versions.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml</span></code></pre></div>
+<pre><code>## File ‘environment.yml’ already there; not retrieving.</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Navigate to your example project files directory using <a href="https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955">command line</a>.</p></li>
 <li><p>Create your conda environment by using this file in the command.</p></li>

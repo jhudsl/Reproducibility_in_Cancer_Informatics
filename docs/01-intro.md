@@ -29,7 +29,7 @@ The course includes hands-on exercises for how to apply reproducible code concep
 Equip learners with reproducibility skills they can apply to their existing analyses scripts and projects. This course opts for an "ease into it" approach. We attempt to give learners doable, incremental steps to increase the reproducibility of their analyses.
 
 **What is not the goal**  
-This course is meant to introduce learners to the reproducibility tools, but _it does not necessarily represent the absolute end-all be-all best practices for the use of these tools_. In other words, this course gives a starting point with these tools, but not an ending point. The advanced version of this course is the next step toward incrementally "better practices".
+This course is meant to introduce learners to the reproducibility tools, but _it does not necessarily represent the absolute end-all, be-all best practices for the use of these tools_. In other words, this course gives a starting point with these tools, but not an ending point. The advanced version of this course is the next step toward incrementally "better practices".
 
 ![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_3.png)
 

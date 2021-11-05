@@ -113,20 +113,11 @@ sessionInfo()
 
 
 ```bash
-wget https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
+wget -nc https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
 ```
 
 ```
-## --2021-11-05 14:05:36--  https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
-## Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
-## Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-## HTTP request sent, awaiting response... 200 OK
-## Length: 398 [text/plain]
-## Saving to: ‘environment.yml.6’
-## 
-##      0K                                                       100% 23.3M=0s
-## 
-## 2021-11-05 14:05:36 (23.3 MB/s) - ‘environment.yml.6’ saved [398/398]
+## File ‘environment.yml’ already there; not retrieving.
 ```
 
 2. Navigate to your example project files directory using [command line](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955).
@@ -185,7 +176,7 @@ install.packages("renv")
 
 </details>
 
-  
+
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 
 After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!
