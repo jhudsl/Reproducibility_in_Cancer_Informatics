@@ -79,7 +79,7 @@ unzip -o chapter-zips/python-heatmap-chapt-4.zip -d chapter-zips/
 ```
 </details>
 
-<details> <summary>**Get the Python project example files**</summary>
+<details> <summary>**Get the R project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-4.zip).
 
 ```{bash, include = FALSE}
@@ -107,6 +107,7 @@ Git and GitHub have a whole rich world of tools and terms that can get complex q
   - Check the box that says `Add a gitignore`.
   - Check the box that says `Add a README`.
 - Follow [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github) to add the example files you downloaded to your new repository.
+
 
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 

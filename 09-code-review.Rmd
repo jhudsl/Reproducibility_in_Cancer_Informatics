@@ -58,6 +58,8 @@ AVOCADO: Put visual to summarize this
 
 9) Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may **not** want to ask your collaborator to spend their time carefully review this _practice_ repository, but now that you understand and have done the steps involved _you are prepared to do this for your own analyses_!
 
+
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
+
 
 In the second part of this course, we will discuss how to conduct code review through GitHub, further utilize version control, and more!
