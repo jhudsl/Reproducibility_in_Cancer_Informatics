@@ -1,4 +1,4 @@
-book_filename: "Intro to Reproducibility"
+book_filename: "Introduction to Reproducibility"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
