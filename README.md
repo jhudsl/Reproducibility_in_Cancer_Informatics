@@ -1,5 +1,5 @@
 
-# Intro to Reproducibility in Cancer Informatics
+# Introduction to Reproducibility in Cancer Informatics
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/actions/workflows/render-bookdown.yml/badge.svg)](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/actions/workflows/render-bookdown.yml)
 
@@ -12,7 +12,7 @@ If you would like to contribute to this course material, take a look at the [get
 ## About this course
 
 This course introduces the concepts of reproducibility and replicability in the context of cancer informatics.
-It is the first course in a two part course on reproducibility (the second part is not yet written but coming soon). 
+It is the first course in a two part course on reproducibility (the second part is not yet written but coming soon).
 It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses.
 The course also introduces tools relevant to reproducibility including analysis notebooks, package management, git and GitHub.
 
@@ -71,7 +71,7 @@ cd r-examples/reproducible-r-example
 docker build -f docker/Dockerfile . -t jhudsl/reproducible-r
 docker run -it -v $PWD:/home/rstudio -e PASSWORD=password -p 8787:8787 jhudsl/reproducible-r
 ```
-Then, in the browser of your choice, navigate to localhost:8787 ; using `rstudio` as your username and `password` as your password (or whatever you choose for your password in the command above). This docker image has the `renv` included in it. 
+Then, in the browser of your choice, navigate to localhost:8787 ; using `rstudio` as your username and `password` as your password (or whatever you choose for your password in the command above). This docker image has the `renv` included in it.
 
 ### Running the Python docker image:
 
@@ -81,5 +81,4 @@ cd python-examples/reproducible-python-example
 docker build -f docker/Dockerfile . -t jhudsl/reproducible-python
 docker run --rm -v $(pwd):/home/jovyan/work -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 jhudsl/reproducible-python
 ```
-Then, in the browser of your choice, navigate to the port that the output tells you. This docker image will automatically have your conda environment set up and working. 
-
+Then, in the browser of your choice, navigate to the port that the output tells you. This docker image will automatically have your conda environment set up and working.
