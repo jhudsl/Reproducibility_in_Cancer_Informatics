@@ -5,6 +5,16 @@
 
 ![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_0.png){width=100%}
 
+## Target Audience  
+
+The course is intended for students in the biomedical sciences and researchers who use informatics tools in their research and have not had training in reproducibility tools and methods.
+
+_This course is written for individuals who:_   
+
+- Have some familiarity with R or Python - have written some scripts.   
+- Have not had formal training in computational methods.  
+- Have limited or no familiar with GitHub, Docker, or package management tools.
+
 ## Motivation
 
 Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.
@@ -13,13 +23,9 @@ Data analyses are generally not reproducible without direct contact with the ori
 
 Equipping researchers with the skills to create reproducible data analyses increases the efficiency of everyone involved. Reproducible analyses are more likely to be understood, applied, and replicated by others. This helps expedite the scientific process by helping researchers avoid false positive dead ends. Open source clarity in reproducible methods also saves researchers' time so they don't have to reinvent the proverbial wheel for methods that everyone in the field is already performing.
 
-This course introduces the concepts of reproducibility and replicability in the context of cancer informatics. It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses. The course also introduces tools relevant to reproducibility including analysis notebooks, package managers, git and GitHub.
-
-## Target Audience  
-
-The course is intended for students in the biomedical sciences and researchers who use informatics tools in their research.
-
 ## Curriculum  
+
+This course introduces the concepts of reproducibility and replicability in the context of cancer informatics. It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses. The course also introduces tools relevant to reproducibility including analysis notebooks, package managers, git and GitHub.
 
 ![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_10.png)
 

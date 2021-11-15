@@ -1,6 +1,6 @@
 introduction
-motivation
 target-audience
+motivation
 curriculum
 how-to-use-the-course
 defining-reproducibility
