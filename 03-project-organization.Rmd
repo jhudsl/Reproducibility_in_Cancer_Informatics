@@ -138,6 +138,8 @@ unzip -o chapter-zips/r-heatmap-chapt-3.zip -d chapter-zips/
 
 ## Exercise: Organize your project!
 
+Using your computer's GUI, organize the files that are part of this project. 
+
 1. Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.  
 2. Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.  
 
