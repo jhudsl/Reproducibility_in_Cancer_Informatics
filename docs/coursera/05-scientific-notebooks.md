@@ -178,6 +178,8 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
 5. Save your `Untitled.ipynb` file as something that tells us what it will end up doing like `make-heatmap.ipynb`.
 
+For [more about using Juptyer notebooks see this](https://realpython.com/jupyter-notebook-introduction/) by @Driscoll2021.
+
 </details>
 
 <details> <summary>**Set up an R notebook**</summary>
@@ -198,6 +200,8 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 6. Save your untitled.Rmd into something that tells us what it will end up doing like `make-heatmap.Rmd`.
 7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`.
 8. This shows the nicely rendered version of your analysis and snapshots whatever output existed when the `.Rmd` file was saved.
+
+For [more about using R notebooks see this](https://bookdown.org/yihui/rmarkdown/) by @Xie2018.
 
 </details>
 

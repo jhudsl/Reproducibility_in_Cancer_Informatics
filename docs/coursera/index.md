@@ -1,5 +1,5 @@
 ---
-title: "Reproducibility in Cancer Informatics"
+title: "Intro to Reproducibility in Cancer Informatics"
 date: "November, 2021"
 site: bookdown::bookdown_site
 documentclass: book
