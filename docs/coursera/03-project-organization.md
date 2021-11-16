@@ -120,10 +120,11 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 ## Exercise: Organize your project!
 
-Using your computer's GUI (drag, drop, and clicking), organize the files that are part of this project. 
+Using your computer's GUI (drag, drop, and clicking), organize the files that are part of this project.
 
-1. Create a `plots`, `results`, and `data` folder and organize the files into their respective folders. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.  
-2. Delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.  
+1. Organized these files using an organizational scheme similar to [what is described above](#example organizational-scheme).
+1. Create folders like `plots`, `results`, and `data` folder. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
+1. You will want to delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.  
 
 After your files are organized, you are ready to move on to the next chapter and create a notebook!
 
