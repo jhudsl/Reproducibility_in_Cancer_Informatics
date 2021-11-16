@@ -62,14 +62,15 @@ Ask yourself if you've polished this code and documentation as far as you can re
 Now you are ready to send this code to your collaborator, but first try to send them a specific set of instructions and questions about what you would like them to review, in your message to them include this information (You may want to draft this out in a scratch file):
 
 _Code review requests should include:_  
-- A link to your repository that has your README to get them quickly oriented to the project.
-- A request for what kind of feedback you are looking for.
-  - Big picture? Technical? Method selection?
-  - Are there specific areas of the code you are having trouble with or are unsure about? Send a link to the [specific lines in GitHub](https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github) you are asking about.
-  - Are there results that are surprising, confusing, or [smell wrong](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels)?
-  - Be sure to detail what you have dug into and tried at this point for any problematic points.  
+
+- A link to your repository that has your README to get them quickly oriented to the project.  
+- A request for what kind of feedback you are looking for.  
+  - Big picture? Technical? Method selection?  
+  - Are there specific areas of the code you are having trouble with or are unsure about? Send a link to the [specific lines in GitHub](https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github) you are asking about.  
+  - Are there results that are surprising, confusing, or [smell wrong](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels)?  
+  - Be sure to detail what you have dug into and tried at this point for any problematic points.   
   - Explicitly ask them what commands or tests you'd like them to test run.
-- Lastly, thank them for helping review your code!
+- Lastly, thank them for helping review your code!  
 
 **9) Ready for review**  
 Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may **not** want to ask your collaborator to spend their time carefully review this practice repository, but now that you understand and have done the steps involved _you are prepared to do this for your own analyses_!

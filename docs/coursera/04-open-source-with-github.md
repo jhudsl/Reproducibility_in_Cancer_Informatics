@@ -80,7 +80,6 @@ Git and GitHub have a whole rich world of tools and terms that can get complex q
 - Follow [these instructions to create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo). As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.
   - Name the repository something that reminds you what its related to.
   - Choose `Public`.
-  - Check the box that says `Add a gitignore`.
   - Check the box that says `Add a README`.
 - Follow [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github) to add the example files you downloaded to your new repository.
 
