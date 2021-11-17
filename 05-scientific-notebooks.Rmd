@@ -94,7 +94,8 @@ For this chapter, we will create notebooks from our example files code. Notebook
 
 1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, so [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation).
 
-To install conda using command line will look something like this in command line (but you will have to change depending on your operating system
+To install conda using command line will look something like this in command line (but you will have to change depending on your operating system).
+
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 mkdir /root/.conda \
@@ -110,7 +111,7 @@ conda --version
 conda install -c conda-forge jupyterlab
 ```
 
-3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).
+3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if you run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).
 
 **Getting familiar with JupyterLab's interface**  
 
@@ -120,14 +121,14 @@ conda install -c conda-forge jupyterlab
 
 > The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
 
-> **File:** actions related to files and directories
-> **Edit:** actions related to editing documents and other activities
-> **View:** actions that alter the appearance of JupyterLab
-> **Run:** actions for running code in different activities such as notebooks and code consoles
-> **Kernel:** actions for managing kernels, which are separate processes for running code
-> **Tabs:** a list of the open documents and activities in the dock panel
-> **Settings:** common settings and an advanced settings editor
-> **Help:** a list of JupyterLab and kernel help links
+> **File:** actions related to files and directories  
+> **Edit:** actions related to editing documents and other activities  
+> **View:** actions that alter the appearance of JupyterLab  
+> **Run:** actions for running code in different activities such as notebooks and code consoles  
+> **Kernel:** actions for managing kernels, which are separate processes for running code  
+> **Tabs:** a list of the open documents and activities in the dock panel  
+> **Settings:** common settings and an advanced settings editor  
+> **Help:** a list of JupyterLab and kernel help links  
 
 </details>
 
