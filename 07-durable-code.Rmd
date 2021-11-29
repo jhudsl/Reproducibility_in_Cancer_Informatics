@@ -106,9 +106,8 @@ Keeping around old code and objects is generally more of a hindrance than a time
 
 This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).
 
-
-
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
+
 
 #### Use code comments effectively  
 <img src="resources/images/comment.png" width="12%">
@@ -312,15 +311,15 @@ For example, for this `make-heatmap` notebook we want to:
 7) Save the heatmap to a PNG.   
 8) Print out the session info!  
 
-
 <details> <summary>**Python version of the exercise**</summary>
 
 **The exercise: Polishing code**  
 
-1. Start up JuptyerLab with running `juptyer lab` from your command line.
+1. Start up JuptyerLab with running `jupyter lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`.
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
+5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Juptyer, you refresh your environment by using the `refresh` icon in the toolbar or by going to `Restart Kernel`.
 
 ***
 
@@ -447,6 +446,7 @@ _More reading on the tidyverse:_
 2. Open up the notebook you created in the previous chapter.  
 3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section.
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
+5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In RStudio, you refresh your environment by going to the `Run` menu and using `Restart R and refresh clear output`.
 
 ***
 

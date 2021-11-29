@@ -91,7 +91,7 @@ unzip -o chapter-zips/r-heatmap-chapt-6.zip -d chapter-zips/
 In your scientific notebook, you'll need to add two items.  
 1. Add the `import session_info` to a code chunk at the beginning of your notebook.  
 2. Add `session_info.show()` to a new code chunk at the very end of your notebook.  
-3. Save your notebook and add it to GitHub.  
+2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter. 
 
 </details>
 
@@ -103,7 +103,7 @@ In your scientific notebook, you'll need to add two items.
 sessionInfo()
 ```
 `````
-2. Save your notebook as is. Note it will not run until we address the issues with the code in the next chapter. 
+2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.
 
 </details>
 
