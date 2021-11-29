@@ -25,9 +25,9 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.
 
-There are two strategies for dealing with software versions that we will use in our exercises:
+There are two strategies for dealing with software versions that we will discuss in this chapter. Either of these strategies can be used alone or you can use both. They address different aspects of the computing environment discrepancy problem.
 
-### Strategy 1: Session Info
+### Strategy 1: Session Info - record a list of your packages
 
 One strategy to combat different software versions is to list the **session info**. This is the easiest (though not most comprehensive) method for handling differences in software versions is to have your code list details about your computing environment.
 
@@ -39,7 +39,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 Session info shows us that they have different R versions and different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions. If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues for any discrepancies. This can give them items to look into for determining why the results didn’t reproduce as expected.
 
-### Package managers
+### Strategy 2: Package managers - share a useable snapshot of your environment
 
 **Package managers** can help handle your computing environment for you in a way that you can share them with others. In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from.
 
@@ -91,7 +91,7 @@ unzip -o chapter-zips/r-heatmap-chapt-6.zip -d chapter-zips/
 In your scientific notebook, you'll need to add two items.  
 1. Add the `import session_info` to a code chunk at the beginning of your notebook.  
 2. Add `session_info.show()` to a new code chunk at the very end of your notebook.  
-2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter. 
+2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.
 
 </details>
 
@@ -149,27 +149,40 @@ jupyter lab
 
 1. Go to RStudio and the Console pane:
 
-2. Install `renv` using:
+2. Install `renv` using (you should only need to do this once per your computer or RStudio environment).
 
 ```
 install.packages("renv")
 ```
 
-3. Create your renv snapshot following the `renv` workflow process:
 
-> 1. Call renv::init() to initialize a new project-local environment with a private R library,
+This is how to use `renv` in your project.
 
-> 2. Work in the project as normal, installing and removing new R packages as they are needed in the project,
+1. Change to your current directory for your project using `setwd()` in your console window (_don't put this in a script or notebook_).
 
-> 3. Call renv::snapshot() to save the state of the project library to the lockfile (called renv.lock),
+2. Use this command in your project:
+```
+renv::init()
+```
+This will start up `renv` in your particular project
 
-> 4. Continue working on your project, installing and updating R packages as needed.
+3. Now you can develop your project as you normally would; installing and removing packages in R as you see fit. For the purposes of this exercise, let's install the `styler` package using the following command. (The styler package will come in handy for styling our code in the next chapter).
+```
+install.packages("styler")
+```
+Now that we have installed `styler` we will want to add it to our renv snapshot.
 
-> 5. Call renv::snapshot() again to save the state of your project library if your attempts to update R packages were successful, or call renv::restore() to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.
+4. To add any packages we've installed to our renv snapshot we will use this command:
+```
+renv::snapshot()
+```
+This will save whatever packages we are currently using to our environment snapshot file called renv.lock. This renv.lock file is what we can share with our collaborators so they can replicate our computing environment.
 
-4. You should see an `renv.lock` file is now created! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
+If your package installation attempts are unsuccessful and you'd like to revert to the previous state of your environment, you can run  `renv::restore()`. This will restore your renv.lock file to what it was before you attempted to install `styler` or whatever packages you tried to install.
 
-5. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
+5. You should see an `renv.lock` file is now created or updated! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
+
+6. Follow [these instructions to add your renv.lock file to the GitHub repository you created in the previous chapter](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
 </details>
 
