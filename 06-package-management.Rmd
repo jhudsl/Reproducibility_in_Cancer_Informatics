@@ -103,8 +103,7 @@ In your scientific notebook, you'll need to add two items.
 sessionInfo()
 ```
 `````
-2. Now you'll want to refresh everything before you save your notebook. In the menu, where it says "Run" click the arrow and choose "Restart R Run All Chunks" to refresh everything.
-3. Save your notebook and add it to GitHub.
+2. Save your notebook as is. Note it will not run until we address the issues with the code in the next chapter. 
 
 </details>
 
