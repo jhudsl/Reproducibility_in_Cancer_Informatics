@@ -113,7 +113,7 @@ sessionInfo()
 
 1. Download this [starter conda environment.yml file](https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml) by clicking on the link and place it with your example project files directory.
 
-```{bash}
+```{bash, include = FALSE}
 wget -nc https://raw.githubusercontent.com/jhudsl/reproducible-python-example/main/environment.yml
 ```
 
