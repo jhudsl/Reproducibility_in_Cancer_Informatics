@@ -29,7 +29,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 #### Reason 2: Notebooks allow for easy sharing of results:
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has her computer showing her notebook. Ruby says ‘Avi, here’s some output from this scientific notebook I’ve been developing from!’ Avi the associate says ‘This is so easy to follow and read, even though I didn’t write the code. Thanks for sharing your exciting results!’"}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_186")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_102")
 ```
 
 > Notebooks can be converted to html and pdf, and then shared as static read-only documents. This is useful to communicate and share a study with colleagues or managers. By adding sufficient explanation, the main story can be understood by the reader, even if they wouldn't be able to write the code that is embedded in the document.
