@@ -167,6 +167,9 @@ renv::init()
 ```
 This will start up `renv` in your particular project
 
+\*[What's `::` about?](https://stackoverflow.com/questions/35240971/what-are-the-double-colons-in-r) -- in brief it allows you to use a function from a package without loading the entire thing with `library()`.  
+
+
 3. Now you can develop your project as you normally would; installing and removing packages in R as you see fit. For the purposes of this exercise, let's install the `styler` package using the following command. (The styler package will come in handy for styling our code in the next chapter).
 ```
 install.packages("styler")
