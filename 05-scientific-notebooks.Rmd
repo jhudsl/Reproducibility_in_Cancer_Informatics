@@ -200,11 +200,18 @@ For [more about using Juptyer notebooks see this](https://realpython.com/jupyter
 
 <img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_13" alt="In RStudio, you can create a new notebook by going to File > New Files > R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." style="display: block; margin: auto;" />
 
-3. Practice creating a new chunk in your R notebook by clicking the `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I`. (You can also manually type out the back ticks and `{}`)
-4. Delete all the default text in this notebook.
+3. Practice creating a new chunk in your R notebook by clicking the `Code` > `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I` (in Mac) or `Ctrl + Alt + I` (in Windows). (You can also manually type out the back ticks and `{}`)
+4. Delete all the default text in this notebook but keep the header which looks like:
+```
+---
+title: "R Notebook"
+output: html_notebook
+---
+```
+You can feel free to change the title from `R Notebook` to something that better suits what we are doing here.
 5. Now copy and paste all of the code from `make_heatmap.R` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
 6. Save your untitled.Rmd into something that tells us what it will end up doing like `make-heatmap.Rmd`.
-7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`.
+7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`. If RStudio asks you to choose a browser, then choose a default browser. 
 8. This shows the nicely rendered version of your analysis and snapshots whatever output existed when the `.Rmd` file was saved.
 
 For [more about using R notebooks see this](https://bookdown.org/yihui/rmarkdown/) by @Xie2018.
