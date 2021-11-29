@@ -73,9 +73,9 @@ _Code review requests should include:_
 - A request for what kind of feedback you are looking for.  
   - Big picture? Technical? Method selection?  
   - Are there specific areas of the code you are having trouble with or are unsure about? Send a link to the [specific lines in GitHub](https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github) you are asking about.  
-  - Are there results that are surprising, confusing, or [smell wrong](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels)?  
+  - Are there results that are surprising, confusing, or [smell wrong](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels)?   
   - Be sure to detail what you have dug into and tried at this point for any problematic points.   
-  - Explicitly ask them what commands or tests you'd like them to test run.
+  - Explicitly ask them what commands or tests you'd like them to test run.  
 - Lastly, thank them for helping review your code!  
 
 **9) Ready for review**  

@@ -36,9 +36,9 @@ What does readable code look like? @Orosz2019 has some thoughts on writing reada
 >
 > Readable code will attract little to no clarifying questions, and reviewers won't misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.
 >
-> A good way to get more feedback on the clarity of your code is to ask for feedback from someone, who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
+> A good way to get more feedback on the clarity of your code is to ask for feedback from someone who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
 
-We'll talk a bit more about code review in a upcoming chapter!
+We'll talk a bit more about code review in an upcoming chapter!
 
 **More reading:**
 
@@ -55,7 +55,7 @@ We'll talk a bit more about code review in a upcoming chapter!
 
 – @Diederich2012
 
-If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places.  
+If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, than in 10 places.  
 
 DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
 DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!
@@ -545,7 +545,7 @@ _Related readings:_
 _Rationale:_  
 This chunk of code can be very tricky to understand what it is doing.
 What is happening with df1 and df2? What's being filtered out? etc.
-Code comments would certainly help understanding, but even better, we can DRY this code up and
+Code comments would certainly help understanding, but even better, we can DRY this code up and make the code clearer on its own.
 
 _Before:_  
 It may be difficult to tell from looking at the before code because there are no comments and it's a bit tricky to read, but the goal of this is to:  

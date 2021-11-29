@@ -120,11 +120,10 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 <details> <summary>**R project exercise**</summary>
 
 1. Open up RStudio.
-2. Open up the notebook you created in the previous chapter.  
-3. Open up your notebook you've been working on in the previous chapters: `make_heatmap.Rmd`
-4. In between code chunks, add more descriptions using Markdown language.
-5. You can test how this renders by saving your `.Rmd` and then opening up the resulting `nb.html` file and choosing `View in Browser`.
-6. Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the ["final" version](https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html) looks like in the [example R repository](https://github.com/jhudsl/reproducible-R-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
+2. Open up your notebook you've been working on in the previous chapters: `make_heatmap.Rmd`
+3. In between code chunks, add more descriptions using Markdown language.
+4. You can test how this renders by saving your `.Rmd` and then opening up the resulting `nb.html` file and choosing `View in Browser`.
+5. Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the ["final" version](https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html) looks like in the [example R repository](https://github.com/jhudsl/reproducible-R-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
 
 </details>
 
@@ -135,5 +134,5 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 3. You can reference the "final" versions of the README, but keep in mind it will reference items that we will discuss in the "advanced" portion of this course. See the [R README here](https://github.com/jhudsl/reproducible-R-example) and the [Python README here](https://github.com/jhudsl/reproducible-python-example).
 4. Add your README and updated notebook to your GitHub repository. Follow [these instructions to add the latest version of your notebook to your GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github). Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.
 
-  
+
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
