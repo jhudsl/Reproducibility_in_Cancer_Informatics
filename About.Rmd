@@ -47,6 +47,8 @@ devtools::session_info()
 [John Muschelli]: https://johnmuschelli.com/
 [Sarah Wheelan]: https://www.hopkinsmedicine.org/profiles/details/sarah-wheelan
 [David Swiderski](https://www.linkedin.com/in/david-swiderski-b5763132)
+[Patrick O'Connell](https://scholar.google.com/citations?user=fvE9aOQAAAAJ&hl=en&oi=ao)
+
 <!-- Links -->
 
 [Leanbuild]: https://github.com/jhudsl/leanbuild

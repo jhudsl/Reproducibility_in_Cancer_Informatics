@@ -355,11 +355,11 @@ For example, for this `make-heatmap` notebook we want to:
 
 **The exercise: Polishing code**  
 
-1. Start up JuptyerLab with running `jupyter lab` from your command line.
+1. Start up JupyterLab with running `jupyter lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`.
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
-5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Juptyer, you refresh your environment by using the `refresh` icon in the toolbar or by going to `Restart Kernel`.
+5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Jupyter, you refresh your environment by using the `refresh` icon in the toolbar or by going to `Restart Kernel`.
 
 ***
 
