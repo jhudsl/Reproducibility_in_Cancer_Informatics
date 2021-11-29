@@ -147,6 +147,8 @@ jupyter lab
 
 <details> <summary>**R version of the exercise**</summary>
 
+**First install the `renv` package**   
+
 1. Go to RStudio and the Console pane:
 
 2. Install `renv` using (you should only need to do this once per your computer or RStudio environment).
@@ -155,8 +157,7 @@ jupyter lab
 install.packages("renv")
 ```
 
-
-This is how to use `renv` in your project.
+**Now set up `renv` to use in your project**  
 
 1. Change to your current directory for your project using `setwd()` in your console window (_don't put this in a script or notebook_).
 
@@ -170,15 +171,15 @@ This will start up `renv` in your particular project
 ```
 install.packages("styler")
 ```
-Now that we have installed `styler` we will want to add it to our renv snapshot.
+ Now that we have installed `styler` we will want to add it to our renv snapshot.
 
 4. To add any packages we've installed to our renv snapshot we will use this command:
 ```
 renv::snapshot()
 ```
-This will save whatever packages we are currently using to our environment snapshot file called renv.lock. This renv.lock file is what we can share with our collaborators so they can replicate our computing environment.
+ This will save whatever packages we are currently using to our environment snapshot file called `renv.lock`. This `renv.lock` file is what we can share with our collaborators so they can replicate our computing environment.
 
-If your package installation attempts are unsuccessful and you'd like to revert to the previous state of your environment, you can run  `renv::restore()`. This will restore your renv.lock file to what it was before you attempted to install `styler` or whatever packages you tried to install.
+ If your package installation attempts are unsuccessful and you'd like to revert to the previous state of your environment, you can run  `renv::restore()`. This will restore your `renv.lock` file to what it was before you attempted to install `styler` or whatever packages you tried to install.
 
 5. You should see an `renv.lock` file is now created or updated! You will want to always include this file with your project files. This means we will want to add it to our GitHub!
 
@@ -186,7 +187,6 @@ If your package installation attempts are unsuccessful and you'd like to revert 
 
 </details>
 
+After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!
 
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
-
-After you've added your computing environment files to your GitHub, you're ready to continue using them with your IDE to actually work on the code in your notebook!
