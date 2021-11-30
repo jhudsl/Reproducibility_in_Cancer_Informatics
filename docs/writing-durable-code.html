@@ -204,7 +204,11 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="6" data-path="managing-package-versions.html"><a href="managing-package-versions.html"><i class="fa fa-check"></i><b>6</b> Managing package versions</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#learning-objectives-4"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="6.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#learning-objectives-4"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#strategy-1-session-info---record-a-list-of-your-packages"><i class="fa fa-check"></i><b>6.1.1</b> Strategy 1: Session Info - record a list of your packages</a></li>
+<li class="chapter" data-level="6.1.2" data-path="managing-package-versions.html"><a href="managing-package-versions.html#strategy-2-package-managers---share-a-useable-snapshot-of-your-environment"><i class="fa fa-check"></i><b>6.1.2</b> Strategy 2: Package managers - share a useable snapshot of your environment</a></li>
+</ul></li>
 <li class="chapter" data-level="6.2" data-path="managing-package-versions.html"><a href="managing-package-versions.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3"><i class="fa fa-check"></i><b>6.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
 <li class="chapter" data-level="6.3" data-path="managing-package-versions.html"><a href="managing-package-versions.html#exercise-1-print-out-session-info"><i class="fa fa-check"></i><b>6.3</b> Exercise 1: Print out session info</a></li>
 <li class="chapter" data-level="6.4" data-path="managing-package-versions.html"><a href="managing-package-versions.html#exercise-2-package-management"><i class="fa fa-check"></i><b>6.4</b> Exercise 2: Package management</a>
@@ -325,9 +329,9 @@ Just like in writing a manuscript you wouldn’t consider your first draft a fin
 <blockquote>
 <p><strong>The real test of readable code is others reading it.</strong> So get feedback from others, via code reviews. Ask people to share feedback on how clear the code is. Encourage people to ask questions if something does not make sense. Code reviews - especially thorough code reviews - are the best way to get feedback on how good and readable your code is.</p>
 <p>Readable code will attract little to no clarifying questions, and reviewers won’t misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.</p>
-<p>A good way to get more feedback on the clarity of your code is to ask for feedback from someone, who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they’ll focus on how much they can follow your code. Most of the comments they make will be about your code’s readability.</p>
+<p>A good way to get more feedback on the clarity of your code is to ask for feedback from someone who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they’ll focus on how much they can follow your code. Most of the comments they make will be about your code’s readability.</p>
 </blockquote>
-<p>We’ll talk a bit more about code review in a upcoming chapter!</p>
+<p>We’ll talk a bit more about code review in an upcoming chapter!</p>
 <p><strong>More reading:</strong></p>
 <ul>
 <li><a href="https://blog.pragmaticengineer.com/readable-code/">Readable Code</a> by <span class="citation">Orosz (<a href="#ref-Orosz2019" role="doc-biblioref">2019</a>)</span>.<br />
@@ -344,7 +348,7 @@ Just like in writing a manuscript you wouldn’t consider your first draft a fin
 <p>“I hate code, and I want as little of it as possible in our product.”</p>
 </blockquote>
 <p>– <span class="citation">Diederich (<a href="#ref-Diederich2012" role="doc-biblioref">2012</a>)</span></p>
-<p>If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places.</p>
+<p>If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, than in 10 places.</p>
 <p>DRY code is easier on the reviewer because they don’t have to review the same thing twice, but also because they don’t have to review the same thing twice. ;)
 DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!</p>
 <p>Here’s an slightly modified example from <span class="citation">Bernardo (<a href="#ref-Bernardo2021" role="doc-biblioref">2021</a>)</span> for what DRY vs non-DRY code might look like:</p>
@@ -366,17 +370,45 @@ class_names &lt;- c(&#39;John&#39;, &#39;Susan&#39;, &#39;Matt&#39; ,&#39;Anne&#
 
 lapply(class_names, GreetStudent)</code></pre>
 <p>Now, if you wanted to edit the greeting, you’d only need to edit it in the function, instead of in each instance.</p>
-<p><strong>More reading:</strong></p>
+<p><strong>More reading about this idea:</strong></p>
 <ul>
 <li><a href="https://www.drycode.io/">Keep your code dry</a> by <span class="citation"><span>“How <span>To</span> <span>Keep</span> <span>Your</span> <span>Code</span> <span>Dry</span>”</span> (<a href="#ref-DRY" role="doc-biblioref">2021</a>)</span>.<br />
 </li>
 <li><a href="https://metova.com/dry-programming-practices/">DRY Programming Practices</a> by <span class="citation">Klinefelter (<a href="#ref-Klinefelter2016" role="doc-biblioref">2016</a>)</span>.</li>
 </ul>
+<p><strong>Practical examples of DRYing code:</strong>
+- <a href="https://www.youtube.com/watch?v=XSRO4VKD-pc">Keeping R Code DRY with functions</a> by <span class="citation">Riffomonas Project (<a href="#ref-Riffomonas2021" role="doc-biblioref">2021</a>)</span>.
+- <a href="https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/">Write efficient R code for science</a> by <span class="citation">Max Joseph (<a href="#ref-Joseph2017" role="doc-biblioref">2017</a>)</span>.
+- <a href="https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/">Write efficient Python code</a> by <span class="citation">(<a href="#ref-Wasser2021" role="doc-biblioref"><strong>Wasser2021?</strong></a>)</span>.
+- <a href="https://scientificallysound.org/2018/07/19/python-functions/">Don’t repeat yourself: Python functions</a> by <span class="citation">Héroux (<a href="#ref-Heroux2018" role="doc-biblioref">2018</a>)</span>.</p>
 </div>
 <div id="dont-be-afraid-to-delete-and-refresh-a-lot" class="section level4" number="7.2.0.4">
 <h4><span class="header-section-number">7.2.0.4</span> Don’t be afraid to delete and refresh a lot</h4>
 <p><img src="resources/images/delete.png" width="12%"></p>
-<p>Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE. Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.</p>
+<p>Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE.</p>
+<p>In essence, this is the data science version of “Have you tried turning it off and then on again?” Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.</p>
+<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png" title="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." alt="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." style="display: block; margin: auto;" /></p>
+<details>
+<summary>
+<em>Why do you need to refresh your kernel/session?</em>
+</summary>
+<p>As a quick example of why refreshing your kernel/session, let’s suppose you are troubleshooting something that centers around an object named <code>some_obj</code> but then you rename this object to <code>iris_df</code>. When you rename this object you may need to update this other places in the code. If you don’t refresh your environment while working on your code, <code>some_obj</code> will still be in your environment. This will make it more difficult for you to find where else the code needs to be updated.</p>
+<p>Refreshing your kernel/session goes beyond objects defined in your environment, and also can affect packages and dependencies loaded or all kinds of other things attached to your kernel/session.</p>
+<p>As a quick experiment, try this in your Python or R environment:</p>
+<p>The <code>dir()</code> and <code>ls()</code> functions list your defined variables in your Python and R environments respectively.</p>
+<p><strong>In Python:</strong></p>
+<pre><code>some_obj=[]
+dir()</code></pre>
+<p>Now refresh your Kernel and re-run <code>dir()</code></p>
+<pre><code>dir()</code></pre>
+<p>You should see you no longer have <code>some_obj</code> listed as being defined in your environment.</p>
+<p><strong>In R</strong></p>
+<pre><code>some_obj &lt;- c()
+ls()</code></pre>
+<p>Now refresh your ession and re-run <code>ls()</code></p>
+<pre><code>ls()</code></pre>
+<p>You should see you no longer have <code>some_obj</code> listed as being defined in your environment.</p>
+</details>
 <p>Keeping around old code and objects is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don’t need to stress about deleting it:</p>
 <ol style="list-style-type: decimal">
 <li>You might write better code on the second try (or third or n’th).<br />
@@ -433,7 +465,7 @@ lapply(class_names, GreetStudent)</code></pre>
 </ul>
 </div>
 <div id="follow-a-code-style" class="section level4" number="7.2.0.7">
-<h4><span class="header-section-number">7.2.0.7</span> 7. Follow a code style</h4>
+<h4><span class="header-section-number">7.2.0.7</span> Follow a code style</h4>
 <p><img src="resources/images/style.png" width="12%"></p>
 <p>Just like when writing doesN”t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results.</p>
 <p>There are different style guides out there that people adhere to. It doesn’t matter so much which one you choose, so much that you pick one and stick to it for a particular project.</p>
@@ -483,25 +515,25 @@ For Python code, you can use <a href="https://black.readthedocs.io/en/stable/">p
 </summary>
 <p>To illustrate how seeds work, run we’ll run a quick experiment with setting the seed here:</p>
 <p>First let’s set a seed (it doesn’t matter what number we use, just that we pick a number), so let’s use <code>1234</code> and then create a “random” number.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="writing-durable-code.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the seed:</span></span>
-<span id="cb16-2"><a href="writing-durable-code.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
-<span id="cb16-3"><a href="writing-durable-code.html#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="writing-durable-code.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now create a random number again</span></span>
-<span id="cb16-5"><a href="writing-durable-code.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="writing-durable-code.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the seed:</span></span>
+<span id="cb19-2"><a href="writing-durable-code.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
+<span id="cb19-3"><a href="writing-durable-code.html#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="writing-durable-code.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now create a random number again</span></span>
+<span id="cb19-5"><a href="writing-durable-code.html#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1137034</code></pre>
 <p>Now if we try a different seed, we will get a different “random” number.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="writing-durable-code.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set a different seed:</span></span>
-<span id="cb18-2"><a href="writing-durable-code.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
-<span id="cb18-3"><a href="writing-durable-code.html#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="writing-durable-code.html#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now create a random number again</span></span>
-<span id="cb18-5"><a href="writing-durable-code.html#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="writing-durable-code.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set a different seed:</span></span>
+<span id="cb21-2"><a href="writing-durable-code.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
+<span id="cb21-3"><a href="writing-durable-code.html#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="writing-durable-code.html#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now create a random number again</span></span>
+<span id="cb21-5"><a href="writing-durable-code.html#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0.334778</code></pre>
 <p>But, if we return to the original seed we used, <code>1234</code>, we will get the original “random” number we got.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="writing-durable-code.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set this back to the original seed</span></span>
-<span id="cb20-2"><a href="writing-durable-code.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
-<span id="cb20-3"><a href="writing-durable-code.html#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-4"><a href="writing-durable-code.html#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now we&#39;ll get the same &quot;random&quot; number we got when we set the seed to 1234 previously</span></span>
-<span id="cb20-5"><a href="writing-durable-code.html#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="writing-durable-code.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set this back to the original seed</span></span>
+<span id="cb23-2"><a href="writing-durable-code.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
+<span id="cb23-3"><a href="writing-durable-code.html#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="writing-durable-code.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now we&#39;ll get the same &quot;random&quot; number we got when we set the seed to 1234 previously</span></span>
+<span id="cb23-5"><a href="writing-durable-code.html#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1137034</code></pre>
 </details>
 <p><strong>More reading:</strong></p>
@@ -584,10 +616,11 @@ For Python code, you can use <a href="https://black.readthedocs.io/en/stable/">p
 </summary>
 <p><strong>The exercise: Polishing code</strong></p>
 <ol style="list-style-type: decimal">
-<li>Start up JuptyerLab with running <code>juptyer lab</code> from your command line.</li>
+<li>Start up JupyterLab with running <code>jupyter lab</code> from your command line.</li>
 <li>Activate your conda environment using <code>conda activate reproducible-python</code>.</li>
 <li>Open up your notebook you made in the previous chapter <code>make-heatmap.ipynb</code></li>
 <li>Work on organizing the code chunks and adding documentation to reflect the steps we’ve laid out in the <a href="writing-durable-code.html#organize-the-big-picture-of-the-code">previous section</a>, you may want to work on this iteratively as we dive into the code.</li>
+<li>As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Jupyter, you refresh your environment by using the <code>refresh</code> icon in the toolbar or by going to <code>Restart Kernel</code>.</li>
 </ol>
 <hr />
 <p><strong>Set the seed</strong></p>
@@ -679,6 +712,7 @@ Then, when you are ready, take a look at what our <a href="https://github.com/jh
 </li>
 <li>Now we’ll work on applying the principles from this chapter to the code. We’ll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section.</li>
 <li>Work on organizing the code chunks and adding documentation to reflect the steps we’ve laid out in the <a href="writing-durable-code.html#organize-the-big-picture-of-the-code">previous section</a>, you may want to work on this iteratively as we dive into the code.</li>
+<li>As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In RStudio, you refresh your environment by going to the <code>Run</code> menu and using <code>Restart R and refresh clear output</code>.</li>
 </ol>
 <hr />
 <p><strong>Set the seed</strong></p>
@@ -716,7 +750,7 @@ Now that we are working from a notebook, we know that the default <a href="https
 <p><em>Rationale:</em><br />
 This chunk of code can be very tricky to understand what it is doing.
 What is happening with df1 and df2? What’s being filtered out? etc.
-Code comments would certainly help understanding, but even better, we can DRY this code up and</p>
+Code comments would certainly help understanding, but even better, we can DRY this code up and make the code clearer on its own.</p>
 <p><em>Before:</em><br />
 It may be difficult to tell from looking at the before code because there are no comments and it’s a bit tricky to read, but the goal of this is to:</p>
 <ol style="list-style-type: decimal">
@@ -860,6 +894,9 @@ Good, and Nicholas, Rachel Severson. 2021. <em>Chapter 5 <span>Reproducible</spa
 <div id="ref-Heil2020b" class="csl-entry">
 Heil, Benjamin J. 2020. <span>“Reproducible Programming for Biologists Who Code - Part 2: Should Dos.”</span> <em>AutoBenCoding</em>. <a href="https://autobencoder.com/2020-06-30-shoulddo/">https://autobencoder.com/2020-06-30-shoulddo/</a>.
 </div>
+<div id="ref-Heroux2018" class="csl-entry">
+Héroux, Martin. 2018. <span>“Don’t Repeat Yourself: <span>Python</span> Functions.”</span> <em>Scientifically Sound</em>. <a href="https://scientificallysound.org/2018/07/19/python-functions/">https://scientificallysound.org/2018/07/19/python-functions/</a>.
+</div>
 <div id="ref-Hobert2018" class="csl-entry">
 Hobert, Kevin. 2018. <span>“Writing <span>Variable</span> — <span>Informative</span>, <span>Descriptive</span> &amp; <span>Elegant</span>.”</span> <em>Medium</em>. <a href="https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3">https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3</a>.
 </div>
@@ -877,6 +914,9 @@ Koehrsen, Will. 2019. <span>“Data <span>Scientists</span>: <span>Your</span> <
 </div>
 <div id="ref-Kostyuk2020" class="csl-entry">
 Kostyuk, Victor. 2020. <span>“Data <span>Science</span> <span>Python</span> <span>Best</span> <span>Practices</span>.”</span> <em>BCG GAMMA</em>. <a href="https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82">https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82</a>.
+</div>
+<div id="ref-Joseph2017" class="csl-entry">
+Max Joseph, Software Carpentry, Leah Wasser. 2017. <span>“Write <span>Efficient</span> <span>Scientific</span> <span>Code</span> - the <span>DRY</span> (<span>Don</span>’t <span>Repeat</span> <span>Yourself</span>) <span>Principle</span>.”</span> <em>Earth Data Science - Earth Lab</em>. <a href="https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/">https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/</a>.
 </div>
 <div id="ref-Meza2018" class="csl-entry">
 Meza, Frank. 2018. <span>“The <span>Value</span> of <span>Code</span> <span>Documentation</span>.”</span> <em>Olio Apps</em>. <a href="https://www.olioapps.com/blog/the-value-of-code-documentation/">https://www.olioapps.com/blog/the-value-of-code-documentation/</a>.
@@ -898,6 +938,9 @@ Python, Real. 2021. <span>“Python 3’s f-<span>Strings</span>: <span>An</span
 </div>
 <div id="ref-Tidyverse2021" class="csl-entry">
 <span>“Read a Delimited File (Including <span>CSV</span> and <span>TSV</span>) into a Tibble — Read_delim.”</span> n.d. Accessed November 2, 2021. <a href="https://readr.tidyverse.org/reference/read_delim.html">https://readr.tidyverse.org/reference/read_delim.html</a>.
+</div>
+<div id="ref-Riffomonas2021" class="csl-entry">
+Riffomonas Project. 2021. <span>“Keeping <span>R</span> Code <span>DRY</span> with Functions: <span>Don</span>’t Repeat Yourself! (<span>Cc096</span>).”</span> <a href="https://www.youtube.com/watch?v=XSRO4VKD-pc">https://www.youtube.com/watch?v=XSRO4VKD-pc</a>.
 </div>
 <div id="ref-Savonen2021" class="csl-entry">
 Savonen, Candace. 2021a. <em>Chapter 8 <span>Creating</span> Clarifying Code Comments <span></span> <span>Documentation</span> and <span>Usability</span></em>. <a href="https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments">https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments</a>.

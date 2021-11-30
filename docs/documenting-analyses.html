@@ -204,7 +204,11 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="6" data-path="managing-package-versions.html"><a href="managing-package-versions.html"><i class="fa fa-check"></i><b>6</b> Managing package versions</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#learning-objectives-4"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="6.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#learning-objectives-4"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#strategy-1-session-info---record-a-list-of-your-packages"><i class="fa fa-check"></i><b>6.1.1</b> Strategy 1: Session Info - record a list of your packages</a></li>
+<li class="chapter" data-level="6.1.2" data-path="managing-package-versions.html"><a href="managing-package-versions.html#strategy-2-package-managers---share-a-useable-snapshot-of-your-environment"><i class="fa fa-check"></i><b>6.1.2</b> Strategy 2: Package managers - share a useable snapshot of your environment</a></li>
+</ul></li>
 <li class="chapter" data-level="6.2" data-path="managing-package-versions.html"><a href="managing-package-versions.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3"><i class="fa fa-check"></i><b>6.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
 <li class="chapter" data-level="6.3" data-path="managing-package-versions.html"><a href="managing-package-versions.html#exercise-1-print-out-session-info"><i class="fa fa-check"></i><b>6.3</b> Exercise 1: Print out session info</a></li>
 <li class="chapter" data-level="6.4" data-path="managing-package-versions.html"><a href="managing-package-versions.html#exercise-2-package-management"><i class="fa fa-check"></i><b>6.4</b> Exercise 2: Package management</a>
@@ -381,7 +385,7 @@ div.csl-indent {
 <li>Open up your notebook you’ve been working on in the previous chapters: <code>make_heatmap.ipynb</code></li>
 <li>Create a new chunk in your notebook and choose the “Markdown” option in the dropdown menu.</li>
 </ol>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="documenting-analyses.html#cb43-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="documenting-analyses.html#cb46-1" aria-hidden="true" tabindex="-1"></a>leanbuild<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30&quot;</span>)</span></code></pre></div>
 <p><img src="resources/images/08-readmes_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" title="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " style="display: block; margin: auto;" />
 5. Continue to add more descriptions where you feel is necessary, You can reference the descriptions we have in the <a href="https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb">“final” version</a> looks like in the <a href="https://github.com/jhudsl/reproducible-python-example">example Python repository</a>. (Again, <em>final</em> here is in quotes because we may continue to make improvements to this notebook too – remember what we said about iterative?)</p>
 </details>
@@ -391,8 +395,6 @@ div.csl-indent {
 </summary>
 <ol style="list-style-type: decimal">
 <li>Open up RStudio.</li>
-<li>Open up the notebook you created in the previous chapter.<br />
-</li>
 <li>Open up your notebook you’ve been working on in the previous chapters: <code>make_heatmap.Rmd</code></li>
 <li>In between code chunks, add more descriptions using Markdown language.</li>
 <li>You can test how this renders by saving your <code>.Rmd</code> and then opening up the resulting <code>nb.html</code> file and choosing <code>View in Browser</code>.</li>

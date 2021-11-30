@@ -38,6 +38,8 @@ set-up-your-ide
 create-a-notebook
 managing-package-versions
 learning-objectives-4
+strategy-1-session-info---record-a-list-of-your-packages
+strategy-2-package-managers---share-a-useable-snapshot-of-your-environment
 get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3
 exercise-1-print-out-session-info
 exercise-2-package-management

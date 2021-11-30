@@ -32,9 +32,9 @@ What does readable code look like? @Orosz2019 has some thoughts on writing reada
 >
 > Readable code will attract little to no clarifying questions, and reviewers won't misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.
 >
-> A good way to get more feedback on the clarity of your code is to ask for feedback from someone, who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
+> A good way to get more feedback on the clarity of your code is to ask for feedback from someone who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
 
-We'll talk a bit more about code review in a upcoming chapter!
+We'll talk a bit more about code review in an upcoming chapter!
 
 **More reading:**
 
@@ -51,7 +51,7 @@ We'll talk a bit more about code review in a upcoming chapter!
 
 – @Diederich2012
 
-If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, then in 10 places.  
+If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, than in 10 places.  
 
 DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
 DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!
@@ -84,15 +84,59 @@ lapply(class_names, GreetStudent)
 
 Now, if you wanted to edit the greeting, you'd only need to edit it in the function, instead of in each instance.
 
-**More reading:**
+**More reading about this idea:**
 
 - [Keep your code dry](https://www.drycode.io/) by @DRY.  
 - [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
 
+**Practical examples of DRYing code:**
+- [Keeping R Code DRY with functions](https://www.youtube.com/watch?v=XSRO4VKD-pc) by @Riffomonas2021.
+- [Write efficient R code for science](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) by @Joseph2017.
+- [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2021.
+- [Don't repeat yourself: Python functions](https://scientificallysound.org/2018/07/19/python-functions/) by @Heroux2018.
+
 #### Don't be afraid to delete and refresh a lot  
 <img src="resources/images/delete.png" width="12%">
 
-Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE. Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your  environment.
+Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE.
+
+In essence, this is the data science version of "Have you tried turning it off and then on again?" Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.
+
+![](resources/images/07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png)
+
+<details> <summary> *Why do you need to refresh your kernel/session?*  </summary>
+
+As a quick example of why refreshing your kernel/session, let's suppose you are troubleshooting something that centers around an object named `some_obj` but then you rename this object to `iris_df`. When you rename this object you may need to update this other places in the code. If you don't refresh your environment while working on your code, `some_obj` will still be in your environment. This will make it more difficult for you to find where else the code needs to be updated.
+
+Refreshing your kernel/session goes beyond objects defined in your environment, and also can affect packages and dependencies loaded or all kinds of other things attached to your kernel/session.
+
+As a quick experiment, try this in your Python or R environment:
+
+The `dir()` and `ls()` functions list your defined variables in your Python and R environments respectively.
+
+**In Python:**
+```
+some_obj=[]
+dir()
+```
+Now refresh your Kernel and re-run `dir()`
+```
+dir()
+```
+You should see you no longer have `some_obj` listed as being defined in your environment.
+
+**In R**
+```
+some_obj <- c()
+ls()
+```
+Now refresh your ession and re-run `ls()`
+```
+ls()
+```
+You should see you no longer have `some_obj` listed as being defined in your environment.
+
+</details>
 
 Keeping around old code and objects is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don't need to stress about deleting it:  
 
@@ -102,9 +146,8 @@ Keeping around old code and objects is generally more of a hindrance than a time
 
 This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).
 
-
-
 Related to this, if you want to be certain that your code is reproducible, it's worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!
+
 
 #### Use code comments effectively  
 <img src="resources/images/comment.png" width="12%">
@@ -149,7 +192,7 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 - [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.  
 - [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018.   
 
-#### 7. Follow a code style
+#### Follow a code style
 <img src="resources/images/style.png" width="12%">
 
 Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results.
@@ -311,15 +354,15 @@ For example, for this `make-heatmap` notebook we want to:
 7) Save the heatmap to a PNG.   
 8) Print out the session info!  
 
-
 <details> <summary>**Python version of the exercise**</summary>
 
 **The exercise: Polishing code**  
 
-1. Start up JuptyerLab with running `juptyer lab` from your command line.
+1. Start up JupyterLab with running `jupyter lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`.
 3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
+5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Jupyter, you refresh your environment by using the `refresh` icon in the toolbar or by going to `Restart Kernel`.
 
 ***
 
@@ -446,6 +489,7 @@ _More reading on the tidyverse:_
 2. Open up the notebook you created in the previous chapter.  
 3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section.
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
+5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In RStudio, you refresh your environment by going to the `Run` menu and using `Restart R and refresh clear output`.
 
 ***
 
@@ -504,7 +548,7 @@ _Related readings:_
 _Rationale:_  
 This chunk of code can be very tricky to understand what it is doing.
 What is happening with df1 and df2? What's being filtered out? etc.
-Code comments would certainly help understanding, but even better, we can DRY this code up and
+Code comments would certainly help understanding, but even better, we can DRY this code up and make the code clearer on its own.
 
 _Before:_  
 It may be difficult to tell from looking at the before code because there are no comments and it's a bit tricky to read, but the goal of this is to:  

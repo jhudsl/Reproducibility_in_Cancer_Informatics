@@ -12,8 +12,8 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Lead Content Instructor(s)|[Candace Savonen]|
 |Lecturer(s)|[Candace Savonen]|
 |Content Directors|[Jeff Leek], [Sarah Wheelan]|
-|Content Consultants||
-|Acknowledgments| |
+|Content Consultants|[David Swiderski]|
+|Acknowledgments|[Patrick O'Connell]|
 |**Production**||
 |Content Publisher|[Ira Gooding]|
 |Content Publishing Reviewers|[Ira Gooding]|
@@ -46,7 +46,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2021-11-17                  
+##  date     2021-11-30                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version    date       lib source                            
@@ -109,6 +109,8 @@ These credits are based on our [course contributors table guidelines](https://gi
 [Jeff Leek]: https://jtleek.com/
 [John Muschelli]: https://johnmuschelli.com/
 [Sarah Wheelan]: https://www.hopkinsmedicine.org/profiles/details/sarah-wheelan
+[David Swiderski](https://www.linkedin.com/in/david-swiderski-b5763132)
+[Patrick O'Connell](https://scholar.google.com/citations?user=fvE9aOQAAAAJ&hl=en&oi=ao)
 
 <!-- Links -->
 

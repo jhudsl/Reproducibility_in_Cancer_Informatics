@@ -56,7 +56,7 @@ Leave your analysis for a bit. Do you think it's perfect? Are you at your wits e
 Now with fresh eyes and doing your best to imagine you don't have the knowledge you have -- does your analysis and results make sense?
 
 **6) Are you sure it's ready?**  
-Ask yourself if you've polished this code and documentation as far as you can reasonably take it? Realizing that determining what qualifies `as far as you can reasonably take it` is also a skill you will builkd with time. Code review is the most efficient use of everyone's time when your code and documentation have reached this point.
+Ask yourself if you've polished this code and documentation as far as you can reasonably take it? Realizing that determining what qualifies `as far as you can reasonably take it` is also a skill you will build with time. Code review is the most efficient use of everyone's time when your code and documentation have reached this point.
 
 **8) Draft your request**
 Now you are ready to send this code to your collaborator, but first try to send them a specific set of instructions and questions about what you would like them to review, in your message to them include this information (You may want to draft this out in a scratch file):
@@ -67,9 +67,9 @@ _Code review requests should include:_
 - A request for what kind of feedback you are looking for.  
   - Big picture? Technical? Method selection?  
   - Are there specific areas of the code you are having trouble with or are unsure about? Send a link to the [specific lines in GitHub](https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github) you are asking about.  
-  - Are there results that are surprising, confusing, or [smell wrong](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels)?  
+  - Are there results that are surprising, confusing, or [smell wrong](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels)?   
   - Be sure to detail what you have dug into and tried at this point for any problematic points.   
-  - Explicitly ask them what commands or tests you'd like them to test run.
+  - Explicitly ask them what commands or tests you'd like them to test run.  
 - Lastly, thank them for helping review your code!  
 
 **9) Ready for review**  

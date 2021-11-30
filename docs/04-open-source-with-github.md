@@ -32,7 +32,7 @@ Life happens, sometimes you misplace a file or your computer malfunctions. If yo
 
 #### Keep a documented history of your project
 
-Overtime in a project, a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to re-visit a question you already answered.
+Overtime in a project, a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to revisit a question you already answered.
 
 ![](resources/images/04-open-source-with-github_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_92.png)
 
@@ -83,8 +83,7 @@ Git and GitHub have a whole rich world of tools and terms that can get complex q
   - Check the box that says `Add a README`.
 - Follow [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github) to add the example files you downloaded to your new repository.
 
-
-**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
-
 Congrats! You've started your very own project on GitHub!
 We encourage you to do the same with your own code and other projects!
+  
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
