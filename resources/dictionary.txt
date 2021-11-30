@@ -83,3 +83,6 @@ Jupyter
 pwd
 renv
 RStudio
+Navarro's
+rmarkdown
+useable
