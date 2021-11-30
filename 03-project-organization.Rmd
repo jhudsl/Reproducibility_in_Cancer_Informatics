@@ -32,7 +32,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 ## Organizational strategies
 
-There's a lot of ways to keep your files organized, and there's not a "one size fits all" organizational solution [@Shapiro2021]. In this chapter, we will discuss some generalities but as far as specifics we will point you to others' who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.
+There's a lot of ways to keep your files organized, and there's not a "one size fits all" organizational solution [@Shapiro2021]. In this chapter, we will discuss some generalities but as far as specifics we will point you to others who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.
 
 The most important aspects of your project organization scheme is that it:  
 

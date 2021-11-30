@@ -29,7 +29,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 #### Reason 2: Notebooks allow for easy sharing of results:
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has her computer showing her notebook. Ruby says ‘Avi, here’s some output from this scientific notebook I’ve been developing from!’ Avi the associate says ‘This is so easy to follow and read, even though I didn’t write the code. Thanks for sharing your exciting results!’"}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_186")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_102")
 ```
 
 > Notebooks can be converted to html and pdf, and then shared as static read-only documents. This is useful to communicate and share a study with colleagues or managers. By adding sufficient explanation, the main story can be understood by the reader, even if they wouldn't be able to write the code that is embedded in the document.
@@ -94,7 +94,8 @@ For this chapter, we will create notebooks from our example files code. Notebook
 
 1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, so [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation).
 
-To install conda using command line will look something like this in command line (but you will have to change depending on your operating system
+To install conda using command line will look something like this in command line (but you will have to change depending on your operating system).
+
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 mkdir /root/.conda \
@@ -110,26 +111,24 @@ conda --version
 conda install -c conda-forge jupyterlab
 ```
 
-3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).
+3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if you run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).
 
 **Getting familiar with JupyterLab's interface**  
 
 > The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list.’ "}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_469")
-```
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gf62875ddf7_0_469" alt="The JupyterLab interface consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running kernels and terminals, the command palette, the notebook cell tools inspector, and the tabs list." style="display: block; margin: auto;" />
 
 > The menu bar at the top of JupyterLab has top-level menus that expose actions available in JupyterLab with their keyboard shortcuts. The default menus are:
 
-> **File:** actions related to files and directories
-> **Edit:** actions related to editing documents and other activities
-> **View:** actions that alter the appearance of JupyterLab
-> **Run:** actions for running code in different activities such as notebooks and code consoles
-> **Kernel:** actions for managing kernels, which are separate processes for running code
-> **Tabs:** a list of the open documents and activities in the dock panel
-> **Settings:** common settings and an advanced settings editor
-> **Help:** a list of JupyterLab and kernel help links
+> **File:** actions related to files and directories  
+> **Edit:** actions related to editing documents and other activities  
+> **View:** actions that alter the appearance of JupyterLab  
+> **Run:** actions for running code in different activities such as notebooks and code consoles  
+> **Kernel:** actions for managing kernels, which are separate processes for running code  
+> **Tabs:** a list of the open documents and activities in the dock panel  
+> **Settings:** common settings and an advanced settings editor  
+> **Help:** a list of JupyterLab and kernel help links  
 
 </details>
 
@@ -143,9 +142,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7D
 
 **Getting familiar with RStudio's interface**
 
-```{r, fig.align='center', echo = FALSE, fig.alt= ""}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_225")
-```
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gf8f405fdab_0_225" alt="The RStudio environment has four main panes, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools, Global Options, Pane Layout). 1. The Editor pane is where you can write R scripts and other documents. Each tab here is its own document. This is your _text editor_, which will allow you to save your R code for future use. Note that change code here will not run automatically until you run it. 2. The Console pane is where you can _interactively_ run R code. There is also a Terminal tab here which can be used for running programs outside R on your computer 3. The Environment pane primarily displays the variables, sometimes known as _objects_ that are defined during a given R session, and what data or values they might hold. 4. The Help viewer pane has several tabs all of which are pretty important: The Files tab shows the structure and contents of files and folders (also known as directories) on your computer. The Plots tab will reveal plots when you make them. The Packages tab shows which installed packages have been loaded into your R session. The Help tab will show the help page when you look up a function. The Viewer pane will reveal compiled R Markdown documents" style="display: block; margin: auto;" />
 
 > The RStudio environment has four main **panes**, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools -> Global Options -> Pane Layout).
 
@@ -183,20 +180,17 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 1. Start a new notebook by going to `New` > `Notebook`.
 2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
 
-```{r, fig.align='center', fig.alt= "In Jupyter, you can create a new notebook by going to New > Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_20")
-```
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_20" alt="In Jupyter, you can create a new notebook by going to New > Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" />
 
 3. Create a new code chunk in your notebook.
 
-```{r, fig.align='center', fig.alt= "The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. "}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
-```
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_30" alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add." style="display: block; margin: auto;" />
+
 
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
 5. Save your `Untitled.ipynb` file as something that tells us what it will end up doing like `make-heatmap.ipynb`.
 
-For [more about using Juptyer notebooks see this](https://realpython.com/jupyter-notebook-introduction/) by @Driscoll2021.
+For [more about using Jupyter notebooks see this](https://realpython.com/jupyter-notebook-introduction/) by @Driscoll2021.
 
 </details>
 
@@ -204,23 +198,23 @@ For [more about using Juptyer notebooks see this](https://realpython.com/jupyter
 
 1. Start a new notebook by going to `File` > `New Files` > `R Notebook`.
 2. Then open up this chapter’s example code folder and open the `make_heatmap.R` file.
-
-```{r, fig.align='center', fig.alt= "In RStudio, you can create a new notebook by going to File > New Files > R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_13")
-```
-
-3. Practice creating a new chunk in your R notebook by clicking the `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I`. (You can also manually type out the back ticks and `{}`)
-4. Delete all the default text in this notebook.
-5. Now copy and paste all of the code from `make_heatmap.R` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
-6. Save your untitled.Rmd into something that tells us what it will end up doing like `make-heatmap.Rmd`.
-7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`.
-8. This shows the nicely rendered version of your analysis and snapshots whatever output existed when the `.Rmd` file was saved.
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_13" alt="In RStudio, you can create a new notebook by going to File > New Files > R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." style="display: block; margin: auto;" />
+3. Practice creating a new chunk in your R notebook by clicking the `Code` > `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I` (in Mac) or `Ctrl + Alt + I` (in Windows). (You can also manually type out the back ticks and `{}`)  
+4. Delete all the default text in this notebook but keep the header which is surrounded by `---` and looks like:  
+`````
+title: "R Notebook"
+output: html_notebook
+`````
+You can feel free to change the title from `R Notebook` to something that better suits the contents of this notebook.  
+5. Now copy and paste all of the code from `make_heatmap.R` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.   
+6. Save your `untitled.Rmd` into something that tells us what it will end up doing like `make-heatmap.Rmd`.  
+7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`. If RStudio asks you to choose a browser, then choose a default browser.  
+8. This shows the nicely rendered version of your analysis and snapshots whatever output existed when the `.Rmd` file was saved.  
 
 For [more about using R notebooks see this](https://bookdown.org/yihui/rmarkdown/) by @Xie2018.
 
 </details>
 
-
-**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
-
 Now that you've created your notebook, you are ready to start polishing that code!
+  
+**Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
