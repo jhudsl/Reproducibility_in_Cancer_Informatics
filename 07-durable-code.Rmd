@@ -136,7 +136,7 @@ You should see you no longer have `some_obj` listed as being defined in your env
 some_obj <- c()
 ls()
 ```
-Now refresh your ession and re-run `ls()`
+Now refresh your session and re-run `ls()`
 ```
 ls()
 ```
