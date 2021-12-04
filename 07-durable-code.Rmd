@@ -40,11 +40,11 @@ What does readable code look like? @Orosz2019 has some thoughts on writing reada
 
 We'll talk a bit more about code review in an upcoming chapter!
 
-**More reading:**
+**More reading:**  
 
-- [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.  
-- [Write clean R code](https://appsilon.com/write-clean-r-code/) by @Dubel2021.
-- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.
+- [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.    
+- [Write clean R code](https://appsilon.com/write-clean-r-code/) by @Dubel2021.  
+- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.  
 
 #### DRY up your code
 <img src="resources/images/DRY.png" width="12%">
@@ -91,13 +91,14 @@ Now, if you wanted to edit the greeting, you'd only need to edit it in the funct
 **More reading about this idea:**
 
 - [Keep your code dry](https://www.drycode.io/) by @DRY.  
-- [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.
+- [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.  
 
 **Practical examples of DRYing code:**
-- [Keeping R Code DRY with functions](https://www.youtube.com/watch?v=XSRO4VKD-pc) by @Riffomonas2021.
-- [Write efficient R code for science](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) by @Joseph2017.
-- [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2021.
-- [Don't repeat yourself: Python functions](https://scientificallysound.org/2018/07/19/python-functions/) by @Heroux2018.
+
+- [Keeping R Code DRY with functions](https://www.youtube.com/watch?v=XSRO4VKD-pc) by @Riffomonas2021.  
+- [Write efficient R code for science](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) by @Joseph2017.  
+- [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2021.  
+- [Don't repeat yourself: Python functions](https://scientificallysound.org/2018/07/19/python-functions/) by @Heroux2018.  
 
 #### Don't be afraid to delete and refresh a lot  
 <img src="resources/images/delete.png" width="12%">
