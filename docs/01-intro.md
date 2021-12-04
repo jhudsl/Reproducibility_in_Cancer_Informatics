@@ -15,6 +15,8 @@ _This course is written for individuals who:_
 - Have not had formal training in computational methods.  
 - Have limited or no familiar with GitHub, Docker, or package management tools.
 
+![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106226cdd08_0_0.png){width=100%}
+
 ## Motivation
 
 Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.
