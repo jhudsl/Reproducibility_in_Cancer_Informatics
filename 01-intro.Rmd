@@ -23,6 +23,18 @@ _This course is written for individuals who:_
 leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.g106226cdd08_0_0")
 ```
 
+## Topics covered:
+
+This is a two part series:
+
+```{r, fig.alt="Discussed in the Introductory Reproducibility in Cancer Informatics course: Organizing your project, using notebooks, Making your project open source with GitHub, using notebooks, managing package versions, writing durable code, documenting analyses, understanding the importance of code review. ", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.g106742f3b7b_0_168")
+```
+
+```{r, fig.alt="Discussed in the sequel course: Advanced Reproducibility for Cancer Informatics: Getting comfortable with GitHub concepts and workflow. Utilizing version control. Engaging in code review. Using a Docker image. Modifying a Docker image. Using Automation (github actions).", out.width = "100%", echo = FALSE}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.g106742f3b7b_0_189")
+```
+
 ## Motivation
 
 Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.
