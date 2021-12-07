@@ -1,5 +1,6 @@
 introduction
 target-audience
+topics-covered
 motivation
 curriculum
 how-to-use-the-course

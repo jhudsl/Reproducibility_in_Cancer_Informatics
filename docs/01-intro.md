@@ -17,6 +17,14 @@ _This course is written for individuals who:_
 
 ![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106226cdd08_0_0.png){width=100%}
 
+## Topics covered:
+
+This is a two part series:
+
+![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_168.png){width=100%}
+
+![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_189.png){width=100%}
+
 ## Motivation
 
 Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.

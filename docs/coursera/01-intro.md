@@ -17,6 +17,14 @@ _This course is written for individuals who:_
 
 <img src="resources/images/01-intro_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106226cdd08_0_0.png" title="Intro to Reproducibility: For individuals who: Have some familiarity with R or Python - have written some scripts. Have not had formal training in computational methods. Have limited or no familiarity with GitHub. Advanced Reproducibility: For individuals who: Have completed the intro course and/or Have used GitHub somewhat." alt="Intro to Reproducibility: For individuals who: Have some familiarity with R or Python - have written some scripts. Have not had formal training in computational methods. Have limited or no familiarity with GitHub. Advanced Reproducibility: For individuals who: Have completed the intro course and/or Have used GitHub somewhat." width="100%" />
 
+## Topics covered:
+
+This is a two part series:
+
+<img src="resources/images/01-intro_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_168.png" title="Discussed in the Introductory Reproducibility in Cancer Informatics course: Organizing your project, using notebooks, Making your project open source with GitHub, using notebooks, managing package versions, writing durable code, documenting analyses, understanding the importance of code review. " alt="Discussed in the Introductory Reproducibility in Cancer Informatics course: Organizing your project, using notebooks, Making your project open source with GitHub, using notebooks, managing package versions, writing durable code, documenting analyses, understanding the importance of code review. " width="100%" />
+
+<img src="resources/images/01-intro_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_189.png" title="Discussed in the sequel course: Advanced Reproducibility for Cancer Informatics: Getting comfortable with GitHub concepts and workflow. Utilizing version control. Engaging in code review. Using a Docker image. Modifying a Docker image. Using Automation (github actions)." alt="Discussed in the sequel course: Advanced Reproducibility for Cancer Informatics: Getting comfortable with GitHub concepts and workflow. Utilizing version control. Engaging in code review. Using a Docker image. Modifying a Docker image. Using Automation (github actions)." width="100%" />
+
 ## Motivation
 
 Cancer datasets are plentiful, complicated, and hold untold amounts of information regarding cancer biology. Cancer researchers are working to apply their expertise to the analysis of these vast amounts of data but training opportunities to properly equip them in these efforts can be sparse. This includes training in reproducible data analysis methods.
