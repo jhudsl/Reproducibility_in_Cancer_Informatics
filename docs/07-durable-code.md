@@ -93,7 +93,7 @@ Now, if you wanted to edit the greeting, you'd only need to edit it in the funct
 
 - [Keeping R Code DRY with functions](https://www.youtube.com/watch?v=XSRO4VKD-pc) by @Riffomonas2021.  
 - [Write efficient R code for science](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) by @Joseph2017.  
-- [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2021.  
+- [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2019.  
 - [Don't repeat yourself: Python functions](https://scientificallysound.org/2018/07/19/python-functions/) by @Heroux2018.  
 
 #### Don't be afraid to delete and refresh a lot  
