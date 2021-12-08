@@ -72,26 +72,11 @@ For this chapter, we will create notebooks from our example files code. Notebook
 
 **Install JupyterLab**
 
-1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, so [if you don't have conda, you will need to install that first](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation).
+1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, so if you don't have `conda`, you will need to install that first. We advise going with `Anaconda` instead of `miniconda`. To install [Anaconda you can download from here](https://www.anaconda.com/products/individual). Download the installer, and follow the installation prompts.
 
-To install conda using command line will look something like this in command line (but you will have to change depending on your operating system).
+2. Start up Anaconda navigator. On the home page choose `JupyterLab` and click `Install`. This may take a few minutes.
 
-```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-mkdir /root/.conda \
-bash Miniconda3-latest-Linux-x86_64.sh -b \
-rm -f Miniconda3-latest-Linux-x86_64.sh
-
-conda --version
-```
-
-2. Then, [following the instructions](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html), install JupyterLab using this command in your [command line window](https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.):
-
-```
-conda install -c conda-forge jupyterlab
-```
-
-3. If you installed JupyterLab successfully, you can run `jupyter lab` in your command line window and a window will open in your browser. (Note that if you run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).
+3. Now you should be able to click `Launch` underneath `JupyterLab`. This will open up a page in your Browser with `JupyterLab`.
 
 **Getting familiar with JupyterLab's interface**  
 
@@ -196,5 +181,5 @@ For [more about using R notebooks see this](https://bookdown.org/yihui/rmarkdown
 </details>
 
 Now that you've created your notebook, you are ready to start polishing that code!
-  
+
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**

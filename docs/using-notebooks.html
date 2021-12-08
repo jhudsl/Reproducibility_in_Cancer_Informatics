@@ -365,21 +365,9 @@ div.csl-indent {
 </summary>
 <p><strong>Install JupyterLab</strong></p>
 <ol style="list-style-type: decimal">
-<li>We advise using the <code>conda</code> method to install JupyterLab, because we will return to talk more about <code>conda</code> later on, so <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation">if you don’t have conda, you will need to install that first</a>.</li>
-</ol>
-<p>To install conda using command line will look something like this in command line (but you will have to change depending on your operating system).</p>
-<pre><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-mkdir /root/.conda \
-bash Miniconda3-latest-Linux-x86_64.sh -b \
-rm -f Miniconda3-latest-Linux-x86_64.sh
-
-conda --version</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Then, <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">following the instructions</a>, install JupyterLab using this command in your <a href="https://towardsdatascience.com/a-quick-guide-to-using-command-line-terminal-96815b97b955#:~:text=Opening%20Command%20Line.&amp;text=There%20are%20varying%20ways%20of,and%20press%20the%20return%20key.">command line window</a>:</li>
-</ol>
-<pre><code>conda install -c conda-forge jupyterlab</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>If you installed JupyterLab successfully, you can run <code>jupyter lab</code> in your command line window and a window will open in your browser. (Note that if you run this multiple times, you will need to close one of your JupyterLab browser windows, or follow their documentation to set a password).</li>
+<li><p>We advise using the <code>conda</code> method to install JupyterLab, because we will return to talk more about <code>conda</code> later on, so if you don’t have <code>conda</code>, you will need to install that first. We advise going with <code>Anaconda</code> instead of <code>miniconda</code>. To install <a href="https://www.anaconda.com/products/individual">Anaconda you can download from here</a>. Download the installer, and follow the installation prompts.</p></li>
+<li><p>Start up Anaconda navigator. On the home page choose <code>JupyterLab</code> and click <code>Install</code>. This may take a few minutes.</p></li>
+<li><p>Now you should be able to click <code>Launch</code> underneath <code>JupyterLab</code>. This will open up a page in your Browser with <code>JupyterLab</code>.</p></li>
 </ol>
 <p><strong>Getting familiar with JupyterLab’s interface</strong></p>
 <blockquote>
