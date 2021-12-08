@@ -76,3 +76,13 @@ md
 n'th
 READing
 runnable
+benefitted
+conda
+jhudsl
+Jupyter
+pwd
+renv
+RStudio
+Navarro's
+rmarkdown
+useable
