@@ -11,6 +11,7 @@ rmd_files: ["index.Rmd",
             "07-durable-code.Rmd",
             "08-readmes.Rmd",
             "09-code-review.Rmd",
+            "tester.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
