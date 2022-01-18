@@ -90,6 +90,8 @@ For this chapter, we will create notebooks from our example files code. Notebook
 
 <details> <summary>**Set up a Python IDE**</summary>
 
+[Go here for the video tutorial version of this exercise](https://www.youtube.com/watch?v=YV8QzH9l9YQ).
+
 **Install JupyterLab**
 
 1. We advise using the `conda` method to install JupyterLab, because we will return to talk more about `conda` later on, so if you don't have `conda`, you will need to install that first. We advise going with `Anaconda` instead of `miniconda`. To install [Anaconda you can download from here](https://www.anaconda.com/products/individual). Download the installer, and follow the installation prompts.
@@ -118,6 +120,7 @@ For this chapter, we will create notebooks from our example files code. Notebook
 </details>
 
 <details> <summary>**Set up an R IDE**</summary>
+[Go here for the video tutorial version of this exercise](https://www.youtube.com/watch?v=xBA9HBsbtNg).
 
 **Install RStudio**
 
