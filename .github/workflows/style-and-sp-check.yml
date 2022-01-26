@@ -1,4 +1,3 @@
-
 # Candace Savonen Dec 2021
 
 name: Style and spell check R markdowns
@@ -18,15 +17,28 @@ jobs:
     container:
       image: jhudsl/course_template
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout files
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-      - name: login as jhudsl-robot
+      - name: Configure git
         run: |
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
+
+          branch_name='preview-${{ github.event.pull_request.number }}'
+          exists=$(git ls-remote https://${{ secrets.GH_PAT }}@github.com/$GITHUB_REPOSITORY $branch_name | wc -l | xargs)
+          if [[ $exists -gt 0 ]];then
+            echo branch does exist
+            git checkout $branch_name
+            git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }}
+          else
+            echo branch doesnt exist
+            git checkout -b $branch_name
+            git push --set-upstream origin $branch_name
+          fi
 
       - name: Run spell check
         id: spell_check_run
@@ -41,23 +53,21 @@ jobs:
           name: spell-check-results
           path: resources/spell_check_results.tsv
 
-      - name: Spell check errors
+      - name: Commit spell check errors
         run: |
-          # Get on the preview branch if it exists. If it doesn't create it.
           branch_name='preview-${{ github.event.pull_request.number }}'
-          git rev-parse --quiet --verify $branch_name >/dev/null && exists=true || exists=false
-
-          if [[ $exists == true ]];
-          then
-            git checkout $branch_name
-            git pull --set-upstream origin $branch_name --allow-unrelated-histories
-          else
-            git checkout -b $branch_name
+          git diff --name-only origin/main -- resources/spell_check_results.tsv >/dev/null && changes=true || changes=false
+          echo $changes
+          if $changes == true; then
+            git diff --name-only origin/$branch_name -- resources/spell_check_results.tsv >/dev/null && changes=true || changes=false
+            echo $changes
+            if $changes == true; then
+              git add --force resources/spell_check_results.tsv
+              git diff-index --quiet HEAD || git commit -m 'Add spell check file'
+              git pull --set-upstream origin $branch_name --allow-unrelated-histories
+              git push --force origin $branch_name
+            fi
           fi
-
-          git add --force resources/spell_check_results.tsv
-          git commit -m 'Add spell check file'
-          git push --force --set-upstream origin $branch_name
 
       - name: Build components of the spell check comment
         id: build-components
@@ -87,7 +97,6 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             :warning: There are spelling errors that need to be addressed. [Read this guide for more info](https://github.com/jhudsl/OTTR_Template/wiki/Spell-check).
-
             [Download the errors here.](${{ steps.build-components.outputs.sp_error_url }})
             _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
           edit-mode: replace
@@ -104,7 +113,6 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             No spelling errors! :tada:
-
             _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
           edit-mode: replace
 
