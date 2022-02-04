@@ -12,7 +12,7 @@ If you would like to contribute to this course material, take a look at the [get
 ## About this course
 
 This course introduces the concepts of reproducibility and replicability in the context of cancer informatics.
-It is the first course in a two part course on reproducibility (the second part is not yet written but coming soon).
+It is the first course in a two part course on reproducibility (See the [advanced course here](https://github.com/jhudsl/Adv_Reproducibility_in_Cancer_Informatics)).
 It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses.
 The course also introduces tools relevant to reproducibility including analysis notebooks, package management, git and GitHub.
 
