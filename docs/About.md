@@ -22,7 +22,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Candace Savonen]|
-|Package Developers ([Leanbuild])[John Muschelli], [Candace Savonen], [Carrie Wright]|
+|Package Developers ([ottr])[John Muschelli], [Candace Savonen], [Carrie Wright]|
 |**Art and Design**||
 |Illustrator| [Candace Savonen]|
 |Figure Artist| [Candace Savonen]|
@@ -106,4 +106,4 @@ These credits are based on our [course contributors table guidelines](https://gi
 
 <!-- Links -->
 
-[Leanbuild]: https://github.com/jhudsl/leanbuild
+[ottr]: https://github.com/jhudsl/ottr
