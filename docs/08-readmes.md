@@ -94,7 +94,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 
 ```r
-leanbuild::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
+ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
 ```
 
 ![](resources/images/08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png)
