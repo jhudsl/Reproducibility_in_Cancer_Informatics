@@ -71,6 +71,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 </details>
 
 ## Exercise: Set up a project on GitHub
+[Go here for the video tutorial version of this exercise](https://www.youtube.com/watch?v=PPbESwm6xcA).
 
 Now that we understand how useful GitHub is for creating reproducible analyses, it's time to set ourselves up on GitHub.
 

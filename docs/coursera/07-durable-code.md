@@ -18,7 +18,7 @@ Just like in writing a manuscript you wouldn't consider your first draft a final
 #### Prioritize readability over cleverness
 <img src="resources/images/readable.png" width="12%">
 
-Some cleverness in code can be helpful, too much can make it difficult for others to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (including perhaps your future self!).
+Some cleverness in code can be helpful, too much can make it difficult for others (including your future self!) to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (AGAIN, including your future self!).
 
 What does readable code look like? @Orosz2019 has some thoughts on writing readable code:
 
@@ -161,7 +161,7 @@ Good code comments are a part of writing good, readable code! Your code is more 
 
 Your code and your understanding of it will fade soon after you write it, leaving your hard work to deprecate. Code that works is a start, but **readable** AND working code is best!
 
-Comments can help clarify at points where your code might need further explanation. The act of writing them can also help you think out your thought process and perhaps identify a better solution to the odd parts of your code.
+Comments can help clarify at points where your code might need further explanation. The best code comments explain the *why* of what you are doing. The act of writing them can also help you think out your thought process and perhaps identify a better solution to the odd parts of your code.
 
 (From @Savonen2021)
 
@@ -177,7 +177,7 @@ Comments can help clarify at points where your code might need further explanati
 #### Use informative variable names
 <img src="resources/images/variable-name.png" width="12%">
 
-Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read.
+Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read. Don't be afraid of long variable names, they are very unlikely to be confused!
 
 > 1 Write intention-revealing names.  
 > 2 Use consistent notation for naming convention.  
