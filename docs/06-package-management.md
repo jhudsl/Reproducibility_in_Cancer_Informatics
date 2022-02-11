@@ -102,7 +102,7 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] knitr_1.33      ottr_0.1.2      magrittr_1.5    hms_0.5.3      
+##  [1] knitr_1.33      ottr_0.1.2      magrittr_2.0.2  hms_0.5.3      
 ##  [5] R6_2.4.1        rlang_0.4.10    stringr_1.4.0   httr_1.4.2     
 ##  [9] tools_4.0.2     xfun_0.26       htmltools_0.5.0 ellipsis_0.3.1 
 ## [13] yaml_2.2.1      digest_0.6.25   tibble_3.0.3    lifecycle_1.0.0
