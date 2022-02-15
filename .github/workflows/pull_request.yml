@@ -326,8 +326,8 @@ jobs:
           git checkout $branch_name
 
           # Start fresh and delete these files
-          git rm -rf docs/*
-          git rm -rf *.rds
+          git rm -rf docs/* || echo "no docs/ folder to delete"
+          git rm -rf *.rds || echo "no RDS file to delete"
           git commit -m "delete docs"
 
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }}
