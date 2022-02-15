@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="managing-package-versions.html"/>
+<link rel="next" href="documenting-analyses.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.itcrtraining.org/"><img src="assets/ITN_logo.png" style="padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.1</b> Target Audience</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#topics-covered"><i class="fa fa-check"></i><b>1.2</b> Topics covered:</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.3</b> Motivation</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.4</b> Curriculum</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.5</b> How to use the course</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html"><i class="fa fa-check"></i><b>2</b> Defining reproducibility</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#learning-objectives"><i class="fa fa-check"></i><b>2.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2.2" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#what-is-reproducibility"><i class="fa fa-check"></i><b>2.2</b> What is reproducibility</a></li>
+<li class="chapter" data-level="2.3" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-in-daily-life"><i class="fa fa-check"></i><b>2.3</b> Reproducibility in daily life</a></li>
+<li class="chapter" data-level="2.4" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-is-worth-the-effort"><i class="fa fa-check"></i><b>2.4</b> Reproducibility is worth the effort!</a></li>
+<li class="chapter" data-level="2.5" data-path="defining-reproducibility.html"><a href="defining-reproducibility.html#reproducibility-exists-on-a-continuum"><i class="fa fa-check"></i><b>2.5</b> Reproducibility exists on a continuum!</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="organizing-your-project.html"><a href="organizing-your-project.html"><i class="fa fa-check"></i><b>3</b> Organizing your project</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#learning-objectives-1"><i class="fa fa-check"></i><b>3.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="3.2" data-path="organizing-your-project.html"><a href="organizing-your-project.html#organizational-strategies"><i class="fa fa-check"></i><b>3.2</b> Organizational strategies</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="organizing-your-project.html"><a href="organizing-your-project.html#tips-for-organizing-your-project"><i class="fa fa-check"></i><b>3.2.1</b> Tips for organizing your project:</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="organizing-your-project.html"><a href="organizing-your-project.html#readings-about-organizational-strategies-for-data-science-projects"><i class="fa fa-check"></i><b>3.3</b> Readings about organizational strategies for data science projects:</a></li>
+<li class="chapter" data-level="3.4" data-path="organizing-your-project.html"><a href="organizing-your-project.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter"><i class="fa fa-check"></i><b>3.4</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="3.5" data-path="organizing-your-project.html"><a href="organizing-your-project.html#exercise-organize-your-project"><i class="fa fa-check"></i><b>3.5</b> Exercise: Organize your project!</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html"><i class="fa fa-check"></i><b>4</b> Making your project open source with GitHub</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#learning-objectives-2"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#github-and-git-allow-you-to"><i class="fa fa-check"></i><b>4.1.1</b> GitHub and git allow you to…</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-1"><i class="fa fa-check"></i><b>4.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="4.3" data-path="making-your-project-open-source-with-github.html"><a href="making-your-project-open-source-with-github.html#exercise-set-up-a-project-on-github"><i class="fa fa-check"></i><b>4.3</b> Exercise: Set up a project on GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="using-notebooks.html"><a href="using-notebooks.html"><i class="fa fa-check"></i><b>5</b> Using Notebooks</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="using-notebooks.html"><a href="using-notebooks.html#learning-objectives-3"><i class="fa fa-check"></i><b>5.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="5.2" data-path="using-notebooks.html"><a href="using-notebooks.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-2"><i class="fa fa-check"></i><b>5.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="5.3" data-path="using-notebooks.html"><a href="using-notebooks.html#exercise-convert-code-into-a-notebook"><i class="fa fa-check"></i><b>5.3</b> Exercise: Convert code into a notebook!</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="using-notebooks.html"><a href="using-notebooks.html#set-up-your-ide"><i class="fa fa-check"></i><b>5.3.1</b> Set up your IDE</a></li>
+<li class="chapter" data-level="5.3.2" data-path="using-notebooks.html"><a href="using-notebooks.html#create-a-notebook"><i class="fa fa-check"></i><b>5.3.2</b> Create a notebook!</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="managing-package-versions.html"><a href="managing-package-versions.html"><i class="fa fa-check"></i><b>6</b> Managing package versions</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#learning-objectives-4"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#strategy-1-session-info---record-a-list-of-your-packages"><i class="fa fa-check"></i><b>6.1.1</b> Strategy 1: Session Info - record a list of your packages</a></li>
+<li class="chapter" data-level="6.1.2" data-path="managing-package-versions.html"><a href="managing-package-versions.html#strategy-2-package-managers---share-a-useable-snapshot-of-your-environment"><i class="fa fa-check"></i><b>6.1.2</b> Strategy 2: Package managers - share a useable snapshot of your environment</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="managing-package-versions.html"><a href="managing-package-versions.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3"><i class="fa fa-check"></i><b>6.2</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="6.3" data-path="managing-package-versions.html"><a href="managing-package-versions.html#exercise-1-print-out-session-info"><i class="fa fa-check"></i><b>6.3</b> Exercise 1: Print out session info</a></li>
+<li class="chapter" data-level="6.4" data-path="managing-package-versions.html"><a href="managing-package-versions.html#exercise-2-package-management"><i class="fa fa-check"></i><b>6.4</b> Exercise 2: Package management</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="managing-package-versions.html"><a href="managing-package-versions.html#more-resources-on-how-to-use-conda"><i class="fa fa-check"></i><b>6.4.1</b> More resources on how to use conda</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="writing-durable-code.html"><a href="writing-durable-code.html"><i class="fa fa-check"></i><b>7</b> Writing durable code</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="writing-durable-code.html"><a href="writing-durable-code.html#learning-objectives-5"><i class="fa fa-check"></i><b>7.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="7.2" data-path="writing-durable-code.html"><a href="writing-durable-code.html#general-principles"><i class="fa fa-check"></i><b>7.2</b> General principles</a></li>
+<li class="chapter" data-level="7.3" data-path="writing-durable-code.html"><a href="writing-durable-code.html#more-reading-on-best-coding-practices"><i class="fa fa-check"></i><b>7.3</b> More reading on best coding practices</a></li>
+<li class="chapter" data-level="7.4" data-path="writing-durable-code.html"><a href="writing-durable-code.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4"><i class="fa fa-check"></i><b>7.4</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="7.5" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-1-make-code-more-durable"><i class="fa fa-check"></i><b>7.5</b> Exercise 1: Make code more durable!</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="writing-durable-code.html"><a href="writing-durable-code.html#organize-the-big-picture-of-the-code"><i class="fa fa-check"></i><b>7.5.1</b> Organize the big picture of the code</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="writing-durable-code.html"><a href="writing-durable-code.html#exercise-2-style-code-automatically"><i class="fa fa-check"></i><b>7.6</b> Exercise 2: Style code automatically!</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="documenting-analyses.html"><a href="documenting-analyses.html"><i class="fa fa-check"></i><b>8</b> Documenting analyses</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="documenting-analyses.html"><a href="documenting-analyses.html#learning-objectives-6"><i class="fa fa-check"></i><b>8.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="8.2" data-path="documenting-analyses.html"><a href="documenting-analyses.html#why-documentation"><i class="fa fa-check"></i><b>8.2</b> Why documentation?</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="documenting-analyses.html"><a href="documenting-analyses.html#notebook-descriptions"><i class="fa fa-check"></i><b>8.2.1</b> Notebook descriptions</a></li>
+<li class="chapter" data-level="8.2.2" data-path="documenting-analyses.html"><a href="documenting-analyses.html#readmes"><i class="fa fa-check"></i><b>8.2.2</b> READMEs!</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="documenting-analyses.html"><a href="documenting-analyses.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-5"><i class="fa fa-check"></i><b>8.3</b> Get the exercise project files (or continue with the files you used in the previous chapter)</a></li>
+<li class="chapter" data-level="8.4" data-path="documenting-analyses.html"><a href="documenting-analyses.html#exercise-1-practice-beefing-up-your-notebook-descriptions"><i class="fa fa-check"></i><b>8.4</b> Exercise 1: Practice beefing up your notebook descriptions</a></li>
+<li class="chapter" data-level="8.5" data-path="documenting-analyses.html"><a href="documenting-analyses.html#exercise-2-write-a-readme-for-your-project"><i class="fa fa-check"></i><b>8.5</b> Exercise 2: Write a README for your project!</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="code-review.html"><a href="code-review.html"><i class="fa fa-check"></i><b>9</b> Code review</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="code-review.html"><a href="code-review.html#learning-objectives-7"><i class="fa fa-check"></i><b>9.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="9.2" data-path="code-review.html"><a href="code-review.html#exercise-set-up-your-code-review-request"><i class="fa fa-check"></i><b>9.2</b> Exercise: Set up your code review request!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/ottrpal_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/hc8Xt3Y2Znjb6M4Y7"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro to Reproducibility in Cancer Informatics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+  <html>
+  
+  <head>
+  <title>Title</title>
+  </head>
+  
+  <body>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RR0VGW95G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-0RR0VGW95G');
+  </script>
+      
+  </body>
+  </html>
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_ITN.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/itcr_main_image.png">
+</div>
+<div id="writing-durable-code" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Writing durable code</h1>
+<div id="learning-objectives-5" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Learning Objectives</h2>
+<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png" title="This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style." alt="This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style." width="1250" style="display: block; margin: auto;" /></p>
+</div>
+<div id="general-principles" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> General principles</h2>
+<div id="work-on-your-code-iteratively" class="section level4" number="7.2.0.1">
+<h4><span class="header-section-number">7.2.0.1</span> Work on your code iteratively</h4>
+<p><img src="resources/images/iterative.png" width="12%"></p>
+<p>Getting your code to work the first time is the first step, but don’t stop there!
+Just like in writing a manuscript you wouldn’t consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it!</p>
+</div>
+<div id="prioritize-readability-over-cleverness" class="section level4" number="7.2.0.2">
+<h4><span class="header-section-number">7.2.0.2</span> Prioritize readability over cleverness</h4>
+<p><img src="resources/images/readable.png" width="12%"></p>
+<p>Some cleverness in code can be helpful, too much can make it difficult for others (including your future self!) to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won’t be re-used or trusted by others (AGAIN, including your future self!).</p>
+<p>What does readable code look like? <span class="citation">Orosz (<a href="#ref-Orosz2019" role="doc-biblioref">2019</a>)</span> has some thoughts on writing readable code:</p>
+<blockquote>
+<p><strong>Readable code starts with code that you find easy to read.</strong> When you finish coding, take a break to clear your mind. Then try to re-read the code, putting yourself in the mindset that you know nothing about the changes and why you made them.</p>
+<p>Can you follow along with your code? Do the variables and method names help understand what they do? Are there comments at places where just the code is not enough? Is the style of the code consistent across the changes?</p>
+<p>Think about how you could make the code more readable. Perhaps you see some functions that do too many things and are too long. Perhaps you find that renaming a variable would make its purpose clearer. Make changes until you feel like the code is as expressive, concise, and pretty as it can be.</p>
+</blockquote>
+<blockquote>
+<p><strong>The real test of readable code is others reading it.</strong> So get feedback from others, via code reviews. Ask people to share feedback on how clear the code is. Encourage people to ask questions if something does not make sense. Code reviews - especially thorough code reviews - are the best way to get feedback on how good and readable your code is.</p>
+<p>Readable code will attract little to no clarifying questions, and reviewers won’t misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.</p>
+<p>A good way to get more feedback on the clarity of your code is to ask for feedback from someone who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they’ll focus on how much they can follow your code. Most of the comments they make will be about your code’s readability.</p>
+</blockquote>
+<p>We’ll talk a bit more about code review in an upcoming chapter!</p>
+<p><strong>More reading:</strong></p>
+<ul>
+<li><a href="https://blog.pragmaticengineer.com/readable-code/">Readable Code</a> by <span class="citation">Orosz (<a href="#ref-Orosz2019" role="doc-biblioref">2019</a>)</span>.<br />
+</li>
+<li><a href="https://appsilon.com/write-clean-r-code/">Write clean R code</a> by <span class="citation">Dubel (<a href="#ref-Dubel2021" role="doc-biblioref">2021</a>)</span>.<br />
+</li>
+<li><a href="https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60">Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable</a> by <span class="citation">Tran (<a href="#ref-Tran2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+</div>
+<div id="dry-up-your-code" class="section level4" number="7.2.0.3">
+<h4><span class="header-section-number">7.2.0.3</span> DRY up your code</h4>
+<p><img src="resources/images/DRY.png" width="12%"></p>
+<p><a href="https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don&#39;t_Repeat_Yourself">DRY</a> is an acronym: “Don’t repeat yourself” <span class="citation">(<a href="#ref-Smith2013" role="doc-biblioref">Smith 2013</a>)</span>.</p>
+<blockquote>
+<p>“I hate code, and I want as little of it as possible in our product.”</p>
+</blockquote>
+<p>– <span class="citation">Diederich (<a href="#ref-Diederich2012" role="doc-biblioref">2012</a>)</span></p>
+<p>If you find yourself writing something more than once, you might want to write a function, or store something as a variable. The added benefit of writing a function is you might be able to borrow it in another project. DRY code is easier to fix and maintain because if it breaks, its easier to fix something in one place, than in 10 places.</p>
+<p>DRY code is easier on the reviewer because they don’t have to review the same thing twice, but also because they don’t have to review the same thing twice. ;)
+DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!</p>
+<p>Here’s an slightly modified example from <span class="citation">Bernardo (<a href="#ref-Bernardo2021" role="doc-biblioref">2021</a>)</span> for what DRY vs non-DRY code might look like:</p>
+<pre><code>paste(&#39;Hello&#39;,&#39;John&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Susan&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Matt&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Anne&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Joe&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Tyson&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Julia&#39;, &#39;welcome to this course&#39;)
+paste(&#39;Hello&#39;,&#39;Cathy&#39;, &#39;welcome to this course&#39;)</code></pre>
+<p>Could be functional-ized and rewritten as:</p>
+<pre><code>GreetStudent &lt;- function(name) {
+ greeting &lt;- paste(&#39;Hello&#39;, name, &#39;welcome to this course&#39;)
+ return(greeting)
+}
+
+class_names &lt;- c(&#39;John&#39;, &#39;Susan&#39;, &#39;Matt&#39; ,&#39;Anne&#39;, &#39;Joe&#39;, &#39;Tyson&#39;, &#39;Julia&#39;, &#39;Cathy&#39;)
+
+lapply(class_names, GreetStudent)</code></pre>
+<p>Now, if you wanted to edit the greeting, you’d only need to edit it in the function, instead of in each instance.</p>
+<p><strong>More reading about this idea:</strong></p>
+<ul>
+<li><a href="https://www.drycode.io/">Keep your code dry</a> by <span class="citation"><span>“How <span>To</span> <span>Keep</span> <span>Your</span> <span>Code</span> <span>Dry</span>”</span> (<a href="#ref-DRY" role="doc-biblioref">2021</a>)</span>.<br />
+</li>
+<li><a href="https://metova.com/dry-programming-practices/">DRY Programming Practices</a> by <span class="citation">Klinefelter (<a href="#ref-Klinefelter2016" role="doc-biblioref">2016</a>)</span>.</li>
+</ul>
+<p><strong>Practical examples of DRYing code:</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=XSRO4VKD-pc">Keeping R Code DRY with functions</a> by <span class="citation">Riffomonas Project (<a href="#ref-Riffomonas2021" role="doc-biblioref">2021</a>)</span>.<br />
+</li>
+<li><a href="https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/">Write efficient R code for science</a> by <span class="citation">Max Joseph (<a href="#ref-Joseph2017" role="doc-biblioref">2017</a>)</span>.<br />
+</li>
+<li><a href="https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/">Write efficient Python code</a> by <span class="citation">Leah Wasser (<a href="#ref-Wasser2019" role="doc-biblioref">2019</a>)</span>.<br />
+</li>
+<li><a href="https://scientificallysound.org/2018/07/19/python-functions/">Don’t repeat yourself: Python functions</a> by <span class="citation">Héroux (<a href="#ref-Heroux2018" role="doc-biblioref">2018</a>)</span>.</li>
+</ul>
+</div>
+<div id="dont-be-afraid-to-delete-and-refresh-a-lot" class="section level4" number="7.2.0.4">
+<h4><span class="header-section-number">7.2.0.4</span> Don’t be afraid to delete and refresh a lot</h4>
+<p><img src="resources/images/delete.png" width="12%"></p>
+<p>Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE.</p>
+<p>In essence, this is the data science version of “Have you tried turning it off and then on again?” Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.</p>
+<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png" title="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." alt="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." width="1250" style="display: block; margin: auto;" /></p>
+<details>
+<summary>
+<em>Why do you need to refresh your kernel/session?</em>
+</summary>
+<p>As a quick example of why refreshing your kernel/session, let’s suppose you are troubleshooting something that centers around an object named <code>some_obj</code> but then you rename this object to <code>iris_df</code>. When you rename this object you may need to update this other places in the code. If you don’t refresh your environment while working on your code, <code>some_obj</code> will still be in your environment. This will make it more difficult for you to find where else the code needs to be updated.</p>
+<p>Refreshing your kernel/session goes beyond objects defined in your environment, and also can affect packages and dependencies loaded or all kinds of other things attached to your kernel/session.</p>
+<p>As a quick experiment, try this in your Python or R environment:</p>
+<p>The <code>dir()</code> and <code>ls()</code> functions list your defined variables in your Python and R environments respectively.</p>
+<p><strong>In Python:</strong></p>
+<pre><code>some_obj=[]
+dir()</code></pre>
+<p>Now refresh your Kernel and re-run <code>dir()</code></p>
+<pre><code>dir()</code></pre>
+<p>You should see you no longer have <code>some_obj</code> listed as being defined in your environment.</p>
+<p><strong>In R</strong></p>
+<pre><code>some_obj &lt;- c()
+ls()</code></pre>
+<p>Now refresh your session and re-run <code>ls()</code></p>
+<pre><code>ls()</code></pre>
+<p>You should see you no longer have <code>some_obj</code> listed as being defined in your environment.</p>
+</details>
+<p>Keeping around old code and objects is generally more of a hindrance than a time saver. Sometimes it can be easy to get very attached to a chunk of code that took you a long time to troubleshoot but there are three reasons you don’t need to stress about deleting it:</p>
+<ol style="list-style-type: decimal">
+<li>You might write better code on the second try (or third or n’th).<br />
+</li>
+<li>Keeping around old code makes it harder for you to write and troubleshoot new better code – it’s easier to confuse yourself. Sometimes a fresh start can be what you need.<br />
+</li>
+<li>With version control you can always return to that old code! (We’ll dive more into version control later on, but you’ve started the process by <a href="https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html">uploading your code to GitHub in chapter 4</a>!)</li>
+</ol>
+<p>This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).</p>
+<p>Related to this, if you want to be certain that your code is reproducible, it’s worth deleting all your output, and re-running everything with a fresh session. The first step to knowing if your analysis is reproducible is seeing if you can repeat it yourself!</p>
+</div>
+<div id="use-code-comments-effectively" class="section level4" number="7.2.0.5">
+<h4><span class="header-section-number">7.2.0.5</span> Use code comments effectively</h4>
+<p><img src="resources/images/comment.png" width="12%"></p>
+<p>Good code comments are a part of writing good, readable code! Your code is more likely to stand the test of time for longer if others, including yourself in the future, can see what’s happening enough to trust it themselves. This will encourage others to use your code and help you maintain it!</p>
+<p>‘Current You’ who is writing your code may know what is happening but ‘Future You’ will have no idea what ‘Current You’ was thinking <span class="citation">(<a href="#ref-Spielman" role="doc-biblioref">Spielman, n.d.</a>)</span>:</p>
+<blockquote>
+<p>‘Future You’ comes into existence about one second after you write code, and has no idea what on earth Past You was thinking. Help out ‘Future You’ by adding lots of comments! ‘Future You’ next week thinks Today You is an idiot, and the only way you can convince ‘Future You’ that Today You is reasonably competent is by adding comments in your code explaining why Today You is actually not so bad.</p>
+</blockquote>
+<p>Your code and your understanding of it will fade soon after you write it, leaving your hard work to deprecate. Code that works is a start, but <strong>readable</strong> AND working code is best!</p>
+<p>Comments can help clarify at points where your code might need further explanation. The best code comments explain the <em>why</em> of what you are doing. The act of writing them can also help you think out your thought process and perhaps identify a better solution to the odd parts of your code.</p>
+<p>(From <span class="citation">Savonen (<a href="#ref-Savonen2021" role="doc-biblioref">2021a</a>)</span>)</p>
+<p><strong>More reading:</strong></p>
+<ul>
+<li><a href="https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments">Creating clarifying code comments</a></li>
+<li><a href="https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/">Best Practices for Writing Code Comments</a> by <span class="citation">Spertus (<a href="#ref-Spertus2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://itnext.io/what-makes-a-good-code-comment-5267debd2c24">What Makes a Good Code Comment?</a> by <span class="citation">Cronin (<a href="#ref-Cronin2019" role="doc-biblioref">2019</a>)</span>.<br />
+</li>
+<li><a href="https://www.olioapps.com/blog/the-value-of-code-documentation/">The Value of Code Documentation</a> by <span class="citation">Meza (<a href="#ref-Meza2018" role="doc-biblioref">2018</a>)</span>.<br />
+</li>
+<li><a href="http://alyssafrazee.com/2014/04/20/rdocs.html">Some internet wisdom on R documentation</a> by <span class="citation">Frazee (<a href="#ref-Frazee2014" role="doc-biblioref">2014</a>)</span>.<br />
+</li>
+<li><a href="https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits">How to Comment Your Code Like a Pro: Best Practices and Good Habits</a> by <span class="citation">Keeton (<a href="#ref-Keeton2019" role="doc-biblioref">2019</a>)</span>.</li>
+</ul>
+</div>
+<div id="use-informative-variable-names" class="section level4" number="7.2.0.6">
+<h4><span class="header-section-number">7.2.0.6</span> Use informative variable names</h4>
+<p><img src="resources/images/variable-name.png" width="12%"></p>
+<p>Try to avoid using variable names that have no meaning like <code>tmp</code> or <code>x</code>, or <code>i</code>. Meaningful variable names make your code more readable! Additionally, variable names that are longer than one letter are much easier to search and replace if needed. One letter variables are hard to replace and hard to read. Don’t be afraid of long variable names, they are very unlikely to be confused!</p>
+<blockquote>
+<p>1 Write intention-revealing names.<br />
+2 Use consistent notation for naming convention.<br />
+3 Use standard terms.<br />
+4 Do not number a variable name.<br />
+5 When you find another way to name variable, refactor as fast as possible.</p>
+</blockquote>
+<p><span class="citation">(<a href="#ref-Hobert2018" role="doc-biblioref">Hobert 2018</a>)</span></p>
+<p><strong>More reading:</strong></p>
+<ul>
+<li><a href="https://www.r4epi.com/coding-best-practices.html#object-variable-names">R for Epidemiology - Coding best Practices</a> by <span class="citation">Cannell (<a href="#ref-Cannell2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be">Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them</a> by <span class="citation">Koehrsen (<a href="#ref-Koehrsen2019" role="doc-biblioref">2019</a>)</span>.<br />
+</li>
+<li><a href="https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3">Writing Variable — Informative, Descriptive &amp; Elegant</a> by <span class="citation">Hobert (<a href="#ref-Hobert2018" role="doc-biblioref">2018</a>)</span>.</li>
+</ul>
+</div>
+<div id="follow-a-code-style" class="section level4" number="7.2.0.7">
+<h4><span class="header-section-number">7.2.0.7</span> Follow a code style</h4>
+<p><img src="resources/images/style.png" width="12%"></p>
+<p>Just like when writing doesN”t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results.</p>
+<p>There are different style guides out there that people adhere to. It doesn’t matter so much which one you choose, so much that you pick one and stick to it for a particular project.</p>
+<p><em>Python style guides</em>:</p>
+<ul>
+<li><a href="https://www.python.org/dev/peps/pep-0008/">PEP8 style guide</a> <span class="citation"><span>“<span>PEP</span> 8 – <span>Style</span> <span>Guide</span> for <span>Python</span> <span>Code</span>”</span> (<a href="#ref-PEP8" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://google.github.io/styleguide/pyguide.html">Google Python style guide</a> <span class="citation"><span>“Styleguide”</span> (<a href="#ref-GooglePython" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+<p><em>R style guides</em>:</p>
+<ul>
+<li><a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham’s Style guide</a> <span class="citation">Wickham (<a href="#ref-Wickham" role="doc-biblioref">2019</a>)</span>.</li>
+<li><a href="https://google.github.io/styleguide/Rguide.html">Google R style guide</a> <span class="citation"><span>“Google’s <span>R</span> <span>Style</span> <span>Guide</span>”</span> (<a href="#ref-GoogleR" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+<p>Although writing code following a style as you are writing is a good practice, we’re all human and that can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you.
+For Python code, you can use <a href="https://black.readthedocs.io/en/stable/">python black</a> and for R, <a href="https://www.tidyverse.org/blog/2017/12/styler-1.0.0/">styler</a>.</p>
+</div>
+<div id="organize-the-structure-of-your-code" class="section level4" number="7.2.0.8">
+<h4><span class="header-section-number">7.2.0.8</span> Organize the structure of your code</h4>
+<p><img src="resources/images/organize.png" width="12%"></p>
+<p>Readable code should follow an organized structure. Just like how outlines help the structure of manuscript writing, outlines can also help the organization of code writing.</p>
+<p>A tentative outline for a notebook might look like this:</p>
+<ol style="list-style-type: decimal">
+<li>A description of the purpose of the code (in Markdown).<br />
+</li>
+<li>Import the libraries you will need (including sourcing any custom functions).<br />
+</li>
+<li>List any hard-coded variables.<br />
+</li>
+<li>Import data.<br />
+</li>
+<li>Do any data cleaning needed.<br />
+</li>
+<li>The main thing you need to do.<br />
+</li>
+<li>Print out session info.</li>
+</ol>
+<p>Note that if your notebook gets too long, you may want to separate out things in their own scripts. Additionally, it’s good practice to keep custom functions in their own file and import them. This allows you to use them elsewhere and also keeps the main part of the analysis cleaner.</p>
+</div>
+<div id="set-the-seed-if-your-analysis-has-randomness-involved" class="section level4" number="7.2.0.9">
+<h4><span class="header-section-number">7.2.0.9</span> Set the seed if your analysis has randomness involved</h4>
+<p><img src="resources/images/seeds.png" width="12%"></p>
+<p>If any randomness is involved in your analysis, you will want to set the seed in order for your results to be reproducible.</p>
+<p>In brief, computers don’t actually create numbers randomly they create <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">numbers pseudorandomly</a>. But if you want your results to be reproducible, you should give your computer a seed by which to create random numbers. This will allow anyone who re-runs your analysis to have a positive control and eliminate randomness as a reason the results were not reproducible.</p>
+<details>
+<summary>
+<strong>For more on how setting the seed works – a quick experiment</strong>
+</summary>
+<p>To illustrate how seeds work, run we’ll run a quick experiment with setting the seed here:</p>
+<p>First let’s set a seed (it doesn’t matter what number we use, just that we pick a number), so let’s use <code>1234</code> and then create a “random” number.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="writing-durable-code.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the seed:</span></span>
+<span id="cb17-2"><a href="writing-durable-code.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
+<span id="cb17-3"><a href="writing-durable-code.html#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="writing-durable-code.html#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now create a random number again</span></span>
+<span id="cb17-5"><a href="writing-durable-code.html#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
+<pre><code>## [1] 0.1137034</code></pre>
+<p>Now if we try a different seed, we will get a different “random” number.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="writing-durable-code.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set a different seed:</span></span>
+<span id="cb19-2"><a href="writing-durable-code.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
+<span id="cb19-3"><a href="writing-durable-code.html#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="writing-durable-code.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now create a random number again</span></span>
+<span id="cb19-5"><a href="writing-durable-code.html#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
+<pre><code>## [1] 0.334778</code></pre>
+<p>But, if we return to the original seed we used, <code>1234</code>, we will get the original “random” number we got.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="writing-durable-code.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set this back to the original seed</span></span>
+<span id="cb21-2"><a href="writing-durable-code.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
+<span id="cb21-3"><a href="writing-durable-code.html#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="writing-durable-code.html#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now we&#39;ll get the same &quot;random&quot; number we got when we set the seed to 1234 previously</span></span>
+<span id="cb21-5"><a href="writing-durable-code.html#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)</span></code></pre></div>
+<pre><code>## [1] 0.1137034</code></pre>
+</details>
+<p><strong>More reading:</strong></p>
+<ul>
+<li><a href="https://r-coder.com/set-seed-r/">Set seed</a> by <span class="citation">Soage (<a href="#ref-Soage2020" role="doc-biblioref">2020</a>)</span>.</li>
+<li><a href="http://www.cookbook-r.com/Numbers/Generating_random_numbers/">Generating random numbers</a> by <span class="citation">Chang (<a href="#ref-Chang2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+</div>
+<div id="to-review-general-principles" class="section level4" number="7.2.0.10">
+<h4><span class="header-section-number">7.2.0.10</span> To review general principles:</h4>
+<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png" title="General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style." alt="General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style." width="1250" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="more-reading-on-best-coding-practices" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> More reading on best coding practices</h2>
+<p>There’s so many opinions and strategies on best practices for code. And although a lot of these principles are generally applicable, not <em>all</em> of it is one size fits all. Some code practices are context-specific so sometimes you may need to pick and choose what works for you, your team, and your particular project.</p>
+<div id="python-specific" class="section level4" number="7.3.0.1">
+<h4><span class="header-section-number">7.3.0.1</span> Python specific:</h4>
+<ul>
+<li><a href="https://autobencoder.com/2020-06-30-shoulddo/">Reproducible Programming for Biologists Who Code Part 2: Should Dos</a> by <span class="citation">Heil (<a href="#ref-Heil2020b" role="doc-biblioref">2020</a>)</span>.</li>
+<li><a href="https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af">15 common coding mistakes data scientist make in Python (and how to fix them)</a> by <span class="citation">Csendes (<a href="#ref-Csendes2020" role="doc-biblioref">2020</a>)</span>.</li>
+<li><a href="https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82">Data Science in Production — Advanced Python Best Practices</a> by <span class="citation">Kostyuk (<a href="#ref-Kostyuk2020" role="doc-biblioref">2020</a>)</span>.</li>
+<li><a href="https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942">6 Mistakes Every Python Beginner Should Avoid While Coding</a> by <span class="citation">Saxena (<a href="#ref-Saxena2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+</div>
+<div id="r-specific" class="section level4" number="7.3.0.2">
+<h4><span class="header-section-number">7.3.0.2</span> R specific:</h4>
+<ul>
+<li><a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">Data Carpentry’s: Best Practices for Writing R Code</a> by <span class="citation"><span>“Best <span>Practices</span> for <span>Writing</span> <span>R</span> <span>Code</span> – <span>Programming</span> with <span>R</span>”</span> (<a href="#ref-DataCarpentry2021b" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html">R Programming for Research: Reproducible Research</a> by <span class="citation">Good (<a href="#ref-Good2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://www.r4epi.com/coding-best-practices.html">R for Epidemiology: Coding best practices</a> by <span class="citation">Cannell (<a href="#ref-Cannell2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a">Best practices for R Programming</a> by <span class="citation">Bernardo (<a href="#ref-Bernardo2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+</div>
+</div>
+<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-4" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
+<details>
+<summary>
+<strong>Get the Python project example files</strong>
+</summary>
+<p><a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip">Click this link to download</a>.</p>
+<p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
+</details>
+<details>
+<summary>
+<strong>Get the R project example files</strong>
+</summary>
+<p><a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip">Click this link to download</a>.</p>
+<p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>).</p>
+</details>
+</div>
+<div id="exercise-1-make-code-more-durable" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> Exercise 1: Make code more durable!</h2>
+<div id="organize-the-big-picture-of-the-code" class="section level3" number="7.5.1">
+<h3><span class="header-section-number">7.5.1</span> Organize the big picture of the code</h3>
+<p>Before diving in line-by-line it can be helpful to make a code-outline of sorts.</p>
+<p>What are the main steps you need to accomplish in this notebook? What are the starting and ending points for this particular notebook?</p>
+<p>For example, for this <code>make-heatmap</code> notebook we want to:</p>
+<ol style="list-style-type: decimal">
+<li>Set up analysis folders and declare file names.<br />
+</li>
+<li>Install the libraries we need.<br />
+</li>
+<li>Import the gene expression data and metadata.<br />
+</li>
+<li>Filter down the gene expression data to genes of interest – in this instance the most variant ones.<br />
+</li>
+<li>Clean the metadata.<br />
+</li>
+<li>Create an annotated heatmap.<br />
+</li>
+<li>Save the heatmap to a PNG.<br />
+</li>
+<li>Print out the session info!</li>
+</ol>
+<details>
+<summary>
+<strong>Python version of the exercise</strong>
+</summary>
+<p><strong>The exercise: Polishing code</strong></p>
+<ol style="list-style-type: decimal">
+<li>Start up JupyterLab with running <code>jupyter lab</code> from your command line.</li>
+<li>Activate your conda environment using <code>conda activate reproducible-python</code>.</li>
+<li>Open up your notebook you made in the previous chapter <code>make-heatmap.ipynb</code></li>
+<li>Work on organizing the code chunks and adding documentation to reflect the steps we’ve laid out in the <a href="writing-durable-code.html#organize-the-big-picture-of-the-code">previous section</a>, you may want to work on this iteratively as we dive into the code.</li>
+<li>As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Jupyter, you refresh your environment by using the <code>refresh</code> icon in the toolbar or by going to <code>Restart Kernel</code>.</li>
+</ol>
+<hr />
+<p><strong>Set the seed</strong></p>
+<p><em>Rationale:</em>
+The clustering in the analysis involves some randomness. We need to set the seed!</p>
+<p><em>Before:</em><br />
+Nothing! We didn’t set the seed before!</p>
+<p><em>After:</em>
+You can pick any number; doesn’t have to be 1234.</p>
+<pre><code>random.seed(1234)</code></pre>
+<p><strong>Use a relative file path</strong></p>
+<p><em>Rationale:</em><br />
+Absolute file paths only work for the original writer of the code and no one else. But if we make the <a href="https://www.educative.io/edpresso/absolute-vs-relative-path">file path relative</a> to the project set up, then it will work for whomever has the project repository <span class="citation">(<a href="#ref-Mustafeez2021" role="doc-biblioref">Mustafeez 2021</a>)</span>.</p>
+<p>Additionally, we can set up our file path names using <a href="https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python">f-Strings</a> so that we only need to change the project ID and the rest will be ready for a new dataset <span class="citation">(<a href="#ref-Python2021" role="doc-biblioref">Python 2021</a>)</span>!</p>
+<p>Although this requires more lines of code, this set up is much more flexible and ready for others to use.</p>
+<p><em>Before:</em></p>
+<pre><code>df1=pd.read_csv(&#39;~/a/file/path/only/I/have/SRP070849.tsv&#39;, sep=&#39;\t&#39;)
+mdf=pd.read_csv(&#39;~/a/file/path/only/I/have/SRP070849_metadata.tsv&#39;, sep=&#39;\t&#39;)</code></pre>
+<p><em>After:</em></p>
+<pre><code># Declare project ID
+id = &quot;SRP070849&quot;
+
+# Define the file path to the data directory
+data_dir = Path(f&quot;data/{id}&quot;)
+
+# Declare the file path to the gene expression matrix file
+data_file = data_dir.joinpath(f&quot;{id}.tsv&quot;)
+
+# Declare the file path to the metadata file
+# inside the directory saved as `data_dir`
+metadata_file = data_dir.joinpath(f&quot;metadata_{id}.tsv&quot;)
+
+# Read in metadata TSV file
+metadata = pd.read_csv(metadata_file, sep=&quot;\t&quot;)
+
+# Read in data TSV file
+expression_df = pd.read_csv(data_file, sep=&quot;\t&quot;)</code></pre>
+<p><em>Related readings:</em></p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/">f-strings in Python</a> by <span class="citation">Geeks (<a href="#ref-Geeksforgeeks2018" role="doc-biblioref">2018</a>)</span>.</li>
+<li><a href="https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python">f-Strings: A New and Improved Way to Format Strings in Python</a> by <span class="citation">Python (<a href="#ref-Python2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://www.educative.io/edpresso/absolute-vs-relative-path">Relative vs absolute file paths</a> by <span class="citation">Mustafeez (<a href="#ref-Mustafeez2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath">About join path</a> by <span class="citation"><span>“Python <span>Examples</span> of Pathlib.<span>Path</span>.joinpath”</span> (<a href="#ref-Programcreek2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+<p><strong>Avoid using mystery numbers</strong></p>
+<p><em>Rationale:</em><br />
+Avoid using numbers that don’t have context around them in the code. Include the calculations for the number, or if it needs to be hard-coded, explain the rationale for that number in the comments. Additionally, using variable and column names that tell you what is happening, helps clarify what the number represents.</p>
+<p><em>Before:</em></p>
+<pre><code>df1[&#39;calc&#39;] =df1.var(axis = 1, skipna = True)
+df2=df1[df1.calc &gt;float(10)]</code></pre>
+<p><em>After:</em></p>
+<pre><code># Calculate the variance for each gene
+expression_df[&quot;variance&quot;] = expression_df.var(axis=1, skipna=True)
+
+# Find the upper quartile for these data
+upper_quartile = expression_df[&quot;variance&quot;].quantile([0.90]).values
+
+# Filter the data choosing only genes whose variances are in the upper quartile
+df_by_var = expression_df[expression_df.variance &gt; float(upper_quartile)]</code></pre>
+<p><em>Related readings:</em><br />
+- <a href="https://betterprogramming.pub/stop-using-magic-numbers-and-variables-in-your-code-4e86f008b84c">Stop Using Magic Numbers and Variables in Your Code</a> by <span class="citation">Aaberge (<a href="#ref-Aaberge2021" role="doc-biblioref">2021</a>)</span>.</p>
+<p><strong>Add checks</strong></p>
+<p><em>Rationale:</em><br />
+Just because your script ran without an error that stopped the script doesn’t mean it is accurate and error free. Silent errors are the most tricky to solve, because you often won’t know that they happened!</p>
+<p>A very common error is data that is in the wrong order. In this example we have two data frames that contain information about the same samples. But in the original script, we don’t ever check that the samples are in the same order in the metadata and the gene expression matrix! This is a really easy way to get incorrect results!</p>
+<p><em>Before:</em><br />
+Nothing, we didn’t check for this before.</p>
+<p><em>After:</em></p>
+<pre><code>print(metadata[&quot;refinebio_accession_code&quot;].tolist() == expression_df.columns.tolist())</code></pre>
+<p>Continue to try to apply the general advice we gave about code to your notebook!
+Then, when you are ready, take a look at what our <a href="https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb">“final” version</a> looks like in the <a href="https://github.com/jhudsl/reproducible-python-example">example Python repository</a>. (<em>Final</em> here is in quotes because we may continue to make improvements to this notebook too – remember what we said about iterative?)</p>
+</details>
+<details>
+<summary>
+<strong>R version of the exercise</strong>
+</summary>
+<p><strong>About the tidyverse:</strong>.</p>
+<p>Before we dive into the exercise, a word about the tidyverse. The tidyverse is a highly useful set of packages for creating readable and reproducible data science workflows in R. In general, we will opt for tidyverse approaches in this course, and strongly encourage you to familiarize yourself with the tidyverse if you have not. We will point out some instances where tidyverse functions can help you DRY up your code as well as make it more readable!</p>
+<p><em>More reading on the tidyverse:</em></p>
+<ul>
+<li><a href="http://jhudatascience.org/tidyversecourse/intro.html">Tidyverse Skills for Data Science</a> by <span class="citation">Carrie Wright (<a href="#ref-Wright2021" role="doc-biblioref">n.d.</a>)</span>.</li>
+<li><a href="https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/">A Beginner’s Guide to Tidyverse</a> by <span class="citation">A. V. Team (<a href="#ref-Vidhya2019" role="doc-biblioref">2019</a>)</span>.</li>
+<li><a href="https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html">Introduction to tidyverse</a> by <span class="citation">Shapiro et al. (<a href="#ref-Shapiro2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+<p><strong>The exercise: Polishing code</strong></p>
+<ol style="list-style-type: decimal">
+<li>Open up RStudio.</li>
+<li>Open up the notebook you created in the previous chapter.<br />
+</li>
+<li>Now we’ll work on applying the principles from this chapter to the code. We’ll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section.</li>
+<li>Work on organizing the code chunks and adding documentation to reflect the steps we’ve laid out in the <a href="writing-durable-code.html#organize-the-big-picture-of-the-code">previous section</a>, you may want to work on this iteratively as we dive into the code.</li>
+<li>As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In RStudio, you refresh your environment by going to the <code>Run</code> menu and using <code>Restart R and refresh clear output</code>.</li>
+</ol>
+<hr />
+<p><strong>Set the seed</strong></p>
+<p><em>Rationale:</em>
+The clustering in the analysis involves some randomness. We need to set the seed!</p>
+<p><em>Before:</em><br />
+Nothing! We didn’t set the seed before!</p>
+<p><em>After:</em>
+You can pick any number; doesn’t have to be 1234.</p>
+<pre><code>set.seed(1234)</code></pre>
+<p><strong>Get rid of setwd</strong></p>
+<p><em>Rationale:</em><br />
+<code>setwd()</code> almost never work for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.</p>
+<p><em>Before:</em></p>
+<pre><code>setwd(&quot;Super specific/filepath/that/noone/else/has/&quot;)</code></pre>
+<p><em>After:</em><br />
+Now that we are working from a notebook, we know that the default <a href="https://bookdown.org/yihui/rmarkdown-cookbook/working-directory.html">current directory is wherever the notebook is placed</a> <span class="citation">(<a href="#ref-Xie2020" role="doc-biblioref">Xie, Dervieux, and Riederer 2020</a>)</span>.</p>
+<p><em>Related readings:</em></p>
+<ul>
+<li><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Jenny Bryan will light your computer on fire if you use setwd() in a script</a> <span class="citation">(<a href="#ref-Bryan2017" role="doc-biblioref">Bryan 2017</a>)</span>.</li>
+</ul>
+<p><strong>Give the variables more informative names</strong></p>
+<p><em>Rationale:</em><br />
+<code>xx</code> doesn’t tell us what is in the data here. Also by using the <code>readr::read_tsv()</code> from tidyverse we’ll get a cleaner, faster read and won’t have to specify <code>sep</code> argument. Note we are also fixing some spacing and using <code>&lt;-</code> so that we can stick to readability conventions.</p>
+<p>You’ll notice later</p>
+<p><em>Before:</em></p>
+<pre><code>xx=read.csv(&quot;metadata_SRP070849.tsv&quot;, sep = &quot;\t&quot;)</code></pre>
+<p><em>After:</em></p>
+<pre><code>metadata &lt;- readr::read_tsv(&quot;metadata_SRP070849.tsv&quot;)</code></pre>
+<p><em>Related readings:</em></p>
+<ul>
+<li><a href="https://readr.tidyverse.org/reference/read_delim.html"><code>readr::read_tsv()</code> documentation</a> by <span class="citation"><span>“Read a Delimited File (Including <span>CSV</span> and <span>TSV</span>) into a Tibble — Read_delim”</span> (<a href="#ref-Tidyverse2021" role="doc-biblioref">n.d.</a>)</span>.</li>
+</ul>
+<p><strong>DRYing up data frame manipulations</strong></p>
+<p><em>Rationale:</em><br />
+This chunk of code can be very tricky to understand what it is doing.
+What is happening with df1 and df2? What’s being filtered out? etc.
+Code comments would certainly help understanding, but even better, we can DRY this code up and make the code clearer on its own.</p>
+<p><em>Before:</em><br />
+It may be difficult to tell from looking at the before code because there are no comments and it’s a bit tricky to read, but the goal of this is to:</p>
+<ol style="list-style-type: decimal">
+<li>Calculate variances for each row (each row is a gene).</li>
+<li>Filter the original gene expression matrix to only genes have a bigger variance (here we use arbitrarily 10 as a filter cutoff).</li>
+</ol>
+<pre><code>df=read.csv(&quot;SRP070849.tsv&quot;, sep=&quot;\t&quot;)
+sums=matrix(nrow = nrow(df), ncol = ncol(df) - 1)
+for(i in 1:nrow(sums)) { sums[i, ] &lt;- sum(df[i, -1])
+}
+df2=df[which(df[, -1] &gt;= 10), ]
+variances=matrix(nrow = nrow(dds), ncol = ncol(dds) - 1)
+  for(i in 1:nrow(dds)) {
+    variances[i, ] &lt;- var(dds[i, -1])
+}</code></pre>
+<p><em>After:</em></p>
+<p>Let’s see how we can do this in a DRY’er and clearer way.</p>
+<p>We can:<br />
+1) Add comments to describe our goals.<br />
+2) Use variable names that are more informative.<br />
+3) Use the apply functions to do the loop for us – this will eliminate the need for unclear variable <code>i</code> as well.<br />
+4) Use the tidyverse to do the filtering for us so we don’t have to rename data frames or store extra versions of <code>df</code>.</p>
+<p>Here’s what the above might look like after some refactoring. Hopefully you find this is easier to follow and total there’s less lines of code (but also has comments too!).</p>
+<pre><code># Read in data TSV file
+expression_df &lt;- readr::read_tsv(data_file) %&gt;%
+  # Here we are going to store the gene IDs as row names so that
+  # we can have only numeric values to perform calculations on later
+  tibble::column_to_rownames(&quot;Gene&quot;)
+
+# Calculate the variance for each gene
+variances &lt;- apply(expression_df, 1, var)
+
+# Determine the upper quartile variance cutoff value
+upper_var &lt;- quantile(variances, 0.75)
+
+# Filter the data choosing only genes whose variances are in the upper quartile
+df_by_var &lt;- data.frame(expression_df) %&gt;%
+  dplyr::filter(variances &gt; upper_var)</code></pre>
+<p><strong>Add checks</strong></p>
+<p><em>Rationale:</em>
+Just because your script ran without an error that stopped the script doesn’t mean it is accurate and error free. Silent errors are the most tricky to solve, because you often won’t know that they happened!</p>
+<p>A very common error is data that is in the wrong order. In this example we have two data frames that contain information about the same samples. But in the original script, we don’t ever check that the samples are in the same order in the metadata and the gene expression matrix! This is a really easy way to get incorrect results!</p>
+<p><em>Before:</em></p>
+<pre><code>Nothing... we didn&#39;t check for this :(</code></pre>
+<p><em>After:</em></p>
+<pre><code># Make the data in the order of the metadata
+expression_df &lt;- expression_df %&gt;%
+  dplyr::select(metadata$refinebio_accession_code)
+
+# Check if this is in the same order
+all.equal(colnames(expression_df), metadata$refinebio_accession_code)</code></pre>
+<p>Continue to try to apply the general advice we gave about code to your notebook!
+Then, when you are ready, take a look at what our <a href="https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html">“final” version</a> looks like in the <a href="https://github.com/jhudsl/reproducible-R-example">example R repository</a>. (<em>Final</em> here is in quotes because we may continue to make improvements to this notebook too – remember what we said about iterative?)</p>
+</details>
+<p>Now that we’ve made some nice updates to the code, we are ready to do a bit more polishing by adding more documentation! But before we head to the next chapter, we can style the code we wrote automatically by using automatic code stylers!</p>
+</div>
+</div>
+<div id="exercise-2-style-code-automatically" class="section level2" number="7.6">
+<h2><span class="header-section-number">7.6</span> Exercise 2: Style code automatically!</h2>
+<details>
+<summary>
+Styling Python code automatically
+</summary>
+<p>Run your notebook through <code>black</code>. First you’ll need to install it by running this command in a Terminal window in your JupyterLab.</p>
+<p>Make sure you are running this within your conda environment.</p>
+<pre><code>conda activate reproducible-python</code></pre>
+<p>Now install this python black.</p>
+<pre><code>pip install black[jupyter]</code></pre>
+<p>To record your <code>conda</code> environment run this command.</p>
+<pre><code>conda env export &gt; environment-record.yml</code></pre>
+<p>Now you can automatically style your code by running this command from your Console (be sure to replace the <code>"make-heatmap.Rmd"</code> with whatever you have named your notebook:</p>
+<pre><code>python -m black make-heatmap.ipynb</code></pre>
+<p>You should get a message that your notebook was styled!</p>
+</details>
+<details>
+<summary>
+Styling R code automatically
+</summary>
+<p>Let’s run your notebook through <code>styler</code>.
+First you’ll need to install it and add it to your <code>renv</code>.</p>
+<pre><code>install.packages(&quot;styler&quot;)</code></pre>
+<p>Then add it to your <code>renv</code> by running:</p>
+<pre><code>renv::snapshot()</code></pre>
+<p>Now you can automatically style your code by running this command from your Console (be sure to replace the <code>"make-heatmap.Rmd"</code> with whatever you have named your notebook:</p>
+<pre><code>styler::style_file(&quot;make-heatmap.Rmd&quot;)</code></pre>
+<p>You should get a message that your notebook was styled!</p>
+</details>
+<p>Before you are done with this exercise, there’s one more thing we need to do: upload the latest version to GitHub.
+Follow <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github">these instructions to add the latest version of your notebook to your GitHub repository</a>. Later, we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.</p>
+<p><strong>Any feedback you have regarding this exercise is greatly appreciated; you can fill out <a href="https://forms.gle/ygSSwoGaEATA2S65A">this form</a>!</strong></p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Aaberge2021" class="csl-entry">
+Aaberge, Martin Andersson. 2021. <span>“Stop <span>Using</span> <span>Magic</span> <span>Numbers</span> and <span>Variables</span> in <span>Your</span> <span>Code</span>.”</span> <em>Medium</em>. <a href="https://betterprogramming.pub/stop-using-magic-numbers-and-variables-in-your-code-4e86f008b84c">https://betterprogramming.pub/stop-using-magic-numbers-and-variables-in-your-code-4e86f008b84c</a>.
+</div>
+<div id="ref-Bernardo2021" class="csl-entry">
+Bernardo, Ivo. 2021. <span>“Best <span>Practices</span> for <span>R</span> <span>Programming</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a">https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a</a>.
+</div>
+<div id="ref-DataCarpentry2021b" class="csl-entry">
+<span>“Best <span>Practices</span> for <span>Writing</span> <span>R</span> <span>Code</span> – <span>Programming</span> with <span>R</span>.”</span> 2021. <a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/</a>.
+</div>
+<div id="ref-Bryan2017" class="csl-entry">
+Bryan, Jenny. 2017. <span>“Project-Oriented Workflow.”</span> <em>Tidyverse Blog</em>. <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.
+</div>
+<div id="ref-Cannell2021" class="csl-entry">
+Cannell, Brad. 2021. <em>9 <span>Coding</span> Best Practices <span></span> <span>R</span> for <span>Epidemiology</span></em>. <a href="https://brad-cannell.github.io/r4epi/">https://brad-cannell.github.io/r4epi/</a>.
+</div>
+<div id="ref-Wright2021" class="csl-entry">
+Carrie Wright, Stephanie C. Hicks and Roger D. Peng, Shannon E. Ellis. n.d. <em>Chapter 1 <span>Introduction</span> to the <span>Tidyverse</span> <span></span> <span>Tidyverse</span> <span>Skills</span> for <span>Data</span> <span>Science</span></em>. Accessed November 2, 2021. <a href="http://jhudatascience.org/tidyversecourse/intro.html">http://jhudatascience.org/tidyversecourse/intro.html</a>.
+</div>
+<div id="ref-Chang2021" class="csl-entry">
+Chang, Winston. 2021. <span>“Generating Random Numbers.”</span> <a href="http://www.cookbook-r.com/Numbers/Generating_random_numbers/">http://www.cookbook-r.com/Numbers/Generating_random_numbers/</a>.
+</div>
+<div id="ref-Cronin2019" class="csl-entry">
+Cronin, Mike. 2019. <span>“What <span>Makes</span> a <span>Good</span> <span>Code</span> <span>Comment</span>?”</span> <em>Medium</em>. <a href="https://itnext.io/what-makes-a-good-code-comment-5267debd2c24">https://itnext.io/what-makes-a-good-code-comment-5267debd2c24</a>.
+</div>
+<div id="ref-Csendes2020" class="csl-entry">
+Csendes, Gerold. 2020. <span>“15 Common Coding Mistakes Data Scientist Make in <span>Python</span> (and How to Fix Them).”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af">https://towardsdatascience.com/15-common-coding-mistakes-data-scientist-make-in-python-and-how-to-fix-them-7760467498af</a>.
+</div>
+<div id="ref-Diederich2012" class="csl-entry">
+Diederich, Jack. 2012. <span>“Stop <span>Writing</span> <span>Classes</span>.”</span> <em>PyVideo.org</em>. <a href="https://pyvideo.org/pycon-us-2012/stop-writing-classes.html">https://pyvideo.org/pycon-us-2012/stop-writing-classes.html</a>.
+</div>
+<div id="ref-Dubel2021" class="csl-entry">
+Dubel, Marcin. 2021. <span>“5 <span>Tips</span> for <span>Writing</span> <span>Clean</span> <span>R</span> <span>Code</span> - <span>Leave</span> <span>Your</span> <span>Code</span> <span>Reviewer</span> <span>Commentless</span>.”</span> <em>Appsilon <span></span> End­ to­ End Data Science Solutions</em>. <a href="https://appsilon.com/write-clean-r-code/">https://appsilon.com/write-clean-r-code/</a>.
+</div>
+<div id="ref-Frazee2014" class="csl-entry">
+Frazee, Alyssa. 2014. <span>“Some Internet Wisdom on <span>R</span> Documentation.”</span> <a href="http://alyssafrazee.com/2014/04/20/rdocs.html">http://alyssafrazee.com/2014/04/20/rdocs.html</a>.
+</div>
+<div id="ref-Geeksforgeeks2018" class="csl-entry">
+Geeks, Geeks for. 2018. <span>“F-Strings in <span>Python</span>.”</span> <em>GeeksforGeeks</em>. <a href="https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/">https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/</a>.
+</div>
+<div id="ref-Good2021" class="csl-entry">
+Good, and Nicholas, Rachel Severson. 2021. <em>Chapter 5 <span>Reproducible</span> Research #1 <span></span> <span>R</span> <span>Programming</span> for <span>Research</span></em>. <a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html">https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html</a>.
+</div>
+<div id="ref-GoogleR" class="csl-entry">
+<span>“Google’s <span>R</span> <span>Style</span> <span>Guide</span>.”</span> 2021. <em>Styleguide</em>. <a href="https://google.github.io/styleguide/Rguide.html">https://google.github.io/styleguide/Rguide.html</a>.
+</div>
+<div id="ref-Heil2020b" class="csl-entry">
+Heil, Benjamin J. 2020. <span>“Reproducible Programming for Biologists Who Code - Part 2: Should Dos.”</span> <em>AutoBenCoding</em>. <a href="https://autobencoder.com/2020-06-30-shoulddo/">https://autobencoder.com/2020-06-30-shoulddo/</a>.
+</div>
+<div id="ref-Heroux2018" class="csl-entry">
+Héroux, Martin. 2018. <span>“Don’t Repeat Yourself: <span>Python</span> Functions.”</span> <em>Scientifically Sound</em>. <a href="https://scientificallysound.org/2018/07/19/python-functions/">https://scientificallysound.org/2018/07/19/python-functions/</a>.
+</div>
+<div id="ref-Hobert2018" class="csl-entry">
+Hobert, Kevin. 2018. <span>“Writing <span>Variable</span> — <span>Informative</span>, <span>Descriptive</span> &amp; <span>Elegant</span>.”</span> <em>Medium</em>. <a href="https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3">https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3</a>.
+</div>
+<div id="ref-DRY" class="csl-entry">
+<span>“How <span>To</span> <span>Keep</span> <span>Your</span> <span>Code</span> <span>Dry</span>.”</span> 2021. <a href="http://www.drycode.io">http://www.drycode.io</a>.
+</div>
+<div id="ref-Keeton2019" class="csl-entry">
+Keeton, BJ. 2019. <span>“How to <span>Comment</span> <span>Your</span> <span>Code</span> <span>Like</span> a <span>Pro</span>: <span>Best</span> <span>Practices</span> and <span>Good</span> <span>Habits</span>.”</span> <em>Elegant Themes</em>. <a href="https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits">https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits</a>.
+</div>
+<div id="ref-Klinefelter2016" class="csl-entry">
+Klinefelter, Sarah. 2016. <span>“<span>DRY</span> <span>Programming</span> <span>Practices</span> – <span>Metova</span>.”</span> <a href="https://metova.com/dry-programming-practices/">https://metova.com/dry-programming-practices/</a>.
+</div>
+<div id="ref-Koehrsen2019" class="csl-entry">
+Koehrsen, Will. 2019. <span>“Data <span>Scientists</span>: <span>Your</span> <span>Variable</span> <span>Names</span> <span>Are</span> <span>Awful</span>. <span>Here</span>’s <span>How</span> to <span>Fix</span> <span>Them</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be">https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be</a>.
+</div>
+<div id="ref-Kostyuk2020" class="csl-entry">
+Kostyuk, Victor. 2020. <span>“Data <span>Science</span> <span>Python</span> <span>Best</span> <span>Practices</span>.”</span> <em>BCG GAMMA</em>. <a href="https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82">https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82</a>.
+</div>
+<div id="ref-Wasser2019" class="csl-entry">
+Leah Wasser, Jenny Palomino. 2019. <span>“<span>DRY</span> <span>Code</span> and <span>Modularity</span>.”</span> <em>Earth Data Science - Earth Lab</em>. <a href="https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/">https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/</a>.
+</div>
+<div id="ref-Joseph2017" class="csl-entry">
+Max Joseph, Software Carpentry, Leah Wasser. 2017. <span>“Write <span>Efficient</span> <span>Scientific</span> <span>Code</span> - the <span>DRY</span> (<span>Don</span>’t <span>Repeat</span> <span>Yourself</span>) <span>Principle</span>.”</span> <em>Earth Data Science - Earth Lab</em>. <a href="https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/">https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/</a>.
+</div>
+<div id="ref-Meza2018" class="csl-entry">
+Meza, Frank. 2018. <span>“The <span>Value</span> of <span>Code</span> <span>Documentation</span>.”</span> <em>Olio Apps</em>. <a href="https://www.olioapps.com/blog/the-value-of-code-documentation/">https://www.olioapps.com/blog/the-value-of-code-documentation/</a>.
+</div>
+<div id="ref-Mustafeez2021" class="csl-entry">
+Mustafeez, Anusheh Zohair. 2021. <span>“Absolute Vs. Relative Path.”</span> <em>Educative</em>. <a href="https://www.educative.io/edpresso/absolute-vs-relative-path">https://www.educative.io/edpresso/absolute-vs-relative-path</a>.
+</div>
+<div id="ref-Orosz2019" class="csl-entry">
+Orosz, Gergely. 2019. <span>“Readable Code.”</span> <a href="https://blog.pragmaticengineer.com/readable-code/">https://blog.pragmaticengineer.com/readable-code/</a>.
+</div>
+<div id="ref-PEP8" class="csl-entry">
+<span>“<span>PEP</span> 8 – <span>Style</span> <span>Guide</span> for <span>Python</span> <span>Code</span>.”</span> 2021. <em>Python.org</em>. <a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a>.
+</div>
+<div id="ref-Programcreek2021" class="csl-entry">
+<span>“Python <span>Examples</span> of Pathlib.<span>Path</span>.joinpath.”</span> 2021. <a href="https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath">https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath</a>.
+</div>
+<div id="ref-Python2021" class="csl-entry">
+Python, Real. 2021. <span>“Python 3’s f-<span>Strings</span>: <span>An</span> <span>Improved</span> <span>String</span> <span>Formatting</span> <span>Syntax</span> (<span>Guide</span>) – <span>Real</span> <span>Python</span>.”</span> <a href="https://realpython.com/python-f-strings/">https://realpython.com/python-f-strings/</a>.
+</div>
+<div id="ref-Tidyverse2021" class="csl-entry">
+<span>“Read a Delimited File (Including <span>CSV</span> and <span>TSV</span>) into a Tibble — Read_delim.”</span> n.d. Accessed November 2, 2021. <a href="https://readr.tidyverse.org/reference/read_delim.html">https://readr.tidyverse.org/reference/read_delim.html</a>.
+</div>
+<div id="ref-Riffomonas2021" class="csl-entry">
+Riffomonas Project. 2021. <span>“Keeping <span>R</span> Code <span>DRY</span> with Functions: <span>Don</span>’t Repeat Yourself! (<span>Cc096</span>).”</span> <a href="https://www.youtube.com/watch?v=XSRO4VKD-pc">https://www.youtube.com/watch?v=XSRO4VKD-pc</a>.
+</div>
+<div id="ref-Savonen2021" class="csl-entry">
+Savonen, Candace. 2021a. <em>Chapter 8 <span>Creating</span> Clarifying Code Comments <span></span> <span>Documentation</span> and <span>Usability</span></em>. <a href="https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments">https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments</a>.
+</div>
+<div id="ref-Saxena2021" class="csl-entry">
+Saxena, Pranjal. 2021. <span>“6 <span>Mistakes</span> <span>Every</span> <span>Python</span> <span>Beginner</span> <span>Should</span> <span>Avoid</span> <span>While</span> <span>Coding</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942">https://towardsdatascience.com/6-mistakes-every-python-beginner-should-avoid-while-coding-e57e14917942</a>.
+</div>
+<div id="ref-Shapiro2021" class="csl-entry">
+Shapiro, Joshua A., Candace L. Savonen, Allegra G. Hawkins, Chante J. Bethell, Deepashree Venkatesh Prasad, Casey S. Greene, and Jaclyn N. Taroni. 2021. <em><span>Childhood Cancer Data Lab Training Modules</span></em> (version 2021-june).
+</div>
+<div id="ref-Smith2013" class="csl-entry">
+Smith, Steve. 2013. <span>“Don’t <span>Repeat</span> <span>Yourself</span> - <span>Programmer</span> 97-Things.”</span> <a href="https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don&#39;t_Repeat_Yourself">https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself</a>.
+</div>
+<div id="ref-Soage2020" class="csl-entry">
+Soage, Jose Carlos. 2020. <span>“<span>SET</span> <span>SEED</span> in <span>R</span> with Set.seed() Function ▷ [<span>WITH</span> <span>EXAMPLES</span>].”</span> <em>R CODER</em>. <a href="https://r-coder.com/set-seed-r/">https://r-coder.com/set-seed-r/</a>.
+</div>
+<div id="ref-Spertus2021" class="csl-entry">
+Spertus, Ellen. 2021. <span>“Best Practices for Writing Code Comments.”</span> <em>Stack Overflow Blog</em>. <a href="https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/">https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/</a>.
+</div>
+<div id="ref-Spielman" class="csl-entry">
+Spielman, Stephanie. n.d. <span>“Introduction to r - Cb2r Data Science Workshop, Summer 2020.”</span> <a href="https://github.com/sjspielman/cb2r-ds-summer2020/blob/71cb11277e7383292bf727841ab5fa4ed43cfcbe/resources/introduction_to_R.Rmd#L92">https://github.com/sjspielman/cb2r-ds-summer2020/blob/71cb11277e7383292bf727841ab5fa4ed43cfcbe/resources/introduction_to_R.Rmd#L92</a>.
+</div>
+<div id="ref-GooglePython" class="csl-entry">
+<span>“Styleguide.”</span> 2021. <em>Styleguide</em>. <a href="https://google.github.io/styleguide/pyguide.html">https://google.github.io/styleguide/pyguide.html</a>.
+</div>
+<div id="ref-Vidhya2019" class="csl-entry">
+Team, Analytics Vidhya. 2019. <span>“What Is <span>Tidyverse</span> <span></span> <span>Tidyverse</span> <span>Package</span> in <span>R</span>.”</span> <em>Analytics Vidhya</em>. <a href="https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/">https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/</a>.
+</div>
+<div id="ref-Tran2021" class="csl-entry">
+Tran, Khuyen. 2021. <span>“Python <span>Clean</span> <span>Code</span>: 6 <span>Best</span> <span>Practices</span> to <span>Make</span> Your <span>Python</span> <span>Functions</span> More <span>Readable</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60">https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60</a>.
+</div>
+<div id="ref-Wickham" class="csl-entry">
+Wickham, Hadley. 2019. <span>“Style Guide · <span>Advanced</span> <span>R</span>.”</span> <a href="http://adv-r.had.co.nz/Style.html">http://adv-r.had.co.nz/Style.html</a>.
+</div>
+<div id="ref-Xie2020" class="csl-entry">
+Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbook</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown-cookbook">https://bookdown.org/yihui/rmarkdown-cookbook</a>.
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="managing-package-versions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="documenting-analyses.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
