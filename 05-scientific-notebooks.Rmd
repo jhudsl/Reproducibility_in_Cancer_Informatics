@@ -1,6 +1,6 @@
 
 ```{r, include = FALSE}
-ottr::set_knitr_image_path()
+ottrpal::set_knitr_image_path()
 ```
 
 # Using Notebooks
@@ -8,7 +8,7 @@ ottr::set_knitr_image_path()
 ## Learning Objectives
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Use an Integrated Development Environment to aid your development of code. Understand how notebooks can increase the usability and readability of scientific code. Set up code as a notebook. Use the notebook’s interface to interactively develop code."}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_4")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_4")
 ```
 
 Notebooks are a handy way to have the code, output, and scientist's thought process all documented in one place that is easy for others to read and follow.
@@ -18,7 +18,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 #### Reason 1: Notebooks allow for tracking data exploration and encourage the scientist to narrate their thought process:
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Working from this notebook allows me to interactively develop on my data analysis and write down my thoughts about the process all in one place!’"}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_186")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_186")
 ```
 
 > Each executed code cell is an attempt by the researcher to achieve something and to tease out some insight from the data set. The result is displayed immediately below the code commands, and the researcher can pause and think about the outcome. As code cells can be executed in any order, modified and re-executed as desired, deleted and copied, the notebook is a convenient environment to iteratively explore a complex problem.
@@ -29,7 +29,7 @@ ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS
 #### Reason 2: Notebooks allow for easy sharing of results:
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher has her computer showing her notebook. Ruby says ‘Avi, here’s some output from this scientific notebook I’ve been developing from!’ Avi the associate says ‘This is so easy to follow and read, even though I didn’t write the code. Thanks for sharing your exciting results!’"}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_102")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8f405fdab_0_102")
 ```
 
 > Notebooks can be converted to html and pdf, and then shared as static read-only documents. This is useful to communicate and share a study with colleagues or managers. By adding sufficient explanation, the main story can be understood by the reader, even if they wouldn't be able to write the code that is embedded in the document.
@@ -39,7 +39,7 @@ ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS
 #### Reason 3: Notebooks can be re-ran as a script or developed interactively:
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Yay! I just got the data for 5 more samples. Because of my handy notebook set up, I can easily call one command and re-run the analysis so it is updated with the new samples included!’ "}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf9440130d0_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf9440130d0_0_0")
 ```
 
 > A common pattern in science is that a computational recipe is iteratively developed in a notebook. Once this has been found and should be applied to further data sets (or other points in some parameter space), the notebook can be executed like a script, for example by submitting these scripts as batch jobs.

@@ -94,7 +94,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 
 ```r
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
 ```
 
 <img src="resources/images/08-readmes_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" title="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " style="display: block; margin: auto;" />

@@ -1,13 +1,13 @@
 
 # Introduction to Reproducibility in Cancer Informatics
 
-[![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-bookdown.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-bookdown.yml)
+[![Render Bookdown and Coursera](https://github.com/jhudsl/ottrpal_Template/actions/workflows/render-bookdown.yml/badge.svg)](https://github.com/jhudsl/ottrpal_Template/actions/workflows/render-bookdown.yml)
 
-This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
+This course was created from [this GitHub template](https://github.com/jhudsl/ottrpal_Template).
 
 You can see the rendered course material here: https://jhudatascience.org/Reproducibility_in_Cancer_Informatics
 
-If you would like to contribute to this course material, take a look at the [getting started GitHub wiki pages](https://github.com/jhudsl/OTTR_Template/wiki).
+If you would like to contribute to this course material, take a look at the [getting started GitHub wiki pages](https://github.com/jhudsl/ottrpal_Template/wiki).
 
 ## About this course
 

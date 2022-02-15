@@ -1,6 +1,6 @@
 
 ```{r, include = FALSE}
-ottr::set_knitr_image_path()
+ottrpal::set_knitr_image_path()
 ```
 
 # Organizing your project
@@ -8,13 +8,13 @@ ottr::set_knitr_image_path()
 ## Learning Objectives
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues."}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_51")
 ```
 
 Keeping your files organized is a skill that has a high long-term payoff. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?"}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_56")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_56")
 ```
 
 @Tayo2019 discusses four particular reasons why it is important to organize your project:
@@ -27,7 +27,7 @@ ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS
 Organization is yet another aspect of reproducibility that saves you and your colleagues time!
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis."}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_180")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7bed24491_1_180")
 ```
 
 ## Organizational strategies

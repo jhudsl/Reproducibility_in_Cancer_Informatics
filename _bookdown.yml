@@ -1,6 +1,6 @@
 book_filename: "Introduction to Reproducibility"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/OTTR_Template/
+repo: https://github.com/jhudsl/ottrpal_Template/
 rmd_files: ["index.Rmd",
             "01-intro.Rmd",
             "02-defining-reproducibility.Rmd",

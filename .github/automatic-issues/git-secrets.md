@@ -1,5 +1,5 @@
 
-For more information on these settings see instructions in the [getting started GitHub wiki pages](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics).
+For more information on these settings see instructions in the [getting started GitHub wiki pages](https://github.com/jhudsl/ottrpal_Template/wiki/Setting-up-images-and-graphics).
 
 It's important that these are set up and named exactly what they are below in order for Github actions to work correctly.
 
@@ -21,6 +21,6 @@ For each new secret, click the `New repository secret` button and set each as fo
 Underneath `Select scopes`, check both `repo` and `workflow`.
 Then copy the PAT and save as the value.
 
-- [ ] Create your [course's main Google Slides](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics)
+- [ ] Create your [course's main Google Slides](https://github.com/jhudsl/ottrpal_Template/wiki/Setting-up-images-and-graphics)
 
-- [ ] (Optionally) Set up your [`Leanpub` repository link to it](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub)
+- [ ] (Optionally) Set up your [`Leanpub` repository link to it](https://github.com/jhudsl/ottrpal_Template/wiki/Publishing-on-Leanpub)
