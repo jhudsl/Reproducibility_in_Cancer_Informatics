@@ -1,6 +1,6 @@
 
 ```{r, include = FALSE}
-ottr::set_knitr_image_path()
+ottrpal::set_knitr_image_path()
 ```
 
 # Code review
@@ -8,7 +8,7 @@ ottr::set_knitr_image_path()
 ## Learning Objectives
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis."}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8379bb805_0_6")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf8379bb805_0_6")
 ```
 
 We've previously discussed that the only way to know if your analysis is truly reproducible is to send it to someone else to reproduce! That sentiment is at the heart of code review. Although most wouldn't dare send out a manuscript for publishing without having our collaborators giving it a line-by-line review, people don't always feel the same way about code.
@@ -32,7 +32,7 @@ Since reproducibility is all about someone else being able to run your code and 
 
 **The goal:**  
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Ruby the researcher and Avi the associate are so happy because Avi was able to reproduce Ruby’s results on his computer."}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.g1006ff8e7e9_48_33")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.g1006ff8e7e9_48_33")
 ```
 In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else look at your code and attempt to run it.  
 
@@ -83,7 +83,7 @@ Now you are ready to send your crafted message to your collaborator for review. 
 
 TL;DR for asking for a code review:  
 ```{r, fig.align='center', echo = FALSE, fig.alt= "This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis."}
-ottr::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_52")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfc9e5f916a_0_52")
 ```
 
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
