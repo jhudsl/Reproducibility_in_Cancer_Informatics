@@ -327,7 +327,6 @@ jobs:
           rm -rf docs/* *.rds *.docx
           git rm docs/*
           git rm *.rds
-          git rm *.docx
           git commit -m "delete docs"
 
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }}
