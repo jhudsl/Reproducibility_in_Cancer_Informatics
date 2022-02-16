@@ -129,7 +129,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            :warning: There are spelling errors that need to be addressed. [Read this guide for more info](https://github.com/jhudsl/ottrpal_Template/wiki/Spell-check).
+            :warning: There are spelling errors that need to be addressed. [Read this guide for more info](https://github.com/jhudsl/OTTR_Template/wiki/Spell-check).
             [Download the errors here.](${{ steps.build-components.outputs.sp_error_url }})
             _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
           edit-mode: replace
@@ -282,7 +282,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            :warning: There are quiz errors that need to be addressed. [Read this guide for more info](https://github.com/jhudsl/ottrpal_Template/wiki/Publishing-on-Leanpub#setting-up-quizzes).
+            :warning: There are quiz errors that need to be addressed. [Read this guide for more info](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub#setting-up-quizzes).
             [Download the errors here.](${{ steps.build-components.outputs.quiz_error_url }})
             _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
           edit-mode: replace
@@ -324,13 +324,6 @@ jobs:
           branch_name='preview-${{ github.event.pull_request.number }}'
           git fetch --all
           git checkout $branch_name
-
-          # Start fresh and delete these files
-          rm -rf docs/* || echo "no docs/ folder to delete"
-          rm -rf *.rds || echo "no RDS file to delete"
-          git add .
-          git commit -m "delete docs"
-
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }}
         shell: bash
 
@@ -421,7 +414,7 @@ jobs:
     name: Build Docker image
     needs: yaml-check
     runs-on: ubuntu-latest
-    if: ${{needs.yaml-check.outputs.toggle_docker_build == 'yes' && needs.yaml-check.outputs.dockerfiles_changed == 'true' && github.head_ref != 'repo-sync/ottrpal_Template/default'}}
+    if: ${{needs.yaml-check.outputs.toggle_docker_build == 'yes' && needs.yaml-check.outputs.dockerfiles_changed == 'true' && github.head_ref != 'repo-sync/OTTR_Template/default'}}
 
     steps:
       - name: checkout repo
