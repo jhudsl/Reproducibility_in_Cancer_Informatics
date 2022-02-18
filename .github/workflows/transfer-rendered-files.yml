@@ -17,6 +17,7 @@ on:
 jobs:
   file-bookdown-pr:
     runs-on: ubuntu-latest
+    if: ${{needs.yaml-check.outputs.toggle_coursera == 'yes' || needs.yaml-check.outputs.toggle_leanpub == 'yes' }}
 
     steps:
       - name: Run git repo check
@@ -73,7 +74,7 @@ jobs:
              This PR was initiated by transfer-rendered.yml in the Bookdown repository.
              It copies over the ottrpal-needed folder (for the `bookdown_to_embed_leanpub(render = FALSE)` function
              to run properly.
-               - resources/chapt_screen_images/*
+               - manuscript/resources/chapt_screen_images/*
           labels: |
             automated
           reviewers: $GITHUB_ACTOR
