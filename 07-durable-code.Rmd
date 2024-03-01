@@ -314,7 +314,7 @@ mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-7.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip
 ```
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 ```{bash, include = FALSE}
 unzip -o chapter-zips/python-heatmap-chapt-7.zip -d chapter-zips/
@@ -329,7 +329,7 @@ mkdir -p chapter-zips
 wget -O chapter-zips/r-heatmap-chapt-7.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip
 ```
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 ```{bash, include = FALSE}
 unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
