@@ -2,7 +2,7 @@ About.Rmd
 docs/*
 style-sets/*
 manuscript/*
+CONTRIBUTING.md
+LICENSE.md
 code_of_conduct.md
 README.md
-README-template.md
-reproducibility-checklist.md
