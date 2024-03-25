@@ -1,6 +1,6 @@
 ---
 title: "Intro to Reproducibility in Cancer Informatics"
-date: "October, 2022"
+date: "March, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
