@@ -12,6 +12,8 @@ spell-check: yes
 style-code: yes
 # Test build the docker image if any docker-relevant files have been changed
 docker-test: no
+# Should the book_txt be generated?
+make_book_txt: yes 
 
 ##### Renderings run upon merge to main branch #####
 # Rendering each platform's content
