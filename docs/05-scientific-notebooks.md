@@ -47,7 +47,7 @@ Because of all of these reasons, we encourage the use of computational notebooks
 
 
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 
 </details>
@@ -57,7 +57,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 
 </details>
@@ -131,7 +131,7 @@ From @Shapiro2021
 
 More reading about RStudio's interface:
 
-- [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+- [RStudio IDE Cheatsheet (pdf)](https://rstudio.github.io/cheatsheets/html/rstudio-ide.html).
 - [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
 
 </details>

@@ -44,7 +44,7 @@ Before you send off your code to someone else, delete your output (the `results`
 **2) Re-run the whole analysis**
 
 **3) Interrogate and troubleshoot**
-If your code has any issues running, try your best to troubleshoot the problems. Read this handy guide for [tips on troubleshooting R](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/00b-debugging_resources.md).
+If your code has any issues running, try your best to troubleshoot the problems. Read this handy guide for [tips on troubleshooting R](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/00b-debugging_resources.Rmd).
 
 **4) Rinse and repeat**  
 Repeat this as many times as needed until you reliably are able to re-run this code and get the same results without any [code smells](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels) popping up. Dig into bad code smells or bad results smells wherever you sense them. If you aren't sure why you feel this way about your code or results, hold on to this and it may be something your collaborator will be able to see something you don't.

@@ -60,7 +60,7 @@ mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip
 ```
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 ```{bash, include = FALSE}
 unzip -o chapter-zips/python-heatmap-chapt-5.zip -d chapter-zips/
@@ -75,7 +75,7 @@ mkdir -p chapter-zips
 wget -O chapter-zips/r-heatmap-chapt-5.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-5.zip
 ```
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 ```{bash, include = FALSE}
 unzip -o chapter-zips/r-heatmap-chapt-5.zip -d chapter-zips/
@@ -151,7 +151,7 @@ From @Shapiro2021
 
 More reading about RStudio's interface:
 
-- [RStudio IDE Cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
+- [RStudio IDE Cheatsheet (pdf)](https://rstudio.github.io/cheatsheets/html/rstudio-ide.html).
 - [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
 
 </details>

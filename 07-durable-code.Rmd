@@ -145,7 +145,7 @@ Keeping around old code and objects is generally more of a hindrance than a time
 
 1) You might write better code on the second try (or third or n'th).  
 2) Keeping around old code makes it harder for you to write and troubleshoot new better code -- it's easier to confuse yourself. Sometimes a fresh start can be what you need.  
-3) With version control you can always return to that old code! (We'll dive more into version control later on, but you've started the process by [uploading your code to GitHub in chapter 4](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/why-git-and-github.html)!)  
+3) With version control you can always return to that old code! (We'll dive more into version control later on, but you've started the process by [uploading your code to GitHub in chapter 4](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/making-your-project-open-source-with-github.html)!)  
 
 This means you should not comment out old code. Just delete it! No code is so precious that you need to keep it commented out (particularly if you are using version control and you can retrieve it in other ways should you need it).
 
@@ -299,7 +299,7 @@ There's so many opinions and strategies on best practices for code. And although
 
 #### R specific:
 
-- [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) by @DataCarpentry2021b.
+- [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html) by @DataCarpentry2021b.
 - [R Programming for Research: Reproducible Research](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html) by @Good2021.
 - [R for Epidemiology: Coding best practices](https://www.r4epi.com/coding-best-practices.html) by @Cannell2021.
 - [Best practices for R Programming](https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a) by @Bernardo2021.
@@ -314,7 +314,7 @@ mkdir -p chapter-zips
 wget -O chapter-zips/python-heatmap-chapt-7.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip
 ```
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 ```{bash, include = FALSE}
 unzip -o chapter-zips/python-heatmap-chapt-7.zip -d chapter-zips/
@@ -329,7 +329,7 @@ mkdir -p chapter-zips
 wget -O chapter-zips/r-heatmap-chapt-7.zip https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/r-heatmap-chapt-7.zip
 ```
 
-Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc)).
+Now double click your chapter zip file to unzip. For Windows you may have to [follow these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc).
 
 ```{bash, include = FALSE}
 unzip -o chapter-zips/r-heatmap-chapt-7.zip -d chapter-zips/
