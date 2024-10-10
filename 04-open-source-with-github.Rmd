@@ -10,7 +10,6 @@ ottrpal::set_knitr_image_path()
 ```{r, fig.alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses.", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf7e3bf260f_0_4")
 ```
-
 git is a version control system that is a great tool for creating reproducible analyses.
 What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.  
 
