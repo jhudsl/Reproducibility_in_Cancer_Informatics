@@ -6,7 +6,6 @@
 ## Learning Objectives
 
 ![](resources/images/04-open-source-with-github_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png){width=100%}
-
 git is a version control system that is a great tool for creating reproducible analyses.
 What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.  
 

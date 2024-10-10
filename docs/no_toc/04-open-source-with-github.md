@@ -6,7 +6,6 @@
 ## Learning Objectives
 
 <img src="resources/images/04-open-source-with-github_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png" title="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." width="100%" />
-
 git is a version control system that is a great tool for creating reproducible analyses.
 What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.  
 
