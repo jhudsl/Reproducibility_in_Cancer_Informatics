@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 9 Code review | Intro to Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 9 Code review | Intro to Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="documenting-analyses.html"/>
 <link rel="next" href="about-the-authors.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,8 +47,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -89,11 +88,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -102,14 +101,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -117,6 +116,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -306,32 +309,32 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/itcr_main_image.png">
 </div>
-<div id="code-review" class="section level1" number="9">
-<h1><span class="header-section-number">Chapter 9</span> Code review</h1>
-<div id="learning-objectives-7" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Learning Objectives</h2>
-<p><img src="resources/images/09-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_6.png" title="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." alt="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." width="1250" style="display: block; margin: auto;" /></p>
+<div id="code-review" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Code review<a href="code-review.html#code-review" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="learning-objectives-7" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Learning Objectives<a href="code-review.html#learning-objectives-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="resources/images/09-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_6.png" alt="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." width="1250" style="display: block; margin: auto;" /></p>
 <p>We’ve previously discussed that the only way to know if your analysis is truly reproducible is to send it to someone else to reproduce! That sentiment is at the heart of code review. Although most wouldn’t dare send out a manuscript for publishing without having our collaborators giving it a line-by-line review, people don’t always feel the same way about code.</p>
-<p><span class="citation">Parker (<a href="#ref-Parker2017" role="doc-biblioref">2017</a>)</span> describes code review:</p>
+<p><span class="citation">Parker (<a href="#ref-Parker2017">2017</a>)</span> describes code review:</p>
 <blockquote>
 <p>Code review will not guarantee an accurate analysis, but it’s one of the most reliable ways of establishing one that is more accurate than before.</p>
 </blockquote>
 <p>Not only does code review help boost the accuracy and reproducibility of the analysis, it also helps everyone involved in the process learn something new!</p>
-<div id="recommended-reading-about-code-review" class="section level4" number="9.1.0.1">
-<h4><span class="header-section-number">9.1.0.1</span> Recommended reading about code review</h4>
+<div id="recommended-reading-about-code-review" class="section level4 hasAnchor" number="9.1.0.1">
+<h4><span class="header-section-number">9.1.0.1</span> Recommended reading about code review<a href="code-review.html#recommended-reading-about-code-review" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li><a href="https://phauer.com/2018/code-review-guidelines/">Code Review Guidelines for Humans</a> by <span class="citation">Hauer (<a href="#ref-Hauer2018" role="doc-biblioref">2018</a>)</span>.</li>
-<li><a href="https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/">Your Code Sucks! – Code Review Best Practices</a> by <span class="citation">Hildebr (<a href="#ref-Hildebr2020" role="doc-biblioref">2020</a>)</span>.</li>
-<li><a href="https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/">Best practices for Code Review</a> by <span class="citation">S. Team (<a href="#ref-Smartbear2021" role="doc-biblioref">2021</a>)</span>.</li>
-<li><a href="https://www.atlassian.com/agile/software-development/code-reviews">Why code reviews matter (and actually save time!)</a> by <span class="citation">Radigan (<a href="#ref-Radigan2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://phauer.com/2018/code-review-guidelines/">Code Review Guidelines for Humans</a> by <span class="citation">Hauer (<a href="#ref-Hauer2018">2018</a>)</span>.</li>
+<li><a href="https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/">Your Code Sucks! – Code Review Best Practices</a> by <span class="citation">Hildebr (<a href="#ref-Hildebr2020">2020</a>)</span>.</li>
+<li><a href="https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/">Best practices for Code Review</a> by <span class="citation">S. Team (<a href="#ref-Smartbear2021">2021</a>)</span>.</li>
+<li><a href="https://www.atlassian.com/agile/software-development/code-reviews">Why code reviews matter (and actually save time!)</a> by <span class="citation">Radigan (<a href="#ref-Radigan2021">2021</a>)</span>.</li>
 </ul>
 </div>
 </div>
-<div id="exercise-set-up-your-code-review-request" class="section level2" number="9.2">
-<h2><span class="header-section-number">9.2</span> Exercise: Set up your code review request!</h2>
+<div id="exercise-set-up-your-code-review-request" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Exercise: Set up your code review request!<a href="code-review.html#exercise-set-up-your-code-review-request" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Since reproducibility is all about someone else being able to run your code and obtain your results, the exercise in this course involves preparing to do just that!</p>
 <p><strong>The goal:</strong><br />
-<img src="resources/images/09-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_33.png" title="Ruby the researcher and Avi the associate are so happy because Avi was able to reproduce Ruby’s results on his computer." alt="Ruby the researcher and Avi the associate are so happy because Avi was able to reproduce Ruby’s results on his computer." width="1250" style="display: block; margin: auto;" />
+<img src="resources/images/09-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_33.png" alt="Ruby the researcher and Avi the associate are so happy because Avi was able to reproduce Ruby’s results on his computer." width="1250" style="display: block; margin: auto;" />
 In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else look at your code and attempt to run it.</p>
 <p>At this point, you should have a GitHub repository that contains the following:</p>
 <ul>
@@ -351,7 +354,7 @@ If your code has any issues running, try your best to troubleshoot the problems.
 <p><strong>4) Rinse and repeat</strong><br />
 Repeat this as many times as needed until you reliably are able to re-run this code and get the same results without any <a href="https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels">code smells</a> popping up. Dig into bad code smells or bad results smells wherever you sense them. If you aren’t sure why you feel this way about your code or results, hold on to this and it may be something your collaborator will be able to see something you don’t.</p>
 <p><strong>5) Let it simmer</strong><br />
-Leave your analysis for a bit. Do you think it’s perfect? Are you at your wits end with it? No matter how you feel about it, let it sit for a half a day or so then return to it with fresh eyes <span class="citation">(<a href="#ref-Savonen2021b" role="doc-biblioref">Savonen 2021b</a>)</span>.</p>
+Leave your analysis for a bit. Do you think it’s perfect? Are you at your wits end with it? No matter how you feel about it, let it sit for a half a day or so then return to it with fresh eyes <span class="citation">(<a href="#ref-Savonen2021b">Savonen 2021b</a>)</span>.</p>
 <p><strong>5) Re-review your documentation and code with fresh eyes</strong><br />
 Now with fresh eyes and doing your best to imagine you don’t have the knowledge you have – does your analysis and results make sense?</p>
 <p><strong>6) Are you sure it’s ready?</strong><br />
@@ -380,13 +383,13 @@ Now you are ready to send this code to your collaborator, but first try to send 
 <p><strong>9) Ready for review</strong><br />
 Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may <strong>not</strong> want to ask your collaborator to spend their time carefully review this practice repository, but now that you understand and have done the steps involved <em>you are prepared to do this for your own analyses</em>!</p>
 <p>TL;DR for asking for a code review:<br />
-<img src="resources/images/09-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_52.png" title="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." alt="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." width="1250" style="display: block; margin: auto;" /></p>
+<img src="resources/images/09-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_52.png" alt="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." width="1250" style="display: block; margin: auto;" /></p>
 <p><strong>Any feedback you have regarding this exercise is greatly appreciated; you can fill out <a href="https://forms.gle/ygSSwoGaEATA2S65A">this form</a>!</strong></p>
 <p>In the second part of this course, we will discuss how to conduct code review through GitHub, further utilize version control, and more!</p>
 
 </div>
 </div>
-<h3>References</h3>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-Hauer2018" class="csl-entry">
 Hauer, Philipp. 2018. <span>“Code <span>Review</span> <span>Guidelines</span> for <span>Humans</span>.”</span> <em>Philipp Hauer’s Blog</em>. <a href="https://phauer.com/2018/code-review-guidelines/">https://phauer.com/2018/code-review-guidelines/</a>.

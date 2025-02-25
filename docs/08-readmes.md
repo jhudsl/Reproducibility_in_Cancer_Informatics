@@ -93,7 +93,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 4. Create a new chunk in your notebook and choose the "Markdown" option in the dropdown menu.
 
 
-```r
+``` r
 ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
 ```
 

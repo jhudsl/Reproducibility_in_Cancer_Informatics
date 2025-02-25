@@ -239,7 +239,7 @@ To illustrate how seeds work, run we'll run a quick experiment with setting the 
 First let's set a seed (it doesn't matter what number we use, just that we pick a number), so let's use `1234` and then create a "random" number.
 
 
-```r
+``` r
 # Set the seed:
 set.seed(1234)
 
@@ -254,7 +254,7 @@ runif(1)
 Now if we try a different seed, we will get a different "random" number.
 
 
-```r
+``` r
 # Set a different seed:
 set.seed(4321)
 
@@ -269,7 +269,7 @@ runif(1)
 But, if we return to the original seed we used, `1234`, we will get the original "random" number we got.  
 
 
-```r
+``` r
 # Set this back to the original seed
 set.seed(1234)
 

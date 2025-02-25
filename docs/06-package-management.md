@@ -78,37 +78,47 @@ In your scientific notebook, you'll need to add two items.
 1. In your Rmd file, add a chunk in the very end that looks like this:
 `````
 
-```r
+``` r
 sessionInfo()
 ```
 
 ```
-## R version 4.0.2 (2020-06-22)
+## R version 4.3.2 (2023-10-31)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 20.04.3 LTS
+## Running under: Ubuntu 22.04.4 LTS
 ## 
 ## Matrix products: default
-## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
+## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 ## 
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
 ##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
-##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C             
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
 ##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## 
+## time zone: Etc/UTC
+## tzcode source: system (glibc)
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] bookdown_0.24   crayon_1.3.4    digest_0.6.25   R6_2.4.1       
-##  [5] lifecycle_1.0.0 magrittr_2.0.2  evaluate_0.14   httr_1.4.2     
-##  [9] pillar_1.4.6    rlang_0.4.10    stringi_1.5.3   curl_4.3       
-## [13] fs_1.5.0        ellipsis_0.3.1  vctrs_0.3.4     rmarkdown_2.10 
-## [17] tools_4.0.2     stringr_1.4.0   readr_1.4.0     hms_0.5.3      
-## [21] xfun_0.26       yaml_2.2.1      compiler_4.0.2  pkgconfig_2.0.3
-## [25] htmltools_0.5.0 ottrpal_0.1.2   knitr_1.33      tibble_3.0.3
+##  [1] jsonlite_1.8.8   dplyr_1.1.4      compiler_4.3.2   promises_1.2.1  
+##  [5] Rcpp_1.0.12      tidyselect_1.2.0 xml2_1.3.6       webshot2_0.1.1  
+##  [9] stringr_1.5.1    snakecase_0.11.1 later_1.3.2      yaml_2.3.8      
+## [13] fastmap_1.1.1    readr_2.1.5      R6_2.5.1         generics_0.1.3  
+## [17] curl_5.2.0       knitr_1.48       tibble_3.2.1     bookdown_0.41   
+## [21] janitor_2.2.0    rprojroot_2.0.4  openssl_2.1.1    lubridate_1.9.3 
+## [25] pillar_1.9.0     tzdb_0.4.0       rlang_1.1.4      websocket_1.4.2 
+## [29] utf8_1.2.4       stringi_1.8.3    xfun_0.48        timechange_0.3.0
+## [33] cli_3.6.2        magrittr_2.0.3   ps_1.7.6         processx_3.8.3  
+## [37] digest_0.6.34    hms_1.1.3        askpass_1.2.0    lifecycle_1.0.4 
+## [41] chromote_0.3.1   vctrs_0.6.5      ottrpal_1.3.0    evaluate_0.23   
+## [45] glue_1.7.0       fansi_1.0.6      rmarkdown_2.25   httr_1.4.7      
+## [49] tools_4.3.2      pkgconfig_2.0.3  htmltools_0.5.7
 ```
 `````
 2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.
