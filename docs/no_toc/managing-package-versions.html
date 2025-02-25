@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Managing package versions | Intro to Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Managing package versions | Intro to Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="using-notebooks.html"/>
 <link rel="next" href="writing-durable-code.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,8 +47,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -89,11 +88,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -102,14 +101,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -117,6 +116,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -306,28 +309,28 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/itcr_main_image.png">
 </div>
-<div id="managing-package-versions" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Managing package versions</h1>
-<div id="learning-objectives-4" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Learning Objectives</h2>
-<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" title="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" /></p>
+<div id="managing-package-versions" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Managing package versions<a href="managing-package-versions.html#managing-package-versions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="learning-objectives-4" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Learning Objectives<a href="managing-package-versions.html#learning-objectives-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" /></p>
 <p>As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!</p>
-<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" title="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" /></p>
-<p>What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don’t have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results <span class="citation">(<a href="#ref-BeaulieuJones2017" role="doc-biblioref">Beaulieu-Jones and Greene 2017</a>)</span>.</p>
-<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" title="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" /></p>
+<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" /></p>
+<p>What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don’t have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results <span class="citation">(<a href="#ref-BeaulieuJones2017">Beaulieu-Jones and Greene 2017</a>)</span>.</p>
+<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" /></p>
 <p>There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.</p>
 <p>There are two strategies for dealing with software versions that we will discuss in this chapter. Either of these strategies can be used alone or you can use both. They address different aspects of the computing environment discrepancy problem.</p>
-<div id="strategy-1-session-info---record-a-list-of-your-packages" class="section level3" number="6.1.1">
-<h3><span class="header-section-number">6.1.1</span> Strategy 1: Session Info - record a list of your packages</h3>
+<div id="strategy-1-session-info---record-a-list-of-your-packages" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Strategy 1: Session Info - record a list of your packages<a href="managing-package-versions.html#strategy-1-session-info---record-a-list-of-your-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>One strategy to combat different software versions is to list the <strong>session info</strong>. This is the easiest (though not most comprehensive) method for handling differences in software versions is to have your code list details about your computing environment.</p>
 <p>Session info can lead to clues as to why results weren’t reproducible. For example, if both Avi and Ruby ran notebooks and included a session info print out it may look like this:</p>
-<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png" title="Two session info print outs are show side by side. One is labeled as ‘Ruby’s session info print out’ and the other as ‘Avi’s session info print out’. Highlighted we can see that they have different R versions: 4.0.2 vs 4.0.5. They also have different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions!  If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues to why that might be! This can give them items to look into for determining why the results didn’t reproduce as expected." alt="Two session info print outs are show side by side. One is labeled as ‘Ruby’s session info print out’ and the other as ‘Avi’s session info print out’. Highlighted we can see that they have different R versions: 4.0.2 vs 4.0.5. They also have different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions!  If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues to why that might be! This can give them items to look into for determining why the results didn’t reproduce as expected." width="100%" /></p>
+<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png" alt="Two session info print outs are show side by side. One is labeled as ‘Ruby’s session info print out’ and the other as ‘Avi’s session info print out’. Highlighted we can see that they have different R versions: 4.0.2 vs 4.0.5. They also have different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions!  If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues to why that might be! This can give them items to look into for determining why the results didn’t reproduce as expected." width="100%" /></p>
 <p>Session info shows us that they have different R versions and different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions. If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues for any discrepancies. This can give them items to look into for determining why the results didn’t reproduce as expected.</p>
 </div>
-<div id="strategy-2-package-managers---share-a-useable-snapshot-of-your-environment" class="section level3" number="6.1.2">
-<h3><span class="header-section-number">6.1.2</span> Strategy 2: Package managers - share a useable snapshot of your environment</h3>
+<div id="strategy-2-package-managers---share-a-useable-snapshot-of-your-environment" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Strategy 2: Package managers - share a useable snapshot of your environment<a href="managing-package-versions.html#strategy-2-package-managers---share-a-useable-snapshot-of-your-environment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Package managers</strong> can help handle your computing environment for you in a way that you can share them with others. In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from.</p>
-<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png" title="In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. In this example we show that Ruby has an environment, and using a package manager, has taken a snapshot of her computing environment. That snapshot is shared with Avi, who can use the package manager to attempt to build it on his own computer. This will help address some differences in package versions between two individual’s computers." alt="In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. In this example we show that Ruby has an environment, and using a package manager, has taken a snapshot of her computing environment. That snapshot is shared with Avi, who can use the package manager to attempt to build it on his own computer. This will help address some differences in package versions between two individual’s computers." width="100%" /></p>
+<p><img src="resources/images/06-package-management_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png" alt="In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. In this example we show that Ruby has an environment, and using a package manager, has taken a snapshot of her computing environment. That snapshot is shared with Avi, who can use the package manager to attempt to build it on his own computer. This will help address some differences in package versions between two individual’s computers." width="100%" /></p>
 <p>For both exercises, we will download an environment ‘snapshot’ file we’ve set up for you, then we will practice adding a new package to the environments we’ve provided, and add them to your new repository along with the rest of your example project files.</p>
 <ul>
 <li>For Python, we’ll use <code>conda</code> for package management and store this information in a <code>environment.yml</code> file.</li>
@@ -335,8 +338,8 @@ div.csl-indent {
 </ul>
 </div>
 </div>
-<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
+<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Get the exercise project files (or continue with the files you used in the previous chapter)<a href="managing-package-versions.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <details>
 <summary>
 <strong>Get the Python project example files</strong>
@@ -352,8 +355,8 @@ div.csl-indent {
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>.</p>
 </details>
 </div>
-<div id="exercise-1-print-out-session-info" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Exercise 1: Print out session info</h2>
+<div id="exercise-1-print-out-session-info" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Exercise 1: Print out session info<a href="managing-package-versions.html#exercise-1-print-out-session-info" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <details>
 <summary>
 <strong>Python version of the exercise</strong>
@@ -371,46 +374,56 @@ div.csl-indent {
 <li>In your Rmd file, add a chunk in the very end that looks like this:</li>
 </ol>
 <pre><code>
-```r
+``` r
 sessionInfo()
 ```
 
 ```
-## R version 4.0.2 (2020-06-22)
+## R version 4.3.2 (2023-10-31)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 20.04.3 LTS
+## Running under: Ubuntu 22.04.4 LTS
 ## 
 ## Matrix products: default
-## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
+## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 ## 
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
 ##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
-##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C             
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
 ##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## 
+## time zone: Etc/UTC
+## tzcode source: system (glibc)
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] knitr_1.33      magrittr_2.0.2  hms_0.5.3       R6_2.4.1       
-##  [5] rlang_0.4.10    highr_0.8       stringr_1.4.0   httr_1.4.2     
-##  [9] tools_4.0.2     xfun_0.26       jquerylib_0.1.4 htmltools_0.5.0
-## [13] ellipsis_0.3.1  ottrpal_0.1.2   yaml_2.2.1      digest_0.6.25  
-## [17] tibble_3.0.3    lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24  
-## [21] readr_1.4.0     vctrs_0.3.4     fs_1.5.0        curl_4.3       
-## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2 
-## [29] pillar_1.4.6    pkgconfig_2.0.3
+##  [1] sass_0.4.8       utf8_1.2.4       generics_0.1.3   xml2_1.3.6      
+##  [5] stringi_1.8.3    hms_1.1.3        digest_0.6.34    magrittr_2.0.3  
+##  [9] evaluate_0.23    timechange_0.3.0 bookdown_0.41    fastmap_1.1.1   
+## [13] rprojroot_2.0.4  jsonlite_1.8.8   processx_3.8.3   chromote_0.3.1  
+## [17] ps_1.7.6         promises_1.2.1   httr_1.4.7       fansi_1.0.6     
+## [21] ottrpal_1.3.0    jquerylib_0.1.4  cli_3.6.2        rlang_1.1.4     
+## [25] cachem_1.0.8     yaml_2.3.8       tools_4.3.2      tzdb_0.4.0      
+## [29] dplyr_1.1.4      curl_5.2.0       vctrs_0.6.5      R6_2.5.1        
+## [33] lifecycle_1.0.4  lubridate_1.9.3  snakecase_0.11.1 stringr_1.5.1   
+## [37] janitor_2.2.0    pkgconfig_2.0.3  pillar_1.9.0     bslib_0.6.1     
+## [41] later_1.3.2      glue_1.7.0       Rcpp_1.0.12      highr_0.11      
+## [45] xfun_0.48        tibble_3.2.1     tidyselect_1.2.0 knitr_1.48      
+## [49] htmltools_0.5.7  websocket_1.4.2  rmarkdown_2.25   webshot2_0.1.1  
+## [53] readr_2.1.5      compiler_4.3.2   askpass_1.2.0    openssl_2.1.1
 ```</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.</li>
 </ol>
 </details>
 </div>
-<div id="exercise-2-package-management" class="section level2" number="6.4">
-<h2><span class="header-section-number">6.4</span> Exercise 2: Package management</h2>
+<div id="exercise-2-package-management" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Exercise 2: Package management<a href="managing-package-versions.html#exercise-2-package-management" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <details>
 <summary>
 <strong>Python version of the exercise</strong>
@@ -432,8 +445,8 @@ sessionInfo()
 <ol start="6" style="list-style-type: decimal">
 <li>Follow <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github">these instructions to add the environment.yml file to the GitHub repository you created in the previous chapter</a>. Later we will practice and discuss how to more fully utilize the features of GitHub but for now, just drag and drop it as the instructions linked describe.</li>
 </ol>
-<div id="more-resources-on-how-to-use-conda" class="section level3" number="6.4.1">
-<h3><span class="header-section-number">6.4.1</span> More resources on how to use conda</h3>
+<div id="more-resources-on-how-to-use-conda" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> More resources on how to use conda<a href="managing-package-versions.html#more-resources-on-how-to-use-conda" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><a href="https://medium.com/swlh/installing-jupyter-notebook-and-using-your-own-environment-on-mac-fa41efd4639d">Install Jupyter using your own environment (Mac specific)</a></li>
 <li><a href="https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda">Definitive guide to using conda</a></li>
@@ -479,7 +492,7 @@ sessionInfo()
 </div>
 </div>
 </div>
-<h3>References</h3>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-BeaulieuJones2017" class="csl-entry">
 Beaulieu-Jones, Brett K, and Casey S Greene. 2017. <span>“Reproducibility of Computational Workflows Is Automated Using Continuous Analysis.”</span> <em>Nature Biotechnology</em> 35 (4): 342–46. <a href="https://doi.org/10.1038/nbt.3780">https://doi.org/10.1038/nbt.3780</a>.

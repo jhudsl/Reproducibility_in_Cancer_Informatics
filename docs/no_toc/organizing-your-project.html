@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Organizing your project | Intro to Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Organizing your project | Intro to Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="defining-reproducibility.html"/>
 <link rel="next" href="making-your-project-open-source-with-github.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,8 +47,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -89,11 +88,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -102,14 +101,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -117,6 +116,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -306,14 +309,14 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/itcr_main_image.png">
 </div>
-<div id="organizing-your-project" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Organizing your project</h1>
-<div id="learning-objectives-1" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Learning Objectives</h2>
-<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png" title="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." alt="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." width="1250" style="display: block; margin: auto;" /></p>
+<div id="organizing-your-project" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Organizing your project<a href="organizing-your-project.html#organizing-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="learning-objectives-1" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Learning Objectives<a href="organizing-your-project.html#learning-objectives-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png" alt="This chapter will demonstrate how to: Identify what aspects make an analysis project more easily navigable. Set up a project with an organizational scheme that will work for the author and their colleagues." width="1250" style="display: block; margin: auto;" /></p>
 <p>Keeping your files organized is a skill that has a high long-term payoff. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.</p>
-<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png" title="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" width="1250" style="display: block; margin: auto;" /></p>
-<p><span class="citation">Tayo (<a href="#ref-Tayo2019" role="doc-biblioref">2019</a>)</span> discusses four particular reasons why it is important to organize your project:</p>
+<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" width="1250" style="display: block; margin: auto;" /></p>
+<p><span class="citation">Tayo (<a href="#ref-Tayo2019">2019</a>)</span> discusses four particular reasons why it is important to organize your project:</p>
 <blockquote>
 <ol style="list-style-type: decimal">
 <li>Organization increases productivity. If a project is well organized, with everything placed in one directory, it makes it easier to avoid wasting time searching for project files such as datasets, codes, output files, and so on.</li>
@@ -323,25 +326,25 @@ div.csl-indent {
 </ol>
 </blockquote>
 <p>Organization is yet another aspect of reproducibility that saves you and your colleagues time!</p>
-<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_180.png" title="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." alt="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." width="1250" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/03-project-organization_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_180.png" alt="Ruby is looking at her computer that has clearly named folders and files. Ruby says to herself: I read my README to get me back up to speed with this project. Now I know that I can run a single command to call run_analysis.sh to re-run my analysis." width="1250" style="display: block; margin: auto;" /></p>
 </div>
-<div id="organizational-strategies" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Organizational strategies</h2>
-<p>There’s a lot of ways to keep your files organized, and there’s not a “one size fits all” organizational solution <span class="citation">(<a href="#ref-Shapiro2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span>. In this chapter, we will discuss some generalities but as far as specifics we will point you to others who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.</p>
+<div id="organizational-strategies" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Organizational strategies<a href="organizing-your-project.html#organizational-strategies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There’s a lot of ways to keep your files organized, and there’s not a “one size fits all” organizational solution <span class="citation">(<a href="#ref-Shapiro2021">Shapiro et al. 2021</a>)</span>. In this chapter, we will discuss some generalities but as far as specifics we will point you to others who have written about works for them and advise that you use them as inspiration to figure out a strategy that works for you and your team.</p>
 <p>The most important aspects of your project organization scheme is that it:</p>
 <ul>
-<li>Is <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">project-oriented</a> <span class="citation">(<a href="#ref-Bryan2017" role="doc-biblioref">Bryan 2017</a>)</span>.<br />
+<li>Is <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">project-oriented</a> <span class="citation">(<a href="#ref-Bryan2017">Bryan 2017</a>)</span>.<br />
 </li>
-<li>Follows consistent patterns <span class="citation">(<a href="#ref-Shapiro2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span>.<br />
+<li>Follows consistent patterns <span class="citation">(<a href="#ref-Shapiro2021">Shapiro et al. 2021</a>)</span>.<br />
 </li>
-<li>Is easy for you and others to find the files you need quickly <span class="citation">(<a href="#ref-Shapiro2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span>.<br />
+<li>Is easy for you and others to find the files you need quickly <span class="citation">(<a href="#ref-Shapiro2021">Shapiro et al. 2021</a>)</span>.<br />
 </li>
-<li>Minimizes the likelihood for errors (like writing over files accidentally) <span class="citation">(<a href="#ref-Shapiro2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span>.<br />
+<li>Minimizes the likelihood for errors (like writing over files accidentally) <span class="citation">(<a href="#ref-Shapiro2021">Shapiro et al. 2021</a>)</span>.<br />
 </li>
-<li>Is something maintainable <span class="citation">(<a href="#ref-Shapiro2021" role="doc-biblioref">Shapiro et al. 2021</a>)</span>!</li>
+<li>Is something maintainable <span class="citation">(<a href="#ref-Shapiro2021">Shapiro et al. 2021</a>)</span>!</li>
 </ul>
-<div id="tips-for-organizing-your-project" class="section level3" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Tips for organizing your project:</h3>
+<div id="tips-for-organizing-your-project" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Tips for organizing your project:<a href="organizing-your-project.html#tips-for-organizing-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Getting more specific, here’s some ideas of how to organize your project:</p>
 <ul>
 <li><strong>Make file names informative</strong> to those who don’t have knowledge of the project but avoid using spaces, quotes, or unusual characters in your filenames and folders – these only serve to make reading in files a nightmare in some programs.</li>
@@ -354,8 +357,8 @@ div.csl-indent {
 <li><strong>Make a central script that re-runs everything</strong> – including the creation of the folders! (more on this in a later chapter)</li>
 </ul>
 <p>Let’s see what these principles might look like put into practice.</p>
-<div id="example-organizational-scheme" class="section level4" number="3.2.1.1">
-<h4><span class="header-section-number">3.2.1.1</span> Example organizational scheme</h4>
+<div id="example-organizational-scheme" class="section level4 hasAnchor" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> Example organizational scheme<a href="organizing-your-project.html#example-organizational-scheme" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Here’s an example of what this might look like:</p>
 <pre><code>project-name/
 ├── run_analysis.sh
@@ -389,22 +392,22 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div id="readings-about-organizational-strategies-for-data-science-projects" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Readings about organizational strategies for data science projects:</h2>
+<div id="readings-about-organizational-strategies-for-data-science-projects" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Readings about organizational strategies for data science projects:<a href="organizing-your-project.html#readings-about-organizational-strategies-for-data-science-projects" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>But you don’t have to take my organizational strategy, there are lots of ideas out there.
 You can read through some of these articles to think about what kind of organizational strategy might work for you and your team:</p>
 <ul>
-<li><a href="https://www.stat.ubc.ca/~jenny/STAT545A/block19_codeFormattingOrganization.html">Jenny Bryan’s organizational strategies</a> <span class="citation">(<a href="#ref-Bryan2021" role="doc-biblioref">Bryan and Hester 2021</a>)</span>.</li>
-<li><a href="https://www.youtube.com/playlist?list=PLRPB0ZzEYegPiBteC2dRn95TX9YefYFyy">Danielle Navarro’s organizational strategies</a> <span class="citation">Navarro (<a href="#ref-Navarro2021" role="doc-biblioref">2021</a>)</span></li>
-<li><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Jenny Bryan on Project-oriented workflows</a><span class="citation">(<a href="#ref-Bryan2017" role="doc-biblioref">Bryan 2017</a>)</span>.</li>
-<li><a href="https://datacarpentry.org/organization-genomics/">Data Carpentry mini-course about organizing projects</a> <span class="citation">(<a href="#ref-DataCarpentry2021" role="doc-biblioref"><span>“Project <span>Organization</span> and <span>Management</span> for <span>Genomics</span>”</span> 2021</a>)</span>.</li>
-<li><a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0">Andrew Severin’s strategy for organization</a> <span class="citation">(<a href="#ref-Severin2021" role="doc-biblioref">Severin 2021</a>)</span>.</li>
-<li><a href="https://www.biostars.org/p/821/">A BioStars thread where many individuals share their own organizational strategies</a> <span class="citation">(<a href="#ref-Biostars2021" role="doc-biblioref"><span>“How Do You Manage Your Files &amp; Directories for Your Projects?”</span> 2010</a>)</span>.</li>
-<li><a href="https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html">Data Carpentry course chapter about getting organized</a> <span class="citation">(<a href="#ref-DataCarpentry2019" role="doc-biblioref"><span>“Introduction to the Command Line for Genomics”</span> 2019</a>)</span>.</li>
+<li><a href="https://www.stat.ubc.ca/~jenny/STAT545A/block19_codeFormattingOrganization.html">Jenny Bryan’s organizational strategies</a> <span class="citation">(<a href="#ref-Bryan2021">Bryan and Hester 2021</a>)</span>.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLRPB0ZzEYegPiBteC2dRn95TX9YefYFyy">Danielle Navarro’s organizational strategies</a> <span class="citation">Navarro (<a href="#ref-Navarro2021">2021</a>)</span></li>
+<li><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Jenny Bryan on Project-oriented workflows</a><span class="citation">(<a href="#ref-Bryan2017">Bryan 2017</a>)</span>.</li>
+<li><a href="https://datacarpentry.org/organization-genomics/">Data Carpentry mini-course about organizing projects</a> <span class="citation">(<a href="#ref-DataCarpentry2021"><span>“Project <span>Organization</span> and <span>Management</span> for <span>Genomics</span>”</span> 2021</a>)</span>.</li>
+<li><a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0">Andrew Severin’s strategy for organization</a> <span class="citation">(<a href="#ref-Severin2021">Severin 2021</a>)</span>.</li>
+<li><a href="https://www.biostars.org/p/821/">A BioStars thread where many individuals share their own organizational strategies</a> <span class="citation">(<a href="#ref-Biostars2021"><span>“How Do You Manage Your Files &amp; Directories for Your Projects?”</span> 2010</a>)</span>.</li>
+<li><a href="https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html">Data Carpentry course chapter about getting organized</a> <span class="citation">(<a href="#ref-DataCarpentry2019"><span>“Introduction to the Command Line for Genomics”</span> 2019</a>)</span>.</li>
 </ul>
 </div>
-<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Get the exercise project files (or continue with the files you used in the previous chapter)</h2>
+<div id="get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Get the exercise project files (or continue with the files you used in the previous chapter)<a href="organizing-your-project.html#get-the-exercise-project-files-or-continue-with-the-files-you-used-in-the-previous-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <details>
 <summary>
 <strong>Get the Python project example files</strong>
@@ -420,8 +423,8 @@ You can read through some of these articles to think about what kind of organiza
 <p>Now double click your chapter zip file to unzip. For Windows you may have to <a href="https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc">follow these instructions</a>.</p>
 </details>
 </div>
-<div id="exercise-organize-your-project" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Exercise: Organize your project!</h2>
+<div id="exercise-organize-your-project" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Exercise: Organize your project!<a href="organizing-your-project.html#exercise-organize-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Using your computer’s GUI (drag, drop, and clicking), organize the files that are part of this project.</p>
 <ol style="list-style-type: decimal">
 <li>Organized these files using an organizational scheme similar to <a href="#example%20organizational-scheme">what is described above</a>.</li>
@@ -433,7 +436,7 @@ You can read through some of these articles to think about what kind of organiza
 
 </div>
 </div>
-<h3>References</h3>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-Bryan2017" class="csl-entry">
 Bryan, Jenny. 2017. <span>“Project-Oriented Workflow.”</span> <em>Tidyverse Blog</em>. <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.
@@ -457,7 +460,7 @@ Navarro, Danielle. 2021. <span>“Project Structure.”</span> <a href="https://
 Severin, Andrew. 2021. <span>“Project <span>Management</span>.”</span> <em>Bioinformatics Workbook</em>. <a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html">https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html</a>.
 </div>
 <div id="ref-Shapiro2021" class="csl-entry">
-Shapiro, Joshua A., Candace L. Savonen, Allegra G. Hawkins, Chante J. Bethell, Deepashree Venkatesh Prasad, Casey S. Greene, and Jaclyn N. Taroni. 2021. <em><span>Childhood Cancer Data Lab Training Modules</span></em> (version 2021-june).
+Shapiro, Joshua A., Candace L. Savonen, Allegra G. Hawkins, Chante J. Bethell, Deepashree Venkatesh Prasad, Casey S. Greene, and Jaclyn N. Taroni. 2021. <span>“<span>Childhood Cancer Data Lab Training Modules</span>.”</span>
 </div>
 <div id="ref-Tayo2019" class="csl-entry">
 Tayo, Benjamin Obi. 2019. <span>“How to <span>Organize</span> <span>Your</span> <span>Data</span> <span>Science</span> <span>Project</span>.”</span> <em>Medium</em>. <a href="https://towardsdatascience.com/how-to-organize-your-data-science-project-dd6599cf000a">https://towardsdatascience.com/how-to-organize-your-data-science-project-dd6599cf000a</a>.
