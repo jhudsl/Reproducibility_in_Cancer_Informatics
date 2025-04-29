@@ -318,10 +318,10 @@ div.csl-indent {
 <div id="why-documentation" class="section level2 hasAnchor" number="8.2">
 <h2><span class="header-section-number">8.2</span> Why documentation?<a href="documenting-analyses.html#why-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Documentation is an important but sometimes overlooked part of creating a reproducible analysis! There are two parts of documentation we will discuss here: 1) In notebook descriptions and 2) READMEs</p>
-<p>Both these notebook descriptions and READMEs are written in markdown – a shorthand for html (the same as the documentation parts of your code). If you aren’t familiar, markdown is such a handy tool and we encourage you to learn it (it doesn’t take too long), here’s a <a href="https://www.markdownguide.org/cheat-sheet/">quick guide</a> to get you started.</p>
+<p>Both these notebook descriptions and READMEs are written in markdown – a lightweight markup language for formatting text that can be converted to html for display in web browsers. If you aren’t familiar, markdown is such a handy tool and we encourage you to learn it (it doesn’t take too long), here’s a <a href="https://www.markdownguide.org/cheat-sheet/">quick guide</a> to get you started.</p>
 <div id="notebook-descriptions" class="section level3 hasAnchor" number="8.2.1">
 <h3><span class="header-section-number">8.2.1</span> Notebook descriptions<a href="documenting-analyses.html#notebook-descriptions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>As we <a href="https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/using-notebooks.html#reason-1-notebooks-allow-for-tracking-data-exploration-and-encourage-the-scientist-to-narrate-their-thought-process">discussed in chapter 5</a>, data analyses can lead one on a winding trail of decisions, but notebooks allow you to narrate your thought process as you travel along these analyses explorations!</p>
+<p>As we <a href="https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/using-notebooks.html#reason-1-notebooks-allow-for-tracking-data-exploration-and-encourage-the-scientist-to-narrate-their-thought-process">discussed in chapter 5</a>, data analyses can lead one on a winding trail of decisions, but notebooks allow you to narrate your thought process as you travel along these analysis explorations!</p>
 <p><img src="resources/images/08-readmes_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png" alt="Ruby is looking at her computer that has a lovely notebook with a heatmap! Ruby says ‘Working from this notebook allows me to interactively develop on my data analysis and write down my thoughts about the process all in one place!’" width="1250" style="display: block; margin: auto;" /></p>
 <p><strong>Your scientific notebook should include descriptions that describe:</strong></p>
 <div id="the-purposes-of-the-notebook" class="section level4 hasAnchor" number="8.2.1.1">
@@ -331,28 +331,28 @@ div.csl-indent {
 <div id="the-rationales-behind-your-decisions" class="section level4 hasAnchor" number="8.2.1.2">
 <h4><span class="header-section-number">8.2.1.2</span> The rationales behind your decisions<a href="documenting-analyses.html#the-rationales-behind-your-decisions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Describe why a particular code chunk is doing a particular thing – the more odd the code looks, the greater need for you to describe why you are doing it.</p>
-<p>Describe any particular filters or cutoffs you are using and how did you decide on those?</p>
+<p>Describe any particular filters or cutoffs you are using and how you decided on those?</p>
 <p>For data wrangling steps, why are you wrangling the data in such a way – is this because a certain package you are using requires it?</p>
 </div>
 <div id="your-observations-of-the-results" class="section level4 hasAnchor" number="8.2.1.3">
 <h4><span class="header-section-number">8.2.1.3</span> Your observations of the results<a href="documenting-analyses.html#your-observations-of-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>What do you think about the results? The plots and tables you show in the notebook – how do they inform your original questions?</p>
+<p>What do you think about the results? For the plots and tables you show in the notebook – how do they inform your original questions?</p>
 </div>
 </div>
 <div id="readmes" class="section level3 hasAnchor" number="8.2.2">
 <h3><span class="header-section-number">8.2.2</span> READMEs!<a href="documenting-analyses.html#readmes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>READMEs are also a great way to help your collaborators get quickly acquainted with the project.</p>
 <p><img src="resources/images/08-readmes_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_11.png" alt="Avi is looking at a set of project files that include a file called a ‘README.md’. Avi says 'I had no idea where to start with this analysis that Ruby sent me to review, but then I saw she included a README and that saved me so much time and effort in getting started!'" width="1250" style="display: block; margin: auto;" /></p>
-<p>READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called “README.md” when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README.</p>
+<p>READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called “README.md” when someone comes to the main page of your repository, which further encourages people looking at your project to read the information in your README.</p>
 <p><strong>Information that should be included in a README:</strong></p>
 <ol style="list-style-type: decimal">
 <li>General purpose of the project</li>
 <li>Instructions on how to re-run the project</li>
 <li>Lists of any software required by the project</li>
-<li>Input and output file descriptions.</li>
-<li>Descriptions of any additional tools included in the project?</li>
+<li>Input and output file descriptions</li>
+<li>Descriptions of any additional tools included in the project</li>
 </ol>
-<p>You can take a look at this <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md">template README</a> to get your started.</p>
+<p>You can take a look at this <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md">template README</a> to get started.</p>
 <div id="more-about-writing-readmes" class="section level4 hasAnchor" number="8.2.2.1">
 <h4><span class="header-section-number">8.2.2.1</span> More about writing READMEs:<a href="documenting-analyses.html#more-about-writing-readmes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
@@ -392,9 +392,9 @@ div.csl-indent {
 <li>Open up your notebook you’ve been working on in the previous chapters: <code>make_heatmap.ipynb</code></li>
 <li>Create a new chunk in your notebook and choose the “Markdown” option in the dropdown menu.</li>
 </ol>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="documenting-analyses.html#cb44-1" tabindex="-1"></a>ottrpal<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="documenting-analyses.html#cb45-1" tabindex="-1"></a>ottrpal<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30&quot;</span>)</span></code></pre></div>
 <p><img src="resources/images/08-readmes_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png" alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add. " width="1250" style="display: block; margin: auto;" />
-5. Continue to add more descriptions where you feel is necessary, You can reference the descriptions we have in the <a href="https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb">“final” version</a> looks like in the <a href="https://github.com/jhudsl/reproducible-python-example">example Python repository</a>. (Again, <em>final</em> here is in quotes because we may continue to make improvements to this notebook too – remember what we said about iterative?)</p>
+5. Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the <a href="https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb">“final” version</a> from the <a href="https://github.com/jhudsl/reproducible-python-example">example Python repository</a>. (Again, <em>final</em> here is in quotes because we may continue to make improvements to this notebook – remember what we said about iterative?)</p>
 </details>
 <details>
 <summary>
@@ -405,7 +405,7 @@ div.csl-indent {
 <li>Open up your notebook you’ve been working on in the previous chapters: <code>make_heatmap.Rmd</code></li>
 <li>In between code chunks, add more descriptions using Markdown language.</li>
 <li>You can test how this renders by saving your <code>.Rmd</code> and then opening up the resulting <code>nb.html</code> file and choosing <code>View in Browser</code>.</li>
-<li>Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the <a href="https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html">“final” version</a> looks like in the <a href="https://github.com/jhudsl/reproducible-R-example">example R repository</a>. (Again, <em>final</em> here is in quotes because we may continue to make improvements to this notebook too – remember what we said about iterative?)</li>
+<li>Continue to add more descriptions where you feel is necessary. You can reference the descriptions we have in the <a href="https://jhudatascience.org/reproducible-R-example/01-heatmap.nb.html">“final” version</a> from the <a href="https://github.com/jhudsl/reproducible-R-example">example R repository</a>. (Again, <em>final</em> here is in quotes because we may continue to make improvements to this notebook – remember what we said about iterative?)</li>
 </ol>
 </details>
 </div>

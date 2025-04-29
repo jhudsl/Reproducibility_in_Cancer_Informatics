@@ -11,7 +11,7 @@ As we discussed previously, sometimes two different researchers can run the same
 
 ![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png){width=100%}
 
-What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
+What Ruby and Avi may not realize is that although they have used the same code and data, the software packages that they have on each of their computers may be very different. Even if they have the same software packages, they likely don't have the same package versions and these versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
 
 ![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png){width=100%}
 
@@ -21,9 +21,9 @@ There are two strategies for dealing with software versions that we will discuss
 
 ### Strategy 1: Session Info - record a list of your packages
 
-One strategy to combat different software versions is to list the **session info**. This is the easiest (though not most comprehensive) method for handling differences in software versions is to have your code list details about your computing environment.
+One strategy to combat different software versions is to list the **session info**. The easiest (though not most comprehensive) method for handling differences in software versions is to have your code list details about your computing environment.
 
-Session info can lead to clues as to why results weren't reproducible. For example, if both Avi and Ruby ran notebooks and included a session info print out it may look like this:
+Session info can lead to clues as to why results weren't reproducible. For example, if both Avi and Ruby ran notebooks, and included a session info print out, it may look like this:
 
 ![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png){width=100%}
 
@@ -31,7 +31,7 @@ Session info shows us that they have different R versions and different operatin
 
 ### Strategy 2: Package managers - share a useable snapshot of your environment
 
-**Package managers** can help handle your computing environment for you in a way that you can share them with others. In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from.
+**Package managers** can help handle your computing environment for you in a way so that you can share it with others. In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempts to rebuild it. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package setup from.
 
 ![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png){width=100%}
 
@@ -76,7 +76,6 @@ In your scientific notebook, you'll need to add two items.
 <details> <summary>**R version of the exercise**</summary>
 
 1. In your Rmd file, add a chunk in the very end that looks like this:
-`````
 
 ``` r
 sessionInfo()
@@ -120,7 +119,7 @@ sessionInfo()
 ## [45] glue_1.7.0       fansi_1.0.6      rmarkdown_2.25   httr_1.4.7      
 ## [49] tools_4.3.2      pkgconfig_2.0.3  htmltools_0.5.7
 ```
-`````
+
 2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.
 
 </details>
@@ -167,7 +166,7 @@ jupyter lab
 
 1. Go to RStudio and the Console pane:
 
-2. Install `renv` using (you should only need to do this once per your computer or RStudio environment).
+2. Install `renv` using the command below (you should only need to do this once per your computer or RStudio environment).
 
 ```
 install.packages("renv")
