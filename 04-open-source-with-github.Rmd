@@ -64,7 +64,7 @@ Data science projects often lead to side analyses that could be very worthwhile 
 ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gf62875ddf7_0_47")
 ```
 
-## Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files
 
 <details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip).

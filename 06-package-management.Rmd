@@ -52,7 +52,7 @@ For both exercises, we will download an environment 'snapshot' file we've set up
 - For Python, we'll use `conda` for package management and store this information in a `environment.yml` file.
 - For R, we'll use `renv` for package management and store this information in a `renv.lock` file.
 
-## Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files 
 
 <details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-6.zip).
