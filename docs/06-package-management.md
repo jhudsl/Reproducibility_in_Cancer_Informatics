@@ -5,15 +5,15 @@
 
 ## Learning Objectives
 
-![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png){width=100%}
+![](06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png){width=100%}
 
 As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!
 
-![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png){width=100%}
+![](06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png){width=100%}
 
 What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
 
-![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png){width=100%}
+![](06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png){width=100%}
 
 There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.
 
@@ -25,7 +25,7 @@ One strategy to combat different software versions is to list the **session info
 
 Session info can lead to clues as to why results weren't reproducible. For example, if both Avi and Ruby ran notebooks and included a session info print out it may look like this:
 
-![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png){width=100%}
+![](06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png){width=100%}
 
 Session info shows us that they have different R versions and different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions. If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues for any discrepancies. This can give them items to look into for determining why the results didn’t reproduce as expected.
 
@@ -33,7 +33,7 @@ Session info shows us that they have different R versions and different operatin
 
 **Package managers** can help handle your computing environment for you in a way that you can share them with others. In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from.
 
-![](resources/images/06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png){width=100%}
+![](06-package-management_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png){width=100%}
 
 For both exercises, we will download an environment 'snapshot' file we've set up for you, then we will practice adding a new package to the environments we've provided, and add them to your new repository along with the rest of your example project files.
 
@@ -106,19 +106,19 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] jsonlite_1.8.8   dplyr_1.1.4      compiler_4.3.2   promises_1.2.1  
-##  [5] Rcpp_1.0.12      tidyselect_1.2.0 xml2_1.3.6       webshot2_0.1.1  
-##  [9] stringr_1.5.1    snakecase_0.11.1 later_1.3.2      yaml_2.3.8      
-## [13] fastmap_1.1.1    readr_2.1.5      R6_2.5.1         generics_0.1.3  
-## [17] curl_5.2.0       knitr_1.48       tibble_3.2.1     bookdown_0.41   
-## [21] janitor_2.2.0    rprojroot_2.0.4  openssl_2.1.1    lubridate_1.9.3 
-## [25] pillar_1.9.0     tzdb_0.4.0       rlang_1.1.4      websocket_1.4.2 
-## [29] utf8_1.2.4       stringi_1.8.3    xfun_0.48        timechange_0.3.0
-## [33] cli_3.6.2        magrittr_2.0.3   ps_1.7.6         processx_3.8.3  
-## [37] digest_0.6.34    hms_1.1.3        askpass_1.2.0    lifecycle_1.0.4 
-## [41] chromote_0.3.1   vctrs_0.6.5      ottrpal_1.3.0    evaluate_0.23   
-## [45] glue_1.7.0       fansi_1.0.6      rmarkdown_2.25   httr_1.4.7      
-## [49] tools_4.3.2      pkgconfig_2.0.3  htmltools_0.5.7
+##  [1] jsonlite_1.8.8   dplyr_1.1.4      compiler_4.3.2   gitcreds_0.1.2  
+##  [5] promises_1.2.1   tidyselect_1.2.0 Rcpp_1.0.12      webshot2_0.1.2  
+##  [9] xml2_1.3.6       stringr_1.5.1    tidyr_1.3.1      later_1.3.2     
+## [13] yaml_2.3.10      fastmap_1.1.1    readr_2.1.5      R6_2.5.1        
+## [17] generics_0.1.3   knitr_1.50       tibble_3.3.0     bookdown_0.43   
+## [21] rprojroot_2.1.0  pillar_1.9.0     tzdb_0.4.0       rlang_1.1.6     
+## [25] utf8_1.2.4       websocket_1.4.4  stringi_1.8.3    xfun_0.52       
+## [29] cli_3.6.2        magrittr_2.0.3   ps_1.7.6         digest_0.6.34   
+## [33] rvest_1.0.4      processx_3.8.3   hms_1.1.3        lifecycle_1.0.4 
+## [37] chromote_0.5.1   vctrs_0.6.5      ottrpal_2.0.0    evaluate_1.0.4  
+## [41] glue_1.7.0       spelling_2.3.1   fansi_1.0.6      purrr_1.0.2     
+## [45] rmarkdown_2.25   httr_1.4.7       tools_4.3.2      pkgconfig_2.0.3 
+## [49] htmltools_0.5.7
 ```
 `````
 2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.

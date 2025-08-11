@@ -5,15 +5,15 @@
 
 ## Learning Objectives
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" />
+<img src="06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_394.png" alt="This chapter will demonstrate how to: Understand that versions of software influence analysis outcomes. Find what package versions you are using. Print session info in all of your analyses so it is more clear what packages and versions you are using." width="100%" />
 
 As we discussed previously, sometimes two different researchers can run the same code and same data and get different results!
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" />
+<img src="06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf1accd298e_0_673.png" alt="Ruby the researcher and Avi the associate are both very confused and slightly horrified that they both ran the same code and data but received different results. " width="100%" />
 
 What Ruby and Avi may not realize is that although they may have used the same code and data, the software packages that they have on each of their computers might be very different. Even if they have the same software packages, they likely don't have the same versions and versions can influence results! Different computing environments are not only a headache to detangle, they also can influence the reproducibility of your results [ @BeaulieuJones2017].
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" />
+<img src="06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_404.png" alt="Ruby has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Ruby’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!" width="100%" />
 
 There are multiple ways to deal with variations in computing environments so that your analyses will be reproducible and we will discuss a few different strategies for tackling this problem in this course and its follow up course. But for now, we will start with the least intensive to implement: session info.
 
@@ -25,7 +25,7 @@ One strategy to combat different software versions is to list the **session info
 
 Session info can lead to clues as to why results weren't reproducible. For example, if both Avi and Ruby ran notebooks and included a session info print out it may look like this:
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png" alt="Two session info print outs are show side by side. One is labeled as ‘Ruby’s session info print out’ and the other as ‘Avi’s session info print out’. Highlighted we can see that they have different R versions: 4.0.2 vs 4.0.5. They also have different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions!  If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues to why that might be! This can give them items to look into for determining why the results didn’t reproduce as expected." width="100%" />
+<img src="06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_0_0.png" alt="Two session info print outs are show side by side. One is labeled as ‘Ruby’s session info print out’ and the other as ‘Avi’s session info print out’. Highlighted we can see that they have different R versions: 4.0.2 vs 4.0.5. They also have different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions!  If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues to why that might be! This can give them items to look into for determining why the results didn’t reproduce as expected." width="100%" />
 
 Session info shows us that they have different R versions and different operating systems. The packages they have attached is rmarkdown but they also have different rmarkdown package versions. If Avi and Ruby have discrepancies in their results, the session info print out gives a record which may have clues for any discrepancies. This can give them items to look into for determining why the results didn’t reproduce as expected.
 
@@ -33,7 +33,7 @@ Session info shows us that they have different R versions and different operatin
 
 **Package managers** can help handle your computing environment for you in a way that you can share them with others. In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. For R and Python versions of the exercises, we will be using different managers, but the foundational strategy will be the same: include a file that someone else could replicate your package set up from.
 
-<img src="resources/images/06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png" alt="In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. In this example we show that Ruby has an environment, and using a package manager, has taken a snapshot of her computing environment. That snapshot is shared with Avi, who can use the package manager to attempt to build it on his own computer. This will help address some differences in package versions between two individual’s computers." width="100%" />
+<img src="06-package-management_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_26.png" alt="In general, package managers work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempt to rebuild it. In this example we show that Ruby has an environment, and using a package manager, has taken a snapshot of her computing environment. That snapshot is shared with Avi, who can use the package manager to attempt to build it on his own computer. This will help address some differences in package versions between two individual’s computers." width="100%" />
 
 For both exercises, we will download an environment 'snapshot' file we've set up for you, then we will practice adding a new package to the environments we've provided, and add them to your new repository along with the rest of your example project files.
 
@@ -106,20 +106,20 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] sass_0.4.8       utf8_1.2.4       generics_0.1.3   xml2_1.3.6      
-##  [5] stringi_1.8.3    hms_1.1.3        digest_0.6.34    magrittr_2.0.3  
-##  [9] evaluate_0.23    timechange_0.3.0 bookdown_0.41    fastmap_1.1.1   
-## [13] rprojroot_2.0.4  jsonlite_1.8.8   processx_3.8.3   chromote_0.3.1  
-## [17] ps_1.7.6         promises_1.2.1   httr_1.4.7       fansi_1.0.6     
-## [21] ottrpal_1.3.0    jquerylib_0.1.4  cli_3.6.2        rlang_1.1.4     
-## [25] cachem_1.0.8     yaml_2.3.8       tools_4.3.2      tzdb_0.4.0      
-## [29] dplyr_1.1.4      curl_5.2.0       vctrs_0.6.5      R6_2.5.1        
-## [33] lifecycle_1.0.4  lubridate_1.9.3  snakecase_0.11.1 stringr_1.5.1   
-## [37] janitor_2.2.0    pkgconfig_2.0.3  pillar_1.9.0     bslib_0.6.1     
-## [41] later_1.3.2      glue_1.7.0       Rcpp_1.0.12      highr_0.11      
-## [45] xfun_0.48        tibble_3.2.1     tidyselect_1.2.0 knitr_1.48      
-## [49] htmltools_0.5.7  websocket_1.4.2  rmarkdown_2.25   webshot2_0.1.1  
-## [53] readr_2.1.5      compiler_4.3.2   askpass_1.2.0    openssl_2.1.1
+##  [1] jsonlite_1.8.8   dplyr_1.1.4      compiler_4.3.2   gitcreds_0.1.2  
+##  [5] promises_1.2.1   tidyselect_1.2.0 Rcpp_1.0.12      xml2_1.3.6      
+##  [9] webshot2_0.1.2   stringr_1.5.1    jquerylib_0.1.4  later_1.3.2     
+## [13] tidyr_1.3.1      yaml_2.3.10      fastmap_1.1.1    readr_2.1.5     
+## [17] R6_2.5.1         generics_0.1.3   knitr_1.50       tibble_3.3.0    
+## [21] bookdown_0.43    rprojroot_2.1.0  bslib_0.6.1      pillar_1.9.0    
+## [25] tzdb_0.4.0       rlang_1.1.6      utf8_1.2.4       websocket_1.4.4 
+## [29] cachem_1.0.8     stringi_1.8.3    xfun_0.52        sass_0.4.8      
+## [33] cli_3.6.2        magrittr_2.0.3   ps_1.7.6         digest_0.6.34   
+## [37] rvest_1.0.4      processx_3.8.3   hms_1.1.3        lifecycle_1.0.4 
+## [41] chromote_0.5.1   vctrs_0.6.5      ottrpal_2.0.0    evaluate_1.0.4  
+## [45] glue_1.7.0       spelling_2.3.1   fansi_1.0.6      rmarkdown_2.25  
+## [49] purrr_1.0.2      httr_1.4.7       htmltools_0.5.7  tools_4.3.2     
+## [53] pkgconfig_2.0.3
 ```
 `````
 2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.

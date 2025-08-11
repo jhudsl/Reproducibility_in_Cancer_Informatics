@@ -152,7 +152,7 @@ From @Shapiro2021
 More reading about RStudio's interface:
 
 - [RStudio IDE Cheatsheet (pdf)](https://rstudio.github.io/cheatsheets/html/rstudio-ide.html).
-- [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/navigating-the-rstudio-interface.html)
+- [Navigating the RStudio Interface - R for Epidemiology](https://www.r4epi.com/chapters/navigating_rstudio/navigating_rstudio)
 
 </details>
 
