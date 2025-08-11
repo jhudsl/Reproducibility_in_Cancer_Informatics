@@ -192,7 +192,7 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 **More reading:**  
 
 - [R for Epidemiology - Coding best Practices](https://www.r4epi.com/chapters/best_practices/best_practices#object-variable-names) by @Cannell2021.
-- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.  
+- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://willkoehrsen.github.io/data%20science/software%20engineering/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them/) by @Koehrsen2019. 
 - [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018.   
 
 #### Follow a code style
