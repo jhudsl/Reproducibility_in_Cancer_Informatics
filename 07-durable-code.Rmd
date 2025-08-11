@@ -185,7 +185,7 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 > 2 Use consistent notation for naming convention.  
 > 3 Use standard terms.  
 > 4 Do not number a variable name.  
-> 5 When you find another way to name a variable, refactor as fast as possible.  
+> 5 When you find another word or term to replace and improve your variable name, refactor those code as soon as possible.  
 
 [@Hobert2018]
 
