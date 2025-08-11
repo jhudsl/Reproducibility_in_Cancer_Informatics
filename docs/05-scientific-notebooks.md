@@ -40,7 +40,7 @@ This can also be handy especially if you use automation to enhance the reproduci
 
 Because of all of these reasons, we encourage the use of computational notebooks as a means of enhancing reproducibility. (This course itself is also written with the use of notebooks!)
 
-## Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files 
 
 <details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-5.zip).
@@ -107,7 +107,7 @@ For this chapter, we will create notebooks from our example files code. Notebook
 
 **Getting familiar with RStudio's interface**
 
-<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gf8f405fdab_0_225" alt="The RStudio environment has four main panes, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools, Global Options, Pane Layout). 1. The Editor pane is where you can write R scripts and other documents. Each tab here is its own document. This is your _text editor_, which will allow you to save your R code for future use. Note that change code here will not run automatically until you run it. 2. The Console pane is where you can _interactively_ run R code. There is also a Terminal tab here which can be used for running programs outside R on your computer 3. The Environment pane primarily displays the variables, sometimes known as _objects_ that are defined during a given R session, and what data or values they might hold. 4. The Help viewer pane has several tabs all of which are pretty important: The Files tab shows the structure and contents of files and folders (also known as directories) on your computer. The Plots tab will reveal plots when you make them. The Packages tab shows which installed packages have been loaded into your R session. The Help tab will show the help page when you look up a function. The Viewer pane will reveal compiled R Markdown documents" style="display: block; margin: auto;" />
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gf8f405fdab_0_225" alt="The RStudio environment has four main panes, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools, Global Options, Pane Layout). 1. The Editor pane is where you can write R scripts and other documents. Each tab here is its own document. This is your _text editor_, which will allow you to save your R code for future use. Note that changes to code here will not take effect until you run the code. 2. The Console pane is where you can _interactively_ run R code. There is also a Terminal tab here which can be used for running programs outside R on your computer 3. The Environment pane primarily displays the variables, sometimes known as _objects_ that are defined during a given R session, and what data or values they might hold. 4. The Help viewer pane has several tabs all of which are pretty important: The Files tab shows the structure and contents of files and folders (also known as directories) on your computer. The Plots tab will reveal plots when you make them. The Packages tab shows which installed packages have been loaded into your R session. The Help tab will show the help page when you look up a function. The Viewer pane will reveal compiled R Markdown documents" style="display: block; margin: auto;" />
 
 > The RStudio environment has four main **panes**, each of which may have a number of tabs that display different information or functionality. (their specific location can be changed under Tools -> Global Options -> Pane Layout).
 
@@ -145,11 +145,13 @@ Now, in your respective IDE, we'll turn our unreproducible scripts into notebook
 1. Start a new notebook by going to `New` > `Notebook`.
 2. Then open up this chapter’s example code folder and open the `make-heatmap.py` file.
 
-<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_20" alt="In Jupyter, you can create a new notebook by going to New > Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file." style="display: block; margin: auto;" />
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_20" alt="In Jupyter, you can create a new notebook by going to New then Notebook. Then open up this chapter’s example code folder and open the make-heatmap.py file."  />
+
 
 3. Create a new code chunk in your notebook.
 
-<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_30" alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add." style="display: block; margin: auto;" />
+
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_30" alt="The Jupyter interface has a ‘add a new chunk’ button, a delete chunk button, and a dropdown menu that allows you to choose the chunk type you’d like to add." />
 
 
 4. Now copy and paste all of the code from `make-heatmap.py` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.
@@ -161,16 +163,20 @@ For [more about using Jupyter notebooks see this](https://realpython.com/jupyter
 
 <details> <summary>**Set up an R notebook**</summary>
 
-1. Start a new notebook by going to `File` > `New Files` > `R Notebook`.
+1. Start a new notebook by going to `File` > `New File` > `R Notebook`.
+
+<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_13" alt="In RStudio, you can create a new notebook by going to File then New File then R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." />
+
 2. Then open up this chapter’s example code folder and open the `make_heatmap.R` file.
-<img src ="https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/export/png?id=1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE&pageid=gfaa026a583_0_13" alt="In RStudio, you can create a new notebook by going to File > New Files > R Notebook. Then open up this chapter’s example code folder and open the make_heatmap.R file." style="display: block; margin: auto;" />
 3. Practice creating a new chunk in your R notebook by clicking the `Code` > `Insert Chunk` button on the toolbar or by pressing `Cmd+Option+I` (in Mac) or `Ctrl + Alt + I` (in Windows). (You can also manually type out the back ticks and `{}`)  
 4. Delete all the default text in this notebook but keep the header which is surrounded by `---` and looks like:  
+
 `````
 title: "R Notebook"
 output: html_notebook
 `````
-You can feel free to change the title from `R Notebook` to something that better suits the contents of this notebook.  
+You can feel free to change the title from `R Notebook` to something that better suits the contents of this notebook. 
+
 5. Now copy and paste all of the code from `make_heatmap.R` into a new chunk. We will later break up this large chunk of code into smaller chunks that are thematic in the next chapter.   
 6. Save your `untitled.Rmd` into something that tells us what it will end up doing like `make-heatmap.Rmd`.  
 7. Notice that upon saving your `.Rmd` file, a new file `.nb.html` file of the same name is created. Open that file and choose `view in Browser`. If RStudio asks you to choose a browser, then choose a default browser.  
@@ -178,7 +184,14 @@ You can feel free to change the title from `R Notebook` to something that better
 
 For [more about using R notebooks see this](https://bookdown.org/yihui/rmarkdown/) by @Xie2018.
 
+
+
+
 </details>
+
+
+<br>
+<br>
 
 Now that you've created your notebook, you are ready to start polishing that code!
 

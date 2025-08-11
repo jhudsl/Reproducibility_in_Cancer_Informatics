@@ -7,7 +7,7 @@
 
 ![](09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_6.png)
 
-We've previously discussed that the only way to know if your analysis is truly reproducible is to send it to someone else to reproduce! That sentiment is at the heart of code review. Although most wouldn't dare send out a manuscript for publishing without having our collaborators giving it a line-by-line review, people don't always feel the same way about code.
+We've previously discussed that the only way to know if your analysis is truly reproducible is to send it to someone else to reproduce! That sentiment is at the heart of code review. Although most wouldn't dare send out a manuscript for publishing without having collaborators giving it a line-by-line review, people don't always feel the same way about code.
 
 @Parker2017 describes code review:
 
@@ -28,7 +28,7 @@ Since reproducibility is all about someone else being able to run your code and 
 
 **The goal:**  
 ![](09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_33.png)
-In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else look at your code and attempt to run it.  
+In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else to look at your code and attempt to run it.  
 
 At this point, you should have a GitHub repository that contains the following:  
 
@@ -43,19 +43,19 @@ Before you send off your code to someone else, delete your output (the `results`
 
 **2) Re-run the whole analysis**
 
-**3) Interrogate and troubleshoot**
+**3) Interrogate and troubleshoot**  
 If your code has any issues running, try your best to troubleshoot the problems. Read this handy guide for [tips on troubleshooting R](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/00b-debugging_resources.Rmd).
 
 **4) Rinse and repeat**  
-Repeat this as many times as needed until you reliably are able to re-run this code and get the same results without any [code smells](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels) popping up. Dig into bad code smells or bad results smells wherever you sense them. If you aren't sure why you feel this way about your code or results, hold on to this and it may be something your collaborator will be able to see something you don't.
+Repeat this as many times as needed until you reliably are able to re-run this code and get the same results without any [code smells](https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels) popping up. Dig into bad code smells or bad results smells wherever you sense them. If you aren't sure why you feel this way about your code or results, hold on to this. It may be something your collaborator will be able to see that you missed.
 
 **5) Let it simmer**   
 Leave your analysis for a bit. Do you think it's perfect? Are you at your wits end with it? No matter how you feel about it, let it sit for a half a day or so then return to it with fresh eyes [@Savonen2021b].
 
-**5) Re-review your documentation and code with fresh eyes**  
+**6) Re-review your documentation and code with fresh eyes**  
 Now with fresh eyes and doing your best to imagine you don't have the knowledge you have -- does your analysis and results make sense?
 
-**6) Are you sure it's ready?**  
+**7) Are you sure it's ready?**  
 Ask yourself if you've polished this code and documentation as far as you can reasonably take it? Realizing that determining what qualifies `as far as you can reasonably take it` is also a skill you will build with time. Code review is the most efficient use of everyone's time when your code and documentation have reached this point.
 
 **8) Draft your request**
@@ -73,7 +73,7 @@ _Code review requests should include:_
 - Lastly, thank them for helping review your code!  
 
 **9) Ready for review**  
-Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may **not** want to ask your collaborator to spend their time carefully review this practice repository, but now that you understand and have done the steps involved _you are prepared to do this for your own analyses_!
+Now you are ready to send your crafted message to your collaborator for review. For the purposes of this exercise, you may **not** want to ask your collaborator to spend their time carefully reviewing a practice repository. However, now that you understand and have done the steps involved _you are prepared to do this for your own analyses_!
 
 TL;DR for asking for a code review:  
 ![](09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_52.png)
