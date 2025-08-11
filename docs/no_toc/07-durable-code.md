@@ -5,7 +5,7 @@
 
 ## Learning Objectives
 
-<img src="resources/images/07-durable-code_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png" alt="This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style." width="1250" style="display: block; margin: auto;" />
+<img src="07-durable-code_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png" alt="This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style." width="1250" style="display: block; margin: auto;" />
 
 ## General principles
 
@@ -99,7 +99,7 @@ Don’t be afraid to delete it all and re-run (multiple times). This includes re
 
 In essence, this is the data science version of "Have you tried turning it off and then on again?" Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.
 
-<img src="resources/images/07-durable-code_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png" alt="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." width="1250" style="display: block; margin: auto;" />
+<img src="07-durable-code_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png" alt="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." width="1250" style="display: block; margin: auto;" />
 
 <details> <summary> *Why do you need to refresh your kernel/session?*  </summary>
 
@@ -291,7 +291,7 @@ runif(1)
 
 #### To review general principles:
 
-<img src="resources/images/07-durable-code_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png" alt="General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style." width="1250" style="display: block; margin: auto;" />
+<img src="07-durable-code_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png" alt="General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style." width="1250" style="display: block; margin: auto;" />
 
 ## More reading on best coding practices
 

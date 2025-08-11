@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Making your project open source with GitHub | Intro to Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Making your project open source with GitHub | Intro to Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
@@ -50,6 +50,7 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<base target="_blank">
 
 
 <style type="text/css">
@@ -313,10 +314,10 @@ div.csl-indent {
 <h1><span class="header-section-number">Chapter 4</span> Making your project open source with GitHub<a href="making-your-project-open-source-with-github.html#making-your-project-open-source-with-github" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="learning-objectives-2" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Learning Objectives<a href="making-your-project-open-source-with-github.html#learning-objectives-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png" alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." width="100%" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7e3bf260f_0_4.png" alt="This chapter will demonstrate how to: Understand that git and GitHub are tools that help your analyses be conducted reproducibly and in an open source manner. Create a GitHub account. Set up a GitHub repository for your analyses." width="100%" /></p>
 <p>git is a version control system that is a great tool for creating reproducible analyses.
 What is version control? Ruby here is experiencing a lack of version control and could probably benefit from using git.</p>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9843bee50_0_535.png" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Now was it “final_final_version_100%_up_to_date” or “final_version_edit5” that I was working from?" width="100%" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9843bee50_0_535.png" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Now was it “final_final_version_100%_up_to_date” or “final_version_edit5” that I was working from?" width="100%" /></p>
 <p>All of us at one point or another have created different versions of a file or document, but for analysis projects this can easily get out of hand if you don’t have a system in place. That’s where git comes in handy.</p>
 <p>There are other version control systems as well, but git is the most popular in part because it works with GitHub, an online hosting service for git controlled files.</p>
 <div id="github-and-git-allow-you-to" class="section level3 hasAnchor" number="4.1.1">
@@ -324,27 +325,27 @@ What is version control? Ruby here is experiencing a lack of version control and
 <div id="maintain-transparent-analyses" class="section level4 hasAnchor" number="4.1.1.1">
 <h4><span class="header-section-number">4.1.1.1</span> Maintain transparent analyses<a href="making-your-project-open-source-with-github.html#maintain-transparent-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Open and transparent analyses are a critical part to conducting open science. GitHub allows you to conduct your analyses in an open source manner. Open science also allows others to better understand your methods and potentially borrow them for their own research, saving everyone time!</p>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_331.png" alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." width="100%" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_331.png" alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." width="100%" /></p>
 </div>
 <div id="have-backups-of-your-code-and-analyses-at-every-point" class="section level4 hasAnchor" number="4.1.1.2">
 <h4><span class="header-section-number">4.1.1.2</span> Have backups of your code and analyses at every point<a href="making-your-project-open-source-with-github.html#have-backups-of-your-code-and-analyses-at-every-point" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Life happens, sometimes you misplace a file or your computer malfunctions. If you ever lose data on your computer or need to retrieve something from an earlier version of your code, GitHub allows you to revert your losses.</p>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_0.png" alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." width="100%" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_0.png" alt="Ruby’s computer shows a virus and has a temperature. Ruby says ‘Oh no! I lost data on my computer! Good thing all the work I have toiled on for years is on GitHub!’ The GitHub cat is in a cloud with a download sign with Ruby’s code." width="100%" /></p>
 </div>
 <div id="keep-a-documented-history-of-your-project" class="section level4 hasAnchor" number="4.1.1.3">
 <h4><span class="header-section-number">4.1.1.3</span> Keep a documented history of your project<a href="making-your-project-open-source-with-github.html#keep-a-documented-history-of-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Overtime in a project, a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don’t have to revisit a question you already answered.</p>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_92.png" alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'" width="1250" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_92.png" alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'" width="1250" /></p>
 </div>
 <div id="collaborate-with-others" class="section level4 hasAnchor" number="4.1.1.4">
 <h4><span class="header-section-number">4.1.1.4</span> Collaborate with others<a href="making-your-project-open-source-with-github.html#collaborate-with-others" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Analysis projects highly benefit from good collaborations! But having multiple copies of code on multiple collaborators’ computers can be a nightmare to keep straight. GitHub allows people to work on the same set of code concurrently but still have a method to integrate all the edits together in a systematic way.</p>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_131.png" alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!" width="1250" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_131.png" alt="Ruby and Avi are both working on the code. Because they are both using git version control, they are able to merge their changes to the code base. And now the main code base contains both of their changes!" width="1250" /></p>
 </div>
 <div id="experiment-with-your-analysis" class="section level4 hasAnchor" number="4.1.1.5">
 <h4><span class="header-section-number">4.1.1.5</span> Experiment with your analysis<a href="making-your-project-open-source-with-github.html#experiment-with-your-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Data science projects often lead to side analyses that could be very worth while but might be scary to venture on if you don’t have your code well version controlled. Git and GitHub allow you to venture on these side experiments without fear since your main code can be kept safe from your side venture.</p>
-<p><img src="resources/images/04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_47.png" alt="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code" width="1250" /></p>
+<p><img src="04-open-source-with-github_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_47.png" alt="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code" width="1250" /></p>
 </div>
 </div>
 </div>
@@ -421,42 +422,42 @@ We encourage you to do the same with your own code and other projects!</p>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
 });
 });
 </script>
