@@ -5,7 +5,7 @@
 
 ## Learning Objectives
 
-![](resources/images/07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png)
+![](07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png)
 
 ## General principles
 
@@ -99,7 +99,7 @@ Don’t be afraid to delete it all and re-run (multiple times). This includes re
 
 In essence, this is the data science version of "Have you tried turning it off and then on again?" Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.
 
-![](resources/images/07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png)
+![](07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png)
 
 <details> <summary> *Why do you need to refresh your kernel/session?*  </summary>
 
@@ -291,7 +291,7 @@ runif(1)
 
 #### To review general principles:
 
-![](resources/images/07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png)
+![](07-durable-code_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png)
 
 ## More reading on best coding practices
 

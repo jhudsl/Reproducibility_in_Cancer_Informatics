@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
@@ -313,7 +313,7 @@ div.csl-indent {
 <h1><span class="header-section-number">Chapter 7</span> Writing durable code<a href="writing-durable-code.html#writing-durable-code" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="learning-objectives-5" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Learning Objectives<a href="writing-durable-code.html#learning-objectives-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png" alt="This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style." width="1250" style="display: block; margin: auto;" /></p>
+<p><img src="07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_9.png" alt="This chapter will demonstrate how to: Convert common code pitfalls into more readable and durable alternatives. Write code that is more readable and durable. Write code that is more useable by others.  Understand the importance of following a code style." width="1250" style="display: block; margin: auto;" /></p>
 </div>
 <div id="general-principles" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> General principles<a href="writing-durable-code.html#general-principles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -396,7 +396,7 @@ lapply(class_names, GreetStudent)</code></pre>
 <p><img src="resources/images/delete.png" width="12%"></p>
 <p>Don’t be afraid to delete it all and re-run (multiple times). This includes refreshing your kernel/session in your IDE.</p>
 <p>In essence, this is the data science version of “Have you tried turning it off and then on again?” Some bugs in your code exist or are not realized because old objects and libraries have overstayed their welcome in your environment.</p>
-<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png" alt="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." width="1250" style="display: block; margin: auto;" /></p>
+<p><img src="07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g102dc56db08_49_212.png" alt="To refresh your kernel in python jupyter lab, go to Kernel then choose one of the Restart Kernel options. You can also use the keyboard shortcut of Escape and pressing 0 twice.  In RStudio, go to the dropdown arrow next to Run and choose Restart R and Clear Output. Or you can press the broom, OR you can use the keyboard shortcut of Ctrl and shift and F10 (For Mac) or Cmd and shift and F10 ( for Windows)." width="1250" style="display: block; margin: auto;" /></p>
 <details>
 <summary>
 <em>Why do you need to refresh your kernel/session?</em>
@@ -553,7 +553,7 @@ For Python code, you can use <a href="https://black.readthedocs.io/en/stable/">p
 </div>
 <div id="to-review-general-principles" class="section level4 hasAnchor" number="7.2.0.10">
 <h4><span class="header-section-number">7.2.0.10</span> To review general principles:<a href="writing-durable-code.html#to-review-general-principles" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p><img src="resources/images/07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png" alt="General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style." width="1250" style="display: block; margin: auto;" /></p>
+<p><img src="07-durable-code_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_89.png" alt="General principles of writing reproducible code. Work on your code iteratively. Prioritize readability over cleverness. DRY up your code. Don't be afraid to delete and refresh. Use code comments effectively. Use informative variable names. Follow a code style." width="1250" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="more-reading-on-best-coding-practices" class="section level2 hasAnchor" number="7.3">
@@ -1023,42 +1023,42 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbo
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
 });
 });
 </script>

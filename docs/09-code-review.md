@@ -5,7 +5,7 @@
 
 ## Learning Objectives
 
-![](resources/images/09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_6.png)
+![](09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_6.png)
 
 We've previously discussed that the only way to know if your analysis is truly reproducible is to send it to someone else to reproduce! That sentiment is at the heart of code review. Although most wouldn't dare send out a manuscript for publishing without having our collaborators giving it a line-by-line review, people don't always feel the same way about code.
 
@@ -27,7 +27,7 @@ Not only does code review help boost the accuracy and reproducibility of the ana
 Since reproducibility is all about someone else being able to run your code and obtain your results, the exercise in this course involves preparing to do just that!
 
 **The goal:**  
-![](resources/images/09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_33.png)
+![](09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_33.png)
 In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else look at your code and attempt to run it.  
 
 At this point, you should have a GitHub repository that contains the following:  
@@ -76,7 +76,7 @@ _Code review requests should include:_
 Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may **not** want to ask your collaborator to spend their time carefully review this practice repository, but now that you understand and have done the steps involved _you are prepared to do this for your own analyses_!
 
 TL;DR for asking for a code review:  
-![](resources/images/09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_52.png)
+![](09-code-review_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_52.png)
 
 **Any feedback you have regarding this exercise is greatly appreciated; you can fill out [this form](https://forms.gle/ygSSwoGaEATA2S65A)!**
 

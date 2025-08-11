@@ -5,7 +5,7 @@
 
 ## Learning Objectives
 
-![](resources/images/08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_1.png)
+![](08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_1.png)
 
 ## Why documentation?
 
@@ -17,7 +17,7 @@ Both these notebook descriptions and READMEs are written in markdown -- a shorth
 
 As we [discussed in chapter 5](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/using-notebooks.html#reason-1-notebooks-allow-for-tracking-data-exploration-and-encourage-the-scientist-to-narrate-their-thought-process), data analyses can lead one on a winding trail of decisions, but notebooks allow you to narrate your thought process as you travel along these analyses explorations!
 
-![](resources/images/08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png)
+![](08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png)
 
 **Your scientific notebook should include descriptions that describe:**   
 
@@ -41,7 +41,7 @@ What do you think about the results? The plots and tables you show in the notebo
 
 READMEs are also a great way to help your collaborators get quickly acquainted with the project.
 
-![](resources/images/08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_11.png)
+![](08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_11.png)
 
 READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called "README.md" when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README.
 
@@ -97,7 +97,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 ottrpal::include_slide("https://docs.google.com/presentation/d/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE/edit#slide=id.gfaa026a583_0_30")
 ```
 
-![](resources/images/08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png)
+![](08-readmes_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfaa026a583_0_30.png)
 5. Continue to add more descriptions where you feel is necessary, You can reference the descriptions we have in the ["final" version](https://github.com/jhudsl/reproducible-python-example/blob/main/make_heatmap.ipynb) looks like in the [example Python repository](https://github.com/jhudsl/reproducible-python-example). (Again, _final_ here is in quotes because we may continue to make improvements to this notebook too -- remember what we said about iterative?)
 
 </details>

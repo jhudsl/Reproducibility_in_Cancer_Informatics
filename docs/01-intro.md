@@ -3,7 +3,7 @@
 
 # Introduction
 
-![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_0.png){width=100%}
+![](01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_0.png){width=100%}
 
 ## Target Audience  
 
@@ -15,15 +15,15 @@ _This course is written for individuals who:_
 - Have not had formal training in computational methods.  
 - Have limited or no familiar with GitHub, Docker, or package management tools.
 
-![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106226cdd08_0_0.png){width=100%}
+![](01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106226cdd08_0_0.png){width=100%}
 
 ## Topics covered:
 
 This is a two part series:
 
-![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_168.png){width=100%}
+![](01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_168.png){width=100%}
 
-![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_189.png){width=100%}
+![](01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g106742f3b7b_0_189.png){width=100%}
 
 ## Motivation
 
@@ -37,7 +37,7 @@ Equipping researchers with the skills to create reproducible data analyses incre
 
 This course introduces the concepts of reproducibility and replicability in the context of cancer informatics. It uses hands-on exercises to demonstrate in practical terms how to increase the reproducibility of data analyses. The course also introduces tools relevant to reproducibility including analysis notebooks, package managers, git and GitHub.
 
-![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_10.png)
+![](01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gd422c5de97_0_10.png)
 
 The course includes hands-on exercises for how to apply reproducible code concepts to their code. Individuals who take this course are encouraged to complete these activities as they follow along with the course material to help increase the reproducibility of their analyses.
 
@@ -47,7 +47,7 @@ Equip learners with reproducibility skills they can apply to their existing anal
 **What is not the goal**  
 This course is meant to introduce learners to the reproducibility tools, but _it does not necessarily represent the absolute end-all, be-all best practices for the use of these tools_. In other words, this course gives a starting point with these tools, but not an ending point. The advanced version of this course is the next step toward incrementally "better practices".
 
-![](resources/images/01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_3.png)
+![](01-intro_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_3.png)
 
 ## How to use the course
 

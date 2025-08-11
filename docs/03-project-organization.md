@@ -5,11 +5,11 @@
 
 ## Learning Objectives
 
-![](resources/images/03-project-organization_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png)
+![](03-project-organization_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_51.png)
 
 Keeping your files organized is a skill that has a high long-term payoff. As you are in the thick of an analysis, you may underestimate how many files and terms you have floating around. But a short time later, you may return to your files and realize your organization was not as clear as you hoped.   
 
-![](resources/images/03-project-organization_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png)
+![](03-project-organization_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png)
 
 @Tayo2019 discusses four particular reasons why it is important to organize your project:
 
@@ -20,7 +20,7 @@ Keeping your files organized is a skill that has a high long-term payoff. As you
 
 Organization is yet another aspect of reproducibility that saves you and your colleagues time!
 
-![](resources/images/03-project-organization_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_180.png)
+![](03-project-organization_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_180.png)
 
 ## Organizational strategies
 

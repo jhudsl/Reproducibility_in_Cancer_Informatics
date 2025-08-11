@@ -5,7 +5,7 @@
 
 ## Learning Objectives
 
-![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_4.png)
+![](05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_4.png)
 
 Notebooks are a handy way to have the code, output, and scientist's thought process all documented in one place that is easy for others to read and follow.
 
@@ -13,7 +13,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 #### Reason 1: Notebooks allow for tracking data exploration and encourage the scientist to narrate their thought process:
 
-![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png)
+![](05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_186.png)
 
 > Each executed code cell is an attempt by the researcher to achieve something and to tease out some insight from the data set. The result is displayed immediately below the code commands, and the researcher can pause and think about the outcome. As code cells can be executed in any order, modified and re-executed as desired, deleted and copied, the notebook is a convenient environment to iteratively explore a complex problem.
 
@@ -22,7 +22,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 #### Reason 2: Notebooks allow for easy sharing of results:
 
-![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_102.png)
+![](05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8f405fdab_0_102.png)
 
 > Notebooks can be converted to html and pdf, and then shared as static read-only documents. This is useful to communicate and share a study with colleagues or managers. By adding sufficient explanation, the main story can be understood by the reader, even if they wouldn't be able to write the code that is embedded in the document.
 
@@ -30,7 +30,7 @@ The notebook environment is incredibly useful for reproducible data science for 
 
 #### Reason 3: Notebooks can be re-ran as a script or developed interactively:
 
-![](resources/images/05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9440130d0_0_0.png)
+![](05-scientific-notebooks_files/figure-docx//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf9440130d0_0_0.png)
 
 > A common pattern in science is that a computational recipe is iteratively developed in a notebook. Once this has been found and should be applied to further data sets (or other points in some parameter space), the notebook can be executed like a script, for example by submitting these scripts as batch jobs.
 
