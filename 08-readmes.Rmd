@@ -63,6 +63,16 @@ READMEs stick out in a project and are generally universal signal for new people
 
 You can take a look at this [template README](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md) to get started.
 
+## Licensing
+
+Adding information about a license is a good idea. If you put your code on GitHub, then the default copyright laws apply. According to GitHub:
+
+> “You retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you’re creating an open source project, we strongly encourage you to include an open source license.”
+
+Open source software or code means that it is distributed with a license that allows others to reuse or adapt your code for other purposes. This is very helpful to advance science and technology.
+
+Check out this great resource on [options for licenses](https://choosealicense.com/) to help you choose which license is right for your project. 
+
 #### More about writing READMEs:
 
 - [How to write a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
