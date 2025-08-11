@@ -40,7 +40,7 @@ We'll talk a bit more about code review in an upcoming chapter!
 
 - [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.    
 - [Write clean R code](https://appsilon.com/write-clean-r-code/) by @Dubel2021.  
-- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.  
+- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://medium.com/data-science/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.  
 
 #### DRY up your code
 <img src="resources/images/DRY.png" width="12%">
@@ -185,8 +185,8 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 
 **More reading:**  
 
-- [R for Epidemiology - Coding best Practices](https://www.r4epi.com/coding-best-practices.html#object-variable-names) by @Cannell2021.
-- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://towardsdatascience.com/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them-89053d2855be) by @Koehrsen2019.  
+- [R for Epidemiology - Coding best Practices](https://www.r4epi.com/chapters/best_practices/best_practices#object-variable-names) by @Cannell2021.
+- [Data Scientists: Your Variable Names Are Awful. Here’s How to Fix Them](https://willkoehrsen.github.io/data%20science/software%20engineering/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them/) by @Koehrsen2019. 
 - [Writing Variable — Informative, Descriptive & Elegant](https://medium.datadriveninvestor.com/writing-variable-informative-descriptive-elegant-1dd6f3f15db3) by @Hobert2018.   
 
 #### Follow a code style
@@ -308,7 +308,7 @@ There's so many opinions and strategies on best practices for code. And although
 
 - [Data Carpentry's: Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html) by @DataCarpentry2021b.
 - [R Programming for Research: Reproducible Research](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html) by @Good2021.
-- [R for Epidemiology: Coding best practices](https://www.r4epi.com/coding-best-practices.html) by @Cannell2021.
+- [R for Epidemiology: Coding best practices](https://www.r4epi.com/chapters/best_practices/best_practices) by @Cannell2021.
 - [Best practices for R Programming](https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a) by @Bernardo2021.
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)

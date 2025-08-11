@@ -59,7 +59,7 @@ You can take a look at this [template README](https://raw.githubusercontent.com/
 
 - [How to write a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 - [A Beginners Guide to writing a Kicka** README](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
-- [How to write an awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
+- [Tips for Creating Great README Docs](https://www.archbee.com/blog/readme-creating-tips)
 
 ## Get the exercise project files (or continue with the files you used in the previous chapter)
 
