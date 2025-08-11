@@ -44,7 +44,7 @@ We'll talk a bit more about code review in an upcoming chapter!
 
 - [Readable Code](https://blog.pragmaticengineer.com/readable-code/) by @Orosz2019.    
 - [Write clean R code](https://appsilon.com/write-clean-r-code/) by @Dubel2021.  
-- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.  
+- [Python Clean Code: 6 Best Practices to Make Your Python Functions More Readable](https://medium.com/data-science/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60) by @Tran2021.  
 
 #### DRY up your code
 <img src="resources/images/DRY.png" width="12%">
