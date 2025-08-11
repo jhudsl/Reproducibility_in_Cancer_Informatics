@@ -98,10 +98,16 @@ In your scientific notebook, you'll need to add two items.
 <details> <summary>**R version of the exercise**</summary>
 
 1. In your Rmd file, add a chunk in the very end that looks like this:
-```{r}
+
+```{r, eval = FALSE}
 sessionInfo()
 ```
 
+The output will look something like this:
+
+```{r, echo = FALSE}
+sessionInfo()
+```
 2. Save your notebook as is. Note it will not run correctly until we address the issues with the code in the next chapter.
 
 </details>
