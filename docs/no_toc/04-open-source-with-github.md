@@ -32,7 +32,7 @@ Life happens, sometimes you misplace a file or your computer malfunctions. If yo
 
 #### Keep a documented history of your project
 
-Overtime in a project, a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to revisit a question you already answered.
+Over time in a project, a lot happens, especially when it comes to exploring and handling data. Sometimes the rationale behind decisions that were made around an analysis can get lost. GitHub keeps communications and tracks the changes to your files so that you don't have to revisit a question you already answered.
 
 <img src="04-open-source-with-github_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_92.png" alt="Ruby holds a magnifying glass and says 'Why did we write the code this way? I don’t remember… Good thing through git tracking I can look into this file’s history and remind myself how it became this.'" width="1250" />
 
@@ -44,11 +44,11 @@ Analysis projects highly benefit from good collaborations! But having multiple c
 
 #### Experiment with your analysis
 
-Data science projects often lead to side analyses that could be very worth while but might be scary to venture on if you don't have your code well version controlled. Git and GitHub allow you to venture on these side experiments without fear since your main code can be kept safe from your side venture.
+Data science projects often lead to side analyses that could be very worthwhile but might be scary to venture on if you don't have your code well version controlled. Git and GitHub allow you to venture on these side experiments without fear since your main code can be kept safe from your side venture.
 
 <img src="04-open-source-with-github_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf62875ddf7_0_47.png" alt="Ruby says ‘I’m not sure if this side analysis I’m working on is a good idea or not, but I want to test it. Good thing I can make a separate branch and keep my original code safe from my experimenting.’ Her computer shows her main code and a branch off of it that says ‘test analysis’. After time and work goes by she may decide to incorporate her test analysis with her main code" width="1250" />
 
-## Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files
 
 <details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-4.zip).
@@ -75,7 +75,7 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 Now that we understand how useful GitHub is for creating reproducible analyses, it's time to set ourselves up on GitHub.
 
-Git and GitHub have a whole rich world of tools and terms that can get complex quickly, but for this exercise, we will not worry about those terms and functionalities just yet, but focus on getting code up on GitHub so we are ready to collaborate and conduct open analyses!
+Git and GitHub have a whole rich world of tools and terms that can get complex quickly, but for this exercise, we will not worry about those terms and functionalities just yet, and instead focus on getting code up on GitHub so we are ready to collaborate and conduct open analyses!
 
 - Go to <a href="https://github.com/" target="_blank">Github's main page</a> and click Sign Up if you don't have an account.
 - Follow <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo" target="_blank">these instructions to create a repository</a>. As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.

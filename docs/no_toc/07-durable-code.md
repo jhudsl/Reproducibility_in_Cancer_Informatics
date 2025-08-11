@@ -13,12 +13,12 @@
 <img src="resources/images/iterative.png" width="12%">
 
 Getting your code to work the first time is the first step, but don't stop there!
-Just like in writing a manuscript you wouldn't consider your first draft a final draft, your polishing code works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it!
+Just like in writing a manuscript you wouldn't consider your first draft a final draft, your code polishing works best in an iterative manner. Although you may need to set it aside for the day to give your brain a rest, return to your code later with fresh eyes and try to look for ways to improve upon it!
 
 #### Prioritize readability over cleverness
 <img src="resources/images/readable.png" width="12%">
 
-Some cleverness in code can be helpful, too much can make it difficult for others (including your future self!) to understand. If cleverness comprises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (AGAIN, including your future self!).
+Some cleverness in code can be helpful, too much can make it difficult for others (including your future self!) to understand. If cleverness compromises the readability of your code, it probably is not worth it. Clever but unreadable code won't be re-used or trusted by others (AGAIN, this includes your future self!).
 
 What does readable code look like? @Orosz2019 has some thoughts on writing readable code:
 
@@ -30,7 +30,7 @@ What does readable code look like? @Orosz2019 has some thoughts on writing reada
 
 > **The real test of readable code is others reading it.** So get feedback from others, via code reviews. Ask people to share feedback on how clear the code is. Encourage people to ask questions if something does not make sense. Code reviews - especially thorough code reviews - are the best way to get feedback on how good and readable your code is.
 >
-> Readable code will attract little to no clarifying questions, and reviewers won't misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints to opportunities to make the code more readable.
+> Readable code will attract little to no clarifying questions, and reviewers won't misunderstand it. So pay careful attention to the cases when you realize someone misunderstood the intent of what you wrote or asked a clarifying question. Every question or misunderstanding hints at opportunities to make the code more readable.
 >
 > A good way to get more feedback on the clarity of your code is to ask for feedback from someone who is not an expert on the codebase you are working on. Ask specifically for feedback on how easy to read your code is. Because this developer is not an expert on the codebase, they'll focus on how much they can follow your code. Most of the comments they make will be about your code's readability.
 
@@ -56,7 +56,7 @@ If you find yourself writing something more than once, you might want to write a
 DRY code is easier on the reviewer because they don't have to review the same thing twice, but also because they don't have to review the same thing twice. ;)
 DRYing code is something that takes some iterative passes and edits through your code, but in the end DRY code saves you and your collaborators time and can be something you reuse again in a future project!
 
-Here's an slightly modified example from @Bernardo2021 for what DRY vs non-DRY code might look like:
+Here's a slightly modified example from @Bernardo2021 for what DRY vs non-DRY code might look like:
 
 ```
 paste('Hello','John', 'welcome to this course')
@@ -103,9 +103,9 @@ In essence, this is the data science version of "Have you tried turning it off a
 
 <details> <summary> *Why do you need to refresh your kernel/session?*  </summary>
 
-As a quick example of why refreshing your kernel/session, let's suppose you are troubleshooting something that centers around an object named `some_obj` but then you rename this object to `iris_df`. When you rename this object you may need to update this other places in the code. If you don't refresh your environment while working on your code, `some_obj` will still be in your environment. This will make it more difficult for you to find where else the code needs to be updated.
+As a quick example of why refreshing your kernel/session helps, let's suppose you are troubleshooting something that centers around an object named `some_obj` but then you rename this object to `iris_df`. When you rename this object you may need to update this other places in the code. If you don't refresh your environment while working on your code, `some_obj` will still be in your environment. This will make it more difficult for you to find where else the code needs to be updated.
 
-Refreshing your kernel/session goes beyond objects defined in your environment, and also can affect packages and dependencies loaded or all kinds of other things attached to your kernel/session.
+Refreshing your kernel/session goes beyond objects defined in your environment, and also can affect the packages and dependencies loaded, or all kinds of other things attached to your kernel/session.
 
 As a quick experiment, try this in your Python or R environment:
 
@@ -179,7 +179,7 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 > 2 Use consistent notation for naming convention.  
 > 3 Use standard terms.  
 > 4 Do not number a variable name.  
-> 5 When you find another way to name variable, refactor as fast as possible.  
+> 5 When you find another word or term to replace and improve your variable name, refactor those code as soon as possible.  
 
 [@Hobert2018]
 
@@ -192,9 +192,9 @@ Try to avoid using variable names that have no meaning like `tmp` or `x`, or `i`
 #### Follow a code style
 <img src="resources/images/style.png" width="12%">
 
-Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may even work all the same, just like you understood what I wrote in that last sentence, but a lack of consistent style can make require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results.
+Just like when writing doesN"t FoLLOW conv3nTi0Ns OR_sPAcinng 0r sp3llinG, it can be distracting, the same goes for code. Your code may run correctly, just like you understood what I wrote in that last sentence, but a lack of consistent style can require more brain power from your readers for them to understand. For reproducibility purposes, readability is important! The easier you can make it on your readers, the more likely they will be able to understand and reproduce the results.
 
-There are different style guides out there that people adhere to. It doesn't matter so much which one you choose, so much that you pick one and stick to it for a particular project.  
+There are different style guides out there that people adhere to. It doesn't matter which one you choose, as long as you pick one and stick to it for a particular project.  
 
 _Python style guides_:
 
@@ -206,7 +206,7 @@ _R style guides_:
 - [Hadley Wickham's Style guide](http://adv-r.had.co.nz/Style.html) @Wickham.
 - [Google R style guide](https://google.github.io/styleguide/Rguide.html) @GoogleR.
 
-Although writing code following a style as you are writing is a good practice, we're all human and that can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you.
+Although writing code that follows a style is a good practice, we're all human and it can be tricky to do, so we recommend using an automatic styler on your code to fix up your code for you.
 For Python code, you can use [python black](https://black.readthedocs.io/en/stable/) and for R, [styler](https://www.tidyverse.org/blog/2017/12/styler-1.0.0/).
 
 #### Organize the structure of your code
@@ -311,7 +311,7 @@ There's so many opinions and strategies on best practices for code. And although
 - [R for Epidemiology: Coding best practices](https://www.r4epi.com/chapters/best_practices/best_practices) by @Cannell2021.
 - [Best practices for R Programming](https://towardsdatascience.com/best-practices-for-r-programming-ec0754010b5a) by @Bernardo2021.
 
-## Get the exercise project files (or continue with the files you used in the previous chapter)
+## See example project files
 
 <details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-7.zip).
@@ -355,9 +355,9 @@ For example, for this `make-heatmap` notebook we want to:
 
 **The exercise: Polishing code**  
 
-1. Start up JupyterLab with running `jupyter lab` from your command line.
+1. Start up JupyterLab by running `jupyter lab` from your command line.
 2. Activate your conda environment using `conda activate reproducible-python`.
-3. Open up your notebook you made in the previous chapter `make-heatmap.ipynb`
+3. Open up the notebook you made in the previous chapter `make-heatmap.ipynb`
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
 5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In Jupyter, you refresh your environment by using the `refresh` icon in the toolbar or by going to `Restart Kernel`.
 
@@ -486,7 +486,7 @@ _More reading on the tidyverse:_
 2. Open up the notebook you created in the previous chapter.  
 3. Now we'll work on applying the principles from this chapter to the code. We'll cover some of the points here, but then we encourage you to dig into the fully transformed notebook we will link at the end of this section.
 4. Work on organizing the code chunks and adding documentation to reflect the steps we've laid out in the [previous section](#organize-the-big-picture-of-the-code), you may want to work on this iteratively as we dive into the code.
-5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objectives stuck in your environment can inhibit your ability to troubleshoot). In RStudio, you refresh your environment by going to the `Run` menu and using `Restart R and refresh clear output`.
+5. As you clean up the code, you should run and re-run chunks to see if they work as you expect. You will also want to refresh your environment to help you develop the code (sometimes older objects stuck in your environment can inhibit your ability to troubleshoot). In RStudio, you refresh your environment by going to the `Run` menu and using `Restart R and Clear Output`.
 
 ***
 
@@ -507,7 +507,7 @@ set.seed(1234)
 **Get rid of setwd**
 
 _Rationale:_  
-`setwd()` almost never work for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.  
+`setwd()` almost never works for anyone besides the one person who wrote it. And in a few days/weeks it may not work for them either.  
 
 _Before:_  
 ```
@@ -523,9 +523,7 @@ _Related readings:_
 **Give the variables more informative names**
 
 _Rationale:_  
-`xx` doesn't tell us what is in the data here. Also by using the `readr::read_tsv()` from tidyverse we'll get a cleaner, faster read and won't have to specify `sep` argument. Note we are also fixing some spacing and using `<-` so that we can stick to readability conventions.
-
-You'll notice later
+`xx` doesn't tell us what is in the data here. Also by using the `readr::read_tsv()` from tidyverse we'll get a cleaner, faster read and won't have to specify the `sep` argument. Note we are also fixing some spacing and using `<-` so that we can stick to readability conventions.
 
 _Before:_  
 ```
@@ -548,10 +546,10 @@ What is happening with df1 and df2? What's being filtered out? etc.
 Code comments would certainly help understanding, but even better, we can DRY this code up and make the code clearer on its own.
 
 _Before:_  
-It may be difficult to tell from looking at the before code because there are no comments and it's a bit tricky to read, but the goal of this is to:  
+It may be difficult to tell from looking at the before code because there are no comments and it's a bit tricky to read, but the goal of this code is to:  
 
-1) Calculate variances for each row (each row is a gene).
-2) Filter the original gene expression matrix to only genes have a bigger variance (here we use arbitrarily 10 as a filter cutoff).
+1) Calculate the variance for each row (each row is a gene with expression values from a number of samples).
+2) Filter the original gene expression matrix to only genes that have a bigger variance (here we arbitrarily use 10 as a filter cutoff).
 
 ```
 df=read.csv("SRP070849.tsv", sep="\t")
@@ -572,10 +570,10 @@ Let's see how we can do this in a DRY'er and clearer way.
 We can:  
 1) Add comments to describe our goals.   
 2) Use variable names that are more informative.   
-3) Use the apply functions to do the loop for us -- this will eliminate the need for unclear variable `i` as well.   
+3) Use the apply functions to do the loop for us -- this will eliminate the need for the unclear variable `i` as well.   
 4) Use the tidyverse to do the filtering for us so we don't have to rename data frames or store extra versions of `df`.   
 
-Here's what the above might look like after some refactoring. Hopefully you find this is easier to follow and total there's less lines of code (but also has comments too!).
+Here's what the above might look like after some refactoring. Hopefully you find this is easier to follow and there's less total lines of code (but it also has comments now too!).
 ```
 # Read in data TSV file
 expression_df <- readr::read_tsv(data_file) %>%

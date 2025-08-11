@@ -11,7 +11,7 @@ Keeping your files organized is a skill that has a high long-term payoff. As you
 
 <img src="03-project-organization_files/figure-html//1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf7bed24491_1_56.png" alt="Ruby is looking at her computer with a lot of folders with different variations on similar names. Ruby asks herself: Which plot was was the edition from the most recent version of the data?" width="1250" style="display: block; margin: auto;" />
 
-@Tayo2019 discusses four particular reasons why it is important to organize your project:
+@Tayo2019 discusses four reasons why it is important to organize your project:
 
 > 1. Organization increases productivity. If a project is well organized, with everything placed in one directory, it makes it easier to avoid wasting time searching for project files such as datasets, codes, output files, and so on.
 > 2. A well-organized project helps you to keep and maintain a record of your ongoing and completed data science projects.
@@ -40,8 +40,8 @@ Getting more specific, here's some ideas of how to organize your project:
 
 - **Make file names informative** to those who don't have knowledge of the project but avoid using spaces, quotes, or unusual characters in your filenames and folders -- these only serve to make reading in files a nightmare in some programs.
 - **Number scripts** in the order that they are run.
-- **Keep like-files together** in their own directory: results tables with other results tables, etc. _Including most importantly keeping raw data separate from processed data or other results!_
-- **Put source scripts and functions in their own directory**. Things that should never need to be called directly by yourself or anyone else.
+- **Keep like-files together** in their own directory: results tables with other results tables, etc. _Most importantly, keep raw data separate from processed data or other results!_
+- **Put source scripts and functions in their own directory**. These are things that are called directly by yourself or anyone else.
 - **Put output in its own directories** like `results` and `plots`.
 - **Have a central document (like a README)** that describes the basic information about the analysis and how to re-run it.
 - Make it easy on yourself, **dates aren't necessary**. The computer keeps track of those.
@@ -54,14 +54,14 @@ Let's see what these principles might look like put into practice.
 Here's an example of what this might look like:
 ```
 project-name/
-├── run_analysis.sh
+├── run-analysis.sh
 ├── 00-download-data.sh
 ├── 01-make-heatmap.Rmd
 ├── README.md
 ├── plots/
 │   └── project-name-heatmap.png
 ├── results/
-│   └── top_gene_results.tsv
+│   └── top-gene-results.tsv
 ├── raw-data/
 │   ├── project-name-raw.tsv
 │   └── project-name-metadata.tsv
@@ -74,14 +74,14 @@ project-name/
 
 **What these hypothetical files and folders contain:**
 
-- `run_analysis.sh` - A central script that runs everything again
-- `00-download-data.sh` - The script that needs to be run first and is called by run_analysis.sh
-- `01-make-heatmap.Rmd` - The script that needs to be run second and is also called by run_analysis.sh
-- `README.md` - The document that has the information that will orient someone to this project, we'll discuss more about how to create a helpful README in [an upcoming chapter](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/documenting-analyses.html#readmes).
+- `run-analysis.sh` - A central script that runs everything again
+- `00-download-data.sh` - The script that needs to be run first and is called by run-analysis.sh
+- `01-make-heatmap.Rmd` - The script that needs to be run second and is also called by run-analysis.sh
+- `README.md` - A document that will orient someone to this project. We'll discuss more about how to create a helpful README in [an upcoming chapter](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/documenting-analyses.html#readmes).
 - `plots` - A folder of plots and resulting images
 - `results` - A folder results
-- `raw-data` - Data files as they first arrive and **nothing** has been done to them yet.
-- `processed-data` - Data that has been modified from the raw in some way.
+- `raw-data` - Data files as they first arrive (**nothing** has been done to them yet)
+- `processed-data` - Data that has been modified from their raw form in some way
 - `util` - A folder of utilities that never needs to be called or touched directly unless troubleshooting something
 
 ## Readings about organizational strategies for data science projects:
@@ -91,13 +91,13 @@ You can read through some of these articles to think about what kind of organiza
 
 - [Jenny Bryan's organizational strategies](https://www.stat.ubc.ca/~jenny/STAT545A/block19_codeFormattingOrganization.html) [@Bryan2021].
 - [Danielle Navarro's organizational strategies](https://www.youtube.com/playlist?list=PLRPB0ZzEYegPiBteC2dRn95TX9YefYFyy) @Navarro2021
-- [Jenny Bryan on Project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)[@Bryan2017].
+- [Jenny Bryan on Project-oriented workflows](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) [@Bryan2017].
 - [Data Carpentry mini-course about organizing projects](https://datacarpentry.org/organization-genomics/) [@DataCarpentry2021].
 - [Andrew Severin's strategy for organization](https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement.html#gsc.tab=0) [@Severin2021].
 - [A BioStars thread where many individuals share their own organizational strategies](https://www.biostars.org/p/821/) [@Biostars2021].
 - [Data Carpentry course chapter about getting organized](https://bioinformatics-core-shared-training.github.io/shell-genomics/07-organization/index.html) [@DataCarpentry2019].
 
-## Get the exercise project files (or continue with the files you used in the previous chapter)
+## Get the exercise project files
 
 <details> <summary>**Get the Python project example files**</summary>
 [Click this link to download](https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/chapter-zips/python-heatmap-chapt-3.zip).
@@ -123,8 +123,8 @@ Now double click your chapter zip file to unzip. For Windows you may have to [fo
 
 Using your computer's GUI (drag, drop, and clicking), organize the files that are part of this project.
 
-1. Organized these files using an organizational scheme similar to [what is described above](#example organizational-scheme).
-1. Create folders like `plots`, `results`, and `data` folder. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
+1. Organize these files using an organizational scheme similar to [what is described above](#example-organizational-scheme).
+1. Create folders like `plots`, `results`, and `data`. Note that `aggregated_metadata.json` and `LICENSE.TXT` also belong in the `data` folder.
 1. You will want to delete any files that say "OLD". Keeping multiple versions of your scripts around is a recipe for mistakes and confusion. In the advanced course we will discuss how to use version control to help you track this more elegantly.  
 
 After your files are organized, you are ready to move on to the next chapter and create a notebook!
