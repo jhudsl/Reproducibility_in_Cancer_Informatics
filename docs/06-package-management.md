@@ -109,17 +109,17 @@ The output will look something like this:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] jsonlite_1.8.8   dplyr_1.1.4      compiler_4.3.2   gitcreds_0.1.2  
+##  [1] jsonlite_2.0.0   dplyr_1.1.4      compiler_4.3.2   gitcreds_0.1.2  
 ##  [5] promises_1.2.1   tidyselect_1.2.0 Rcpp_1.0.12      webshot2_0.1.2  
-##  [9] xml2_1.3.6       stringr_1.5.1    tidyr_1.3.1      later_1.3.2     
-## [13] yaml_2.3.10      fastmap_1.1.1    readr_2.1.5      R6_2.5.1        
-## [17] generics_0.1.3   knitr_1.50       tibble_3.3.0     bookdown_0.43   
-## [21] rprojroot_2.1.0  pillar_1.9.0     tzdb_0.4.0       rlang_1.1.6     
-## [25] utf8_1.2.4       websocket_1.4.4  stringi_1.8.3    xfun_0.52       
-## [29] cli_3.6.2        magrittr_2.0.3   ps_1.7.6         digest_0.6.34   
-## [33] rvest_1.0.4      processx_3.8.3   hms_1.1.3        lifecycle_1.0.4 
-## [37] chromote_0.5.1   vctrs_0.6.5      ottrpal_2.0.0    evaluate_1.0.4  
-## [41] glue_1.7.0       spelling_2.3.1   fansi_1.0.6      purrr_1.0.2     
+##  [9] xml2_1.5.1       stringr_1.5.1    tidyr_1.3.1      later_1.3.2     
+## [13] yaml_2.3.12      fastmap_1.1.1    readr_2.1.5      R6_2.6.1        
+## [17] generics_0.1.3   knitr_1.50       tibble_3.3.0     bookdown_0.46   
+## [21] rprojroot_2.1.1  pillar_1.9.0     tzdb_0.4.0       rlang_1.1.6     
+## [25] utf8_1.2.4       websocket_1.4.4  stringi_1.8.3    xfun_0.55       
+## [29] cli_3.6.5        magrittr_2.0.3   ps_1.9.1         digest_0.6.34   
+## [33] rvest_1.0.5      processx_3.8.6   hms_1.1.3        lifecycle_1.0.4 
+## [37] chromote_0.5.1   vctrs_0.6.5      ottrpal_2.0.0    evaluate_1.0.5  
+## [41] glue_1.7.0       spelling_2.3.2   fansi_1.0.6      purrr_1.0.2     
 ## [45] rmarkdown_2.25   httr_1.4.7       tools_4.3.2      pkgconfig_2.0.3 
 ## [49] htmltools_0.5.7
 ```

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Writing durable code | Intro to Reproducibility in Cancer Informatics" />
   <meta property="og:type" content="book" />
@@ -381,7 +381,7 @@ lapply(class_names, GreetStudent)</code></pre>
 <p>Now, if you wanted to edit the greeting, you’d only need to edit it in the function, instead of in each instance.</p>
 <p><strong>More reading about this idea:</strong></p>
 <ul>
-<li><a href="https://metova.com/dry-programming-practices/">DRY Programming Practices</a> by <span class="citation">Klinefelter (<a href="#ref-Klinefelter2016">2016</a>)</span>.<br />
+<li><a href="https://rebecca-margaret.medium.com/on-the-evils-of-duplication-723fffbc1319">DRY Programming Practices</a> by <span class="citation">Robbins (<a href="#ref-Robbins2020-cj">2020</a>)</span>.<br />
 </li>
 <li><a href="https://www.youtube.com/watch?v=XSRO4VKD-pc">Keeping R Code DRY with functions</a> by <span class="citation">Riffomonas Project (<a href="#ref-Riffomonas2021">2021</a>)</span>.<br />
 </li>
@@ -672,7 +672,7 @@ expression_df = pd.read_csv(data_file, sep=&quot;\t&quot;)</code></pre>
 <li><a href="https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/">f-strings in Python</a> by <span class="citation">Geeks (<a href="#ref-Geeksforgeeks2018">2018</a>)</span>.</li>
 <li><a href="https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python">f-Strings: A New and Improved Way to Format Strings in Python</a> by <span class="citation">Python (<a href="#ref-Python2021">2021</a>)</span>.</li>
 <li><a href="https://www.educative.io/edpresso/absolute-vs-relative-path">Relative vs absolute file paths</a> by <span class="citation">Mustafeez (<a href="#ref-Mustafeez2021">2021</a>)</span>.</li>
-<li><a href="https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath">About join path</a> by <span class="citation"><span>“Python <span>Examples</span> of Pathlib.<span>Path</span>.joinpath”</span> (<a href="#ref-Programcreek2021">2021</a>)</span>.</li>
+<li><a href="https://docs.python.org/3/library/os.path.html#os.path.join">About join path</a> by <span class="citation"><span>“Os.path — Common Pathname Manipulations”</span> (<a href="#ref-Pythondocs">n.d.</a>)</span>.</li>
 </ul>
 <p><strong>Avoid using mystery numbers</strong></p>
 <p><em>Rationale:</em><br />
@@ -711,7 +711,7 @@ Then, when you are ready, take a look at what our <a href="https://github.com/jh
 <p><em>More reading on the tidyverse:</em></p>
 <ul>
 <li><a href="http://jhudatascience.org/tidyversecourse/intro.html">Tidyverse Skills for Data Science</a> by <span class="citation">Carrie Wright (<a href="#ref-Wright2021">n.d.</a>)</span>.</li>
-<li><a href="https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/">A Beginner’s Guide to Tidyverse</a> by <span class="citation">A. V. Team (<a href="#ref-Vidhya2019">2019</a>)</span>.</li>
+<li><a href="https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/">A Beginner’s Guide to Tidyverse</a> by <span class="citation">Team (<a href="#ref-Vidhya2019">2019</a>)</span>.</li>
 <li><a href="https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html">Introduction to tidyverse</a> by <span class="citation">Shapiro et al. (<a href="#ref-Shapiro2021">2021</a>)</span>.</li>
 </ul>
 <p><strong>The exercise: Polishing code</strong></p>
@@ -911,9 +911,6 @@ Hobert, Kevin. 2018. <span>“Writing <span>Variable</span> — <span>Informativ
 <div id="ref-Keeton2019" class="csl-entry">
 Keeton, BJ. 2019. <span>“How to <span>Comment</span> <span>Your</span> <span>Code</span> <span>Like</span> a <span>Pro</span>: <span>Best</span> <span>Practices</span> and <span>Good</span> <span>Habits</span>.”</span> <em>Elegant Themes</em>. <a href="https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits">https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits</a>.
 </div>
-<div id="ref-Klinefelter2016" class="csl-entry">
-Klinefelter, Sarah. 2016. <span>“<span>DRY</span> <span>Programming</span> <span>Practices</span> – <span>Metova</span>.”</span> <a href="https://metova.com/dry-programming-practices/">https://metova.com/dry-programming-practices/</a>.
-</div>
 <div id="ref-Koehrsen2019" class="csl-entry">
 Koehrsen, Will. 2019. <span>“Data <span>Scientists</span>: <span>Your</span> <span>Variable</span> <span>Names</span> <span>Are</span> <span>Awful</span>. <span>Here</span>’s <span>How</span> to <span>Fix</span> <span>Them</span>.”</span> <em>Medium</em>. <a href="https://willkoehrsen.github.io/data%20science/software%20engineering/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them/">https://willkoehrsen.github.io/data%20science/software%20engineering/data-scientists-your-variable-names-are-awful-heres-how-to-fix-them/</a>.
 </div>
@@ -935,11 +932,11 @@ Mustafeez, Anusheh Zohair. 2021. <span>“Absolute Vs. Relative Path.”</span> 
 <div id="ref-Orosz2019" class="csl-entry">
 Orosz, Gergely. 2019. <span>“Readable Code.”</span> <a href="https://blog.pragmaticengineer.com/readable-code/">https://blog.pragmaticengineer.com/readable-code/</a>.
 </div>
+<div id="ref-Pythondocs" class="csl-entry">
+<span>“Os.path — Common Pathname Manipulations.”</span> n.d. <a href="https://docs.python.org/3/library/os.path.html" class="uri">https://docs.python.org/3/library/os.path.html</a>.
+</div>
 <div id="ref-PEP8" class="csl-entry">
 <span>“<span>PEP</span> 8 – <span>Style</span> <span>Guide</span> for <span>Python</span> <span>Code</span>.”</span> 2021. <em>Python.org</em>. <a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a>.
-</div>
-<div id="ref-Programcreek2021" class="csl-entry">
-<span>“Python <span>Examples</span> of Pathlib.<span>Path</span>.joinpath.”</span> 2021. <a href="https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath">https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath</a>.
 </div>
 <div id="ref-Python2021" class="csl-entry">
 Python, Real. 2021. <span>“Python 3’s f-<span>Strings</span>: <span>An</span> <span>Improved</span> <span>String</span> <span>Formatting</span> <span>Syntax</span> (<span>Guide</span>) – <span>Real</span> <span>Python</span>.”</span> <a href="https://realpython.com/python-f-strings/">https://realpython.com/python-f-strings/</a>.
@@ -949,6 +946,9 @@ Python, Real. 2021. <span>“Python 3’s f-<span>Strings</span>: <span>An</span
 </div>
 <div id="ref-Riffomonas2021" class="csl-entry">
 Riffomonas Project. 2021. <span>“Keeping <span>R</span> Code <span>DRY</span> with Functions: <span>Don</span>’t Repeat Yourself! (<span>CC096</span>).”</span> <a href="https://www.youtube.com/watch?v=XSRO4VKD-pc">https://www.youtube.com/watch?v=XSRO4VKD-pc</a>.
+</div>
+<div id="ref-Robbins2020-cj" class="csl-entry">
+Robbins, Rebecca. 2020. <span>“On <span>‘the Evils of Duplication’</span>.”</span> <a href="https://rebecca-margaret.medium.com/on-the-evils-of-duplication-723fffbc1319" class="uri">https://rebecca-margaret.medium.com/on-the-evils-of-duplication-723fffbc1319</a>.
 </div>
 <div id="ref-Savonen2021" class="csl-entry">
 Savonen, Candace. 2021a. <em>Chapter 8 <span>Creating</span> Clarifying Code Comments <span></span> <span>Documentation</span> and <span>Usability</span></em>. <a href="https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments">https://jhudatascience.org/Documentation_and_Usability/creating-clarifying-code-comments.html#creating-clarifying-code-comments</a>.

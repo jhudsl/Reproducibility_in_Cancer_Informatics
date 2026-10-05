@@ -86,7 +86,7 @@ Now, if you wanted to edit the greeting, you'd only need to edit it in the funct
 
 **More reading about this idea:**
 
-- [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.  
+- [DRY Programming Practices](https://rebecca-margaret.medium.com/on-the-evils-of-duplication-723fffbc1319) by @Robbins2020-cj.  
 - [Keeping R Code DRY with functions](https://www.youtube.com/watch?v=XSRO4VKD-pc) by @Riffomonas2021.  
 - [Write efficient R code for science](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) by @Joseph2017.  
 - [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2019.  
@@ -419,7 +419,7 @@ _Related readings:_
 - [f-strings in Python](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/) by @Geeksforgeeks2018.
 - [f-Strings: A New and Improved Way to Format Strings in Python](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) by @Python2021.
 - [Relative vs absolute file paths](https://www.educative.io/edpresso/absolute-vs-relative-path) by @Mustafeez2021.
-- [About join path](https://www.programcreek.com/python/example/114070/pathlib.Path.joinpath) by @Programcreek2021.
+- [About join path](https://docs.python.org/3/library/os.path.html#os.path.join) by @Pythondocs.
 
 **Avoid using mystery numbers**
 
