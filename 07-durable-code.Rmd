@@ -90,7 +90,7 @@ Now, if you wanted to edit the greeting, you'd only need to edit it in the funct
 
 **More reading about this idea:**
 
-- [DRY Programming Practices](https://metova.com/dry-programming-practices/) by @Klinefelter2016.  
+- [DRY Programming Practices](https://rebecca-margaret.medium.com/on-the-evils-of-duplication-723fffbc1319) by @Klinefelter2016.  
 - [Keeping R Code DRY with functions](https://www.youtube.com/watch?v=XSRO4VKD-pc) by @Riffomonas2021.  
 - [Write efficient R code for science](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) by @Joseph2017.  
 - [Write efficient Python code](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/intro-to-clean-code/dry-modular-code/) by @Wasser2019.  
