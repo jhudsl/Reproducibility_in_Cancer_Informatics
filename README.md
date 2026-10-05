@@ -3,6 +3,8 @@
 
 [![Render](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics/actions/workflows/render-all.yml)
 
+<a href="https://doi.org/10.5281/zenodo.23168439"><img src="https://zenodo.org/badge/412054174.svg" alt="DOI"></a>
+
 This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
 
 You can see the rendered course material here: https://jhudatascience.org/Reproducibility_in_Cancer_Informatics

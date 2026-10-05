@@ -23,7 +23,7 @@ Not only does code review help boost the accuracy and reproducibility of the ana
 
 - [Code Review Guidelines for Humans](https://phauer.com/2018/code-review-guidelines/) by @Hauer2018.
 - [Your Code Sucks! – Code Review Best Practices](https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/) by @Hildebr2020.
-- [Best practices for Code Review](https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/) by @Smartbear2021.
+- [Best practices for Code Review](https://quokkalabs.com/blog/top-11-best-practices-for-code-review/) by @Joshi_code_review.
 - [Why code reviews matter (and actually save time!)](https://www.atlassian.com/agile/software-development/code-reviews) by @Radigan2021.
 
 ## Exercise: Set up your code review request!
